@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Chitin from Biomes! Caverns. -->
+	<!-- ToDo: We need to either transfer all the chitin to Core or create a new series of "toxic chitin" -->
+	<ThingDef ParentName="BiomesCore_ChitinBase">
+		<defName>BMT_WeakChitin</defName>
+		<label>brittle chitin</label>
+		<description>Chitin of a giant insect. It doesn't protect very well.</description>
+		<graphicData>
+			<color>(61,48,70)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.0</MarketValue>
+			<StuffPower_Armor_Sharp>0.4</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt>
+			<StuffPower_Insulation_Cold>10</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+			<BC_StuffPower_FlammabilityOffset>-0.2</BC_StuffPower_FlammabilityOffset>
+		</statBases>
+		<stuffProps>
+			<color>(61,48,70)</color>
+			<statFactors>
+				<MaxHitPoints>1.0</MaxHitPoints>
+				<Beauty>1</Beauty>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+</Defs>

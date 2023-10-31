@@ -16,12 +16,19 @@
 	  <color>(164,212,150)</color>
 	  <commonality>0.04</commonality>
 	  <statOffsets>
-		<ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
+		<ToxicEnvironmentResistance>0.25</ToxicEnvironmentResistance>
 	  </statOffsets>
 	</stuffProps>
 	<graphicData>
 	  <color>(164,212,150)</color>
 	</graphicData>
+	<comps>
+	  <li Class="CompProperties_GasOnDamage">
+		<type>ToxGas</type>
+		<damageFactor>6</damageFactor>
+		<useStackCountAsFactor>true</useStackCountAsFactor>
+	  </li>
+	</comps>
   </ThingDef>
 
 </Defs>

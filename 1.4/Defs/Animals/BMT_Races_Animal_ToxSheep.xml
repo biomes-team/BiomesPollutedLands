@@ -1,9 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+<!-- How big is it? Vanilla sheep sized. -->
+<!-- What does it eat? (is it a predator?) Herbivore. -->
+<!-- Where does it live? Rarely spawns in polluted vanilla forested biomes that are NOT swamps. -->
+<!-- Does it spawn in packs? Yes, in groups up to 5 or 6. -->
+<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Shearable for a wool that provides good toxic protection, roughly 25% per piece, so a pawn with pants, shirt, hat, and jacket or something will be fully protected. The wool however releases tox gas and pollution if burned. -->
+
   <ThingDef ParentName="AnimalThingBase">
 	<defName>BMT_ToxSheep</defName>
 	<label>tox-wool sheep</label>
+	<!-- ToDo: Need to add a description. -->
 	<description>Sheep husbandry is practised throughout the majority of the inhabited worlds, however only recently it has been introduced to the rimworlds. Domestic sheep are relatively small herbivores, usually with yellowish wool and medium sized horns.</description>
 	<statBases>
 	  <MoveSpeed>5.1</MoveSpeed>
@@ -70,11 +77,13 @@
 		<li>(-0.27, 0, 0.11)</li>
 	  </headPosPerRotation>
 	</race>
+	<!-- ToDo: Change tags? -->
 	<tradeTags>
 	  <!-- <li>AnimalCommon</li> -->
 	  <!-- <li>AnimalFarm</li> -->
 	  <li>BMT_PollutedCommon</li>
 	  <li>BMT_PollutedAnimalFarm</li>
+	  <li>BMT_PollutedLands_AllAnimals</li>
 	</tradeTags>
 	<tools>
 	  <li>
@@ -128,6 +137,8 @@
 	<race>BMT_ToxSheep</race>
 	<combatPower>55</combatPower>
 	<ecoSystemWeight>0.5</ecoSystemWeight>
+	<wildGroupSize>5~6</wildGroupSize>
+	<!-- ToDo: Change textures -->
 	<lifeStages>
 	  <li>
 		<label>tox lamb</label>

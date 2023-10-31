@@ -1,9 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+<!-- How big is it? Slightly smaller than vanilla huskies. -->
+<!-- What does it eat? (is it a predator?) Same diet as vanilla dogs. -->
+<!-- Where does it live? Rarely spawns in polluted vanilla biomes that are arid or forested but not swampy. -->
+<!-- Does it spawn in packs? Yes, in groups up to 3 or 4. -->
+<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Good pets and good attack animals. They should use the pack defense and pack hunting comps both.  -->
+
   <HediffDef>
 	<defName>BMT_WasteHound_ToxTileReaction</defName>
 	<label>pollution speed</label>
+	<!-- ToDo: Need to add a description. -->
 	<description>This creature is saturated with pollution.</description>
 	<hediffClass>HediffWithComps</hediffClass>
 	<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
@@ -30,21 +37,21 @@
 		<label>polluted</label>
 		<minSeverity>0.20</minSeverity>
 		<statFactors>
-		  <MoveSpeed>1.2</MoveSpeed>
+		  <MoveSpeed>1.1</MoveSpeed>
 		</statFactors>
 	  </li>
 	  <li>
 		<label>polluted</label>
 		<minSeverity>0.50</minSeverity>
 		<statFactors>
-		  <MoveSpeed>1.5</MoveSpeed>
+		  <MoveSpeed>1.3</MoveSpeed>
 		</statFactors>
 	  </li>
 	  <li>
 		<label>polluted</label>
 		<minSeverity>1.0</minSeverity>
 		<statFactors>
-		  <MoveSpeed>1.8</MoveSpeed>
+		  <MoveSpeed>1.5</MoveSpeed>
 		</statFactors>
 	  </li>
 	</stages>
@@ -53,6 +60,7 @@
   <ThingDef ParentName="AnimalThingBase">
 	<defName>BMT_WasteHound</defName>
 	<label>waste hound</label>
+	<!-- ToDo: Need to add a description. -->
 	<description>waste hound desc</description>
 	<statBases>
 	  <MoveSpeed>4.6</MoveSpeed>
@@ -70,12 +78,12 @@
 	  <baseHungerRate>0.25</baseHungerRate>
 	  <baseHealthScale>1.3</baseHealthScale>
 	  <maxPreyBodySize>2.5</maxPreyBodySize>
-	  <foodType>CarnivoreAnimalStrict</foodType>
+	  <foodType>CarnivoreAnimal</foodType>
 	  <leatherDef>Leather_Wolf</leatherDef>
 	  <gestationPeriodDays>10</gestationPeriodDays>
 	  <nameOnTameChance>1</nameOnTameChance>
 	  <trainability>Intermediate</trainability>
-	  <wildness>0.70</wildness>
+	  <wildness>0.40</wildness>
 	  <manhunterOnTameFailChance>0.50</manhunterOnTameFailChance>
 	  <manhunterOnDamageChance>0.95</manhunterOnDamageChance>
 	  <litterSizeCurve>
@@ -122,10 +130,19 @@
 			  <li>BMT_WasteHound_ToxTileReaction</li>
 			</hediffDefs>
 		</li>
+		<li Class="BiomesCore.CompProperties_PackDefense">
+			<baseChance>0.6</baseChance>
+			<canBashFences>true</canBashFences>
+		</li>
+		<li Class="BiomesCore.CompProperties_PackHunter">
+			<joinHuntRange>10</joinHuntRange>
+		</li>
 	</comps>
+	<!-- ToDo: Change tags? -->
 	<tradeTags>
 	  <li>BMT_PollutedAnimalUncommon</li>
 	  <li>BMT_PollutedAnimalFighter</li>
+	  <li>BMT_PollutedLands_AllAnimals</li>
 	</tradeTags>
 	<tools>
 	  <li>
@@ -200,6 +217,8 @@
 	<race>BMT_WasteHound</race>
 	<combatPower>160</combatPower>
 	<ecoSystemWeight>0.5</ecoSystemWeight>
+	<wildGroupSize>3~4</wildGroupSize>
+	<!-- ToDo: Change textures -->
 	<lifeStages>
 	  <li>
 		<label>hound puppy</label>

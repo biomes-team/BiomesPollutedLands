@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Temp forest -->
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="TemperateForest"]/pollutionWildAnimals</xpath>
+	  <value>
+		<BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_WasteHound>
+		<BMT_ToxSheep MayRequire="Ludeon.RimWorld.Biotech">0.7</BMT_ToxSheep>
+	  </value>
+	</Operation>
+
+	<!-- Trop forest -->
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="TropicalRainforest"]/pollutionWildAnimals</xpath>
+	  <value>
+		<BMT_VenomPede MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_VenomPede>
+		<BMT_ToxSheep MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_ToxSheep>
+	  </value>
+	</Operation>
+
+	<!-- Temp swamp -->
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="TemperateSwamp"]/pollutionWildAnimals</xpath>
+	  <value>
+		<!-- <BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound> -->
+	  </value>
+	</Operation>
+
+	<!-- Trop swamp -->
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="TropicalSwamp"]/pollutionWildAnimals</xpath>
+	  <value>
+		<!-- <BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound> -->
+	  </value>
+	</Operation>
+
+	<!-- Desert -->
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="Desert" or defName="ExtremeDesert"]/pollutionWildAnimals</xpath>
+	  <value>
+		<!-- <BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound> -->
+	  </value>
+	</Operation>
+
+	<!-- Arid -->
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="AridShrubland"]/pollutionWildAnimals</xpath>
+	  <value>
+		<BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.5</BMT_WasteHound>
+	  </value>
+	</Operation>
+
+	<!-- Cold Forest -->
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="BorealForest" or defName="Tundra"]/pollutionWildAnimals</xpath>
+	  <value>
+		<BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.4</BMT_WasteHound>
+		<BMT_ToxSheep MayRequire="Ludeon.RimWorld.Biotech">0.8</BMT_ToxSheep>
+	  </value>
+	</Operation>
+
+	<!-- Cold swamp -->
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="ColdBog"]/pollutionWildAnimals</xpath>
+	  <value>
+		<!-- <BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound> -->
+	  </value>
+	</Operation>
+
+	<!-- Ice -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>/Defs/BiomeDef[defName="IceSheet"]/pollutionWildAnimals</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+			  <xpath>/Defs/BiomeDef[defName="IceSheet"]</xpath>
+			  <success>Always</success>
+			  <value>
+				<pollutionWildAnimals/>
+			  </value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="IceSheet"]/pollutionWildAnimals</xpath>
+	  <value>
+		<!-- <BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound> -->
+	  </value>
+	</Operation>
+
+	<!-- Sea Ice -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>/Defs/BiomeDef[defName="SeaIce"]/pollutionWildAnimals</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+			  <xpath>/Defs/BiomeDef[defName="SeaIce"]</xpath>
+			  <success>Always</success>
+			  <value>
+				<pollutionWildAnimals/>
+			  </value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="SeaIce"]/pollutionWildAnimals</xpath>
+	  <value>
+		<!-- <BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound> -->
+	  </value>
+	</Operation>
+
+</Patch>
