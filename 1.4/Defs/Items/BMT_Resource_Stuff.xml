@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Sheep wool - most basic -->
+  <ThingDef ParentName="WoolBase">
+	<defName>BMT_ToxWoolSheep</defName>
+	<label>tox-sheep wool</label>
+	<description>Tox-sheep's wool. It provides good insulation.</description>
+	<possessionCount>30</possessionCount>
+	<statBases>
+	  <StuffPower_Insulation_Cold>26</StuffPower_Insulation_Cold>
+	  <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+	  <!-- <ToxicEnvironmentResistance>0.1</ToxicEnvironmentResistance> -->
+	</statBases>
+	<stuffProps>
+	  <color>(164,212,150)</color>
+	  <commonality>0.04</commonality>
+	  <statOffsets>
+		<ToxicEnvironmentResistance>0.2</ToxicEnvironmentResistance>
+	  </statOffsets>
+	</stuffProps>
+	<graphicData>
+	  <color>(164,212,150)</color>
+	</graphicData>
+  </ThingDef>
+
+</Defs>

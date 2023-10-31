@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef>
+	<defName>BMT_WasteHound_ToxTileReaction</defName>
+	<label>pollution speed</label>
+	<description>This creature is saturated with pollution.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
+	<isBad>false</isBad>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<maxSeverity>1</maxSeverity>
+	<!-- <lethalSeverity>2</lethalSeverity> -->
+	<initialSeverity>0.01</initialSeverity>
+	<comps>
+	  <li Class="HediffCompProperties_Pollution">
+		<pollutedSeverity>0.0233</pollutedSeverity>
+		<unpollutedSeverity>-0.0333</unpollutedSeverity>
+		<interval>360</interval>
+	  </li>
+	</comps>
+	<stages>
+	  <li>
+		<label>unpolluted</label>
+		<becomeVisible>false</becomeVisible>
+		<minSeverity>0.0</minSeverity>
+	  </li>
+	  <li>
+		<label>polluted</label>
+		<minSeverity>0.20</minSeverity>
+		<statFactors>
+		  <MoveSpeed>1.2</MoveSpeed>
+		</statFactors>
+	  </li>
+	  <li>
+		<label>polluted</label>
+		<minSeverity>0.50</minSeverity>
+		<statFactors>
+		  <MoveSpeed>1.5</MoveSpeed>
+		</statFactors>
+	  </li>
+	  <li>
+		<label>polluted</label>
+		<minSeverity>1.0</minSeverity>
+		<statFactors>
+		  <MoveSpeed>1.8</MoveSpeed>
+		</statFactors>
+	  </li>
+	</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="AnimalThingBase">
+	<defName>BMT_WasteHound</defName>
+	<label>waste hound</label>
+	<description>waste hound desc</description>
+	<statBases>
+	  <MoveSpeed>4.6</MoveSpeed>
+	  <MarketValue>650</MarketValue>
+	  <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+	  <FilthRate>3</FilthRate>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	</statBases>
+	<race>
+	  <animalType>Canine</animalType>
+	  <body>QuadrupedAnimalWithPawsAndTail</body>
+	  <predator>true</predator>
+	  <petness>0.3</petness>
+	  <baseBodySize>1.3</baseBodySize>
+	  <baseHungerRate>0.25</baseHungerRate>
+	  <baseHealthScale>1.3</baseHealthScale>
+	  <maxPreyBodySize>2.5</maxPreyBodySize>
+	  <foodType>CarnivoreAnimalStrict</foodType>
+	  <leatherDef>Leather_Wolf</leatherDef>
+	  <gestationPeriodDays>10</gestationPeriodDays>
+	  <nameOnTameChance>1</nameOnTameChance>
+	  <trainability>Intermediate</trainability>
+	  <wildness>0.70</wildness>
+	  <manhunterOnTameFailChance>0.50</manhunterOnTameFailChance>
+	  <manhunterOnDamageChance>0.95</manhunterOnDamageChance>
+	  <litterSizeCurve>
+		<points>
+		  <li>(0.5, 0)</li>
+		  <li>(1, 1)</li>
+		  <li>(2, 1.7)</li>
+		  <li>(2.5, 0.7)</li>
+		  <li>(3, 0)</li>
+		</points>
+	  </litterSizeCurve>
+	  <lifeExpectancy>15</lifeExpectancy>
+	  <lifeStageAges>
+		<li>
+		  <def>AnimalBaby</def>
+		  <minAge>0</minAge>
+		</li>
+		<li>
+		  <def>AnimalJuvenile</def>
+		  <minAge>0.2</minAge>
+		</li>
+		<li>
+		  <def>AnimalAdult</def>
+		  <minAge>0.5</minAge>
+		  <soundWounded>Pawn_Warg_Wounded</soundWounded>
+		  <soundDeath>Pawn_Warg_Death</soundDeath>
+		  <soundCall>Pawn_Warg_Call</soundCall>
+		  <soundAngry>Pawn_Warg_Angry</soundAngry>
+		</li>
+	  </lifeStageAges>
+	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+	  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+	  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	  <headPosPerRotation>
+		<li>(0.0, 0, 0.2)</li>
+		<li>(0.3, 0, 0.03)</li>
+		<li>(0.0, 0, -0.16)</li>
+		<li>(-0.3, 0, 0.03)</li>
+	  </headPosPerRotation>
+	</race>
+	<comps>
+		<li Class="BiomesCore.CompProperties_InitialHediff">
+			<hediffDefs>
+			  <li>BMT_WasteHound_ToxTileReaction</li>
+			</hediffDefs>
+		</li>
+	</comps>
+	<tradeTags>
+	  <li>BMT_PollutedAnimalUncommon</li>
+	  <li>BMT_PollutedAnimalFighter</li>
+	</tradeTags>
+	<tools>
+	  <li>
+		<label>left claw</label>
+		<capacities>
+		  <li>Scratch</li>
+		</capacities>
+		<power>13</power>
+		<cooldownTime>1.5</cooldownTime>
+		<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+		<surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>14</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+	  </li>
+	  <li>
+		<label>right claw</label>
+		<capacities>
+		  <li>Scratch</li>
+		</capacities>
+		<power>13</power>
+		<cooldownTime>1.5</cooldownTime>
+		<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+		<surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>14</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+	  </li>
+	  <li>
+		<label>razorfangs</label>
+		<capacities>
+		  <li>Bite</li>
+		</capacities>
+		<power>15</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+		<chanceFactor>0.9</chanceFactor>
+		<surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>14</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+	  </li>
+	  <li>
+		<label>head</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>5</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<chanceFactor>0.2</chanceFactor>
+	  </li>
+	</tools>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+	<defName>BMT_WasteHound</defName>
+	<label>waste hound</label>
+	<race>BMT_WasteHound</race>
+	<combatPower>160</combatPower>
+	<ecoSystemWeight>0.5</ecoSystemWeight>
+	<lifeStages>
+	  <li>
+		<label>hound puppy</label>
+		<labelPlural>warg puppies</labelPlural>
+		<bodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Warg/Warg</texPath>
+		  <drawSize>1.05</drawSize>
+		  <color>(123,104,89)</color>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
+		  <drawSize>1.05</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Warg/Warg</texPath>
+		  <drawSize>1.7</drawSize>
+		  <color>(123,104,89)</color>
+		  <shadowData>
+			<volume>(0.25, 0.3, 0.25)</volume>
+			<offset>(0,0,-0.15)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
+		  <drawSize>1.7</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Warg/Warg</texPath>
+		  <drawSize>2.15</drawSize>
+		  <color>(123,104,89)</color>
+		  <shadowData>
+			<volume>(0.3, 0.4, 0.3)</volume>
+			<offset>(0,0,-0.15)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
+		  <drawSize>2.15</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	</lifeStages>
+  </PawnKindDef>
+
+</Defs>
