@@ -1,0 +1,9 @@
+How big is it? About cow sized, maybe slightly bigger.
+What does it eat? (is it a predator?) Herbivore.
+Where does it live? Spawns in swamps and forests, but more rarely outside of swamps.
+Does it spawn in packs? Nope, it's solitary.
+Other info-- good pets? shearable? do you want it to have a specific type of leather? etc. Should give higher-end chitin when butchered. It should be milked for a liquid that can be used in crafting stone-like walls with weirdly high HP, between steel and plasteel.
+Should be a fairly tough to kill creature and it should retract into its shell when too damaged.
+Attacks cause a slowing hediff on pawns (due to their slime) and pawns with this hediff must be given medical help or they will be unable to move at all. (Rain should also slowly free a pawn)
+
+It should produce a slime trail as it moves like Caverns snails.

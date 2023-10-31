@@ -1,0 +1,7 @@
+How big is it? About cat sized.
+What does it eat? (is it a predator?) Carnivore but should mostly eat from terrain. Text should be something like "Luring in bugs"
+Where does it live? Spawns in polluted warmer vanilla biomes.
+Does it spawn in packs? No.
+Other info-- good pets? shearable? do you want it to have a specific type of leather? etc. It should be a really good pet for nuzzling.
+
+If possible, it should produce one tile of light whenever it's eating, but ONLY when it's eating.

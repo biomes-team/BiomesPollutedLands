@@ -1,0 +1,10 @@
+How big is it? Slightly bigger than rabbits.
+What does it eat? (is it a predator?) Carnivore. Should be able to eat from terrain with the text "Catching bugs"
+Where does it live? Spawns in swamps and forests, but more rarely outside of swamps.
+Does it spawn in packs? No.
+Other info-- good pets? shearable? do you want it to have a specific type of leather? etc. Should give amphibianskin when butchered. 
+Should have a tadpole stage as a baby. Its eating from terrain should have text like "Eating tiny prey"
+Tadpole stage should be fully aquatic.
+Adult stage should be amphibious.
+
+Should primarily attack with its tongue. Tongue attacks should be acidic.

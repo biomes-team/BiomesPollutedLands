@@ -1,0 +1,5 @@
+How big is it? Vanilla sheep sized.
+What does it eat? (is it a predator?) Herbivore.
+Where does it live? Rarely spawns in polluted vanilla forested biomes that are NOT swamps.
+Does it spawn in packs? Yes, in groups up to 5 or 6.
+Other info-- good pets? shearable? do you want it to have a specific type of leather? etc. Shearable for a wool that provides good toxic protection, roughly 25% per piece, so a pawn with pants, shirt, hat, and jacket or something will be fully protected. The wool however releases tox gas and pollution if burned.

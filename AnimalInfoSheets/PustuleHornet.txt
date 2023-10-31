@@ -1,0 +1,8 @@
+How big is it? A little bigger than cats.
+What does it eat? (is it a predator?) Predatory carnivore.
+Where does it live? Spawns in forested and swampy polluted vanilla biomes.
+Does it spawn in packs? Yes, in hives.
+Other info-- good pets? shearable? do you want it to have a specific type of leather? etc. When they die, they'll explode into small clouds of tox gas. 
+Their attacks should give an increasing paralysis debuff (which we should have in Core, I believe). 
+
+If possible, they should have a hive structure they spawn near on map gen. If it's destroyed it should spawn their queen, a bigger and tougher hornet. They should stay near her like she's their hive if their hive structure is gone. They should also mercilessly defend her using the pack defense comp.
