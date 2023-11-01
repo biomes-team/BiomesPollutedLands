@@ -7,7 +7,7 @@
 <!-- Does it spawn in packs? Yes, in groups up to 5 or 6. -->
 <!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Shearable for a wool that provides good toxic protection, roughly 25% per piece, so a pawn with pants, shirt, hat, and jacket or something will be fully protected. The wool however releases tox gas and pollution if burned. -->
 
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="BMT_PolluedLands_AnimalThingBase">
 	<defName>BMT_ToxSheep</defName>
 	<label>tox-wool sheep</label>
 	<!-- ToDo: Need to add a description. -->
@@ -18,7 +18,7 @@
 	  <ComfyTemperatureMin>-20</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
 	  <FilthRate>11</FilthRate>
-	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	  <!-- <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance> -->
 	</statBases>
 	<uiIconScale>1.3</uiIconScale>
 	<comps>
@@ -83,7 +83,7 @@
 	  <!-- <li>AnimalFarm</li> -->
 	  <li>BMT_PollutedCommon</li>
 	  <li>BMT_PollutedAnimalFarm</li>
-	  <li>BMT_PollutedLands_AllAnimals</li>
+	  <!-- <li>BMT_PollutedLands_AllAnimals</li> -->
 	</tradeTags>
 	<tools>
 	  <li>

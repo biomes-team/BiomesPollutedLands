@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Base -->
+
+  <!-- Animals are immune to toxic environments but can still die from toxins. -->
+  <ThingDef ParentName="AnimalThingBase" Name="BMT_PolluedLands_AnimalThingBase" Abstract="True">
+	<statBases>
+	  <ToxicResistance>0.4</ToxicResistance>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	</statBases>
+	<!-- A trading tag that is common to all animals in the mod -->
+	<tradeTags>
+	  <li>BMT_PollutedLands_AllAnimals</li>
+	</tradeTags>
+  </ThingDef>
+
+  <!-- Insects are completely immune to toxins. -->
+  <ThingDef ParentName="BaseInsect" Name="BMT_PolluedLands_BaseInsect" Abstract="True">
+	<statBases>
+	  <ToxicResistance>1.0</ToxicResistance>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	</statBases>
+	<tradeTags>
+	  <li>BMT_PollutedLands_AllAnimals</li>
+	</tradeTags>
+  </ThingDef>
+
+</Defs>

@@ -8,7 +8,7 @@
 <!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. It should give a decent chitin. It should be surprisingly tough for its size. -->
 <!-- Its fang attacks should deal toxic buildup. -->
 
-  <ThingDef ParentName="BaseInsect">
+  <ThingDef ParentName="BMT_PolluedLands_BaseInsect">
 	<defName>BMT_VenomPede</defName>
 	<label>venompede</label>
 	<!-- ToDo: Need to add a description. -->
@@ -19,7 +19,7 @@
 	  <ArmorRating_Sharp>0.42</ArmorRating_Sharp>
 	  <ComfyTemperatureMin>0</ComfyTemperatureMin>
 	  <MarketValue>320</MarketValue>
-	  <LeatherAmount>11</LeatherAmount>
+	  <LeatherAmount>42</LeatherAmount>
 	  <IncomingDamageFactor>0.4</IncomingDamageFactor>
 	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
 	</statBases>
@@ -90,7 +90,7 @@
 	<!-- ToDo: Change tags? -->
 	<tradeTags>
 	  <li>BMT_PollutedAnimalInsect</li>
-	  <li>BMT_PollutedLands_AllAnimals</li>
+	  <!-- <li>BMT_PollutedLands_AllAnimals</li> -->
 	</tradeTags>
 	<modExtensions>
 		<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
