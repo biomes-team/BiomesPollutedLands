@@ -21,7 +21,7 @@
 	  <MarketValue>320</MarketValue>
 	  <LeatherAmount>42</LeatherAmount>
 	  <IncomingDamageFactor>0.4</IncomingDamageFactor>
-	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	  <!-- <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance> -->
 	</statBases>
 	<uiIconScale>2</uiIconScale>
 	<tools>
