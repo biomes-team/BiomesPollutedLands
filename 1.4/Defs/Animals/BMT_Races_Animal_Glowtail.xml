@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- How big is it? About cat sized. -->
+<!-- What does it eat? (is it a predator?) Carnivore but should mostly eat from terrain. Text should be something like "Luring in bugs" -->
+<!-- Where does it live? Spawns in polluted warmer vanilla biomes. -->
+<!-- Does it spawn in packs? No. -->
+<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. It should be a really good pet for nuzzling. -->
+
+<!-- If possible, it should produce one tile of light whenever it's eating, but ONLY when it's eating. -->
+
+<!-- Sergkart: I'm afraid this is a terrible idea. Every time a light source appears on the map, absolutely all light sources are recalculated (fortunately within the map itself). That is, such an animal will cause severe lags. -->
+
+  <ThingDef ParentName="BMT_PolluedLands_AnimalThingBase">
+	<defName>BMT_Glowtail</defName>
+	<label>glowtail</label>
+	<!-- ToDo: Need to add a description. -->
+	<description>One of mankind's first pets, the cat is a small mammal which hunts vermin. Known for their aloofness, cats are nevertheless popular companions because of their independence, calm disposition, and fine, pettable fur.</description>
+	<statBases>
+	  <MoveSpeed>5.2</MoveSpeed>
+	  <MarketValue>150</MarketValue>
+	  <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>41</ComfyTemperatureMax>
+	</statBases>
+	<race>
+	  <body>QuadrupedAnimalWithPawsAndTail</body>
+	  <predator>true</predator>
+	  <baseBodySize>0.32</baseBodySize>
+	  <maxPreyBodySize>0.25</maxPreyBodySize>
+	  <baseHungerRate>0.15</baseHungerRate>
+	  <baseHealthScale>0.42</baseHealthScale>
+	  <foodType>CarnivoreAnimal</foodType>
+	  <leatherDef>Leather_Light</leatherDef>
+	  <wildness>0</wildness>
+	  <petness>1</petness>
+	  <trainability>None</trainability>
+	  <nuzzleMtbHours>12</nuzzleMtbHours>
+	  <gestationPeriodDays>10</gestationPeriodDays>
+	  <nameOnTameChance>1</nameOnTameChance>
+	  <litterSizeCurve>
+		<points>
+		  <li>(0.5, 0)</li>
+		  <li>(1, 1)</li>
+		  <li>(2, 1.7)</li>
+		  <li>(3, 0.7)</li>
+		  <li>(3.5, 0)</li>
+		</points>
+	  </litterSizeCurve>
+	  <lifeExpectancy>10</lifeExpectancy>
+	  <lifeStageAges>
+		<li>
+		  <def>AnimalBaby</def>
+		  <minAge>0</minAge>
+		</li>
+		<li>
+		  <def>AnimalJuvenile</def>
+		  <minAge>0.15</minAge>
+		</li>
+		<li>
+		  <def>AnimalAdult</def>
+		  <minAge>0.4</minAge>
+		  <soundWounded>Pawn_Cat_Injured</soundWounded>
+		  <soundDeath>Pawn_Cat_Death</soundDeath>
+		  <soundCall>Pawn_Cat_Call</soundCall>
+		  <soundAngry>Pawn_Cat_Angry</soundAngry>
+		</li>
+	  </lifeStageAges>
+	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+	  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+	  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	  <headPosPerRotation>
+		<li>(0.02, 0, 0.23)</li>
+		<li>(0.35, 0, 0.05)</li>
+		<li>(0.0, 0, -0.185)</li>
+		<li>(-0.35, 0, 0.05)</li>
+	  </headPosPerRotation>
+	</race>
+	<!-- ToDo: Change tags? -->
+	<tradeTags>
+	  <li>BMT_PollutedAnimalCommon</li>
+	  <li>BMT_PollutedAnimalPet</li>
+	</tradeTags>
+	<tools>
+	  <li>
+		<label>left claw</label>
+		<capacities>
+		  <li>Scratch</li>
+		</capacities>
+		<power>7</power>
+		<cooldownTime>1.5</cooldownTime>
+		<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+		<surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>14</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+	  </li>
+	  <li>
+		<label>right claw</label>
+		<capacities>
+		  <li>Scratch</li>
+		</capacities>
+		<power>7</power>
+		<cooldownTime>1.5</cooldownTime>
+		<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+		<surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>14</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+	  </li>
+	  <li>
+		<capacities>
+		  <li>Bite</li>
+		</capacities>
+		<power>8</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+		<chanceFactor>0.7</chanceFactor>
+		<surpriseAttack>
+		  <extraMeleeDamages>
+			<li>
+			  <def>Stun</def>
+			  <amount>14</amount>
+			</li>
+		  </extraMeleeDamages>
+		</surpriseAttack>
+	  </li>
+	  <li>
+		<label>head</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>3</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<chanceFactor>0.2</chanceFactor>
+	  </li>
+	</tools>
+	<comps>
+		<li Class="BiomesCore.CompProperties_BottomFeeder">
+			<!-- <tickInterval>250</tickInterval> -->
+			<!-- <tickInterval>60000</tickInterval> -->
+			<feedingTerrainTag>Soil</feedingTerrainTag>
+			<consumingFoodReportString>Luring in bugs.</consumingFoodReportString>
+			<!-- Sergkart:  Instead of tile lighting, a simple projectile. -->
+			<effecterDef>Interceptor_BlockedProjectile</effecterDef>
+			<!-- <effecterDef>EatVegetarian</effecterDef> -->
+		</li>
+	</comps>
+	<modExtensions>
+		<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
+			<isBottomFeeder>true</isBottomFeeder>
+		</li>
+	</modExtensions>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+	<defName>BMT_Glowtail</defName>
+	<label>glowtail</label>
+	<race>BMT_Glowtail</race>
+	<combatPower>35</combatPower>
+	<ecoSystemWeight>0.3</ecoSystemWeight>
+	<!-- ToDo: Change textures -->
+	<lifeStages>
+	  <li>
+		<label>kitten</label>
+		<bodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Cat/Cat</texPath>
+		  <drawSize>0.6</drawSize>
+		  <color>(189,171,159)</color>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
+		  <drawSize>0.6</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Cat/Cat</texPath>
+		  <drawSize>0.8</drawSize>
+		  <color>(189,171,159)</color>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
+		  <drawSize>0.8</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Cat/Cat</texPath>
+		  <drawSize>1.0</drawSize>
+		  <color>(189,171,159)</color>
+		  <shadowData>
+			<volume>(0.25, 0.3, 0.25)</volume>
+			<offset>(0,0,-0.15)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
+		  <drawSize>1.0</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	</lifeStages>
+  </PawnKindDef>
+
+</Defs>
