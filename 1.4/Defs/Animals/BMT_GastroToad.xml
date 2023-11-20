@@ -94,6 +94,9 @@
 			<li Class="PathfindingFramework.MovementExtension">
 				<movementDef>PF_Movement_Aquatic</movementDef>
 			</li>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
+				<isBottomFeeder>true</isBottomFeeder>
+			</li>
 		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
