@@ -61,6 +61,16 @@
 				<ageInDays>10</ageInDays>
 				<evolveIntoPawnKindDef>BMT_SmogPupa</evolveIntoPawnKindDef>
 			</li>
+
+			<!-- Comps for glowing when doing a job start here... -->
+			<li Class="BiomesCore.CompProperties_LurePrey">
+				<shouldGlow>true</shouldGlow>
+				<!--<preyApproachTimeout>int</preyApproachTimeout>-->
+				<!--<attackOnDistance>int</attackOnDistance>-->
+			</li>
+			<li Class="BiomesCore.CompProperties_DefaultOffGlower">
+			</li>
+			<!-- ...and end here. -->
 		</comps>
 		<tools>
 			<li>
