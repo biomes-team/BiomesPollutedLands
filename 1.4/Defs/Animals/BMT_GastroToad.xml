@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="AnimalThingBase">
+	<ThingDef ParentName="BMT_PolluedLands_AnimalThingBase">
 		<defName>BMT_Polluwog</defName>
 		<label>Polluwog</label>
 		<description>The larval form of the gastro toad. It lives in the disgusting waters of polluted biomes, feeding off any detritus and plants it can reach. It often lives in large groups.</description>
@@ -141,7 +141,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<ThingDef ParentName="AnimalThingBase">
+	<ThingDef ParentName="BMT_PolluedLands_AnimalThingBase">
 		<defName>BMT_GastroToad</defName>
 		<label>gastro toad</label>
 		<description>A funny looking toad bigger than some rabbits. It uses its sticky acidic tongue and wide maw to snag small prey. Some waster colonies tame and raise them for their meat.</description>
