@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BMT_PolluedLands_PlantBase">
+	<defName>BMT_Plant_ToxCotton</defName>
+	<label>tox-cotton plant</label>
+	<description>A mid-size crop that yields fine white cotton fibers. These are used to make cloth.</description>
+	<statBases>
+	  <MaxHitPoints>85</MaxHitPoints>
+	  <Nutrition>0.2</Nutrition>
+	</statBases>
+	<graphicData>
+	  <texPath>BMT_PollutedLands/Things/ToxPlants/ToxCotton</texPath>
+	  <graphicClass>Graphic_Random</graphicClass>
+	</graphicData>
+	<selectable>true</selectable>
+	<pathCost>14</pathCost>
+	<ingestible />
+	<plant>
+	  <growDays>8</growDays>
+	  <dieIfLeafless>true</dieIfLeafless>
+	  <harvestTag>Standard</harvestTag>
+	  <harvestedThingDef>Cloth</harvestedThingDef>
+	  <!-- <pollution>PollutedOnly</pollution> -->
+	  <harvestYield>10</harvestYield>
+	  <sowTags>
+		<li>Ground</li>
+		<li>Hydroponic</li>
+	  </sowTags>
+	  <topWindExposure>0.1</topWindExposure>
+	  <!-- <immatureGraphicPath>Things/Plant/CottonPlant_Immature</immatureGraphicPath> -->
+	  <visualSizeRange>0.3~1.05</visualSizeRange>
+	  <wildOrder>2</wildOrder>
+	</plant>
+  </ThingDef>
+
+</Defs>

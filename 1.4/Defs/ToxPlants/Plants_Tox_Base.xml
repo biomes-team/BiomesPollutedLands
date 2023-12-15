@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="PlantBase" Name="BMT_PolluedLands_PlantBase" Abstract="True">
+	<plant>
+	  <pollution>PollutedOnly</pollution>
+	</plant>
+  </ThingDef>
+
+</Defs>
