@@ -111,6 +111,10 @@
       </li>
     </tools>
 	<comps>
+		<li Class="CompProperties_Glower">
+			<glowRadius>1</glowRadius>
+			<compClass>BiomesCore.CompDefaultOffGlower</compClass>
+		</li>
 		<li Class="BiomesCore.CompProperties_BottomFeeder">
 			<!-- <tickInterval>250</tickInterval> -->
 			<!-- <tickInterval>60000</tickInterval> -->
@@ -119,6 +123,7 @@
 			<!-- Sergkart:  Instead of tile lighting, a simple projectile. -->
 			<effecterDef>Interceptor_BlockedProjectile</effecterDef>
 			<!-- <effecterDef>EatVegetarian</effecterDef> -->
+			<shouldGlow>true</shouldGlow>
 		</li>
 	   <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>BMT_EggGlowtailFertilized</eggFertilizedDef>
