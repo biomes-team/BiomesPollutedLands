@@ -4,4 +4,6 @@ Where does it live? Spawns in polluted warmer vanilla biomes if there's a river 
 Does it spawn in packs? No.
 Other info-- good pets? shearable? do you want it to have a specific type of leather? etc. It should give decent leather.
 Its attacks should give toxic buildup.
+↑  When making this  XML, use this DamageDef: ToxicBite
+
 It should be aquatic with PF.
