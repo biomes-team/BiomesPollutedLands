@@ -5,5 +5,6 @@ Does it spawn in packs? Nope, it's solitary.
 Other info-- good pets? shearable? do you want it to have a specific type of leather? etc. Should give decent chitin. It should lure in prey using the Lure comp and its attacks should have a good stun chance.
 Should be rarely milkable for glow pods. 
 If possible, it should produce light ONLY when using the lure ability!
+↑ This has been made. -Thekiborg
 
 It should be a flying creature using Pathfinding Framework.
