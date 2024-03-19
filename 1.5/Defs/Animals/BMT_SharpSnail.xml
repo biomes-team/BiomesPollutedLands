@@ -25,7 +25,6 @@
 			</li>
 			<li Class="BiomesCore.CompProperties_MakeFilthTrail">
 				<filthDef>BMT_Filth_Snail_Slime</filthDef>
-				<cooldown>20</cooldown>
 			</li>
 			<li Class="CompProperties_Milkable">
 				<milkDef>BMT_CementSlime</milkDef>

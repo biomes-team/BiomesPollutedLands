@@ -14,7 +14,7 @@
     </statBases>
     <stuffProps>
       <color>(126,126,126)</color>
-      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <!-- <soundImpactStuff>BulletImpact_Ground</soundImpactStuff> Removed in 1.5? -->
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
       <stuffAdjective>cement slime</stuffAdjective>
