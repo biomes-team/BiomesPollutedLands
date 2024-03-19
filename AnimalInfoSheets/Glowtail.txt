@@ -5,3 +5,4 @@ Does it spawn in packs? No.
 Other info-- good pets? shearable? do you want it to have a specific type of leather? etc. It should be a really good pet for nuzzling.
 
 If possible, it should produce one tile of light whenever it's eating, but ONLY when it's eating.
+↑ This has beem made. -Thekiborg
