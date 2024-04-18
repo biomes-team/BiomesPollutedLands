@@ -34,8 +34,54 @@
       <damageEffecter>Impact_Toxic</damageEffecter>
     </DamageDef>
 
+    <DamageDef ParentName="BluntBase" Name="BMT_BluntToxicAttackBase" Abstract="true">
+      <additionalHediffs>
+        <li>
+          <hediff>ToxicBuildup</hediff>
+          <severityPerDamageDealt>0.015</severityPerDamageDealt>
+          <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+          <inverseStatScaling>true</inverseStatScaling>
+          <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+        </li>
+      </additionalHediffs>
+      <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+      <impactSoundType>Toxic</impactSoundType>
+      <damageEffecter>Impact_Toxic</damageEffecter>
+    </DamageDef>
+
     <DamageDef ParentName="BMT_SharpToxicAttackBase">
       <defName>BMT_ToxicFang</defName>
       <label>toxic fang</label>
+    </DamageDef>
+
+    <!-- gastro toad-->
+    <DamageDef ParentName="BMT_SharpToxicAttackBase">
+      <defName>BMT_ToxicScratch</defName>
+      <label>toxic claws</label>
+      <additionalHediffs>
+        <li>
+          <severityPerDamageDealt>13</severityPerDamageDealt>
+        </li>
+      </additionalHediffs>
+    </DamageDef>
+    
+    <DamageDef ParentName="BMT_SharpToxicAttackBase">
+      <defName>BMT_ToxicBite</defName>
+      <label>toxic bite</label>
+      <additionalHediffs>
+        <li>
+          <severityPerDamageDealt>13</severityPerDamageDealt>
+        </li>
+      </additionalHediffs>
+    </DamageDef>
+
+    <DamageDef ParentName="BMT_BluntToxicAttackBase">
+      <defName>BMT_ToxicHeadbutt</defName>
+      <label>toxic skin</label>
+      <additionalHediffs>
+        <li>
+          <severityPerDamageDealt>13</severityPerDamageDealt>
+        </li>
+      </additionalHediffs>
     </DamageDef>
 </Defs>
