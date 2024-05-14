@@ -8,8 +8,6 @@ namespace BMT_PollutedLands
 	public class Gene_AddOrRemoveHediff : Gene, IGeneOverridden
 	{
 
-		// public HediffDef HediffDefName => def.GetModExtension<GeneExtension_Giver>().hediffDefName;
-
 		public GeneExtension Props => def.GetModExtension<GeneExtension>();
 
 		public override void PostAdd()
@@ -20,17 +18,17 @@ namespace BMT_PollutedLands
 
 		public void Local_AddOrRemoveHediff()
 		{
-			HediffUtility.TryAddOrRemoveHediff(Props.hediffDefName, pawn, this, Props.bodyparts);
+			HediffUtility.TryAddOrRemoveHediff(Props.hediffDef, pawn, this, Props.bodyparts);
 		}
 
 		public void Notify_OverriddenBy(Gene overriddenBy)
 		{
-			HediffUtility.TryRemoveHediff(Props.hediffDefName, pawn);
+			HediffUtility.TryRemoveHediff(Props.hediffDef, pawn);
 		}
 
 		public void Notify_Override()
 		{
-			HediffUtility.TryAddOrRemoveHediff(Props.hediffDefName, pawn, this, Props.bodyparts);
+			HediffUtility.TryAddOrRemoveHediff(Props.hediffDef, pawn, this, Props.bodyparts);
 		}
 
 		public override void Tick()
@@ -46,7 +44,7 @@ namespace BMT_PollutedLands
 		public override void PostRemove()
 		{
 			base.PostRemove();
-			HediffUtility.TryRemoveHediff(Props.hediffDefName, pawn);
+			HediffUtility.TryRemoveHediff(Props.hediffDef, pawn);
 		}
 
 		public override IEnumerable<Gizmo> GetGizmos()
