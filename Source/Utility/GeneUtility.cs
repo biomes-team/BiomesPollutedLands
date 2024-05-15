@@ -63,10 +63,10 @@ namespace BMT_PollutedLands
 			{
 				return true;
 			}
-			if (geneDef.GetModExtension<GeneExtension>() != null)
-			{
-				return true;
-			}
+			// if (geneDef.GetModExtension<GeneExtension>() != null)
+			// {
+				// return true;
+			// }
 			return false;
 		}
 
