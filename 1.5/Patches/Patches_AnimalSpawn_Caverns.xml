@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="BMT_CrystalCaverns"]/pollutionWildAnimals</xpath>
+	  <success>Always</success>
+	  <value>
+		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.3</BMT_Megaroach>
+		<BMT_Glowtail MayRequire="Ludeon.RimWorld.Biotech">0.4</BMT_Glowtail>
+		<BMT_SmogMoth MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_SmogMoth>
+		<BMT_SmogMothLarvae MayRequire="Ludeon.RimWorld.Biotech">0.05</BMT_SmogMothLarvae>
+		<BMT_SharpSnail MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_SharpSnail>
+		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.08</BMT_Polluwog>
+	  </value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="BMT_FungalForest"]/pollutionWildAnimals</xpath>
+	  <success>Always</success>
+	  <value>
+		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.8</BMT_Megaroach>
+		<BMT_Glowtail MayRequire="Ludeon.RimWorld.Biotech">0.4</BMT_Glowtail>
+		<BMT_SmogMoth MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_SmogMoth>
+		<BMT_SmogMothLarvae MayRequire="Ludeon.RimWorld.Biotech">0.05</BMT_SmogMothLarvae>
+		<BMT_SharpSnail MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_SharpSnail>
+		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.08</BMT_Polluwog>
+		<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_GastroToad>
+	  </value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="BMT_EarthenDepths"]/pollutionWildAnimals</xpath>
+	  <success>Always</success>
+	  <value>
+		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">2.1</BMT_Megaroach>
+	  </value>
+	</Operation>
+
+</Patch>

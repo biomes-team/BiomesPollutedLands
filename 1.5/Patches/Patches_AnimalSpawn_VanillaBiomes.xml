@@ -5,6 +5,7 @@
 	<Operation Class="PatchOperationAdd">
 	  <xpath>/Defs/BiomeDef[defName="TemperateForest"]/pollutionWildAnimals</xpath>
 	  <value>
+		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
 		<BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_WasteHound>
 		<BMT_ToxSheep MayRequire="Ludeon.RimWorld.Biotech">0.7</BMT_ToxSheep>
 		<BMT_DoubledDeer MayRequire="Ludeon.RimWorld.Biotech">0.8</BMT_DoubledDeer>
@@ -21,6 +22,7 @@
 	<Operation Class="PatchOperationAdd">
 	  <xpath>/Defs/BiomeDef[defName="TropicalRainforest"]/pollutionWildAnimals</xpath>
 	  <value>
+		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
 		<BMT_VenomPede MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_VenomPede>
 		<BMT_ToxSheep MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_ToxSheep>
 		<BMT_Glowtail MayRequire="Ludeon.RimWorld.Biotech">0.8</BMT_Glowtail>
@@ -36,6 +38,7 @@
 	<Operation Class="PatchOperationAdd">
 	  <xpath>/Defs/BiomeDef[defName="TemperateSwamp"]/pollutionWildAnimals</xpath>
 	  <value>
+		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
 		<!-- <BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound> -->
 		<BMT_Glowtail MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_Glowtail>
 		<BMT_SmogMoth MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_SmogMoth>
@@ -50,6 +53,7 @@
 	<Operation Class="PatchOperationAdd">
 	  <xpath>/Defs/BiomeDef[defName="TropicalSwamp"]/pollutionWildAnimals</xpath>
 	  <value>
+		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
 		<!-- <BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound> -->
 		<BMT_Glowtail MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Glowtail>
 		<BMT_SmogMoth MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_SmogMoth>
@@ -64,6 +68,7 @@
 	<Operation Class="PatchOperationAdd">
 	  <xpath>/Defs/BiomeDef[defName="Desert" or defName="ExtremeDesert"]/pollutionWildAnimals</xpath>
 	  <value>
+		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
 		<!-- <BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound> -->
 		<BMT_SharpSnail MayRequire="Ludeon.RimWorld.Biotech">0.02</BMT_SharpSnail>
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_Polluwog>
@@ -75,6 +80,7 @@
 	<Operation Class="PatchOperationAdd">
 	  <xpath>/Defs/BiomeDef[defName="AridShrubland"]/pollutionWildAnimals</xpath>
 	  <value>
+		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
 		<BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.5</BMT_WasteHound>
 		<BMT_Glowtail MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_Glowtail>
 		<BMT_SharpSnail MayRequire="Ludeon.RimWorld.Biotech">0.02</BMT_SharpSnail>
@@ -87,6 +93,7 @@
 	<Operation Class="PatchOperationAdd">
 	  <xpath>/Defs/BiomeDef[defName="BorealForest" or defName="Tundra"]/pollutionWildAnimals</xpath>
 	  <value>
+		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
 		<BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.4</BMT_WasteHound>
 		<BMT_ToxSheep MayRequire="Ludeon.RimWorld.Biotech">0.8</BMT_ToxSheep>
 		<BMT_DoubledDeer MayRequire="Ludeon.RimWorld.Biotech">0.8</BMT_DoubledDeer>
@@ -100,6 +107,7 @@
 	<Operation Class="PatchOperationAdd">
 	  <xpath>/Defs/BiomeDef[defName="ColdBog"]/pollutionWildAnimals</xpath>
 	  <value>
+		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
 		<!-- <BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound> -->
 		<BMT_SharpSnail MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_SharpSnail>
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_Polluwog>
@@ -127,6 +135,7 @@
 	<Operation Class="PatchOperationAdd">
 	  <xpath>/Defs/BiomeDef[defName="IceSheet"]/pollutionWildAnimals</xpath>
 	  <value>
+		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
 		<!-- <BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound> -->
 	  </value>
 	</Operation>
@@ -151,6 +160,7 @@
 	<Operation Class="PatchOperationAdd">
 	  <xpath>/Defs/BiomeDef[defName="SeaIce"]/pollutionWildAnimals</xpath>
 	  <value>
+		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
 		<!-- <BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound> -->
 	  </value>
 	</Operation>
