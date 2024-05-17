@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Dummy -->
+  <GeneDef ParentName="BMT_MutaGenes_Base">
+	<defName>BMT_ToxspewingPores</defName>
+	<label>toxspewing pores</label>
+	<!-- <description>Dummy gene. Background and icon test.</description> -->
+	<geneClass>Gene</geneClass>
+	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_ToxspewingPores</iconPath>
+	<customEffectDescriptions>
+	  <!-- <li>When a pawn is close to bleeding out reseting bloodloss, with an 21% chance of also causing a heart attack. It have around 1 day cooldown.</li> -->
+	</customEffectDescriptions>
+  </GeneDef>
+
+</Defs>
