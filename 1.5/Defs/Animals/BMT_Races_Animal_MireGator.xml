@@ -9,7 +9,6 @@
 <!-- Its attacks should have a higher bleeding chance and higher initial stun chance. -->
 <!-- It should be amphibious with PF. -->
 
-  <!-- ToDo: We will need to add PF support when the framework is ready. -->
   <ThingDef ParentName="BMT_PolluedLands_AnimalThingBase">
 	<defName>BMT_MireGator</defName>
 	<label>mire gator</label>
@@ -145,6 +144,11 @@
 	<tradeTags>
 	  <li>BMT_PollutedAnimalUncommon</li>
 	</tradeTags>
+	<modExtensions>
+		<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+			<movementDef>PF_Movement_Amphibious</movementDef>
+		</li>
+	</modExtensions>
   </ThingDef>
   
   <PawnKindDef ParentName="AnimalKindBase">

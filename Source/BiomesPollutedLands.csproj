@@ -57,6 +57,8 @@
     <Compile Include="Harmony\Harmony.cs" />
     <Compile Include="Harmony\Harmony_GeneOverride.cs" />
     <Compile Include="ModExtension.cs" />
+    <Compile Include="ModSettings.cs" />
+    <Compile Include="PostInitializationStartup.cs" />
     <Compile Include="Utility\GeneUtility.cs" />
     <Compile Include="Utility\HediffUtility.cs" />
   </ItemGroup>

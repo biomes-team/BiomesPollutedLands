@@ -9,8 +9,6 @@
 
 <!-- If possible, it should produce one tile of light whenever it's eating, but ONLY when it's eating. -->
 
-<!-- Sergkart: I'm afraid this is a terrible idea. Every time a light source appears on the map, absolutely all light sources are recalculated (fortunately within the map itself). That is, such an animal will cause severe lags. -->
-
   <ThingDef ParentName="BMT_PolluedLands_AnimalThingBase">
 	<defName>BMT_Glowtail</defName>
 	<label>glowtail</label>
@@ -20,7 +18,7 @@
 	  <MarketValue>100</MarketValue>
 	  <ComfyTemperatureMin>0</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
-	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+	  <!-- <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance> -->
 	</statBases>
 	<race>
 	  <body>QuadrupedAnimalWithClawsTailAndJowl</body>
@@ -116,22 +114,18 @@
 			<compClass>BiomesCore.CompDefaultOffGlower</compClass>
 		</li>
 		<li Class="BiomesCore.CompProperties_BottomFeeder">
-			<!-- <tickInterval>250</tickInterval> -->
-			<!-- <tickInterval>60000</tickInterval> -->
 			<feedingTerrainTag>Soil</feedingTerrainTag>
 			<consumingFoodReportString>Luring in bugs.</consumingFoodReportString>
-			<!-- Sergkart:  Instead of tile lighting, a simple projectile. -->
 			<effecterDef>Interceptor_BlockedProjectile</effecterDef>
-			<!-- <effecterDef>EatVegetarian</effecterDef> -->
 			<shouldGlow>true</shouldGlow>
 		</li>
-	   <li Class="CompProperties_EggLayer">
-        <eggFertilizedDef>BMT_EggGlowtailFertilized</eggFertilizedDef>
-        <eggFertilizationCountMax>1</eggFertilizationCountMax>
-        <eggLayIntervalDays>5.661</eggLayIntervalDays>
-        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-        <eggCountRange>1~2</eggCountRange>
-      </li>
+		<li Class="CompProperties_EggLayer">
+			<eggFertilizedDef>BMT_EggGlowtailFertilized</eggFertilizedDef>
+			<eggFertilizationCountMax>1</eggFertilizationCountMax>
+			<eggLayIntervalDays>5.661</eggLayIntervalDays>
+			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+			<eggCountRange>1~2</eggCountRange>
+		</li>
 	</comps>
 	<modExtensions>
 		<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">

@@ -224,18 +224,18 @@
 		<label>hound puppy</label>
 		<labelPlural>warg puppies</labelPlural>
 		<bodyGraphicData>
-		  <texPath>Things/Pawn/Animal/Warg/Warg</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/Wastehound/Wastehound</texPath>
 		  <drawSize>1.05</drawSize>
 		  <color>(123,104,89)</color>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/Wastehound/Wastehound_dessicated</texPath>
 		  <drawSize>1.05</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>Things/Pawn/Animal/Warg/Warg</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/Wastehound/Wastehound</texPath>
 		  <drawSize>1.7</drawSize>
 		  <color>(123,104,89)</color>
 		  <shadowData>
@@ -244,13 +244,13 @@
 		  </shadowData>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/Wastehound/Wastehound_dessicated</texPath>
 		  <drawSize>1.7</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>Things/Pawn/Animal/Warg/Warg</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/Wastehound/Wastehound</texPath>
 		  <drawSize>2.15</drawSize>
 		  <color>(123,104,89)</color>
 		  <shadowData>
@@ -259,7 +259,7 @@
 		  </shadowData>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/Wastehound/Wastehound_dessicated</texPath>
 		  <drawSize>2.15</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
