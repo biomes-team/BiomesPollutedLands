@@ -22,6 +22,7 @@
 	<modExtensions>
 		<li Class="BMT_PollutedLands.GeneExtension">
 			<filthDef>BMT_Filth_MutatedShedSkin</filthDef>
+			<intervals>450000~900000</intervals>
 		</li>
 	</modExtensions>
   </GeneDef>

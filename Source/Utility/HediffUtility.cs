@@ -17,6 +17,11 @@ namespace BMT_PollutedLands
 				if (!pawn.RaceProps.body.GetPartsWithDef(bodypart).EnumerableNullOrEmpty() && num <= pawn.RaceProps.body.GetPartsWithDef(bodypart).Count)
 				{
 					Hediff hediff = HediffMaker.MakeHediff(hediffDef, pawn);
+					HediffComp_GeneHediff hediff_GeneCheck = hediff.TryGetComp<HediffComp_GeneHediff>();
+					if (hediff_GeneCheck != null)
+					{
+						hediff_GeneCheck.geneDef = geneDef;
+					}
 					pawn.health.AddHediff(hediff, pawn.RaceProps.body.GetPartsWithDef(bodypart).ToArray()[num]);
 					num++;
 				}
@@ -51,6 +56,11 @@ namespace BMT_PollutedLands
 				}
 				// pawn.health.AddHediff(hediffDef);
 				Hediff hediff = HediffMaker.MakeHediff(hediffDef, pawn);
+				HediffComp_GeneHediff hediff_GeneCheck = hediff.TryGetComp<HediffComp_GeneHediff>();
+				if (hediff_GeneCheck != null)
+				{
+					hediff_GeneCheck.geneDef = geneDef;
+				}
 				if (randomizeSeverity)
 				{
 					FloatRange floatRange = new(hediffDef.minSeverity, hediffDef.maxSeverity);

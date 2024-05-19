@@ -5,12 +5,20 @@
   <GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_AcidicGlands</defName>
 	<label>acidic glands</label>
-	<!-- <description>Dummy gene. Background and icon test.</description> -->
-	<geneClass>Gene</geneClass>
+	<description>Carriers of this gene have acid glands covering most of their body. These glands release acid when in danger.</description>
+	<geneClass>BMT_PollutedLands.Gene_AddOrRemoveHediff</geneClass>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_AcidicGlands</iconPath>
+	<statOffsets>
+	  <ImmunityGainSpeed>-0.05</ImmunityGainSpeed>
+	</statOffsets>
 	<customEffectDescriptions>
-	  <!-- <li>When a pawn is close to bleeding out reseting bloodloss, with an 21% chance of also causing a heart attack. It have around 1 day cooldown.</li> -->
+	  <li>Anything attacking the carrier in melee receives 8 acid damage per hit. </li>
 	</customEffectDescriptions>
+	<modExtensions>
+		<li Class="BMT_PollutedLands.GeneExtension">
+			<hediffDef>BMT_AcidicGlands</hediffDef>
+		</li>
+	</modExtensions>
   </GeneDef>
 
 </Defs>

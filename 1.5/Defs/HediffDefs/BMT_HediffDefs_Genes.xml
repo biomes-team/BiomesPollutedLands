@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Base with all the necessary tags for gene hediffs. -->
+  <HediffDef Name="BMT_PollutionLands_Hediffs_Base" Abstract="True">
+	<label>test</label>
+	<description>Should be invisible.</description>
+	<defaultLabelColor>(255,255,255)</defaultLabelColor>
+	<hediffClass>HediffWithComps</hediffClass>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<makesAlert>false</makesAlert>
+	<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+	<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+	<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+	<canAffectBionicOrImplant>false</canAffectBionicOrImplant>
+	<!-- Genes must be able to renew their hediffs, so this should be false. -->
+	<duplicationAllowed>false</duplicationAllowed>
+	<!-- If genes don't know how to renew hediff, then, dude, what the hell? We have all the code needed for this, see the Gene_AddOrRemoveHediff class. -->
+	<isInfection>false</isInfection>
+  </HediffDef>
+
+  <!-- ========================================= -->
+
+  <HediffDef ParentName="BMT_PollutionLands_Hediffs_Base">
+	<defName>BMT_AcidicGlands</defName>
+	<label>acidic glands</label>
+	<stages>
+	  <li>
+		<becomeVisible>false</becomeVisible>
+		<minSeverity>0.0</minSeverity>
+	  </li>
+	</stages>
+	<comps>
+	  <li Class="BMT_PollutedLands.HediffCompProperties_ReturnDamage">
+		<!-- To-Do: Add acid damage -->
+		<damageDef>ScratchToxic</damageDef>
+		<damageAmount>8</damageAmount>
+	  </li>
+	  <!-- This comp is only needed for permanent hediffs. If hediff is removed from time to time, do not use this component. -->
+	  <li Class="BMT_PollutedLands.HediffCompProperties_GeneHediff"/>
+	</comps>
+  </HediffDef>
+
+</Defs>

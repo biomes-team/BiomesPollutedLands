@@ -13,6 +13,23 @@ namespace BMT_PollutedLands
 	public static class PL_GeneUtility
 	{
 
+		public static bool HasActiveGene(GeneDef geneDef, Pawn pawn)
+		{
+			if (geneDef == null || pawn?.genes == null)
+			{
+				return false;
+			}
+			List<Gene> genesListForReading = pawn?.genes?.GenesListForReading;
+			for (int i = 0; i < genesListForReading.Count; i++)
+			{
+				if (genesListForReading[i].Active == true && genesListForReading[i].def == geneDef)
+				{
+					return true;
+				}
+			}
+			return false;
+		}
+
 		public static bool TrySpawnFilth(Pawn victim, IntRange bloodFilthToSpawnRange, ThingDef filthDef)
 		{
 			if (victim?.Map == null)
@@ -92,8 +109,9 @@ namespace BMT_PollutedLands
 			return false;
 		}
 
-		// Sergkart: A solution that uses VEF always patches background genes, regardless of the use of custom backks. I tried different workarounds, nothing worked, VEF always overwrote back.
-		// Sergkart: This solution is as dumb as a wooden stick (poor 54%), but it guarantees a bypass of the VEF patch and opens up access to easier changes to some interface things related to genes.
+		// Sergkart:
+		// A solution that uses VEF always patches background genes, regardless of the use of custom backks. I tried different workarounds, nothing worked, VEF always overwrote back.
+		// This solution is as dumb as a wooden stick (poor 54%), but it guarantees a bypass of the VEF patch and opens up access to easier changes to some interface things related to genes.
 
 		public static void DrawGeneBasics(GeneDef gene, Rect geneRect, GeneType geneType, bool doBackground, bool clickable, bool overridden)
 		{

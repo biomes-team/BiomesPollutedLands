@@ -54,6 +54,8 @@
     <Compile Include="Genes\Gene_MoltingRegeneration.cs" />
     <Compile Include="Harmony\Harmony.cs" />
     <Compile Include="Harmony\Harmony_GeneOverride.cs" />
+    <Compile Include="Hediffs\HediffComp_RemoveIfGeneIsNotActive.cs" />
+    <Compile Include="Hediffs\HediffComp_ReturnDamage.cs" />
     <Compile Include="ModExtension.cs" />
     <Compile Include="ModSettings.cs" />
     <Compile Include="PostInitializationStartup.cs" />

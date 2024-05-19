@@ -25,8 +25,8 @@ namespace BMT_PollutedLands
 			public static void PostInitialPatches()
 			{
 				var harmony = new Harmony("biomesteam.biomespollutedlands");
-				// Sergkart: Background can be disabled
-				// Sergkart: This is necessary in case there are conflicts with other mods
+				// Background can be disabled
+				// This is necessary in case there are conflicts with other mods
 				if (!BMT_PollutedLands.settings.disableUniqueGeneInterface)
 				{
 					harmony.Patch(AccessTools.Method(typeof(GeneUIUtility), "DrawGene"), prefix: new HarmonyMethod(typeof(HarmonyUtility).GetMethod("PL_DrawGene")));
@@ -36,7 +36,7 @@ namespace BMT_PollutedLands
 
 			// Backgroud
 
-			// Sergkart: This is a very cumbersome solution, but it allows us to bypass the VEF background patch and, if necessary, add custom information to genes.
+			// This is a very cumbersome solution, but it allows us to bypass the VEF background patch and, if necessary, add custom information to genes.
 
 			public static bool PL_DrawGene(ref Gene gene, ref Rect geneRect, ref GeneType geneType, ref bool doBackground, ref bool clickable)
 			{

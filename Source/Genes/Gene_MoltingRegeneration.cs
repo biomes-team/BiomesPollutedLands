@@ -17,7 +17,7 @@ namespace BMT_PollutedLands
 
 		private int ticksToHeal;
 
-		private static readonly IntRange HealingIntervalTicksRange = new(450000, 900000);
+		// private static readonly IntRange HealingIntervalTicksRange = new(450000, 900000);
 
 		public override void PostAdd()
 		{
@@ -37,7 +37,7 @@ namespace BMT_PollutedLands
 
 		private void ResetInterval()
 		{
-			ticksToHeal = HealingIntervalTicksRange.RandomInRange;
+			ticksToHeal = Props.intervals.RandomInRange;
 		}
 
 		public override IEnumerable<Gizmo> GetGizmos()
