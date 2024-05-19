@@ -35,7 +35,7 @@
 	<comps>
 	  <li Class="BMT_PollutedLands.HediffCompProperties_ReturnDamage">
 		<!-- To-Do: Add acid damage -->
-		<damageDef>ScratchToxic</damageDef>
+		<damageDef>BMT_ToxicHeadbutt</damageDef>
 		<damageAmount>8</damageAmount>
 	  </li>
 	  <!-- This comp is only needed for permanent hediffs. If hediff is removed from time to time, do not use this component. -->
