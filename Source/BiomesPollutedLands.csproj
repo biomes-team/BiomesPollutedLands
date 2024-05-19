@@ -51,6 +51,7 @@
     <Compile Include="Genes\Gene_AddOrRemoveHediff.cs" />
     <Compile Include="Genes\Gene_ConjoinedHeart.cs" />
     <Compile Include="Genes\Gene_Interface.cs" />
+    <Compile Include="Genes\Gene_MoltingRegeneration.cs" />
     <Compile Include="Harmony\Harmony.cs" />
     <Compile Include="Harmony\Harmony_GeneOverride.cs" />
     <Compile Include="ModExtension.cs" />

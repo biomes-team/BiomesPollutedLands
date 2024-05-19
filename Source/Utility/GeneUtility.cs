@@ -13,6 +13,28 @@ namespace BMT_PollutedLands
 	public static class PL_GeneUtility
 	{
 
+		public static bool TrySpawnFilth(Pawn victim, IntRange bloodFilthToSpawnRange, ThingDef filthDef)
+		{
+			if (victim?.Map == null)
+			{
+				return false;
+			}
+			int randomInRange = bloodFilthToSpawnRange.RandomInRange;
+			for (int i = 0; i < randomInRange; i++)
+			{
+				IntVec3 c = victim.Position;
+				if (randomInRange > 1 && Rand.Chance(0.8888f))
+				{
+					c = victim.Position.RandomAdjacentCell8Way();
+				}
+				if (c.InBounds(victim.MapHeld))
+				{
+					FilthMaker.TryMakeFilth(c, victim.MapHeld, filthDef, victim.LabelShort);
+				}
+			}
+			return true;
+		}
+
 		// Non-anomaly regen. With custom ticker
 		// Regeneration
 		public static void Regeneration(Pawn pawn, float regeneration = -1, bool ignoreScarification = true, int tick = 10)

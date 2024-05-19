@@ -6,18 +6,21 @@
 	<label>goliath arms</label>
 	<description>Carriers of this gene have huge, oversized hands. Their strength is much higher, but their agility leaves much to be desired.</description>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_GoliathArms</iconPath>
-	<displayCategory>BMT_MutaGenes</displayCategory>
+	<biostatCpx>2</biostatCpx>
+	<biostatMet>-2</biostatMet>
 	<capMods>
 	  <li>
 		<capacity>Manipulation</capacity>
-		<postFactor>0.80</postFactor>
+		<offset>-0.20</offset>
 	  </li>
 	</capMods>
 	<statFactors>
 	  <MeleeDamageFactor>1.5</MeleeDamageFactor>
 	  <CarryingCapacity>1.5</CarryingCapacity>
-	  <ImmunityGainSpeed>0.9</ImmunityGainSpeed>
 	</statFactors>
+	<statOffsets>
+	  <ImmunityGainSpeed>-0.1</ImmunityGainSpeed>
+	</statOffsets>
   </GeneDef>
 
 </Defs>

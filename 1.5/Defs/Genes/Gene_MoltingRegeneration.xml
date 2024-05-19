@@ -1,16 +1,49 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- Dummy -->
   <GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_MoltingRegeneration</defName>
 	<label>molting regeneration</label>
-	<!-- <description>Dummy gene. Background and icon test.</description> -->
-	<geneClass>Gene</geneClass>
+	<description>Carriers of this gene have incredible regeneration, their old wounds and chronic diseases gradually disappear. However, this causes their skin to peel off and they are forced to shed it from time to time.</description>
+	<geneClass>BMT_PollutedLands.Gene_MoltingRegeneration</geneClass>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_MoltingRegeneration</iconPath>
+	<biostatCpx>3</biostatCpx>
+	<biostatMet>-4</biostatMet>
+	<preventPermanentWounds>true</preventPermanentWounds>
 	<customEffectDescriptions>
-	  <!-- <li>When a pawn is close to bleeding out reseting bloodloss, with an 21% chance of also causing a heart attack. It have around 1 day cooldown.</li> -->
+	  <li>Every (*DateTime)7-15 days(/DateTime), one &lt;color=#8a8ae6&gt;old wound&lt;/color&gt; or &lt;color=#8a8ae6&gt;chronic illness&lt;/color&gt; is healed.</li>
 	</customEffectDescriptions>
+	<statFactors>
+	  <CancerRate>2.0</CancerRate>
+	</statFactors>
+	<statOffsets>
+	  <ImmunityGainSpeed>-0.1</ImmunityGainSpeed>
+	</statOffsets>
+	<modExtensions>
+		<li Class="BMT_PollutedLands.GeneExtension">
+			<filthDef>BMT_Filth_MutatedShedSkin</filthDef>
+		</li>
+	</modExtensions>
   </GeneDef>
+  
+  <ThingDef ParentName="BaseFilth">
+	<defName>BMT_Filth_MutatedShedSkin</defName>
+	<label>mutated skin</label>
+	<statBases>
+	  <Beauty>-50</Beauty>
+	  <Cleanliness>-20</Cleanliness>
+	</statBases>
+	<graphicData>
+	  <texPath>Things/Filth/CorpseBile</texPath>
+	</graphicData>
+	<filth>
+	  <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+	  <disappearsInDays>35~40</disappearsInDays>
+	  <rainWashes>true</rainWashes>
+	  <cleaningWorkToReduceThickness>280</cleaningWorkToReduceThickness>
+	  <canFilthAttach>true</canFilthAttach>
+	  <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+	</filth>
+  </ThingDef>
 
 </Defs>
