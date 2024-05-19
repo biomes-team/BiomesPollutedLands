@@ -39,6 +39,7 @@ namespace BMT_PollutedLands
 					HediffUtility.TryAddOrRemoveHediff(Props.hediffDef, pawn, this, bodyparts);
 				}
 				cooldown = Props.intervals.RandomInRange;
+				Messages.Message("BMT_PL_ConjoinedHeartRemoveBloodloss".Translate(pawn.Name.ToStringFull), pawn, MessageTypeDefOf.NeutralEvent, historical: false);
 			}
 		}
 
