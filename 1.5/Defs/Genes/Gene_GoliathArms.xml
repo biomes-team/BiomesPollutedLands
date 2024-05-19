@@ -16,6 +16,7 @@
 	<statFactors>
 	  <MeleeDamageFactor>1.5</MeleeDamageFactor>
 	  <CarryingCapacity>1.5</CarryingCapacity>
+	  <ImmunityGainSpeed>0.9</ImmunityGainSpeed>
 	</statFactors>
   </GeneDef>
 
