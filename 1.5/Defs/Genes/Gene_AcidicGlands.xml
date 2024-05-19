@@ -8,6 +8,8 @@
 	<description>Carriers of this gene have acid glands covering most of their body. These glands release acid when in danger.</description>
 	<geneClass>BMT_PollutedLands.Gene_AddOrRemoveHediff</geneClass>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_AcidicGlands</iconPath>
+	<biostatCpx>1</biostatCpx>
+	<biostatMet>-3</biostatMet>
 	<statOffsets>
 	  <ImmunityGainSpeed>-0.05</ImmunityGainSpeed>
 	</statOffsets>
