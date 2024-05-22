@@ -52,6 +52,7 @@
     <Compile Include="Genes\Gene_ConjoinedHeart.cs" />
     <Compile Include="Genes\Gene_Interface.cs" />
     <Compile Include="Genes\Gene_MoltingRegeneration.cs" />
+    <Compile Include="Genes\Gene_ProtectiveLeprosy.cs" />
     <Compile Include="Harmony\Harmony.cs" />
     <Compile Include="Harmony\Harmony_GeneOverride.cs" />
     <Compile Include="Hediffs\HediffComp_RemoveIfGeneIsNotActive.cs" />

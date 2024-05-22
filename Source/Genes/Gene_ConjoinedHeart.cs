@@ -26,7 +26,7 @@ namespace BMT_PollutedLands
 
 		public void HeartCheck()
 		{
-			if (!pawn.health.hediffSet.TryGetHediff(HediffDefOf.BloodLoss, out Hediff bloodloss) || cooldown > 0f)
+			if (cooldown > 0f || !pawn.health.hediffSet.TryGetHediff(HediffDefOf.BloodLoss, out Hediff bloodloss))
 			{
 				return;
 			}
