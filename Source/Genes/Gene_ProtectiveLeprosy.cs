@@ -33,7 +33,10 @@ namespace BMT_PollutedLands
 			if (bloodloss.Severity > Props.maxSeverity && bloodloss.Part != null)
 			{
 				pawn.health.RemoveHediff(bloodloss);
-				pawn.health.AddHediff(HediffDefOf.MissingBodyPart, bloodloss.Part);
+				if (bloodloss.Part != pawn.RaceProps.body.corePart)
+				{
+					pawn.health.AddHediff(HediffDefOf.MissingBodyPart, bloodloss.Part);
+				}
 				cooldown = Props.intervals.RandomInRange;
 				Messages.Message("BMT_PL_ProtectiveLeprosyDestroyPart".Translate(pawn.Name.ToStringFull), pawn, MessageTypeDefOf.NeutralEvent, historical: false);
 			}
