@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_PolluedLands_BaseInsect">
+		<label>bunker bug</label>
+		<description>Whether it is engineered or mutated from a wild animal is unknown, but this  massive insect-like creature can use its powerful claws to rend its way through steel almost as easily as flesh and bone. It does not breed in captivity.</description>
+		<statBases>
+			<MoveSpeed>4.5</MoveSpeed>
+			<MarketValue>2300</MarketValue>
+			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<FilthRate>16</FilthRate>
+			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+		</statBases>
+		<race>
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<baseBodySize>4.0</baseBodySize>
+			<predator>true</predator>
+			<baseHealthScale>8</baseHealthScale>
+			<foodType>CarnivoreAnimal</foodType>
+			<leatherDef>BMT_RoyalChitin</leatherDef>
+			<meatLabel>bunker bug meat</meatLabel>
+			<trainability>Intermediate</trainability>
+			<packAnimal>false</packAnimal>
+			<manhunterOnDamageChance>0.9</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
+		</race>
+		<tradeTags>
+			<li>AnimalExotic</li>
+		</tradeTags>
+
+		<tools>
+			<li>
+				<label>claw</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>4</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<butcherProducts>
+			<ChunkSlagSteel>5</ChunkSlagSteel>
+		</butcherProducts>
+	</ThingDef>
+
+	<!-- ============================================================================ -->
+
+	<!-- ============================================================================ -->
+
+
+
+  <PawnKindDef ParentName="AnimalKindBase">
+	<defName>BMT_BunkerBug</defName>
+	<label>bunkerbug</label>
+	<race>BMT_BunkerBug</race>
+	<combatPower>35</combatPower>
+	<ecoSystemWeight>0.8</ecoSystemWeight>
+	<lifeStages>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/BunkerBug/BunkerBug</texPath>
+		  <drawSize>0.6</drawSize>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/BunkerBug/Dessicated_BunkerBug</texPath>
+		  <drawSize>0.6</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/BunkerBug/BunkerBug</texPath>
+		  <drawSize>0.8</drawSize>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/BunkerBug/Dessicated_BunkerBug</texPath>
+		  <drawSize>0.8</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/BunkerBug/BunkerBug</texPath>
+		  <drawSize>1.0</drawSize>
+		  <shadowData>
+			<volume>(0.25, 0.3, 0.25)</volume>
+			<offset>(0,0,-0.15)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/BunkerBug/Dessicated_BunkerBug</texPath>
+		  <drawSize>1.0</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	</lifeStages>
+  </PawnKindDef>
+
+
+
+</Defs>

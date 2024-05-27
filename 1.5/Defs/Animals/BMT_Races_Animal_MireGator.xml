@@ -10,10 +10,10 @@
 <!-- It should be amphibious with PF. -->
 
   <ThingDef ParentName="BMT_PolluedLands_AnimalThingBase">
-	<defName>BMT_MireGator</defName>
-	<label>mire gator</label>
+	<defName>BMT_BiliousVarog</defName>
+	<label>bilious varog</label>
 	<!-- ToDo: Need to add a description. -->
-	<description>BMT_MireGator</description>
+	<description>Adapted to highly toxic waters, this relative of the common crocodile is highly dangerous when hungry. Alongside its razor sharp teeth, its powerful jaws also contain acid glands it can use to spew acid onto prey.</description>
 	<statBases>
 	  <MoveSpeed>3.0</MoveSpeed>
 	  <MarketValue>100</MarketValue>
@@ -94,7 +94,7 @@
 	</tools>
 	<comps>
 	  <li Class="CompProperties_EggLayer">
-		<eggFertilizedDef>BMT_EggMireGatorFertilized</eggFertilizedDef>
+		<eggFertilizedDef>BMT_EggBiliousVarogFertilized</eggFertilizedDef>
 		<eggFertilizationCountMax>1</eggFertilizationCountMax>
 		<eggLayIntervalDays>4.861</eggLayIntervalDays>
 		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -152,36 +152,36 @@
   </ThingDef>
   
   <PawnKindDef ParentName="AnimalKindBase">
-	<defName>BMT_MireGator</defName>
-	<label>mire gator</label>
-	<race>BMT_MireGator</race>
+	<defName>BMT_BiliousVarog</defName>
+	<label>bilious varog</label>
+	<race>BMT_BiliousVarog</race>
 	<combatPower>80</combatPower>
 	<ecoSystemWeight>0.30</ecoSystemWeight>
 	<!-- ToDo: Change textures -->
 	<lifeStages>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>Things/Pawn/Animal/Iguana/Iguana</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/BiliousVarog</texPath>
 		  <drawSize>2</drawSize>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
+		  <texPath>Things/Pawn/Animal/BiliousVarog/Dessicated_BiliousVarog</texPath>
 		  <drawSize>2</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>Things/Pawn/Animal/Iguana/Iguana</texPath>
+		  <texPath>Things/Pawn/Animal/BiliousVarog/BiliousVarog</texPath>
 		  <drawSize>2.25</drawSize>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
+		  <texPath>Things/Pawn/Animal/BiliousVarog/Dessicated_BiliousVarog</texPath>
 		  <drawSize>2.25</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>Things/Pawn/Animal/Iguana/Iguana</texPath>
+		  <texPath>Things/Pawn/Animal/BiliousVarog/BiliousVarog</texPath>
 		  <drawSize>2.5</drawSize>
 		  <shadowData>
 			<volume>(0.25, 0.3, 0.25)</volume>
@@ -189,7 +189,7 @@
 		  </shadowData>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
+		  <texPath>Things/Pawn/Animal/BiliousVarog/Dessicated_BiliousVarog</texPath>
 		  <drawSize>2.5</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
@@ -197,9 +197,9 @@
   </PawnKindDef>
 
   <ThingDef ParentName="EggFertBase">
-	<defName>BMT_EggMireGatorFertilized</defName>
-	<label>mire gator egg (fert.)</label>
-	<description>A fertilized mire gator egg. If all goes well, it should hatch into a baby mire gator. It can be eaten raw, but it's much better cooked.</description>
+	<defName>BMT_EggBiliousVarogFertilized</defName>
+	<label>biilious varog egg (fert.)</label>
+	<description>A fertilized bilious varog egg. If all goes well, it should hatch into a baby mire gator. It can be eaten raw, but it's much better cooked.</description>
 	<possessionCount>1</possessionCount>
 	<graphicData>
 	  <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
