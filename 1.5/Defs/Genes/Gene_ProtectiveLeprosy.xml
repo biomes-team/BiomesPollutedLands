@@ -15,7 +15,7 @@
 	  <ImmunityGainSpeed>-0.10</ImmunityGainSpeed>
 	</statOffsets>
 	<customEffectDescriptions>
-	  <li>Whenever an infection on a bodypart is 80-100%, the bodypart is destroyed, preventing the pawn's death via infection. It have ~2 days cooldown.</li>
+	  <li>Whenever an &lt;color=#8a8ae6&gt;infection&lt;/color&gt; on a bodypart is 80-100%, the &lt;color=#8a8ae6&gt;bodypart is destroyed&lt;/color&gt;, preventing the pawn's death via infection. It have ~2 days cooldown.</li>
 	</customEffectDescriptions>
 	<modExtensions>
 		<li Class="BMT_PollutedLands.GeneExtension">

@@ -11,10 +11,9 @@ namespace BMT_PollutedLands
 
 		public static void BodyPartsGiver(List<BodyPartDef> bodyparts, Pawn pawn, HediffDef hediffDef, GeneDef geneDef)
 		{
-			int num = 0;
 			foreach (BodyPartDef bodypart in bodyparts)
 			{
-				if (!pawn.RaceProps.body.GetPartsWithDef(bodypart).EnumerableNullOrEmpty() && num <= pawn.RaceProps.body.GetPartsWithDef(bodypart).Count)
+				foreach (BodyPartRecord bodyPartRecord in pawn.RaceProps.body.GetPartsWithDef(bodypart))
 				{
 					Hediff hediff = HediffMaker.MakeHediff(hediffDef, pawn);
 					HediffComp_GeneHediff hediff_GeneCheck = hediff.TryGetComp<HediffComp_GeneHediff>();
@@ -22,8 +21,7 @@ namespace BMT_PollutedLands
 					{
 						hediff_GeneCheck.geneDef = geneDef;
 					}
-					pawn.health.AddHediff(hediff, pawn.RaceProps.body.GetPartsWithDef(bodypart).ToArray()[num]);
-					num++;
+					pawn.health.AddHediff(hediff, bodyPartRecord);
 				}
 			}
 		}
@@ -47,7 +45,7 @@ namespace BMT_PollutedLands
 
 		public static bool TryAddHediff(HediffDef hediffDef, Pawn pawn, GeneDef geneDef, List<BodyPartDef> bodyparts = null, bool randomizeSeverity = false)
 		{
-			if (!pawn.health.hediffSet.HasHediff(hediffDef))
+			if (!pawn.health.hediffSet.HasHediff(hediffDef) || !bodyparts.NullOrEmpty())
 			{
 				if (!bodyparts.NullOrEmpty())
 				{

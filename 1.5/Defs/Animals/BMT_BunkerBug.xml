@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="BMT_PolluedLands_BaseInsect">
+		<defName>BMT_BunkerBug</defName>
 		<label>bunker bug</label>
 		<description>Whether it is engineered or mutated from a wild animal is unknown, but this  massive insect-like creature can use its powerful claws to rend its way through steel almost as easily as flesh and bone. It does not breed in captivity.</description>
 		<statBases>
@@ -23,11 +24,28 @@
 			<packAnimal>false</packAnimal>
 			<manhunterOnDamageChance>0.9</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
+			<lifeStageAges>
+				<li>
+				  <def>EusocialInsectLarva</def>
+				  <minAge>0</minAge>
+				</li>
+				<li>
+				  <def>EusocialInsectJuvenile</def>
+				  <minAge>0.03</minAge>
+				</li>
+				<li>
+				  <def>BMT_EusocialInsectAdult</def>
+				  <minAge>0.4</minAge>
+				  <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+				  <soundDeath>Pawn_Megascarab_Death</soundDeath>
+				  <soundCall>Pawn_Megascarab_Call</soundCall>
+				  <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
 		</race>
 		<tradeTags>
 			<li>AnimalExotic</li>
 		</tradeTags>
-
 		<tools>
 			<li>
 				<label>claw</label>

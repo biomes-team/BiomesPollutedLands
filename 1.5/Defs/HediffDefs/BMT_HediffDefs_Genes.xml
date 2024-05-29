@@ -43,4 +43,25 @@
 	</comps>
   </HediffDef>
 
+  <HediffDef ParentName="BMT_PollutionLands_Hediffs_Base">
+	<defName>BMT_OverdevelopedOrgan</defName>
+	<label>absorb HP</label>
+	<description>An additional layer of fat near the organ, which can absorb some of the incoming damage.</description>
+	<stages>
+	  <li>
+		<becomeVisible>true</becomeVisible>
+		<minSeverity>0.0</minSeverity>
+	  </li>
+	</stages>
+	<comps>
+	  <li Class="BMT_PollutedLands.HediffCompProperties_OverdevelopedOrgan">
+		<hp_perDay>3</hp_perDay>
+		<hp_percent>0.5</hp_percent>
+		<absorb_percent>0.4</absorb_percent>
+		<absorb_chance>0.2</absorb_chance>
+	  </li>
+	  <li Class="BMT_PollutedLands.HediffCompProperties_GeneHediff"/>
+	</comps>
+  </HediffDef>
+
 </Defs>

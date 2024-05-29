@@ -25,7 +25,34 @@
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
-	
+
+	<ThingDef ParentName="BiomesCore_ChitinBase">
+		<defName>BMT_RoyalChitin</defName>
+		<!-- large chitin t4 -->
+		<label>royal chitin</label>
+		<description>A legendary, royal, chitinous shell. It is only found on the strongest and or rarest creatures from within the bowels of the earth.</description>
+		<graphicData>
+			<color>(81,48,100)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>10.0</MarketValue>
+			<StuffPower_Armor_Sharp>1.8</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.8</StuffPower_Armor_Blunt>
+			<StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+			<BC_StuffPower_FlammabilityOffset>-0.5</BC_StuffPower_FlammabilityOffset>
+		</statBases>
+		<stuffProps>
+			<color>(81,48,100)</color>
+			<statFactors>
+				<MaxHitPoints>1.8</MaxHitPoints>
+				<Beauty>6</Beauty>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<!-- ======================================================== -->
+
 	<ThingDef ParentName="BiomesCore_ChitinBase">
 		<defName>BMT_ToxiChitin</defName>
 		<!-- medium chitin t2 -->

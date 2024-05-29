@@ -211,7 +211,7 @@
 	<comps>
 	  <li Class="CompProperties_Hatcher">
 		<hatcherDaystoHatch>4.7</hatcherDaystoHatch>
-		<hatcherPawn>BMT_MireGator</hatcherPawn>
+		<hatcherPawn>BMT_BiliousVarog</hatcherPawn>
 	  </li>
 	</comps>
   </ThingDef>
