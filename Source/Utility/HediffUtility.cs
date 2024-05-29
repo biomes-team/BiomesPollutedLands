@@ -78,10 +78,12 @@ namespace BMT_PollutedLands
 			}
 			if (pawn.health.hediffSet.HasHediff(hediffDef))
 			{
-				Hediff firstHediffOfDef = pawn.health.hediffSet.GetFirstHediffOfDef(hediffDef);
-				if (firstHediffOfDef != null)
+				foreach (Hediff hediff in pawn.health.hediffSet.hediffs.ToList())
 				{
-					pawn.health.RemoveHediff(firstHediffOfDef);
+					if (hediff.def == hediffDef)
+					{
+						pawn.health.RemoveHediff(hediff);
+					}
 				}
 				return true;
 			}
