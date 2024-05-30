@@ -48,7 +48,10 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\CompAbility_Validators.cs" />
+    <Compile Include="Abilities\CompProperties_CorpseEater.cs" />
     <Compile Include="Genes\Gene_AddOrRemoveHediff.cs" />
+    <Compile Include="Genes\Gene_CarrionMetabolism.cs" />
     <Compile Include="Genes\Gene_ConjoinedHeart.cs" />
     <Compile Include="Genes\Gene_Interface.cs" />
     <Compile Include="Genes\Gene_MoltingRegeneration.cs" />
@@ -59,6 +62,7 @@
     <Compile Include="Hediffs\HediffComp_OverdevelopedOrgan.cs" />
     <Compile Include="Hediffs\HediffComp_RemoveIfGeneIsNotActive.cs" />
     <Compile Include="Hediffs\HediffComp_ReturnDamage.cs" />
+    <Compile Include="JobDriver_EatCorpseTarget.cs" />
     <Compile Include="ModExtension.cs" />
     <Compile Include="ModSettings.cs" />
     <Compile Include="PostInitializationStartup.cs" />

@@ -7,4 +7,6 @@
 
 	<!-- <BMT_PL_OverdevelopedOrganHP>Absorb HP</BMT_PL_OverdevelopedOrganHP> -->
 
+	<BMT_PL_MessageWrongRottingStage>The target has an inappropriate rotting stage.</BMT_PL_MessageWrongRottingStage>
+
 </LanguageData>

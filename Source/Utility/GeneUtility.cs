@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using UnityEngine;
 using Verse;
+using Verse.AI;
 using Verse.Grammar;
 
 namespace BMT_PollutedLands
@@ -12,6 +13,31 @@ namespace BMT_PollutedLands
 
 	public static class PL_GeneUtility
 	{
+
+		public static bool TryGetAbilityJob(Pawn biter, Thing victim, AbilityDef abilityDef, out Job job)
+		{
+			job = null;
+			if (biter == victim)
+			{
+				return false;
+			}
+			if (biter.CurJobDef == abilityDef.jobDef)
+			{
+				return false;
+			}
+			Ability ability = biter.abilities?.GetAbility(abilityDef);
+			if (ability == null || !ability.CanCast)
+			{
+				return false;
+			}
+			LocalTargetInfo target = victim;
+			if (!target.IsValid || !ability.CanApplyOn(target))
+			{
+				return false;
+			}
+			job = ability.GetJob(target, target);
+			return true;
+		}
 
 		public static bool HasActiveGene(GeneDef geneDef, Pawn pawn)
 		{
