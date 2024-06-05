@@ -30,21 +30,21 @@ namespace BMT_PollutedLands
 			return 0f;
 		}
 
-		// public override string GetDesc(LordJob_Ritual ritual = null, RitualOutcomeComp_Data data = null)
-		// {
-			// if (ritual == null)
-			// {
-				// return labelAbstract;
-			// }
-			// Pawn pawn = ritual?.PawnWithRole(roleId);
-			// if (pawn == null)
-			// {
-				// return null;
-			// }
-			// float num = curve.Evaluate(pawn.ageTracker.AgeBiologicalYearsFloat);
-			// string text = ((num < 0f) ? "" : "+");
-			// return LabelForDesc.Formatted(pawn.Named("PAWN")) + ": " + "OutcomeBonusDesc_QualitySingleOffset".Translate(text + num.ToStringPercent()) + ".";
-		// }
+		public override string GetDesc(LordJob_Ritual ritual = null, RitualOutcomeComp_Data data = null)
+		{
+			if (ritual == null)
+			{
+				return labelAbstract;
+			}
+			Pawn pawn = ritual?.PawnWithRole(roleId);
+			if (pawn == null)
+			{
+				return null;
+			}
+			float num = quality;
+			string text = ((num < 0f) ? "" : "+");
+			return LabelForDesc.Formatted(pawn.Named("PAWN")) + ": " + "OutcomeBonusDesc_QualitySingleOffset".Translate(text + num.ToStringPercent()) + ".";
+		}
 
 		public override QualityFactor GetQualityFactor(Precept_Ritual ritual, TargetInfo ritualTarget, RitualObligation obligation, RitualRoleAssignments assignments, RitualOutcomeComp_Data data)
 		{
@@ -61,9 +61,10 @@ namespace BMT_PollutedLands
 			return new QualityFactor
 			{
 				label = label.Formatted(pawn.Named("PAWN")),
-				count = pawn.ageTracker.AgeBiologicalYears.ToString(),
+				// count = "1",
 				qualityChange = ExpectedOffsetDesc(num > 0f, num),
 				positive = (num > 0f),
+				present = true,
 				quality = num,
 				priority = 0f
 			};
