@@ -47,4 +47,31 @@
 	  </value>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/HediffDef[defName="PregnantHuman"]/comps</xpath>
+	  <order>Prepend</order>
+	  <value>
+		<li Class="BMT_PollutedLands.HediffCompProperties_MutagenicFertility">
+		  <anyGeneDefs>
+			<li>BMT_MutagenicFertility</li>
+		  </anyGeneDefs>
+		</li>
+	  </value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/RitualOutcomeEffectDef[defName="ChildBirth"]/comps</xpath>
+	  <value>
+		<li Class="BMT_PollutedLands.RitualOutcomeComp_PawnGenes">
+		  <label>{PAWN_labelShort}'s genes</label>
+		  <labelAbstract>mother's genes</labelAbstract>
+		  <roleId>mother</roleId>
+		  <quality>-0.1</quality>
+		  <anyGeneDefs>
+			<li>BMT_MutagenicFertility</li>
+		  </anyGeneDefs>
+		</li>
+	  </value>
+	</Operation>
+
 </Patch>

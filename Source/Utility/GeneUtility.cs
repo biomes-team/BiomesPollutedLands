@@ -14,6 +14,49 @@ namespace BMT_PollutedLands
 	public static class PL_GeneUtility
 	{
 
+		// public static bool IsMutagenicFertility(this Pawn pawn)
+		// {
+			// return pawn?.genes?.GetFirstGeneOfType<Gene_MutagenicFertility>() != null;
+		// }
+
+		public static List<GeneDef> GetAllMutagenes()
+		{
+			List<GeneDef> genes = new();
+			foreach (GeneDef item in DefDatabase<GeneDef>.AllDefsListForReading)
+			{
+				if (item.displayCategory != PL_GenesDefOf.BMT_MutaGenes)
+				{
+					continue;
+				}
+				genes.Add(item);
+			}
+			return genes;
+		}
+
+		public static bool HasAnyActiveGene(List<GeneDef> geneDefs, Pawn pawn)
+		{
+			if (geneDefs.NullOrEmpty() || pawn?.genes == null)
+			{
+				return false;
+			}
+			List<Gene> genesListForReading = pawn.genes.GenesListForReading;
+			for (int j = 0; j < genesListForReading.Count; j++)
+			{
+				if (!genesListForReading[j].Active)
+				{
+					continue;
+				}
+				for (int i = 0; i < geneDefs.Count; i++)
+				{
+					if (genesListForReading[j].def == geneDefs[i])
+					{
+						return true;
+					}
+				}
+			}
+			return false;
+		}
+
 		public static bool TryGetAbilityJob(Pawn biter, Thing victim, AbilityDef abilityDef, out Job job)
 		{
 			job = null;
