@@ -107,6 +107,7 @@
 	  <baseHungerRate>0.235</baseHungerRate>
 	  <baseHealthScale>1.5</baseHealthScale>
 	  <foodType>CarnivoreAnimal</foodType>
+	  <predator>true</predator>
 	  <leatherDef>Leather_Lizard</leatherDef>
 	  <wildness>0.5</wildness>
 	  <trainability>None</trainability>

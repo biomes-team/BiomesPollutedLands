@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- How big is it? About deer sized. -->
+<!-- What does it eat? (is it a predator?) Herbivore. -->
+<!-- Where does it live? Spawns in polluted forests and cold forests. -->
+<!-- Does it spawn in packs? No. -->
+<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. It should be half-decent for meat but give fairly weak leather. -->
+
+	<ThingDef ParentName="BMT_PolluedLands_AnimalThingBase">
+    <defName>BMT_Maligoat</defName>
+    <label>maligoat</label>
+    <description>Naturally so hideous and maligned for its looks that it makes people flinch and cringe on sight, it is not often kept as a farm animal. For those that do so however, it produces milk of a high quality not seen elsewhere.</description>
+    <statBases>
+      <MoveSpeed>3.9</MoveSpeed>
+      <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+      <MarketValue>220</MarketValue>
+      <FilthRate>8</FilthRate>
+    </statBases>
+    <uiIconScale>1.2</uiIconScale>
+    <comps>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Milk</milkDef>
+        <milkIntervalDays>3</milkIntervalDays>
+        <milkAmount>12</milkAmount>
+      </li>
+    </comps>
+    <race>
+      <body>QuadrupedAnimalWithHooves</body>
+      <baseBodySize>0.75</baseBodySize>
+      <baseHealthScale>0.7</baseHealthScale>
+      <baseHungerRate>0.225</baseHungerRate>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>Leather_Plain</leatherDef>
+      <wildness>0</wildness>
+      <roamMtbDays>8</roamMtbDays>
+      <trainability>None</trainability>
+      <gestationPeriodDays>5.61</gestationPeriodDays>
+      <lifeExpectancy>12</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.1</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.266</minAge>
+          <soundWounded>Pawn_Goat_Wounded</soundWounded>
+          <soundDeath>Pawn_Goat_Death</soundDeath>
+          <soundCall>Pawn_Goat_Call</soundCall>
+          <soundAngry>Pawn_Goat_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <soundEating>Herbivore_Eat</soundEating>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.25)</li>
+        <li>(0.26, 0, 0.04)</li>
+        <li>(0, 0, 0)</li>
+        <li>(-0.26, 0, 0.04)</li>
+      </headPosPerRotation>
+    </race>
+    <tradeTags>
+		<li>BMT_PollutedAnimalCommon</li>
+    </tradeTags>
+    <tools>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>7.3</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>BMT_Maligoat</defName>
+    <label>maligoat</label>
+    <labelFemale>maligoat doe</labelFemale>
+    <race>Maligoat</race>
+    <combatPower>45</combatPower>
+    <ecoSystemWeight>0.5</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <label>baby maligoat</label>
+        <bodyGraphicData>
+          <texPath>BMT_PollutedLands/Things/Animal/Maligoat/MaligoatFemale</texPath>
+          <drawSize>0.6</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.25, 0.25)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BMT_PollutedLands/Things/Animal/Maligoat/Dessicated_MaligoatFemale</texPath>
+          <drawSize>0.6</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>BMT_PollutedLands/Things/Animal/Maligoat/Dessicated_MaligoatMale</texPath>
+          <drawSize>1.15</drawSize>
+          <shadowData>
+            <volume>(0.375, 0.375, 0.375)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>BMT_PollutedLands/Things/Animal/Maligoat/MaligoatFemale</texPath>
+          <drawSize>1.1</drawSize>
+          <shadowData>
+            <volume>(0.375, 0.375, 0.375)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BMT_PollutedLands/Things/Animal/Maligoat/Dessicated_MaligoatMale</texPath>
+          <drawSize>1.15</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>BMT_PollutedLands/Things/Animal/Maligoat/Dessicated_MaligoatFemale</texPath>
+          <drawSize>1.1</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>BMT_PollutedLands/Things/Animal/Maligoat/Dessicated_MaligoatMale</texPath>
+          <drawSize>1.42</drawSize>
+          <shadowData>
+            <volume>(0.5, 0.5, 0.5)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>BMT_PollutedLands/Things/Animal/Maligoat/MaligoatFemale</texPath>
+          <drawSize>1.30</drawSize>
+          <shadowData>
+            <volume>(0.5, 0.5, 0.4)</volume>
+            <offset>(0,0,-0.05)</offset>
+          </shadowData>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BMT_PollutedLands/Things/Animal/Maligoat/Dessicated_MaligoatMale</texPath>
+          <drawSize>1.42</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>BMT_PollutedLands/Things/Animal/Maligoat/Dessicated_MaligoatFemale</texPath>
+          <drawSize>1.3</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+</Defs>
