@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="BMT_PolluedLands_AnimalThingBase">
+	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_SharpSnail</defName>
 		<label>sharp snail</label>
 		<description>A gigantic mutant snail with two heads. Due to its strange anatomy, it cannot retract into its shell. It instead uses its slime for defense, as it rapidly hardens into something akin to biological cement.</description>

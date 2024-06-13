@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BMT_PolluedLands_AnimalThingBase">
+  <ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 	<defName>BMT_TaintedTurtle</defName>
 	<label>taintedturtle</label>
 	<description>A mutated turtle that can withstand the noxious waters of polluted biomes. It cannot however survive its own toxin-filled sacs bursting due to high stress.</description>

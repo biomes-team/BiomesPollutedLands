@@ -7,7 +7,7 @@
 <!-- Does it spawn in packs? No. -->
 <!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. It should be half-decent for meat but give fairly weak leather. -->
 
-	<ThingDef ParentName="BMT_PolluedLands_AnimalThingBase">
+	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
     <defName>BMT_Maligoat</defName>
     <label>maligoat</label>
     <description>Naturally so hideous and maligned for its looks that it makes people flinch and cringe on sight, it is not often kept as a farm animal. For those that do so however, it produces milk of a high quality not seen elsewhere.</description>

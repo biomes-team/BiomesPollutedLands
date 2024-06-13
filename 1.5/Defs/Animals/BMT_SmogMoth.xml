@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- Larvae -->
-	<ThingDef ParentName="BMT_PolluedLands_AnimalThingBase">
+	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_SmogMothLarvae</defName>
 		<label>smog caterpillar</label>
 		<description>The larval form of the smog moth. To deter predators, it uses toxic colors.</description>

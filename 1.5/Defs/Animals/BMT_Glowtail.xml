@@ -9,7 +9,7 @@
 
 <!-- If possible, it should produce one tile of light whenever it's eating, but ONLY when it's eating. -->
 
-  <ThingDef ParentName="BMT_PolluedLands_AnimalThingBase">
+  <ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 	<defName>BMT_Glowtail</defName>
 	<label>glowtail</label>
 	<description>A small lizard adapted to toxic environments, it uses its glowing tail tip to lure in flying insects to eat. It's considered rather cute by denizens of polluted lands and is often kept as both pet and pest control, much like a cat.</description>

@@ -57,7 +57,7 @@
 	</stages>
   </HediffDef>
 
-  <ThingDef ParentName="BMT_PolluedLands_AnimalThingBase">
+  <ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 	<defName>BMT_WasteHound</defName>
 	<label>waste hound</label>
 	<!-- ToDo: Need to add a description. -->

@@ -9,7 +9,7 @@
 <!-- Its attacks should have a higher bleeding chance and higher initial stun chance. -->
 <!-- It should be amphibious with PF. -->
 
-  <ThingDef ParentName="BMT_PolluedLands_AnimalThingBase">
+  <ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 	<defName>BMT_BiliousVarog</defName>
 	<label>bilious varog</label>
 	<!-- ToDo: Need to add a description. -->

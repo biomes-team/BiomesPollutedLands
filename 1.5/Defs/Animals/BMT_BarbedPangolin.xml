@@ -7,7 +7,7 @@
 <!-- Does it spawn in packs? Yes, in groups up to 3 or 4. -->
 <!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Good pets and good attack animals. They should use the pack defense and pack hunting comps both.  -->
 
-  <ThingDef ParentName="BMT_PolluedLands_AnimalThingBase">
+  <ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 	<defName>BMT_BarbedPangolin</defName>
 	<label>barbed pangolin</label>
 	<description>While passive in nature, this creature still has defenses. Its spiky plating has barbed edges, causing pain and bleeding to anything that tries to attack it and its tongue is covered with organic neurotoxins that cause rapid paralysis.</description>

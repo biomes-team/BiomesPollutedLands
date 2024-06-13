@@ -7,7 +7,7 @@
 <!-- Does it spawn in packs? Yes, in fairly large groups. -->
 <!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. They should be decent for ranching, giving a fair amount of meat per slaughter and able to breed quite fast. Their eggs should be able to survive in pretty much any temp range. -->
 
-  <ThingDef ParentName="BMT_PolluedLands_BaseInsect">
+  <ThingDef ParentName="BMT_PollutedLands_BaseInsect">
 	<defName>BMT_Megaroach</defName>
 	<label>megaroach</label>
 	<description>This small, solitary radroach can swiftly hop away from danger.</description>
