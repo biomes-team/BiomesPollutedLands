@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- Dummy -->
   <GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_ChronicPains</defName>
 	<label>chronic pains</label>
-	<!-- <description>Dummy gene. Background and icon test.</description> -->
-	<geneClass>Gene</geneClass>
+	<description>Carriers of this gene suffer from periodic chronic pain.</description>
+	<geneClass>BMT_PollutedLands.Gene_ChronicPains</geneClass>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_ChronicPains</iconPath>
+	<biostatCpx>1</biostatCpx>
+	<biostatMet>2</biostatMet>
+	<statOffsets>
+	  <ImmunityGainSpeed>0.1</ImmunityGainSpeed>
+	</statOffsets>
 	<customEffectDescriptions>
-	  <!-- <li>When a pawn is close to bleeding out reseting bloodloss, with an 21% chance of also causing a heart attack. It have around 1 day cooldown.</li> -->
+	  <li>Randomly causes bouts of pain in the carrier, ranging from minor to intense.</li>
 	</customEffectDescriptions>
+	<modExtensions>
+		<li Class="BMT_PollutedLands.GeneExtension">
+			<hediffDef>BMT_ChronicPains</hediffDef>
+			<intervals>141111~744444</intervals>
+		</li>
+	</modExtensions>
   </GeneDef>
 
 </Defs>

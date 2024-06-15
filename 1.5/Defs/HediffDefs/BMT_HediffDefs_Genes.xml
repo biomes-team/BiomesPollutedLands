@@ -64,4 +64,46 @@
 	</comps>
   </HediffDef>
 
+  <HediffDef ParentName="BMT_PollutionLands_Hediffs_Base">
+	<defName>BMT_ChronicPains</defName>
+	<label>chronic pains</label>
+	<description>Genetically caused chronic pain.</description>
+	<initialSeverity>0.5</initialSeverity>
+	<minSeverity>0.0</minSeverity>
+	<maxSeverity>1.25</maxSeverity>
+	<stages>
+	  <li>
+		<label>minor</label>
+		<minSeverity>0.0</minSeverity>
+		<painOffset>0.05</painOffset>
+	  </li>
+	  <li>
+		<label>moderate</label>
+		<minSeverity>0.25</minSeverity>
+		<painOffset>0.15</painOffset>
+	  </li>
+	  <li>
+		<label>severe</label>
+		<minSeverity>0.5</minSeverity>
+		<painOffset>0.30</painOffset>
+	  </li>
+	  <li>
+		<label>major</label>
+		<minSeverity>0.75</minSeverity>
+		<painOffset>0.40</painOffset>
+	  </li>
+	  <li>
+		<label>intense</label>
+		<minSeverity>1.0</minSeverity>
+		<painOffset>0.50</painOffset>
+	  </li>
+	</stages>
+	<comps>
+	  <li Class="HediffCompProperties_Disappears">
+		<disappearsAfterTicks>12000~34000</disappearsAfterTicks>
+		<showRemainingTime>true</showRemainingTime>
+	  </li>
+	</comps>
+  </HediffDef>
+
 </Defs>
