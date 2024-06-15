@@ -135,7 +135,7 @@
 		</lifeStages>
 	</PawnKindDef>
 	<!-- Pupa -->
-	<ThingDef ParentName="BMT_PolluedLands_AnimalThingBase">
+	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_SmogPupa</defName>
 		<label>smog pupa</label>
 		<description>The pupal form of the smog moth. While immobile, its hard shell and terrible taste protects it from most predators.</description>
@@ -221,7 +221,7 @@
 		</lifeStages>
 	</PawnKindDef>
 	<!-- Adult -->
-	<ThingDef ParentName="BMT_PolluedLands_AnimalThingBase">
+	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_SmogMoth</defName>
 		<label>smog moth</label>
 		<description>A large moth with wings with markings that glow faintly in the dark. This creature uses its bioluminescent abdomen to lure in prey.</description>

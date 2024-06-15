@@ -7,7 +7,7 @@
 <!-- Does it spawn in packs? No. -->
 <!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. It should be half-decent for meat but give fairly weak leather. -->
 
-	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
+	<ThingDef MayRequire="biomesteam.biomesislands" ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_LyncusSeal</defName>
 		<label>lyncus seal</label>
 		<description>Intelligent but territorial when it comes to its own species, lyncus seal males will try to kill each other almost on sight.</description>
@@ -49,14 +49,6 @@
 				<chanceFactor>0.3</chanceFactor>
 			</li>
 		</tools>
-		<modExtensions>
-			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
-				<isBottomFeeder>true</isBottomFeeder>
-			</li>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Amphibious</movementDef>
-			</li>
-		</modExtensions>
 		<comps>
 			<li Class="BiomesCore.CompProperties_BottomFeeder">
 				<feedingTerrainTag>Water</feedingTerrainTag>
@@ -65,14 +57,14 @@
 			</li>
 		</comps>
 		<race>
-			<body>Biomes_WhalePinnipedBody</body>
+			<body>Biomes_WhaleBody</body>
 			<petness>0.10</petness>
 			<baseBodySize>4</baseBodySize>
 			<baseHungerRate>1.5</baseHungerRate>
 			<baseHealthScale>3.9</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
 			<predator>true</predator>
-			<leatherDef>BMT_Pinnipedskin</leatherDef>
+			<leatherDef>BiomesIslands_Leather_Pinnipedskin</leatherDef>
 			<gestationPeriodDays>13</gestationPeriodDays>
 			<trainability>Advanced</trainability>
 			<wildness>0.75</wildness>
@@ -114,13 +106,16 @@
 			<li>BMT_PollutedAnimalCommon</li>
 		</tradeTags>
 		<modExtensions>
-			<li Class="PathfindingFramework.MovementExtension">
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
+				<isBottomFeeder>true</isBottomFeeder>
+			</li>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
 				<movementDef>PF_Movement_Amphibious</movementDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="AnimalKindBase">
+	<PawnKindDef MayRequire="biomesteam.biomesislands" ParentName="AnimalKindBase">
 		<defName>BMT_LyncusSeal</defName>
 		<label>lyncus seal</label>
 		<race>BMT_LyncusSeal</race>

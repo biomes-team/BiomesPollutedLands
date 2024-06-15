@@ -58,6 +58,7 @@
     <Compile Include="Genes\Gene_MutagenicFertility.cs" />
     <Compile Include="Genes\Gene_OverdevelopedOrgans.cs" />
     <Compile Include="Genes\Gene_ProtectiveLeprosy.cs" />
+    <Compile Include="Genes\Gene_ToxspewingPores.cs" />
     <Compile Include="Harmony\Harmony.cs" />
     <Compile Include="Harmony\Harmony_GeneOverride.cs" />
     <Compile Include="Hediffs\HediffComp_MutagenicFertility.cs" />

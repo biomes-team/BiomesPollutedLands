@@ -97,7 +97,7 @@
     <defName>BMT_Maligoat</defName>
     <label>maligoat</label>
     <labelFemale>maligoat doe</labelFemale>
-    <race>Maligoat</race>
+    <race>BMT_Maligoat</race>
     <combatPower>45</combatPower>
     <ecoSystemWeight>0.5</ecoSystemWeight>
     <lifeStages>
