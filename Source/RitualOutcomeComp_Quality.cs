@@ -12,10 +12,6 @@ namespace BMT_PollutedLands
 		[NoTranslate]
 		public string roleId;
 
-		public List<GeneDef> anyGeneDefs = new();
-
-		public float quality = 0f;
-
 		public override float QualityOffset(LordJob_Ritual ritual, RitualOutcomeComp_Data data)
 		{
 			Pawn pawn = ritual?.PawnWithRole(roleId);
@@ -23,11 +19,7 @@ namespace BMT_PollutedLands
 			{
 				return 0f;
 			}
-			if (PL_GeneUtility.HasAnyActiveGene(anyGeneDefs, pawn))
-			{
-				return quality;
-			}
-			return 0f;
+			return GetBirthQualityOffsetFromGenes(pawn);
 		}
 
 		public override string GetDesc(LordJob_Ritual ritual = null, RitualOutcomeComp_Data data = null)
@@ -41,9 +33,9 @@ namespace BMT_PollutedLands
 			{
 				return null;
 			}
-			float num = quality;
-			string text = ((num < 0f) ? "" : "+");
-			return LabelForDesc.Formatted(pawn.Named("PAWN")) + ": " + "OutcomeBonusDesc_QualitySingleOffset".Translate(text + num.ToStringPercent()) + ".";
+			float offset = GetBirthQualityOffsetFromGenes(pawn);
+			string text = ((offset < 0f) ? "" : "+");
+			return LabelForDesc.Formatted(pawn.Named("PAWN")) + ": " + "OutcomeBonusDesc_QualitySingleOffset".Translate(text + offset.ToStringPercent()) + ".";
 		}
 
 		public override QualityFactor GetQualityFactor(Precept_Ritual ritual, TargetInfo ritualTarget, RitualObligation obligation, RitualRoleAssignments assignments, RitualOutcomeComp_Data data)
@@ -53,19 +45,18 @@ namespace BMT_PollutedLands
 			{
 				return null;
 			}
-			if (!PL_GeneUtility.HasAnyActiveGene(anyGeneDefs, pawn))
+			float offset = GetBirthQualityOffsetFromGenes(pawn);
+			if (offset == 0f)
 			{
 				return null;
 			}
-			float num = quality;
 			return new QualityFactor
 			{
 				label = label.Formatted(pawn.Named("PAWN")),
-				// count = "1",
-				qualityChange = ExpectedOffsetDesc(num > 0f, num),
-				positive = (num > 0f),
+				qualityChange = ExpectedOffsetDesc(offset > 0f, offset),
+				positive = (offset > 0f),
 				present = true,
-				quality = num,
+				quality = offset,
 				priority = 0f
 			};
 		}
@@ -78,6 +69,31 @@ namespace BMT_PollutedLands
 		public override bool Applies(LordJob_Ritual ritual)
 		{
 			return true;
+		}
+
+		public static float GetBirthQualityOffsetFromGenes(Pawn pawn)
+		{
+			if (pawn?.genes == null)
+			{
+				return 0f;
+			}
+			List<Gene> genesListForReading = pawn.genes.GenesListForReading;
+			float offest = 0f;
+			for (int j = 0; j < genesListForReading.Count; j++)
+			{
+				Gene gene = genesListForReading[j];
+				if (!gene.Active)
+				{
+					continue;
+				}
+				GeneExtension general = gene.def?.GetModExtension<GeneExtension>();
+				if (general == null)
+				{
+					continue;
+				}
+				offest += general.birthQualityOffset;
+			}
+			return offest;
 		}
 
 	}

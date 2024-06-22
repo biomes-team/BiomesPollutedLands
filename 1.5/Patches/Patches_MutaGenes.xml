@@ -63,13 +63,13 @@
 	  <xpath>/Defs/RitualOutcomeEffectDef[defName="ChildBirth"]/comps</xpath>
 	  <value>
 		<li Class="BMT_PollutedLands.RitualOutcomeComp_PawnGenes">
-		  <label>{PAWN_labelShort}'s genes</label>
-		  <labelAbstract>mother's genes</labelAbstract>
+		  <label>{PAWN_labelShort}'s mutagenes</label>
+		  <labelAbstract>mother's mutagenes</labelAbstract>
 		  <roleId>mother</roleId>
-		  <quality>-0.1</quality>
-		  <anyGeneDefs>
-			<li>BMT_MutagenicFertility</li>
-		  </anyGeneDefs>
+		  <!-- <quality>-0.1</quality> -->
+		  <!-- <anyGeneDefs> -->
+			<!-- <li>BMT_MutagenicFertility</li> -->
+		  <!-- </anyGeneDefs> -->
 		</li>
 	  </value>
 	</Operation>

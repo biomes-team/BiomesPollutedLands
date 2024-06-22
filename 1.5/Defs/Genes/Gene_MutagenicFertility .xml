@@ -16,6 +16,11 @@
 	  <li>Children of the carrier receive 1-3 random mutagenes upon birth.</li>
 	  <li>Birth quality -10%</li>
 	</customEffectDescriptions>
+	<modExtensions>
+		<li Class="BMT_PollutedLands.GeneExtension">
+			<birthQualityOffset>-0.1</birthQualityOffset>
+		</li>
+	</modExtensions>
   </GeneDef>
 
 </Defs>

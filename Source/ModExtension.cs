@@ -17,6 +17,7 @@ namespace BMT_PollutedLands
 		public float chance = 0.21f;
 		public float maxSeverity = 0.72f;
 		public ThingDef filthDef;
+		public float birthQualityOffset = 0f;
 	}
 
 }
