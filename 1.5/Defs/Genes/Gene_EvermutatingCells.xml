@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- Dummy -->
   <GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_EvermutatingCells</defName>
 	<label>evermutating cells</label>
-	<!-- <description>Dummy gene. Background and icon test.</description> -->
-	<geneClass>Gene</geneClass>
+	<description>Carriers of this gene have unstable cellular mutations that can cause mutapox.</description>
+	<geneClass>BMT_PollutedLands.Gene_AddHediffWithInterval</geneClass>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_EvermutatingCells</iconPath>
+	<statOffsets>
+	  <ImmunityGainSpeed>-0.05</ImmunityGainSpeed>
+	</statOffsets>
 	<customEffectDescriptions>
-	  <!-- <li>When a pawn is close to bleeding out reseting bloodloss, with an 21% chance of also causing a heart attack. It have around 1 day cooldown.</li> -->
+	  <li>Carrier periodically catch mutapox, even outside polluted biomes.</li>
 	</customEffectDescriptions>
+	<modExtensions>
+		<li Class="BMT_PollutedLands.GeneExtension">
+			<hediffDef>BMT_Mutapox</hediffDef>
+			<intervals>441111~744444</intervals>
+		</li>
+	</modExtensions>
   </GeneDef>
 
 </Defs>

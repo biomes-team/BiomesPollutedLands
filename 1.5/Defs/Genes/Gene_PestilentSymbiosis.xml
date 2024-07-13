@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Dummy -->
+  <!-- <GeneDef ParentName="BMT_MutaGenes_Base"> -->
+	<!-- <defName>BMT_PestilentSymbiosis</defName> -->
+	<!-- <label>pestilent symbiosis</label> -->
+	<!-- <description>Dummy gene. Background and icon test.</description> -->
+	<!-- <geneClass>Gene</geneClass> -->
+	<!-- <iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_PsychicCortex</iconPath> -->
+	<!-- <statOffsets> -->
+	  <!-- <ImmunityGainSpeed>-0.1</ImmunityGainSpeed> -->
+	<!-- </statOffsets> -->
+	<!-- <customEffectDescriptions> -->
+	  <!-- <li>TEST.</li> -->
+	<!-- </customEffectDescriptions> -->
+  <!-- </GeneDef> -->
+
+</Defs>

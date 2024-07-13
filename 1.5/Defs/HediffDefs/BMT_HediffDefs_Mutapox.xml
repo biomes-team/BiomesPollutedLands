@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- DEV -->
+  <HediffDef ParentName="BMT_PollutionLands_Hediffs_Base">
+	<defName>BMT_Mutapox</defName>
+	<label>mutapox (TEST)</label>
+	<description>Genetically caused chronic pain.</description>
+	<initialSeverity>0.5</initialSeverity>
+	<minSeverity>0.0</minSeverity>
+	<maxSeverity>1.25</maxSeverity>
+	<stages>
+	  <li>
+		<label>minor</label>
+		<minSeverity>0.0</minSeverity>
+	  </li>
+	</stages>
+	<comps>
+	  <li Class="HediffCompProperties_Disappears">
+		<disappearsAfterTicks>12000~34000</disappearsAfterTicks>
+		<showRemainingTime>true</showRemainingTime>
+	  </li>
+	</comps>
+  </HediffDef>
+
+</Defs>

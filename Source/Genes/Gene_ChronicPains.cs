@@ -5,7 +5,7 @@ using Verse;
 namespace BMT_PollutedLands
 {
 
-	public class Gene_ChronicPains : Gene
+	public class Gene_AddHediffWithInterval : Gene
 	{
 
 		public GeneExtension Props => def.GetModExtension<GeneExtension>();

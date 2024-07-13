@@ -69,6 +69,7 @@
     <Compile Include="JobDriver_EatCorpseTarget.cs" />
     <Compile Include="ModExtension.cs" />
     <Compile Include="ModSettings.cs" />
+    <Compile Include="PawnRenderNode_FurIsSkin.cs" />
     <Compile Include="PostInitializationStartup.cs" />
     <Compile Include="RitualOutcomeComp_Quality.cs" />
     <Compile Include="Utility\GeneUtility.cs" />
