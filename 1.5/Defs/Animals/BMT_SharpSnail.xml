@@ -16,6 +16,15 @@
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
 		</statBases>
 		<comps>
+			<li Class="BiomesCore.CompProperties_DefensiveReaction">
+				<hediffs>
+					<li>BMT_GiantSnailDefense</li>
+				</hediffs>
+				<graphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/SharpSnail/SharpSnailShell</texPath>
+				</graphicData>
+				<duration>750</duration>
+			</li>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggSharpSnailFertilized</eggFertilizedDef>
 				<eggLayIntervalDays>20</eggLayIntervalDays>
