@@ -8,12 +8,12 @@
 <!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. They should be decent for ranching, giving a fair amount of meat per slaughter and able to breed quite fast. Their eggs should be able to survive in pretty much any temp range. -->
 
   <ThingDef ParentName="BMT_PollutedLands_BaseInsect">
-	<defName>BMT_Megaroach</defName>
-	<label>megaroach</label>
-	<description>This small, solitary radroach can swiftly hop away from danger.</description>
+	<defName>BMT_FamineLocust</defName>
+	<label>famine locust</label>
+	<description>While small and weak, the famine locust can devastate colonies as easily as any raiders as they devour their way through fields of crops.</description>
 	<uiIconScale>1.5</uiIconScale>
 	<statBases>
-	  <MoveSpeed>6.0</MoveSpeed>
+	  <MoveSpeed>5.0</MoveSpeed>
 	  <MarketValue>50</MarketValue>
 	  <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>70</ComfyTemperatureMax>
@@ -41,17 +41,19 @@
 	</tools>
 	<race>
 	  <!-- <body>QuadrupedAnimalWithPawsAndTail</body> -->
-	  <baseBodySize>0.2</baseBodySize>
-	  <baseHungerRate>0.115</baseHungerRate>
+	  <baseBodySize>0.32</baseBodySize>
+	  <baseHungerRate>0.45</baseHungerRate>
 	  <baseHealthScale>0.4</baseHealthScale>
 	  <foodType>OmnivoreAnimal</foodType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
 	  <wildness>0.75</wildness>
 	  <trainability>None</trainability>
-	  <petness>0.08</petness>
 	  <!-- <mateMtbHours>8</mateMtbHours> -->
 	  <!-- <gestationPeriodDays>5.661</gestationPeriodDays> -->
 	  <soundEating>Rodent_Eat</soundEating>
+	  <manhunterOnDamageChance>0.15</manhunterOnDamageChance>
+	  <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+	  <herdAnimal>true</herdAnimal>
 	  <litterSizeCurve>
 		<points>
 		  <li>(1.0, 0)</li>
@@ -94,42 +96,20 @@
 	</tradeTags>
 	<comps>
 		<li Class="CompProperties_EggLayer">
-			<eggFertilizedDef>BMT_EggMegaroachFertilized</eggFertilizedDef>
-			<eggUnfertilizedDef>BMT_EggMegaroachUnfertilized</eggUnfertilizedDef>
+			<eggFertilizedDef>BMT_EggFamineLocustFertilized</eggFertilizedDef>
 			<eggLayIntervalDays>7</eggLayIntervalDays>
 			<!-- <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax> -->
 			<eggCountRange>2~5</eggCountRange>
 		</li>
-		<li Class="BiomesCore.CompProperties_CustomThingEater">
-			<filthNutrition>1.12</filthNutrition>
-		</li>
+
 	</comps>
-	<modExtensions>
-		<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
-			<isCustomThingEater>true</isCustomThingEater>
-			<eatWhenFed>true</eatWhenFed>
-		</li>
-	</modExtensions>
   </ThingDef>
-  
-  <ThingDef ParentName="EggUnfertBase">
-	<defName>BMT_EggMegaroachUnfertilized</defName>
-	<label>megaroach egg (unfert.)</label>
-	<description>An unfertilized megaroach egg. It can be eaten raw, but it's much, much better cooked.</description>
-	<graphicData>
-		<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
-		<color>(167,198,153)</color>
-		<drawSize>0.7</drawSize>
-	</graphicData>
-	<statBases>
-	  <MarketValue>2.0</MarketValue>
-	</statBases>
-  </ThingDef>
+ 
 
   <ThingDef ParentName="EggFertBase">
-	<defName>BMT_EggMegaroachFertilized</defName>
+	<defName>BMT_EggFamineLocustFertilized</defName>
 	<label>megaroach egg (fert.)</label>
-	<description>A fertilized megaroach egg. If all goes well, it should hatch into a baby megaroach. It can be eaten raw, but it's much better cooked.</description>
+	<description>A fertilized famine locust egg. If all goes well, it should hatch into a baby megaroach. It can be eaten raw, but it's much better cooked.</description>
 	<graphicData>
 		<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
 		<color>(167,198,153)</color>
@@ -142,7 +122,7 @@
 	<comps Inherit="False">
 	  <li Class="CompProperties_Hatcher">
 		<hatcherDaystoHatch>2</hatcherDaystoHatch>
-		<hatcherPawn>BMT_Megaroach</hatcherPawn>
+		<hatcherPawn>BMT_FamineLocust</hatcherPawn>
 	  </li>
 	  <li Class="CompProperties_TemperatureRuinable">
 		<minSafeTemperature>-60</minSafeTemperature>
@@ -155,36 +135,36 @@
   <!--================================================ -->
 
   <PawnKindDef ParentName="HareBase">
-	<defName>BMT_Megaroach</defName>
-	<label>megaroach</label>
-	<race>BMT_Megaroach</race>
-	<wildGroupSize>6~17</wildGroupSize>
+	<defName>BMT_FamineLocust</defName>
+	<label>famine locust</label>
+	<race>BMT_FamineLocust</race>
+	<wildGroupSize>6~10</wildGroupSize>
 	<lifeStages>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/Megaroach/Megaroach</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/FamineLocust/FamineLocust</texPath>
 		  <drawSize>1</drawSize>
 		  <color>(130,127,106)</color>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/Megaroach/Megaroach_dessicated</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/FamineLocust/FamineLocust_dessicated</texPath>
 		  <drawSize>1.0</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/Megaroach/Megaroach</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/FamineLocust/FamineLocust</texPath>
 		  <drawSize>1.25</drawSize>
 		  <color>(130,127,106)</color>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/Megaroach/Megaroach_dessicated</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/FamineLocust/FamineLocust_dessicated</texPath>
 		  <drawSize>1.25</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/Megaroach/Megaroach</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/FamineLocust/FamineLocust</texPath>
 		  <drawSize>1.5</drawSize>
 		  <color>(130,127,106)</color>
 		  <shadowData>
@@ -193,7 +173,7 @@
 		  </shadowData>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/Megaroach/Megaroach_dessicated</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/FamineLocust/FamineLocust_dessicated</texPath>
 		  <drawSize>1.5</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
