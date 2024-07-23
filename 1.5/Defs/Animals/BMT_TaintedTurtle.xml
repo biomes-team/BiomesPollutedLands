@@ -97,6 +97,9 @@
 			<explosiveDamageType>ToxGas</explosiveDamageType>
 			<postExplosionGasType>ToxGas</postExplosionGasType>
 		</li>
+		<li Class="BiomesCore.ThingComponents.CompProperties_DieOnDamage">
+			<procChance>0.75</procChance>
+		</li>
 	</comps>
   </ThingDef>
   
