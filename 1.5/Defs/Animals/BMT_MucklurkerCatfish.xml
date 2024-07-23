@@ -85,12 +85,51 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
+			<comps>
+
+			<li Class="BiomesCore.CompProperties_LurePrey">
+				<shouldGlow>false</shouldGlow>
+				<!--<preyApproachTimeout>int</preyApproachTimeout>-->
+				<!--<attackOnDistance>int</attackOnDistance>-->
+			</li>
+		<li Class="CompProperties_EggLayer">
+			<eggFertilizedDef>BMT_EggMucklurkerCatfishFertilized</eggFertilizedDef>
+			<eggLayIntervalDays>7</eggLayIntervalDays>
+			<!-- <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax> -->
+			<eggCountRange>2~5</eggCountRange>
+		</li>
+		</comps>
 		<modExtensions>
 			<li Class="PathfindingFramework.MovementExtension">
 				<movementDef>PF_Movement_Aquatic</movementDef>
 			</li>
 		</modExtensions>
 	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+	<defName>BMT_EggMucklurkerCatfishFertilized</defName>
+	<label>mucklurker catfish egg (fert.)</label>
+	<description>A fertilized mucklurker catfish egg. If all goes well, it should hatch into a baby catfish. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<color>(144,152,112)</color>
+		<drawSize>0.7</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>4.0</MarketValue>
+		<DeteriorationRate>0</DeteriorationRate>
+	</statBases>
+	<comps Inherit="False">
+	  <li Class="CompProperties_Hatcher">
+		<hatcherDaystoHatch>2</hatcherDaystoHatch>
+		<hatcherPawn>BMT_MucklurkerCatfish</hatcherPawn>
+	  </li>
+	  <li Class="CompProperties_TemperatureRuinable">
+		<minSafeTemperature>-60</minSafeTemperature>
+		<maxSafeTemperature>80</maxSafeTemperature>
+		<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+	  </li>
+	</comps>
+  </ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_MucklurkerCatfish</defName>
