@@ -92,6 +92,11 @@
 			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 			<eggCountRange>1~3</eggCountRange>
 		</li>
+		<li Class="BiomesCore.ThingComponents.CompProperties_ExplodeOnDeath">
+			<explosiveRadius>2.66</explosiveRadius>
+			<explosiveDamageType>ToxGas</explosiveDamageType>
+			<postExplosionGasType>ToxGas</postExplosionGasType>
+		</li>
 	</comps>
   </ThingDef>
   
