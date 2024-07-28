@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
-		<defName>BMT_SharpSnail</defName>
-		<label>sharp snail</label>
-		<description>A gigantic mutant snail with two heads. Due to its strange anatomy, it cannot retract into its shell. It instead uses its slime for defense, as it rapidly hardens into something akin to biological cement.</description>
+		<defName>BMT_SludgeCrawler</defName>
+		<label>sludgecrawler</label>
+		<description>A gigantic mutant snail with two heads. It uses its unique slime for defense, as it rapidly hardens into something akin to biological cement.</description>
 		<statBases>
 			<MoveSpeed>2.5</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -21,12 +21,12 @@
 					<li>BMT_GiantSnailDefense</li>
 				</hediffs>
 				<graphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/SharpSnail/SharpSnailShell</texPath>
+					<texPath>BMT_PollutedLands/Things/Animal/SludgeCrawler/SludgeCrawlerShell</texPath>
 				</graphicData>
 				<duration>750</duration>
 			</li>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggSharpSnailFertilized</eggFertilizedDef>
+				<eggFertilizedDef>BMT_EggSludgeCrawlerFertilized</eggFertilizedDef>
 				<eggLayIntervalDays>20</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>
@@ -108,40 +108,40 @@
 		</butcherProducts>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_SharpSnail</defName>
-		<label>sharp snail</label>
-		<race>BMT_SharpSnail</race>
+		<defName>BMT_SludgeCrawler</defName>
+		<label>sludge crawler</label>
+		<race>BMT_SludgeCrawler</race>
 		<combatPower>190</combatPower>
 		<wildGroupSize>3~4</wildGroupSize>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/SharpSnail/SharpSnail</texPath>
+					<texPath>BMT_PollutedLands/Things/Animal/SludgeCrawler/SludgeCrawler</texPath>
 					<drawSize>1.45</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/SharpSnail/Dessicated_SharpSnail</texPath>
+					<texPath>BMT_PollutedLands/Things/Animal/SludgeCrawler/SludgeCrawler_dessicated</texPath>
 					<drawSize>1.45</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/SharpSnail/SharpSnail</texPath>
+					<texPath>BMT_PollutedLands/Things/Animal/SludgeCrawler/SludgeCrawler</texPath>
 					<drawSize>2.1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/SharpSnail/Dessicated_SharpSnail</texPath>
+					<texPath>BMT_PollutedLands/Things/Animal/SludgeCrawler/SludgeCrawler_dessicated</texPath>
 					<drawSize>2.1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/SharpSnail/SharpSnail</texPath>
+					<texPath>BMT_PollutedLands/Things/Animal/SludgeCrawler/SludgeCrawler</texPath>
 					<drawSize>2.85</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/SharpSnail/Dessicated_SharpSnail</texPath>
+					<texPath>BMT_PollutedLands/Things/Animal/SludgeCrawler/SludgeCrawler_dessicated</texPath>
 					<drawSize>2.85</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -149,9 +149,9 @@
 	</PawnKindDef>
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggSharpSnailFertilized</defName>
-		<label>sharp snail egg (fert.)</label>
-		<description>A fertilized sharp snail egg. If all goes well, it should hatch into a baby snail. It can be eaten raw, but it's much better cooked.</description>
+		<defName>BMT_EggSludgeCrawlerFertilized</defName>
+		<label>sludgecrawler egg (fert.)</label>
+		<description>A fertilized sludgecrawler egg. If all goes well, it should hatch into a baby sludgecrawler. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
 			<color>(167,198,153)</color>
