@@ -12,7 +12,7 @@
 		<BMT_Glowtail MayRequire="Ludeon.RimWorld.Biotech">0.4</BMT_Glowtail>
 		<BMT_SmogMoth MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_SmogMoth>
 		<BMT_SmogMothLarvae MayRequire="Ludeon.RimWorld.Biotech">0.05</BMT_SmogMothLarvae>
-		<BMT_SharpSnail MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_SharpSnail>
+		<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_SludgeCrawler>
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.08</BMT_Polluwog>
 		<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_GastroToad>
 	  </value>
@@ -28,7 +28,7 @@
 		<BMT_Glowtail MayRequire="Ludeon.RimWorld.Biotech">0.8</BMT_Glowtail>
 		<BMT_SmogMoth MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_SmogMoth>
 		<BMT_SmogMothLarvae MayRequire="Ludeon.RimWorld.Biotech">0.05</BMT_SmogMothLarvae>
-		<BMT_SharpSnail MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_SharpSnail>
+		<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_SludgeCrawler>
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.08</BMT_Polluwog>
 		<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_GastroToad>
 	  </value>
@@ -43,7 +43,7 @@
 		<BMT_Glowtail MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_Glowtail>
 		<BMT_SmogMoth MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_SmogMoth>
 		<BMT_SmogMothLarvae MayRequire="Ludeon.RimWorld.Biotech">0.05</BMT_SmogMothLarvae>
-		<BMT_SharpSnail MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_SharpSnail>
+		<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_SludgeCrawler>
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.08</BMT_Polluwog>
 		<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_GastroToad>
 	  </value>
@@ -58,7 +58,7 @@
 		<BMT_Glowtail MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Glowtail>
 		<BMT_SmogMoth MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_SmogMoth>
 		<BMT_SmogMothLarvae MayRequire="Ludeon.RimWorld.Biotech">0.05</BMT_SmogMothLarvae>
-		<BMT_SharpSnail MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_SharpSnail>
+		<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_SludgeCrawler>
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.08</BMT_Polluwog>
 		<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_GastroToad>
 	  </value>
@@ -70,7 +70,7 @@
 	  <value>
 		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
 		<!-- <BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound> -->
-		<BMT_SharpSnail MayRequire="Ludeon.RimWorld.Biotech">0.02</BMT_SharpSnail>
+		<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.02</BMT_SludgeCrawler>
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_Polluwog>
 		<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_GastroToad>
 	  </value>
@@ -83,7 +83,7 @@
 		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
 		<BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.5</BMT_WasteHound>
 		<BMT_Glowtail MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_Glowtail>
-		<BMT_SharpSnail MayRequire="Ludeon.RimWorld.Biotech">0.02</BMT_SharpSnail>
+		<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.02</BMT_SludgeCrawler>
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_Polluwog>
 		<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_GastroToad>
 	  </value>
@@ -97,7 +97,7 @@
 		<BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.4</BMT_WasteHound>
 		<BMT_ToxSheep MayRequire="Ludeon.RimWorld.Biotech">0.8</BMT_ToxSheep>
 		<BMT_DoubledDeer MayRequire="Ludeon.RimWorld.Biotech">0.8</BMT_DoubledDeer>
-		<BMT_SharpSnail MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_SharpSnail>
+		<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_SludgeCrawler>
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_Polluwog>
 		<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_GastroToad>
 	  </value>
@@ -109,7 +109,7 @@
 	  <value>
 		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
 		<!-- <BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound> -->
-		<BMT_SharpSnail MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_SharpSnail>
+		<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_SludgeCrawler>
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_Polluwog>
 		<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_GastroToad>
 	  </value>

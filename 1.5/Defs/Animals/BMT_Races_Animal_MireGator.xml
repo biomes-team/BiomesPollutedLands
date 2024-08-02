@@ -166,23 +166,23 @@
 		  <drawSize>2</drawSize>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>Things/Pawn/Animal/BiliousVarog/Dessicated_BiliousVarog</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/BiliousVarog</texPath>
 		  <drawSize>2</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>Things/Pawn/Animal/BiliousVarog/BiliousVarog</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/BiliousVarog</texPath>
 		  <drawSize>2.25</drawSize>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>Things/Pawn/Animal/BiliousVarog/Dessicated_BiliousVarog</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/BiliousVarog_dessicated</texPath>
 		  <drawSize>2.25</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>Things/Pawn/Animal/BiliousVarog/BiliousVarog</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/BiliousVarog</texPath>
 		  <drawSize>2.5</drawSize>
 		  <shadowData>
 			<volume>(0.25, 0.3, 0.25)</volume>
@@ -190,7 +190,7 @@
 		  </shadowData>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>Things/Pawn/Animal/BiliousVarog/Dessicated_BiliousVarog</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/BiliousVarog_dessicated</texPath>
 		  <drawSize>2.5</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>

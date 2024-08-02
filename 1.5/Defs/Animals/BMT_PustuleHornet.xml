@@ -45,7 +45,7 @@
 				</capacities>
 				<power>2</power>
 				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>BMT_Stinger</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>BMT_StingerGroup</linkedBodyPartsGroup>
 				<extraMeleeDamages>
 					<li>
 						<def>BMT_Neurotoxin</def>
@@ -111,10 +111,10 @@
 	  <li>BMT_PollutedAnimalFighter</li>
 	</tradeTags>
 		<modExtensions>
-			<li Class="PathfindingFramework.MovementExtension">
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
 				<movementDef>PF_Movement_Flying</movementDef>
 			</li>
-			<li Class="PathfindingFramework.LocomotionMovementExtension">
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.LocomotionMovementExtension">
 				<locomotionUrgencies>
 					<li>Jog</li>
 					<li>Sprint</li>

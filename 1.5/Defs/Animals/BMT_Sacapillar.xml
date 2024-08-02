@@ -45,7 +45,7 @@
 					<minAge>0.05</minAge>
 				</li>
 				<li>
-					<def>BMT_InsectLarvalThird</def>
+					<def>BMT_LarvalAdult</def>
 					<minAge>0.1</minAge>
 					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
 					<soundDeath>Pawn_Megascarab_Death</soundDeath>
@@ -95,6 +95,7 @@
 			</li>
 		</tools>
 	</ThingDef>
+
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_Sacapillar</defName>
 		<label>sacapillar</label>
@@ -136,5 +137,26 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggSacapillarFertilized</defName>
+		<label>sacapillar egg (fert.)</label>
+		<description>A fertilized sacapillar egg. If all goes well, it should hatch into a baby sacapillar. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(167,198,153)</color>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>25.0</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>10</hatcherDaystoHatch>
+				<hatcherPawn>BMT_Sacapillar</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 
 </Defs>

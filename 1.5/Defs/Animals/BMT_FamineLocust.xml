@@ -142,29 +142,29 @@
 	<lifeStages>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/FamineLocust/FamineLocust</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/SwarmingLocust/SwarmingLocust</texPath>
 		  <drawSize>1</drawSize>
 		  <color>(130,127,106)</color>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/FamineLocust/FamineLocust_dessicated</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/SwarmingLocust/SwarmingLocust_dessicated</texPath>
 		  <drawSize>1.0</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/FamineLocust/FamineLocust</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/SwarmingLocust/SwarmingLocust</texPath>
 		  <drawSize>1.25</drawSize>
 		  <color>(130,127,106)</color>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/FamineLocust/FamineLocust_dessicated</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/SwarmingLocust/SwarmingLocust_dessicated</texPath>
 		  <drawSize>1.25</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/FamineLocust/FamineLocust</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/SwarmingLocust/SwarmingLocust</texPath>
 		  <drawSize>1.5</drawSize>
 		  <color>(130,127,106)</color>
 		  <shadowData>
@@ -173,7 +173,7 @@
 		  </shadowData>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/FamineLocust/FamineLocust_dessicated</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/SwarmingLocust/SwarmingLocust_dessicated</texPath>
 		  <drawSize>1.5</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>

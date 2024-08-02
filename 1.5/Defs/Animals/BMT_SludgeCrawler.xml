@@ -147,7 +147,28 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
+	<HediffDef>
+		<defName>BMT_GiantSnailDefense</defName>
+		<label>retracted into shell</label>
+		<description>Retracted into shell for defense.</description>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0</postFactor>
+					</li>
+				</capMods>
+				<statFactors>
+					<IncomingDamageFactor>0.25</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggSludgeCrawlerFertilized</defName>
 		<label>sludgecrawler egg (fert.)</label>
@@ -164,8 +185,9 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>10</hatcherDaystoHatch>
-				<hatcherPawn>BMT_SharpSnail</hatcherPawn>
+				<hatcherPawn>BMT_SludgeCrawler</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>
+
 </Defs>

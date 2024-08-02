@@ -135,7 +135,7 @@
 	<defName>BMT_Swarmcaller</defName>
 	<label>swarmcaller</label>
 	<race>BMT_Swarmcaller</race>
-	<wildGroupSize>1-2</wildGroupSize>
+	<wildGroupSize>1~2</wildGroupSize>
 	<lifeStages>
 	  <li>
 		<bodyGraphicData>
@@ -149,7 +149,7 @@
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/Swarmcaller/Megaroach</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/Swarmcaller/Swarmcaller</texPath>
 		  <drawSize>1.25</drawSize>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
@@ -159,7 +159,7 @@
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/Swarmcaller/Megaroach</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/Swarmcaller/Swarmcaller</texPath>
 		  <drawSize>1.5</drawSize>
 		  <shadowData>
 			<volume>(0.32, 0.35, 0.32)</volume>
