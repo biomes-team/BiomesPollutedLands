@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- Dummy -->
   <GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_BloodExplusion</defName>
 	<label>blood explusion</label>
-	<!-- <description>Dummy gene. Background and icon test.</description> -->
-	<geneClass>Gene</geneClass>
+	<description>Carriers of this gene have a small filtering organ in their stomach. It increases immunity, but when sick, it causes the carrier to vomit blood.</description>
+	<geneClass>BMT_PollutedLands.Gene_BloodExplusion</geneClass>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_BloodExplusion</iconPath>
+	<biostatCpx>2</biostatCpx>
+	<biostatMet>1</biostatMet>
 	<customEffectDescriptions>
-	  <!-- <li>When a pawn is close to bleeding out reseting bloodloss, with an 21% chance of also causing a heart attack. It have around 1 day cooldown.</li> -->
+	  <li>Whenever a carrier is sick, the gene causes them to randomly puke bloody vomit.</li>
 	</customEffectDescriptions>
+	<statOffsets>
+	  <ImmunityGainSpeed>0.12</ImmunityGainSpeed>
+	</statOffsets>
+	<modExtensions>
+		<li Class="BMT_PollutedLands.GeneExtension">
+			<intervals>171111~544444</intervals>
+			<bloodlossSeverity>0.15</bloodlossSeverity>
+		</li>
+	</modExtensions>
   </GeneDef>
 
 </Defs>

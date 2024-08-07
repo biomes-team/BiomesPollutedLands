@@ -51,6 +51,7 @@
     <Compile Include="Abilities\CompAbility_Validators.cs" />
     <Compile Include="Abilities\CompProperties_CorpseEater.cs" />
     <Compile Include="Genes\Gene_AddOrRemoveHediff.cs" />
+    <Compile Include="Genes\Gene_BloodExplusion.cs" />
     <Compile Include="Genes\Gene_CarrionMetabolism.cs" />
     <Compile Include="Genes\Gene_ChronicPains.cs" />
     <Compile Include="Genes\Gene_ConjoinedHeart.cs" />
