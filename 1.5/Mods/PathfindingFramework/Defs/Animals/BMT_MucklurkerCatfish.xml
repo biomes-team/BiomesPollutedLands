@@ -171,6 +171,9 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<abilities>
+			<li>BMT_AbilityMucklurkerCatfishDevour</li>
+		</abilities>
 		<modExtensions>
 			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
@@ -184,5 +187,32 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
+	
+	<AbilityDef>
+		<defName>BMT_AbilityMucklurkerCatfishDevour</defName>
+		<label>TODO</label>
+		<description>TODO.</description>
+		<cooldownTicksRange>3600</cooldownTicksRange> <!-- 60 seconds -->
+		<jobDef>CastJump</jobDef>
+		<ai_IsOffensive>true</ai_IsOffensive>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityConsumeLeap</verbClass>
+			<label>TODO</label>
+			<range>9.9</range>
+			<requireLineOfSight>true</requireLineOfSight>
+			<warmupTime>0.25</warmupTime>
+			<soundCast>Pawn_Devourer_Jump</soundCast>
+			<soundLanding>Pawn_Devourer_Land</soundLanding>
+			<targetParams>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_ConsumeLeap">
+				<maxBodySize>0.32</maxBodySize>
+			</li>
+		</comps>
+	</AbilityDef>
 
 </Defs>
