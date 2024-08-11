@@ -13,6 +13,9 @@
 				<baseTendDurationHours>48</baseTendDurationHours>
 				<disappearsAtTotalTendQuality>4</disappearsAtTotalTendQuality>
 			</li>
+          <li Class="BMT_PollutedLands.HediffCompProperties_SeverityChangeWhenWet">
+            <isWetChangePerDay>-2</isWetChangePerDay>
+          </li>
 		</comps>
     <stages>
       <li>

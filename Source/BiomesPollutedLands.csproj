@@ -67,6 +67,7 @@
     <Compile Include="Hediffs\HediffComp_OverdevelopedOrgan.cs" />
     <Compile Include="Hediffs\HediffComp_RemoveIfGeneIsNotActive.cs" />
     <Compile Include="Hediffs\HediffComp_ReturnDamage.cs" />
+    <Compile Include="Hediffs\HediffComp_SeverityChangeWhenWet.cs" />
     <Compile Include="JobDriver_EatCorpseTarget.cs" />
     <Compile Include="ModExtension.cs" />
     <Compile Include="ModSettings.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="RitualOutcomeComp_Quality.cs" />
     <Compile Include="Utility\GeneUtility.cs" />
     <Compile Include="Utility\HediffUtility.cs" />
+    <Compile Include="Utility\WetUtility.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
