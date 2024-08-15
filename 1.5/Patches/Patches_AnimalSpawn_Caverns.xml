@@ -25,6 +25,7 @@
 		<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_SludgeCrawler>
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.08</BMT_Polluwog>
 		<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_GastroToad>
+		<BMT_TripleSnapper MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_TripleSnapper>
 	  </value>
 	</Operation>
 
