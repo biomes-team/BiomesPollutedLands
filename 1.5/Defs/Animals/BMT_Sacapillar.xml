@@ -25,7 +25,7 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<wildness>0.6</wildness>
 			<roamMtbDays>4</roamMtbDays>
-			<trainability>None</trainability>
+			<trainability>Intermediate</trainability>
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>5</lifeExpectancy>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>

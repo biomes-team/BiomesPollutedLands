@@ -166,7 +166,7 @@
 		  <drawSize>2</drawSize>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/BiliousVarog</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/BiliousVarog_dessicated</texPath>
 		  <drawSize>2</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
@@ -199,7 +199,7 @@
 
   <ThingDef ParentName="EggFertBase">
 	<defName>BMT_EggBiliousVarogFertilized</defName>
-	<label>biilious varog egg (fert.)</label>
+	<label>bilious varog egg (fert.)</label>
 	<description>A fertilized bilious varog egg. If all goes well, it should hatch into a baby mire gator. It can be eaten raw, but it's much better cooked.</description>
 	<possessionCount>1</possessionCount>
 	<graphicData>
