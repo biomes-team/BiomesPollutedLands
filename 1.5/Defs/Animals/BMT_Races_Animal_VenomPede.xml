@@ -46,6 +46,15 @@
 		<chanceFactor>0.1</chanceFactor>
 	  </li>
 	</tools>
+	<comps>
+	  <li Class="CompProperties_EggLayer">
+		<eggFertilizedDef>BMT_EggVenomPedeFertilized</eggFertilizedDef>
+		<eggFertilizationCountMax>1</eggFertilizationCountMax>
+		<eggLayIntervalDays>4.861</eggLayIntervalDays>
+		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+		<eggCountRange>1~2</eggCountRange>
+	  </li>
+	</comps>
 	<race>
 	  <body>BeetleLike</body>
 	  <baseBodySize>0.2</baseBodySize>
@@ -95,6 +104,26 @@
 	<modExtensions>
 		<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
 	</modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="EggFertBase">
+	<defName>BMT_EggVenomPedeFertilized</defName>
+	<label>venompede egg (fert.)</label>
+	<description>A fertilized venompede egg. If all goes well, it should hatch into a baby venompede. It can be eaten raw, but it's much better cooked.</description>
+	<possessionCount>1</possessionCount>
+	<graphicData>
+	  <texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+	  <color>(245,245,245)</color>
+	</graphicData>
+	<statBases>
+	  <MarketValue>45.0</MarketValue>
+	</statBases>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+		<hatcherDaystoHatch>4.7</hatcherDaystoHatch>
+		<hatcherPawn>BMT_VenomPede</hatcherPawn>
+	  </li>
+	</comps>
   </ThingDef>
   
   <PawnKindDef ParentName="AnimalKindBase">

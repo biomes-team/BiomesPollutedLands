@@ -333,7 +333,7 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>3.5</hatcherDaystoHatch>
-				<hatcherPawn>BMT_GastroToad</hatcherPawn>
+				<hatcherPawn>BMT_Polluwog</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>

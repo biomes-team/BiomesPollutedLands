@@ -134,6 +134,7 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+
 	<!-- Pupa -->
 	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_SmogPupa</defName>
@@ -220,6 +221,7 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+
 	<!-- Adult -->
 	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_SmogMoth</defName>

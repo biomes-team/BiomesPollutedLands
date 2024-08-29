@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="AnimalThingBase">
+	<ThingDef ParentName="BMT_PollutedLands_BaseInsect">
 		<defName>BMT_Sacapillar</defName>
 		<label>sacapillar</label>
 		<description>Timid by nature, this larva-like bug has a large thorax filled with putrescent gasses, allowing it to move about and escape attackers while barely touching the ground It releases these gasses when attacked, often allowing it to escape unharmed.</description>

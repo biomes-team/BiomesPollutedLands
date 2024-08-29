@@ -16,6 +16,8 @@
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.08</BMT_Polluwog>
 		<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_GastroToad>
 		<BMT_TripleSnapper MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_TripleSnapper>
+		<BMT_Norphea MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_Norphea>
+		<BMT_Swarmcaller MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Swarmcaller>
 	  </value>
 	</Operation>
 
@@ -33,6 +35,8 @@
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.08</BMT_Polluwog>
 		<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_GastroToad>
 		<BMT_TripleSnapper MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_TripleSnapper>
+		<BMT_Norphea MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_Norphea>
+		<BMT_Swarmcaller MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Swarmcaller>
 	  </value>
 	</Operation>
 
@@ -49,6 +53,8 @@
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.08</BMT_Polluwog>
 		<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_GastroToad>
 		<BMT_TripleSnapper MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_TripleSnapper>
+		<BMT_Norphea MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_Norphea>
+		<BMT_Swarmcaller MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Swarmcaller>
 	  </value>
 	</Operation>
 
@@ -65,6 +71,8 @@
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.08</BMT_Polluwog>
 		<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_GastroToad>
 		<BMT_TripleSnapper MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_TripleSnapper>
+		<BMT_Norphea MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_Norphea>
+		<BMT_Swarmcaller MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Swarmcaller>
 	  </value>
 	</Operation>
 
@@ -77,6 +85,8 @@
 		<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.02</BMT_SludgeCrawler>
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_Polluwog>
 		<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_GastroToad>
+		<BMT_Norphea MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_Norphea>
+		<BMT_Swarmcaller MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Swarmcaller>
 	  </value>
 	</Operation>
 
@@ -90,6 +100,8 @@
 		<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.02</BMT_SludgeCrawler>
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_Polluwog>
 		<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_GastroToad>
+		<BMT_Norphea MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_Norphea>
+		<BMT_Swarmcaller MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Swarmcaller>
 	  </value>
 	</Operation>
 
@@ -107,6 +119,8 @@
 		<BMT_BloodletterPetrel MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_BloodletterPetrel>
 		<BMT_Varmot MayRequire="Ludeon.RimWorld.Biotech">1</BMT_Varmot>
 		<BMT_FenridStoat MayRequire="Ludeon.RimWorld.Biotech">0.07</BMT_FenridStoat>
+		<BMT_Norphea MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_Norphea>
+		<BMT_Swarmcaller MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Swarmcaller>
 	  </value>
 	</Operation>
 
@@ -122,6 +136,8 @@
 		<BMT_BloodletterPetrel MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_BloodletterPetrel>
 		<BMT_Varmot MayRequire="Ludeon.RimWorld.Biotech">1</BMT_Varmot>
 		<BMT_FenridStoat MayRequire="Ludeon.RimWorld.Biotech">0.07</BMT_FenridStoat>
+		<BMT_Norphea MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_Norphea>
+		<BMT_Swarmcaller MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Swarmcaller>
 	  </value>
 	</Operation>
 
@@ -147,6 +163,7 @@
 	  <value>
 		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
 		<BMT_Varmot MayRequire="Ludeon.RimWorld.Biotech">2</BMT_Varmot>
+		<BMT_Swarmcaller MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Swarmcaller>
 		<!-- <BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound> -->
 	  </value>
 	</Operation>
@@ -172,6 +189,7 @@
 	  <xpath>/Defs/BiomeDef[defName="SeaIce"]/pollutionWildAnimals</xpath>
 	  <value>
 		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
+		<BMT_Swarmcaller MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Swarmcaller>
 		<!-- <BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound> -->
 	  </value>
 	</Operation>

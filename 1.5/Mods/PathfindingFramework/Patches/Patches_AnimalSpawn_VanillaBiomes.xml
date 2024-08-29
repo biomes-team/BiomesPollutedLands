@@ -6,6 +6,7 @@
 	  <xpath>/Defs/BiomeDef[defName="TemperateForest" or defName="Mashed_Ashlands_ForestAshlands"]/pollutionWildAnimals</xpath>
 	  <value>
 		<BMT_MucklurkerCatfish MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_MucklurkerCatfish>
+		<BMT_MutatingTumorfish_StageOne MayRequire="Ludeon.RimWorld.Biotech">0.05</BMT_MutatingTumorfish_StageOne>
 	  </value>
 	</Operation>
 
@@ -14,6 +15,7 @@
 	  <xpath>/Defs/BiomeDef[defName="TropicalRainforest" or defName="Mashed_Ashlands_MeadowAshlands"]/pollutionWildAnimals</xpath>
 	  <value>
 		<BMT_MucklurkerCatfish MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_MucklurkerCatfish>
+		<BMT_MutatingTumorfish_StageOne MayRequire="Ludeon.RimWorld.Biotech">0.05</BMT_MutatingTumorfish_StageOne>
 	  </value>
 	</Operation>
 
@@ -22,6 +24,7 @@
 	  <xpath>/Defs/BiomeDef[defName="TemperateSwamp" or defName="Mashed_Ashlands_MarshAshlands"]/pollutionWildAnimals</xpath>
 	  <value>
 		<BMT_MucklurkerCatfish MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_MucklurkerCatfish>
+		<BMT_MutatingTumorfish_StageOne MayRequire="Ludeon.RimWorld.Biotech">0.05</BMT_MutatingTumorfish_StageOne>
 	  </value>
 	</Operation>
 
@@ -30,6 +33,7 @@
 	  <xpath>/Defs/BiomeDef[defName="TropicalSwamp" or defName="Mashed_Ashlands_SwampAshlands"]/pollutionWildAnimals</xpath>
 	  <value>
 		<BMT_MucklurkerCatfish MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_MucklurkerCatfish>
+		<BMT_MutatingTumorfish_StageOne MayRequire="Ludeon.RimWorld.Biotech">0.05</BMT_MutatingTumorfish_StageOne>
 	  </value>
 	</Operation>
 
@@ -55,6 +59,7 @@
 	  <value>
 		<BMT_Megakrill MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_Megakrill>
 		<BMT_MucklurkerCatfish MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_MucklurkerCatfish>
+		<BMT_MutatingTumorfish_StageOne MayRequire="Ludeon.RimWorld.Biotech">0.05</BMT_MutatingTumorfish_StageOne>
 	  </value>
 	</Operation>
 
@@ -64,6 +69,7 @@
 	  <value>
 		<BMT_MucklurkerCatfish MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_MucklurkerCatfish>
 		<BMT_Megakrill MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_Megakrill>
+		<BMT_MutatingTumorfish_StageOne MayRequire="Ludeon.RimWorld.Biotech">0.05</BMT_MutatingTumorfish_StageOne>
 	  </value>
 	</Operation>
 
