@@ -47,13 +47,14 @@ namespace BMT_PollutedLands
 			{
 				return;
 			}
-			pawn.jobs.StartJob(JobMaker.MakeJob(JobDefOf.Vomit), JobCondition.InterruptForced, null, resumeCurJobAfterwards: true);
+			// pawn.jobs.StartJob(JobMaker.MakeJob(JobDefOf.Vomit), JobCondition.InterruptForced, null, resumeCurJobAfterwards: true);
+			pawn.jobs.StartJob(JobMaker.MakeJob(PL_GenesDefOf.BMT_BloodVomit), JobCondition.InterruptForced, null, resumeCurJobAfterwards: true);
 			if (!SanguophageUtility.WouldDieFromAdditionalBloodLoss(pawn, Props.bloodlossSeverity))
 			{
 				Hediff hediff = HediffMaker.MakeHediff(HediffDefOf.BloodLoss, pawn);
 				hediff.Severity = Props.bloodlossSeverity;
 				pawn.health.AddHediff(hediff);
-				PL_GeneUtility.TrySpawnFilth(pawn, new(0, 1), pawn.RaceProps.BloodDef);
+				// PL_GeneUtility.TrySpawnFilth(pawn, new(0, 1), pawn.RaceProps.BloodDef);
 			}
 		}
 

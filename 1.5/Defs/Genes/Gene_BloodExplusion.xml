@@ -23,4 +23,35 @@
 	</modExtensions>
   </GeneDef>
 
+  <JobDef>
+	<defName>BMT_BloodVomit</defName>
+	<driverClass>BMT_PollutedLands.JobDriver_BloodVomit</driverClass>
+	<playerInterruptible>false</playerInterruptible>
+	<casualInterruptible>false</casualInterruptible>
+	<reportString>vomiting.</reportString>
+	<suspendable>false</suspendable>
+  </JobDef>
+
+  <EffecterDef>
+	<defName>BMT_BloodVomitEffect</defName>
+	<children>
+	  <li>
+		<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+		<scale>0.5~0.7</scale>
+		<ticksBetweenMotes>20</ticksBetweenMotes>
+		<positionLerpFactor>0.35</positionLerpFactor>
+		<positionRadius>0.2</positionRadius>
+		<moteDef>BMT_Mote_BloodVomitBit</moteDef>
+	  </li>
+	</children>
+  </EffecterDef>
+  
+  <ThingDef ParentName="FoodBitBase">
+	<defName>BMT_Mote_BloodVomitBit</defName>
+	<graphicData>
+	  <texPath>BMT_PollutedLands/Things/Effects/BloodVomitBit</texPath>
+	  <shaderType>Mote</shaderType>
+	</graphicData>
+  </ThingDef>
+
 </Defs>

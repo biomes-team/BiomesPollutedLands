@@ -1,33 +1,36 @@
 ﻿using Verse;
 
-namespace BMT_PollutedLands;
-
-public class HediffComp_SeverityChangeWhenWet : HediffComp_SeverityModifierBase
+namespace BMT_PollutedLands
 {
-    private HediffCompProperties_SeverityChangeWhenWet Props =>
-        (HediffCompProperties_SeverityChangeWhenWet)props;
 
-    public override float SeverityChangePerDay()
+    public class HediffComp_SeverityChangeWhenWet : HediffComp_SeverityModifierBase
     {
-        var changePerDay = Props.baseChangePerDay;
+        private HediffCompProperties_SeverityChangeWhenWet Props =>
+            (HediffCompProperties_SeverityChangeWhenWet)props;
 
-        if (Pawn.IsWet())
+        public override float SeverityChangePerDay()
         {
-            changePerDay += Props.isWetChangePerDay;
+            var changePerDay = Props.baseChangePerDay;
+
+            if (Pawn.IsWet())
+            {
+                changePerDay += Props.isWetChangePerDay;
+            }
+
+            return changePerDay;
         }
-
-        return changePerDay;
     }
-}
 
-public class HediffCompProperties_SeverityChangeWhenWet : HediffCompProperties
-{
-    public float isWetChangePerDay = -1f;
-    public float baseChangePerDay = 0;
-
-
-    public HediffCompProperties_SeverityChangeWhenWet()
+    public class HediffCompProperties_SeverityChangeWhenWet : HediffCompProperties
     {
-        compClass = typeof(HediffComp_SeverityChangeWhenWet);
+        public float isWetChangePerDay = -1f;
+        public float baseChangePerDay = 0;
+
+
+        public HediffCompProperties_SeverityChangeWhenWet()
+        {
+            compClass = typeof(HediffComp_SeverityChangeWhenWet);
+        }
     }
+
 }

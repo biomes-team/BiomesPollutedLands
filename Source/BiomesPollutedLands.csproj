@@ -68,6 +68,7 @@
     <Compile Include="Hediffs\HediffComp_RemoveIfGeneIsNotActive.cs" />
     <Compile Include="Hediffs\HediffComp_ReturnDamage.cs" />
     <Compile Include="Hediffs\HediffComp_SeverityChangeWhenWet.cs" />
+    <Compile Include="JobDriver_BloodVomit.cs" />
     <Compile Include="JobDriver_EatCorpseTarget.cs" />
     <Compile Include="ModExtension.cs" />
     <Compile Include="ModSettings.cs" />

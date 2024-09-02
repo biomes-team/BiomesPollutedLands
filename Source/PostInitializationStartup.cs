@@ -10,6 +10,8 @@ namespace BMT_PollutedLands
 	public static class PL_GenesDefOf
 	{
 		public static GeneCategoryDef BMT_MutaGenes;
+		public static JobDef BMT_BloodVomit;
+		public static EffecterDef BMT_BloodVomitEffect;
 	}
 
 	[StaticConstructorOnStartup]
