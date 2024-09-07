@@ -1,16 +1,95 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- Dummy -->
   <GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_PsychicCortex</defName>
 	<label>psychic cortex</label>
 	<!-- <description>Dummy gene. Background and icon test.</description> -->
 	<geneClass>Gene</geneClass>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_PsychicCortex</iconPath>
+	<abilities>
+	  <li>BMT_PsychicCortex</li>
+	</abilities>
 	<customEffectDescriptions>
 	  <!-- <li>When a pawn is close to bleeding out reseting bloodloss, with an 21% chance of also causing a heart attack. It have around 1 day cooldown.</li> -->
 	</customEffectDescriptions>
+	<painOffset>0.1</painOffset>
+	<statOffsets>
+	  <ImmunityGainSpeed>-0.10</ImmunityGainSpeed>
+	  <PawnBeauty>-1</PawnBeauty>
+	  <PsychicSensitivity>0.5</PsychicSensitivity>
+	  <StudyEfficiency MayRequire="ludeon.rimworld.anomaly">0.5</StudyEfficiency>
+	</statOffsets>
   </GeneDef>
+
+  <AbilityDef>
+	<defName>BMT_PsychicCortex</defName>
+	<label>psychic shield</label>
+	<description>TEST.</description>
+	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_PsychicCortex</iconPath>
+	<cooldownTicksRange>300000</cooldownTicksRange><!-- 5 days -->
+	<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+	<disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted>
+	<targetRequired>false</targetRequired>
+	<hostile>false</hostile>
+	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	<verbProperties>
+	  <verbClass>Verb_CastAbility</verbClass>
+	  <warmupTime>0.5</warmupTime>
+	  <requireLineOfSight>false</requireLineOfSight>
+	  <drawAimPie>false</drawAimPie>      
+	  <range>2.9</range>
+	  <targetParams>
+		<canTargetSelf>true</canTargetSelf>
+	  </targetParams>
+	</verbProperties>
+	<comps>
+	  <li Class="CompProperties_AbilitySpawn">
+		<thingDef>BMT_PsychicCortexShield</thingDef>
+	  </li>
+	  <li Class="CompProperties_AbilityFleckOnTarget">
+		<fleckDef>BulletShieldAreaEffect</fleckDef>
+		<sound>BulletShield_Ambience</sound>
+	  </li>
+	</comps>
+  </AbilityDef>
+
+  <ThingDef ParentName="EtherealThingBase">
+	<defName>BMT_PsychicCortexShield</defName>
+	<label>skipshield</label>
+	<thingClass>ThingWithComps</thingClass>
+	<tickerType>Normal</tickerType>
+	<drawerType>RealtimeOnly</drawerType>
+	<drawOffscreen>true</drawOffscreen>
+	<graphicData>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>Things/Ethereal/PsychicShieldRipples</texPath>
+	  <shaderType>BulletShieldPsychic</shaderType>
+	  <color>(180, 231, 237)</color>
+	  <drawSize>9.9</drawSize>
+	  <shaderParameters>
+		<_PulseInterval>0.5</_PulseInterval>
+		<_DistortionScale>0.5</_DistortionScale>
+		<_DistortionIntensity>0.15</_DistortionIntensity>
+		<_MinAlpha>0.1</_MinAlpha>
+		<_MaxAlpha>0.3</_MaxAlpha>
+		<_DistortionTex>/Things/Mote/SmokeTiled</_DistortionTex>
+	  </shaderParameters>
+	</graphicData>
+	<comps>
+	  <li Class="CompProperties_ProjectileInterceptor">
+		<radius>3</radius>
+		<interceptGroundProjectiles>true</interceptGroundProjectiles>
+		<interceptNonHostileProjectiles>true</interceptNonHostileProjectiles>
+		<interceptOutgoingProjectiles>true</interceptOutgoingProjectiles>
+		<color>(0.4, 0.4, 0.4)</color>
+		<minAlpha>0.2</minAlpha>
+		<interceptEffect>Interceptor_BlockedProjectilePsychic</interceptEffect>
+	  </li>
+	  <li Class="CompProperties_DestroyAfterDelay">
+		<delayTicks>900</delayTicks>
+	  </li>
+	</comps>
+  </ThingDef>
 
 </Defs>
