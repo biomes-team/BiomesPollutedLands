@@ -1,17 +1,116 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- Dummy -->
   <GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_ImpalingClaws</defName>
 	<label>impaling claws</label>
-	<!-- <description>Dummy gene. Background and icon test.</description> -->
-	<geneClass>Gene</geneClass>
+	<description>Carriers of this gene grow two claws on their backs.</description>
+	<geneClass>BMT_PollutedLands.Gene_AddOrRemoveHediff</geneClass>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_ImpalingClaws</iconPath>
     <iconColor>(0.75, 0.75, 0.75)</iconColor>
 	<customEffectDescriptions>
-	  <!-- <li>When a pawn is close to bleeding out reseting bloodloss, with an 21% chance of also causing a heart attack. It have around 1 day cooldown.</li> -->
+	  <li>Carrier can attack with claws in melee.</li>
 	</customEffectDescriptions>
+	<capMods>
+	  <li>
+		<capacity>Manipulation</capacity>
+		<offset>0.10</offset>
+	  </li>
+	</capMods>
+	<statOffsets>
+	  <ImmunityGainSpeed>-0.1</ImmunityGainSpeed>
+	  <PawnBeauty>-1</PawnBeauty>
+	</statOffsets>
+	<renderNodeProperties>
+	  <li Class="PawnRenderNodeProperties_Spastic">
+		<!-- To enable animation, you need to comment out workerClass -->
+		<!-- The animation will most likely require new offset and rotationOffset. -->
+		<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+		<texPaths>
+		  <li>BMT_PollutedLands/Things/Pawn/Humanlike/BodyAttachments/ImplaingClawLimb/ImpalingClaw</li>
+		</texPaths>
+		<drawSize>1.0</drawSize>
+		<colorType>Skin</colorType>
+		<rotDrawMode>Fresh, Rotting</rotDrawMode>
+		<useSkinShader>true</useSkinShader>
+		<useRottenColor>true</useRottenColor>
+		<rotationRange>-30~30</rotationRange>
+		<durationTicksRange>10~35</durationTicksRange>
+		<nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+		<drawData>
+		  <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+		  <defaultData>
+			<layer>-2</layer>
+		  </defaultData>
+		  <dataNorth>
+			<offset>(0.20, 0.2, -0.06)</offset>
+			<layer>90</layer>
+			<rotationOffset>50</rotationOffset>
+		  </dataNorth>
+		  <dataSouth>
+			<offset>(0.20, -0.1, -0.06)</offset>
+			<rotationOffset>50</rotationOffset>
+		  </dataSouth>
+		  <dataEast>
+			<offset>(-0.06, -0.1, -0.06)</offset>
+			<!-- <rotationOffset>60</rotationOffset> -->
+		  </dataEast>
+		  <dataWest>
+			<offset>(0.06, -0.1, -0.06)</offset>
+			<flip>true</flip>
+			<!-- <rotationOffset>60</rotationOffset> -->
+		  </dataWest>
+		</drawData>
+	  </li>
+	  <li Class="PawnRenderNodeProperties_Spastic">
+		<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+		<texPaths>
+		  <li>BMT_PollutedLands/Things/Pawn/Humanlike/BodyAttachments/ImplaingClawLimb/ImpalingClaw</li>
+		</texPaths>
+		<drawSize>1.0</drawSize>
+		<colorType>Skin</colorType>
+		<rotDrawMode>Fresh, Rotting</rotDrawMode>
+		<useSkinShader>true</useSkinShader>
+		<useRottenColor>true</useRottenColor>
+		<rotationRange>-30~30</rotationRange>
+		<durationTicksRange>10~35</durationTicksRange>
+		<nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+		<drawData>
+		  <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+		  <defaultData>
+			<layer>-2</layer>
+		  </defaultData>
+		  <dataNorth>
+			<offset>(-0.20, 0.2, -0.06)</offset>
+			<flip>true</flip>
+			<layer>90</layer>
+			<rotationOffset>-50</rotationOffset>
+		  </dataNorth>
+		  <dataSouth>
+			<offset>(-0.20, -0.1, -0.06)</offset>
+			<flip>true</flip>
+			<rotationOffset>-50</rotationOffset>
+		  </dataSouth>
+		  <dataEast>
+			<offset>(-0.06, -0.1, -0.06)</offset>
+			<!-- <rotationOffset>60</rotationOffset> -->
+		  </dataEast>
+		  <dataWest>
+			<offset>(0.06, -0.1, -0.06)</offset>
+			<flip>true</flip>
+			<!-- <rotationOffset>60</rotationOffset> -->
+		  </dataWest>
+		</drawData>
+	  </li>
+	</renderNodeProperties>
+	<modExtensions>
+		<li Class="BMT_PollutedLands.GeneExtension">
+			<hediffDef>BMT_ImpalingClaws</hediffDef>
+			<bodyparts>
+			  <li>Torso</li>
+			</bodyparts>
+		</li>
+	</modExtensions>
   </GeneDef>
 
 </Defs>

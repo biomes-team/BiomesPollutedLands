@@ -106,4 +106,28 @@
 	</comps>
   </HediffDef>
 
+  <HediffDef ParentName="BMT_PollutionLands_Hediffs_Base">
+	<defName>BMT_ImpalingClaws</defName>
+	<label>impaling claws</label>
+	<description>A creepy and sharp claws growing from the back.</description>
+	<comps>
+	  <li Class="HediffCompProperties_VerbGiver">
+		<tools>
+		  <li>
+			<label>claw</label>
+			<capacities>
+			  <li>Cut</li>
+			</capacities>
+			<power>16</power>
+			<cooldownTime>1.8</cooldownTime>
+			<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			<!-- <soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit> -->
+			<!-- <soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss> -->
+		  </li>
+		</tools>
+	  </li>
+	  <li Class="BMT_PollutedLands.HediffCompProperties_GeneHediff"/>
+	</comps>
+  </HediffDef>
+
 </Defs>
