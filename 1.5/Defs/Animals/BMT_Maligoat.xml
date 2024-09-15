@@ -19,6 +19,7 @@
     </statBases>
     <uiIconScale>1.2</uiIconScale>
     <comps>
+      <!-- TODO: move this to prime milk -->
       <li Class="CompProperties_Milkable">
         <milkDef>Milk</milkDef>
         <milkIntervalDays>3</milkIntervalDays>
