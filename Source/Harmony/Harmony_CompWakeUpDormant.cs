@@ -25,7 +25,7 @@ public static class Harmony_CompWakeUpDormant
     public static void SwarmCall(Thing thing, CompWakeUpDormant instance)
     {
         //TODO: move this to a comp and check for the existence of said comp instead of checking for def
-        if (thing.def == PL_AnimalsDefOf.BMT_Swarmcaller)
+        if (thing.def == BMT_AnimalsDefOf.BMT_Swarmcaller)
         {
             instance.Activate(thing);
         }

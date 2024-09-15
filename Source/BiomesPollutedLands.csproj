@@ -31,7 +31,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <PackageReference Include="Krafs.Publicizer">
       <Version>2.2.1</Version>
@@ -64,6 +63,7 @@
     <Compile Include="Harmony\Harmony.cs" />
     <Compile Include="Harmony\Harmony_CompWakeUpDormant.cs" />
     <Compile Include="Harmony\Harmony_GeneOverride.cs" />
+    <Compile Include="Harmony\Harmony_GiveObservedThought.cs" />
     <Compile Include="Hediffs\HediffComp_MutagenicFertility.cs" />
     <Compile Include="Hediffs\HediffComp_OverdevelopedOrgan.cs" />
     <Compile Include="Hediffs\HediffComp_RemoveIfGeneIsNotActive.cs" />
@@ -74,7 +74,7 @@
     <Compile Include="ModExtension.cs" />
     <Compile Include="ModSettings.cs" />
     <Compile Include="PawnRenderNode_FurIsSkin.cs" />
-    <Compile Include="PL_AnimalsDefOf.cs" />
+    <Compile Include="BMT_AnimalsDefOf.cs" />
     <Compile Include="PostInitializationStartup.cs" />
     <Compile Include="RitualOutcomeComp_Quality.cs" />
     <Compile Include="Utility\GeneUtility.cs" />
