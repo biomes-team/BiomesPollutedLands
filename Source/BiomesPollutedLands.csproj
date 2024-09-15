@@ -62,6 +62,7 @@
     <Compile Include="Genes\Gene_ProtectiveLeprosy.cs" />
     <Compile Include="Genes\Gene_ToxspewingPores.cs" />
     <Compile Include="Harmony\Harmony.cs" />
+    <Compile Include="Harmony\Harmony_CompWakeUpDormant.cs" />
     <Compile Include="Harmony\Harmony_GeneOverride.cs" />
     <Compile Include="Hediffs\HediffComp_MutagenicFertility.cs" />
     <Compile Include="Hediffs\HediffComp_OverdevelopedOrgan.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="ModExtension.cs" />
     <Compile Include="ModSettings.cs" />
     <Compile Include="PawnRenderNode_FurIsSkin.cs" />
+    <Compile Include="PL_AnimalsDefOf.cs" />
     <Compile Include="PostInitializationStartup.cs" />
     <Compile Include="RitualOutcomeComp_Quality.cs" />
     <Compile Include="Utility\GeneUtility.cs" />
