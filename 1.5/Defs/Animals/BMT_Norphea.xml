@@ -29,7 +29,6 @@
 			<wildness>0.50</wildness>
 			<trainability>Advanced</trainability>
 			<lifeExpectancy>20</lifeExpectancy>
-			<body>BeetleLike</body>
 			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.25</manhunterOnDamageChance>
 			<lifeStageAges>
