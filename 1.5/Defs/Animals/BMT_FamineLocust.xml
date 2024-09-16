@@ -25,7 +25,7 @@
 		</capacities>
 		<power>3.4</power>
 		<cooldownTime>2</cooldownTime>
-		<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+		<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 	  </li>
 	  <li>
 		<label>head</label>
@@ -40,7 +40,7 @@
 	  </li>
 	</tools>
 	<race>
-	  <!-- <body>QuadrupedAnimalWithPawsAndTail</body> -->
+	  <body>BeetleLike</body>
 	  <baseBodySize>0.32</baseBodySize>
 	  <baseHungerRate>0.45</baseHungerRate>
 	  <baseHealthScale>0.4</baseHealthScale>

@@ -13,6 +13,7 @@
 			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
 		</statBases>
 		<race>
+			<body>BeetleLikeWithClaw</body>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<baseBodySize>4.0</baseBodySize>
 			<predator>true</predator>

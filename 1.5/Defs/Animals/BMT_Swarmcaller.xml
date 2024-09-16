@@ -25,7 +25,7 @@
 		</capacities>
 		<power>3.4</power>
 		<cooldownTime>2</cooldownTime>
-		<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+		<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 	  </li>
 	  <li>
 		<label>head</label>
@@ -40,12 +40,14 @@
 	  </li>
 	</tools>
 	<race>
-	  <!-- <body>QuadrupedAnimalWithPawsAndTail</body> -->
+	  <body>BeetleLike</body>
 	  <baseBodySize>0.2</baseBodySize>
 	  <baseHungerRate>0.115</baseHungerRate>
 	  <baseHealthScale>0.4</baseHealthScale>
 	  <foodType>OmnivoreAnimal</foodType>
+	  <fleshType>Insectoid</fleshType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
+	  <useMeatFrom>Megaspider</useMeatFrom>
 	  <wildness>0.75</wildness>
 	  <trainability>None</trainability>
 	  <petness>0.08</petness>
