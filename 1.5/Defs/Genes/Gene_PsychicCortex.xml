@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <GeneDef ParentName="BMT_MutaGenes_Base">
+  <GeneDef MayRequire="ludeon.rimworld.royalty" ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_PsychicCortex</defName>
 	<label>psychic cortex</label>
-	<!-- <description>Dummy gene. Background and icon test.</description> -->
+	<description>Carriers of this gene have enhanced psychic abilities and can create a skipshield for quite a long period of time.</description>
 	<geneClass>Gene</geneClass>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_PsychicCortex</iconPath>
 	<abilities>
@@ -22,10 +22,10 @@
 	</statOffsets>
   </GeneDef>
 
-  <AbilityDef>
+  <AbilityDef MayRequire="ludeon.rimworld.royalty">
 	<defName>BMT_PsychicCortex</defName>
 	<label>psychic shield</label>
-	<description>TEST.</description>
+	<description>Creates a skipshield that lasts for about a day and then disappears. The shield cannot be moved.</description>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_PsychicCortex</iconPath>
 	<cooldownTicksRange>300000</cooldownTicksRange><!-- 5 days -->
 	<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
@@ -54,7 +54,8 @@
 	</comps>
   </AbilityDef>
 
-  <ThingDef ParentName="EtherealThingBase">
+  <!-- Temp -->
+  <ThingDef MayRequire="ludeon.rimworld.royalty" ParentName="EtherealThingBase">
 	<defName>BMT_PsychicCortexShield</defName>
 	<label>skipshield</label>
 	<thingClass>ThingWithComps</thingClass>
@@ -78,16 +79,16 @@
 	</graphicData>
 	<comps>
 	  <li Class="CompProperties_ProjectileInterceptor">
-		<radius>3</radius>
+		<radius>4.9</radius>
 		<interceptGroundProjectiles>true</interceptGroundProjectiles>
-		<interceptNonHostileProjectiles>true</interceptNonHostileProjectiles>
-		<interceptOutgoingProjectiles>true</interceptOutgoingProjectiles>
+		<interceptNonHostileProjectiles>false</interceptNonHostileProjectiles>
+		<interceptOutgoingProjectiles>false</interceptOutgoingProjectiles>
 		<color>(0.4, 0.4, 0.4)</color>
 		<minAlpha>0.2</minAlpha>
 		<interceptEffect>Interceptor_BlockedProjectilePsychic</interceptEffect>
 	  </li>
 	  <li Class="CompProperties_DestroyAfterDelay">
-		<delayTicks>900</delayTicks>
+		<delayTicks>47432</delayTicks>
 	  </li>
 	</comps>
   </ThingDef>
