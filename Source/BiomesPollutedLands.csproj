@@ -54,6 +54,7 @@
     <Compile Include="Genes\Gene_CarrionMetabolism.cs" />
     <Compile Include="Genes\Gene_ChronicPains.cs" />
     <Compile Include="Genes\Gene_ConjoinedHeart.cs" />
+    <Compile Include="Genes\Gene_EvermutatingCells.cs" />
     <Compile Include="Genes\Gene_Interface.cs" />
     <Compile Include="Genes\Gene_MoltingRegeneration.cs" />
     <Compile Include="Genes\Gene_MutagenicFertility.cs" />

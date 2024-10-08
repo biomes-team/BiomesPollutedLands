@@ -4,14 +4,17 @@
   <GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_EvermutatingCells</defName>
 	<label>evermutating cells</label>
-	<description>Carriers of this gene have unstable cellular mutations that can cause mutapox.</description>
-	<geneClass>BMT_PollutedLands.Gene_AddHediffWithInterval</geneClass>
+	<!-- <description>Carriers of this gene have unstable cellular mutations that can cause mutapox.</description> -->
+	<description>Carriers of this gene have unstable cellular mutations that can cause the emergence of new mutagens.</description>
+	<!-- <geneClass>BMT_PollutedLands.Gene_AddHediffWithInterval</geneClass> -->
+	<geneClass>BMT_PollutedLands.Gene_EvermutatingCells</geneClass>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_EvermutatingCells</iconPath>
 	<statOffsets>
 	  <ImmunityGainSpeed>-0.05</ImmunityGainSpeed>
 	</statOffsets>
 	<customEffectDescriptions>
-	  <li>Carrier periodically catch mutapox, even outside polluted biomes.</li>
+	  <!-- <li>Carrier periodically catch mutapox, even outside polluted biomes.</li> -->
+	  <li>Carrier has a chance of receiving more mutagens over time.</li>
 	</customEffectDescriptions>
 	<modExtensions>
 		<li Class="BMT_PollutedLands.GeneExtension">

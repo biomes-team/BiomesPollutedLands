@@ -24,7 +24,7 @@ namespace BMT_PollutedLands
 			List<GeneDef> genes = new();
 			foreach (GeneDef item in DefDatabase<GeneDef>.AllDefsListForReading)
 			{
-				if (item.displayCategory != PL_GenesDefOf.BMT_MutaGenes)
+				if (item.displayCategory != BMT_GenesDefOf.BMT_MutaGenes)
 				{
 					continue;
 				}

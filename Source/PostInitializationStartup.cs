@@ -7,7 +7,7 @@ namespace BMT_PollutedLands
 {
 
 	[DefOf]
-	public static class PL_GenesDefOf
+	public static class BMT_GenesDefOf
 	{
 		public static GeneCategoryDef BMT_MutaGenes;
 		public static JobDef BMT_BloodVomit;

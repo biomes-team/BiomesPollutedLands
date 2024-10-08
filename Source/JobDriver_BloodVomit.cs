@@ -60,7 +60,7 @@ namespace BMT_PollutedLands
 				}
 			};
 			toil.defaultCompleteMode = ToilCompleteMode.Never;
-			toil.WithEffect(PL_GenesDefOf.BMT_BloodVomitEffect, TargetIndex.A);
+			toil.WithEffect(BMT_GenesDefOf.BMT_BloodVomitEffect, TargetIndex.A);
 			toil.PlaySustainerOrSound(() => SoundDefOf.Vomit);
 			yield return toil;
 		}
