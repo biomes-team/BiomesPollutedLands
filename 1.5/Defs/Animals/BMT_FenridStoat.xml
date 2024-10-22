@@ -140,6 +140,13 @@
         <chanceFactor>0.2</chanceFactor>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="BiomesCore.DefModExtensions.PreferenceHunterModExtension">
+        <huntingPrefs>
+          <li>BMT_Varmot</li>
+        </huntingPrefs>
+      </li>
+    </modExtensions>
   </ThingDef>
   
   <PawnKindDef ParentName="AnimalKindBase">
