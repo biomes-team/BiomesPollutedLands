@@ -113,11 +113,23 @@
 			<!-- </li> -->
 		<!-- </operations> -->
 	<!-- </Operation> -->
-	<Operation Class="PatchOperationAdd">
-	  <xpath>/Defs/BiomeDef[defName="SeaIce"]/pollutionWildAnimals</xpath>
-	  <value>
-		<BMT_Megakrill MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_Megakrill>
-	  </value>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/BiomeDef[defName="SeaIce"]/pollutionWildAnimals</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/BiomeDef[defName="SeaIce"]/pollutionWildAnimals</xpath>
+			<value>
+			  	<BMT_Megakrill MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_Megakrill>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/BiomeDef[defName="SeaIce"]</xpath>
+			<value>
+				<pollutionWildAnimals>
+					<BMT_Megakrill MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_Megakrill>
+				</pollutionWildAnimals>
+			</value>
+		</nomatch>
 	</Operation>
+	
 
 </Patch>
