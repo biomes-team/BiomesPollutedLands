@@ -16,12 +16,14 @@
 	  <!-- <li>Carrier periodically catch mutapox, even outside polluted biomes.</li> -->
 	  <li>Carrier has a chance of receiving more mutagens over time.</li>
 	</customEffectDescriptions>
-	<modExtensions>
+
+	<!--Commented out until the hediff is out of experimental phase-->
+	<!-- <modExtensions>
 		<li Class="BMT_PollutedLands.GeneExtension">
 			<hediffDef>BMT_Mutapox</hediffDef>
 			<intervals>441111~744444</intervals>
 		</li>
-	</modExtensions>
+	</modExtensions> -->
   </GeneDef>
 
 </Defs>

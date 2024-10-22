@@ -96,6 +96,7 @@
 		<defName>BMT_Megaphorid</defName>
 		<label>megaphorid</label>
 		<race>BMT_Megaphorid</race>
+		<combatPower>140</combatPower> <!--Temporary value to be rebalanced later-->
 		<lifeStages>
 			<li>
 				<bodyGraphicData>

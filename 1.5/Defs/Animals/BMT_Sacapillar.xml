@@ -24,7 +24,7 @@
 			<baseHungerRate>0.25</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<wildness>0.6</wildness>
-			<roamMtbDays>4</roamMtbDays>
+			<!-- <roamMtbDays>4</roamMtbDays> -->
 			<trainability>Intermediate</trainability>
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>5</lifeExpectancy>

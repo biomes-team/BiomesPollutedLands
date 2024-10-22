@@ -69,6 +69,21 @@
 			<specificMeatDef>BMT_FishMeat</specificMeatDef>
 			<lifeStageAges>
 				<li>
+					<def>AnimalBabyTiny</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.4</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.8</minAge>
+				</li>
+
+				<!--Not sure how these would differ from standard life stages, so they are just commented out for now to avoid errors. 
+				Remove the comments once the stages are made-->
+				<!-- <li> 
 					<def>BMT_FishTiny</def>
 					<minAge>0</minAge>
 				</li>
@@ -79,7 +94,7 @@
 				<li>
 					<def>BMT_FishAdult</def>
 					<minAge>0.8</minAge>
-				</li>
+				</li> -->
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>

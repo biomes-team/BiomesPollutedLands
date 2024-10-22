@@ -50,7 +50,7 @@
 			<baseHungerRate>0.25</baseHungerRate>
 			<baseHealthScale>1</baseHealthScale>
 			<maxPreyBodySize>0.2</maxPreyBodySize>
-			<foodType>Herbivore</foodType>
+			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
 			<gestationPeriodDays>10</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
@@ -159,7 +159,7 @@
 			<baseHungerRate>0.25</baseHungerRate>
 			<baseHealthScale>1</baseHealthScale>
 			<maxPreyBodySize>0.80</maxPreyBodySize>
-			<foodType>OvivoreAnimal</foodType>
+			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
 			<gestationPeriodDays>10</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
@@ -260,7 +260,7 @@
 			<baseHungerRate>1.0</baseHungerRate>
 			<baseHealthScale>1</baseHealthScale>
 			<maxPreyBodySize>1.2</maxPreyBodySize>
-			<foodType>CarnivorePredator</foodType>
+			<foodType>CarnivoreAnimal</foodType>
 			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
 			<gestationPeriodDays>10</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
