@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+	<ThinkTreeDef>
+		<defName>BMT_VarmotStealCrop</defName>
+		<insertTag>Animal_PreMain</insertTag> <!--Inserted here so they will check for player plants first. If none are found, it goes to standard eat-->
+        <insertPriority>100</insertPriority>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="BiomesCore.JobGiver_StealPlayerFood">
+					<!--This first checks for stray food the animal can eat, then for colony animals if one of the pawn kinds is a predator-->
+					<thiefKinds>
+						<li>BMT_Varmot</li> <!--List the PawnKindDefs-->
+					</thiefKinds>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+	
 	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_Varmot</defName>
 		<label>varmot</label>
