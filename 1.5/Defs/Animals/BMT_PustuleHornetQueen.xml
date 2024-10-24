@@ -65,7 +65,7 @@
 	  <foodType>CarnivoreAnimal</foodType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
 	  <wildness>1</wildness>
-	  <trainability>Intermediate</trainability>
+	  <trainability>None</trainability>
 	  <!-- <mateMtbHours>8</mateMtbHours> -->
 	  <!-- <gestationPeriodDays>5.661</gestationPeriodDays> -->
 	  <soundEating>Rodent_Eat</soundEating>
@@ -106,6 +106,9 @@
 	  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 	  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 	</race>
+	<comps>
+		<li Class="BiomesCore.CompProperties_PermanentManhunter" />
+	</comps>
 	<tradeTags>
 	  <li>BMT_PollutedAnimalUncommon</li>
 	  <li>BMT_PollutedAnimalFighter</li>
