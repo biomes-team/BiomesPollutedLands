@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BMT_PolluedLands_DeciduousTreeBase">
+	<defName>BMT_Plant_TreeBlotBirch</defName>
+	<label>blot birch tree</label>
+	<description>A temperate-biome tree known for its thin, white, paper-like bark.</description>
+	<graphicData>
+	  <texPath>BMT_PollutedLands/Things/ToxPlants/BlotBirch/BlotBirch</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <shadowData>
+		<volume>(0.15, 0.3, 0.1)</volume>
+		<offset>(-0.03,0,-0.44)</offset>
+	  </shadowData>
+	</graphicData>
+	<statBases>
+	  <Beauty>2</Beauty>
+	  <BeautyOutdoors>2</BeautyOutdoors>
+	</statBases>
+	<ingestible />
+	<plant>
+	  <growDays>20</growDays>
+	  <harvestWork>800</harvestWork>
+	  <harvestYield>27</harvestYield>
+	  <!-- <immatureGraphicPath>Things/Plant/TreeBirch_Immature</immatureGraphicPath> -->
+	  <leaflessGraphicPath>BMT_PollutedLands/Things/ToxPlants/BlotBirch/BlotBirch_Leafless</leaflessGraphicPath>
+	</plant>
+  </ThingDef>
+
+</Defs>

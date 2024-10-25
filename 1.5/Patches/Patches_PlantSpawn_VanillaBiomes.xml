@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Temp forest -->
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="TemperateForest"]/wildPlants</xpath>
+	  <value>
+		<BMT_Plant_TreeBlotBirch>0.5</BMT_Plant_TreeBlotBirch>
+		<BMT_Plant_TreeWormoak>0.5</BMT_Plant_TreeWormoak>
+	  </value>
+	</Operation>
+
+	<!-- Trop forest -->
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="TropicalRainforest"]/wildPlants</xpath>
+	  <value>
+		<!-- <BMT_Plant_TreeMartyr>0.2</BMT_Plant_TreeMartyr> -->
+	  </value>
+	</Operation>
+
+	<!-- Temp swamp -->
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="TemperateSwamp"]/wildPlants</xpath>
+	  <value>
+		<BMT_Plant_TreeWormoak>0.5</BMT_Plant_TreeWormoak>
+	  </value>
+	</Operation>
+
+	<!-- Trop swamp -->
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="TropicalSwamp"]/wildPlants</xpath>
+	  <value>
+		<!-- <BMT_Plant_TreeMartyr>0.2</BMT_Plant_TreeMartyr> -->
+	  </value>
+	</Operation>
+
+	<!-- Desert -->
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="Desert" or defName="ExtremeDesert"]/wildPlants</xpath>
+	  <value>
+		<!-- <BMT_Plant_TreeMartyr>0.2</BMT_Plant_TreeMartyr> -->
+	  </value>
+	</Operation>
+
+	<!-- Arid -->
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="AridShrubland"]/wildPlants</xpath>
+	  <value>
+		<BMT_Plant_TreeMartyr>0.2</BMT_Plant_TreeMartyr>
+	  </value>
+	</Operation>
+
+	<!-- Cold Forest -->
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="BorealForest"]/wildPlants</xpath>
+	  <value>
+		<BMT_Plant_TreeBlotBirch>0.5</BMT_Plant_TreeBlotBirch>
+	  </value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="Tundra"]/wildPlants</xpath>
+	  <value>
+		<!-- <BMT_Plant_TreeBlotBirch>0.5</BMT_Plant_TreeBlotBirch> -->
+	  </value>
+	</Operation>
+
+	<!-- Cold swamp -->
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="ColdBog"]/wildPlants</xpath>
+	  <value>
+		<!-- <BMT_Plant_TreeMartyr>0.2</BMT_Plant_TreeMartyr> -->
+	  </value>
+	</Operation>
+
+</Patch>

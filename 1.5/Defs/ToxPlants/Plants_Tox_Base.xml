@@ -7,4 +7,16 @@
 	</plant>
   </ThingDef>
 
+  <ThingDef ParentName="TreeBase" Name="BMT_PolluedLands_TreeBase" Abstract="True">
+	<plant>
+	  <pollution>PollutedOnly</pollution>
+	</plant>
+  </ThingDef>
+
+  <ThingDef ParentName="DeciduousTreeBase" Name="BMT_PolluedLands_DeciduousTreeBase" Abstract="True">
+	<plant>
+	  <pollution>PollutedOnly</pollution>
+	</plant>
+  </ThingDef>
+
 </Defs>

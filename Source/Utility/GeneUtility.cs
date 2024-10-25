@@ -167,14 +167,18 @@ namespace BMT_PollutedLands
 
 		public static bool ReplaceGeneBackground(GeneDef geneDef)
 		{
-			if (geneDef.IsPollutedDef())
+			//if (geneDef.IsPollutedDef())
+			//{
+			//	return true;
+			//}
+			// if (geneDef.GetModExtension<GeneExtension>() != null)
+			// {
+			// return true;
+			// }
+			if (geneDef.displayCategory == BMT_GenesDefOf.BMT_MutaGenes)
 			{
 				return true;
 			}
-			// if (geneDef.GetModExtension<GeneExtension>() != null)
-			// {
-				// return true;
-			// }
 			return false;
 		}
 

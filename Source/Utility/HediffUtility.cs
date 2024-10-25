@@ -15,7 +15,11 @@ namespace BMT_PollutedLands
 			{
 				foreach (BodyPartRecord bodyPartRecord in pawn.RaceProps.body.GetPartsWithDef(bodypart))
 				{
-					Hediff hediff = HediffMaker.MakeHediff(hediffDef, pawn);
+					if (pawn.health.hediffSet.PartIsMissing(bodyPartRecord))
+					{
+						continue;
+					}
+                    Hediff hediff = HediffMaker.MakeHediff(hediffDef, pawn);
 					HediffComp_GeneHediff hediff_GeneCheck = hediff.TryGetComp<HediffComp_GeneHediff>();
 					if (hediff_GeneCheck != null)
 					{

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BMT_PolluedLands_TreeBase">
+	<defName>BMT_Plant_TreeMartyr</defName>
+	<label>martyr tree</label>
+	<description>A large cactus native to arid Earth environments. It yields a small amount of fibrous material that can be used like wood.</description>
+	<minifiedDef IsNull="True" />
+	<statBases>
+	  <MaxHitPoints>130</MaxHitPoints>
+	  <Nutrition>2.0</Nutrition>
+	  <Mass>100</Mass>
+	</statBases>
+	<graphicData>
+	  <texPath>BMT_PollutedLands/Things/ToxPlants/MartyrTree</texPath>
+	  <graphicClass>Graphic_Random</graphicClass>
+	  <shadowData>
+		<volume>(0.24, 0.3, 0.15)</volume>
+		<offset>(0,0,-0.38)</offset>
+	  </shadowData>
+	</graphicData>
+	<fillPercent>0.35</fillPercent>
+	<plant>
+	  <lifespanDaysPerGrowDays>40</lifespanDaysPerGrowDays>
+	  <fertilityMin>0.05</fertilityMin>
+	  <fertilitySensitivity>0</fertilitySensitivity>
+	  <growDays>5</growDays>
+	  <!-- <leaflessGraphicPath>Things/Plant/SaguaroCactus_Leafless</leaflessGraphicPath> -->
+	  <harvestWork>210</harvestWork>
+	  <harvestYield>15</harvestYield>
+	  <harvestMinGrowth>0.2</harvestMinGrowth>
+	  <topWindExposure>0.08</topWindExposure>
+	  <wildClusterRadius>-1</wildClusterRadius>
+	  <treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+	</plant>
+  </ThingDef>
+
+</Defs>
