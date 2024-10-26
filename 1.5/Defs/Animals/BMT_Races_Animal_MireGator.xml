@@ -100,6 +100,15 @@
 		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 		<eggCountRange>1~2</eggCountRange>
 	  </li>
+	  <li Class="BiomesCore.CompProperties_HungerReaction">
+		<maxFood>0.4</maxFood> <!--The food percentage where the hediff(s) become active, and the graphic changes-->
+		<hediffs>
+			<li>BMT_BiliousVarogEnraged</li>
+		</hediffs>
+		<graphicData>
+			<texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/BiliousVarogFamished</texPath>
+		</graphicData>
+	  </li>
 	</comps>
 	<race>
 	  <body>QuadrupedAnimalWithClawsTailAndJowl</body>
@@ -151,7 +160,29 @@
 		</li>
 	</modExtensions>
   </ThingDef>
-  
+
+  <HediffDef>
+	<defName>BMT_BiliousVarogEnraged</defName>
+	<label>enraged bilious varog</label>
+	<description>This bilious varog is hungry enough to attack anyone it can reach.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<stages>
+		<li>
+			<statFactors>
+				<MeleeDamageFactor>1.3</MeleeDamageFactor>
+			</statFactors>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_CauseMentalState">
+			<animalMentalState>ManhunterPermanent</animalMentalState>
+			<animalMentalStateAlias>Manhunter</animalMentalStateAlias>
+			<humanMentalState>Berserk</humanMentalState>
+			<forced>True</forced>
+		</li>
+	</comps>
+  </HediffDef>
+
   <PawnKindDef ParentName="AnimalKindBase">
 	<defName>BMT_BiliousVarog</defName>
 	<label>bilious varog</label>
