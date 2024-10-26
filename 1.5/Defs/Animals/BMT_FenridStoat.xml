@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+  <ThinkTreeDef>
+		<defName>BMT_FenridStoatDigUpVarmot</defName>
+		<insertTag>Animal_PreWander</insertTag> <!--If it's idle, it'll try to dig something up-->
+    <insertPriority>100</insertPriority>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="BiomesCore.JobGiver_DigUpCorpse">
+          <!--This giver will create a corpse when the job is done. It picks a random animal from corpseKinds to dig up and kill-->
+          <onlyNaturalTerrain>True</onlyNaturalTerrain> <!--Set to false if you want to be able to dig up from any terrain which passes the fertility check-->
+          <hashInterval>30</hashInterval> <!--This adds a bit of randomness so the animal won't constantly run around creating corpses. Making it too low can result in too many jobs being created at once-->
+          <minFertility>0.7</minFertility> <!--Stops the pawn from digging something up in a stone/sandy terrain, along with any other terrains that the target animal would be unlikely to live in-->
+          <diggerKinds>
+            <li>BMT_FenridStoat</li><!--List the PawnKindDefs that can dig up a corpse-->
+          </diggerKinds>
+					<corpseKinds> <!--Will pick a random PawnKindDef from this list-->
+						<li>BMT_Varmot</li> 
+					</corpseKinds>
+          <jobDef>BMT_DigUpCorpse</jobDef>
+          <!--JobDef to assign. The job receives a pawn kind def and duration, and should probably use the related driver class. Report string is flexible-->
+          <jobTicks>625</jobTicks> <!--Time it takes. Ideally not a multiple of the interval to avoid repeatedly digging up corpses-->
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
 
+  <JobDef>
+    <defName>BMT_DigUpCorpse</defName>
+    <driverClass>BiomesCore.JobDriver_DigUpCorpse</driverClass>
+    <reportString>digging up a {0}.</reportString> <!--{0} represents the label of TargetA (corpse)-->
+  </JobDef>
 
   <ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
     <defName>BMT_FenridStoat</defName>
