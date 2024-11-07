@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BMT_PolluedLands_PlantBase">
+	<defName>BMT_Plant_ClawhandCitron</defName>
+	<label>clawhand citron</label>
+	<!-- To-Do: Add desc -->
+	<description>Fast-growing crop that yields edible fruits.</description>
+	<statBases>
+	  <MaxHitPoints>85</MaxHitPoints>
+	  <Nutrition>0.175</Nutrition>
+	</statBases>
+	<graphicData>
+	  <texPath>BMT_PollutedLands/Things/ToxPlants/ClawhandCitron/ClawhandCitron</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<selectable>true</selectable>
+	<pathCost>14</pathCost>
+	<ingestible />
+	<plant>
+	  <immatureGraphicPath>BMT_PollutedLands/Things/ToxPlants/ClawhandCitron/ClawhandCitron_Immature</immatureGraphicPath>
+	  <leaflessGraphicPath>BMT_PollutedLands/Things/ToxPlants/ClawhandCitron/ClawhandCitron_Leafless</leaflessGraphicPath>
+	  <dieIfLeafless>false</dieIfLeafless>
+	  <maxMeshCount>4</maxMeshCount>
+	  <harvestTag>Standard</harvestTag>
+	  <harvestedThingDef>BMT_ClawhandCitron</harvestedThingDef>
+	  <harvestYield>7</harvestYield>
+	  <sowTags>
+		<li>Ground</li>
+		<li>Hydroponic</li>
+	  </sowTags>
+	  <topWindExposure>0.1</topWindExposure>
+	  <growDays>4</growDays>
+	  <visualSizeRange>0.5~0.8</visualSizeRange>
+	  <wildOrder>2</wildOrder>
+	  <purpose>Food</purpose>
+	  <humanFoodPlant>true</humanFoodPlant>
+	</plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+	<defName>BMT_ClawhandCitron</defName>
+	<label>clawed citrons</label>
+	<description>Raw clawed citrons.</description>
+	<soundInteract>Grain_Drop</soundInteract>
+	<soundDrop>Grain_Drop</soundDrop>
+	<graphicData>
+	  <texPath>BMT_PollutedLands/Things/Item/RawPlants/ClawedCitrons</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+	  <MarketValue>1.2</MarketValue>
+	  <Mass>0.027</Mass>
+	  <FoodPoisonChanceFixedHuman>0.04</FoodPoisonChanceFixedHuman>
+	</statBases>
+	<ingestible>
+	  <preferability>RawTasty</preferability>
+	  <tasteThought></tasteThought>
+	  <foodType>VegetableOrFruit</foodType>
+	</ingestible>
+	<comps>
+	  <li Class="CompProperties_Rottable">
+		<daysToRotStart>40</daysToRotStart>
+		<rotDestroys>true</rotDestroys>
+	  </li>
+	</comps>
+  </ThingDef>
+
+</Defs>

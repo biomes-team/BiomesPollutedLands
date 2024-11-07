@@ -7,6 +7,8 @@
 	  <value>
 		<BMT_Plant_TreeBlotBirch>0.5</BMT_Plant_TreeBlotBirch>
 		<BMT_Plant_TreeWormoak>0.5</BMT_Plant_TreeWormoak>
+		<BMT_Plant_Rashroot>1.0</BMT_Plant_Rashroot>
+		<BMT_Plant_ClawhandCitron>0.2</BMT_Plant_ClawhandCitron>
 	  </value>
 	</Operation>
 
@@ -23,6 +25,8 @@
 	  <xpath>/Defs/BiomeDef[defName="TemperateSwamp"]/wildPlants</xpath>
 	  <value>
 		<BMT_Plant_TreeWormoak>0.5</BMT_Plant_TreeWormoak>
+		<BMT_Plant_Rashroot>1.0</BMT_Plant_Rashroot>
+		<BMT_Plant_ClawhandCitron>0.2</BMT_Plant_ClawhandCitron>
 	  </value>
 	</Operation>
 
@@ -30,7 +34,7 @@
 	<Operation Class="PatchOperationAdd">
 	  <xpath>/Defs/BiomeDef[defName="TropicalSwamp"]/wildPlants</xpath>
 	  <value>
-		<!-- <BMT_Plant_TreeMartyr>0.2</BMT_Plant_TreeMartyr> -->
+		<BMT_Plant_ClawhandCitron>0.2</BMT_Plant_ClawhandCitron>
 	  </value>
 	</Operation>
 
@@ -55,12 +59,14 @@
 	  <xpath>/Defs/BiomeDef[defName="BorealForest"]/wildPlants</xpath>
 	  <value>
 		<BMT_Plant_TreeBlotBirch>0.5</BMT_Plant_TreeBlotBirch>
+		<BMT_Plant_Rashroot>1.0</BMT_Plant_Rashroot>
 	  </value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
 	  <xpath>/Defs/BiomeDef[defName="Tundra"]/wildPlants</xpath>
 	  <value>
 		<!-- <BMT_Plant_TreeBlotBirch>0.5</BMT_Plant_TreeBlotBirch> -->
+		<BMT_Plant_Rashroot>1.0</BMT_Plant_Rashroot>
 	  </value>
 	</Operation>
 
@@ -69,6 +75,7 @@
 	  <xpath>/Defs/BiomeDef[defName="ColdBog"]/wildPlants</xpath>
 	  <value>
 		<!-- <BMT_Plant_TreeMartyr>0.2</BMT_Plant_TreeMartyr> -->
+		<BMT_Plant_Rashroot>1.0</BMT_Plant_Rashroot>
 	  </value>
 	</Operation>
 

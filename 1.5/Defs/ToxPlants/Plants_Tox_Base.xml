@@ -19,4 +19,10 @@
 	</plant>
   </ThingDef>
 
+  <ThingDef ParentName="BushBase" Name="BMT_PolluedLands_BushBase" Abstract="True">
+	<plant>
+	  <pollution>PollutedOnly</pollution>
+	</plant>
+  </ThingDef>
+
 </Defs>
