@@ -3,25 +3,24 @@
 
   <!-- To-Do: Add mood debuff when harvest -->
   <ThingDef ParentName="BMT_PollutedLands_BushBase">
-	<defName>BMT_Plant_Rashroot</defName>
-	<label>rashroot</label>
-	<description>A shrub-like plant related to poison ivy. Touching it induces considerable itching.</description>
-	<statBases>
-	  <MaxHitPoints>120</MaxHitPoints>
-	  <Nutrition>1.0</Nutrition>
-	  <Mass>30</Mass>
-	</statBases>
+	<defName>BMT_Plant_PigsEars</defName>
+	<label>pigs ears</label>
+	<description>A large leafy plant. It scrapes by even in areas so toxic most other plants cannot.</description>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/Rashroot/Rashroot</texPath>
+	  <texPath>BMT_PollutedLands/Things/ToxPlants/PigsEars/PigsEars</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1.15</drawSize>
 	  <shadowData>
 		<volume>(0.55, 0.2, 0.2)</volume>
 	  </shadowData>
 	</graphicData>
+	 <statBases>
+	  <MaxHitPoints>115</MaxHitPoints>
+	  <Nutrition>0.5</Nutrition>
+    </statBases>
 	<uiIconScale>0.85</uiIconScale>
 	<plant>
-	  <growDays>3</growDays>
+	  <growDays>4</growDays>
 	  <!-- <leaflessGraphicPath>Things/Plant/Bush_Leafless</leaflessGraphicPath> -->
 	</plant>
   </ThingDef>

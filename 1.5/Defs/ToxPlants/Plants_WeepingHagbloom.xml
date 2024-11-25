@@ -2,15 +2,15 @@
 <Defs>
 
   <ThingDef ParentName="BMT_PollutedLands_PlantBase">
-	<defName>BMT_Plant_ToxBrosia</defName>
-	<label>toxbrosia bush</label>
-	<description>A rare wild bush which yields the toxbrosia fruit. Toxbrosia fruit is delicious and produces a drug-like mood boost. Toxbrosia cannot be farmed, which makes wild toxbrosia groves very valuable.</description>
+	<defName>BMT_Plant_WeepingHagbloom</defName>
+	<label>weeping hagbloom</label>
+	<description>A rare wild plant which yields delicious nectar. The nectar is delicious and produces a drug-like mood boost. Hagbloom cannot be farmed, which makes wild hagbloom groves very valuable.</description>
 	<statBases>
 	  <MaxHitPoints>100</MaxHitPoints>
 	  <Nutrition>0.5</Nutrition>
 	</statBases>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/ToxBrosia</texPath>
+	  <texPath>BMT_PollutedLands/Things/ToxPlants/WeepingHagbloom</texPath>
 	  <graphicClass>Graphic_Random</graphicClass>
 	  <shadowData>
 		<volume>(0.1, 0.2, 0.1)</volume>
@@ -28,7 +28,7 @@
 	  <harvestYield>4</harvestYield>
 	  <harvestTag>Standard</harvestTag>
 	  <harvestAfterGrowth>0.3</harvestAfterGrowth>
-	  <harvestedThingDef>BMT_ToxBrosia</harvestedThingDef>
+	  <harvestedThingDef>BMT_HagbloomNectar</harvestedThingDef>
 	  <visualSizeRange>0.6~1.1</visualSizeRange>
 	  <topWindExposure>0.1</topWindExposure>
 	  <wildOrder>2</wildOrder>
@@ -38,9 +38,9 @@
   </ThingDef>
 
   <ThingDef ParentName="DrugBase">
-	<defName>BMT_ToxBrosia</defName>
-	<label>toxbrosia</label>
-	<description>A soft, rare fruit. Toxbrosia tastes wonderful and produces a subtle mood-increasing chemical high. However, if eaten too often, it can generate a mild addiction or causing food poisoning.</description>
+	<defName>BMT_HagbloomNectar</defName>
+	<label>hagbloom nectar</label>
+	<description>A sticky honey-like nectar. It tastes wonderful and produces a subtle mood-increasing chemical high. However, if eaten too often, it can generate a mild addiction or cause food poisoning.</description>
 	<descriptionHyperlinks>
 	  <HediffDef>AmbrosiaHigh</HediffDef>
 	  <HediffDef>AmbrosiaTolerance</HediffDef>
@@ -50,7 +50,7 @@
 	<socialPropernessMatters>true</socialPropernessMatters>
 	<tickerType>Rare</tickerType>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/Item/ToxBrosia</texPath>
+	  <texPath>BMT_PollutedLands/Things/Item/HagbloomNectar</texPath>
 	  <graphicClass>Graphic_StackCount</graphicClass>
 	</graphicData>
 	<statBases>

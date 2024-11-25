@@ -2,17 +2,17 @@
 <Defs>
 
   <ThingDef ParentName="BMT_PollutedLands_TreeBase">
-	<defName>BMT_Plant_MartyrTree</defName>
-	<label>martyr tree</label>
-	<description>A large yucca-related plant originally native to arid Earth environments but now adapted to polluted soils. It yields a small amount of fibrous material that can be used like wood.</description>
+	<defName>BMT_Plant_TwistingThornwood</defName>
+	<label>twisting thornwood</label>
+	<description>A large species of tree found in polluted arid environments. It is one of three closely related species of plant, alongside the thornweed and thorngrass. It is believed that each were engineered to survive human-caused pollution.</description>
 	<minifiedDef IsNull="True" />
 	<statBases>
-	  <MaxHitPoints>200</MaxHitPoints>
+	  <MaxHitPoints>210</MaxHitPoints>
 	  <Nutrition>2.0</Nutrition>
 	  <Mass>100</Mass>
 	</statBases>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/MartyrTree/MartyrTree</texPath>
+	  <texPath>BMT_PollutedLands/Things/ToxPlants/TwistingThornwood/TwistingThornwood</texPath>
 	  <graphicClass>Graphic_Random</graphicClass>
 	  <shadowData>
 		<volume>(0.24, 0.3, 0.15)</volume>
@@ -24,10 +24,10 @@
 	  <lifespanDaysPerGrowDays>40</lifespanDaysPerGrowDays>
 	  <fertilityMin>0.05</fertilityMin>
 	  <fertilitySensitivity>0</fertilitySensitivity>
-	  <growDays>10</growDays>
+	  <growDays>15</growDays>
 	  <!-- <leaflessGraphicPath>Things/Plant/SaguaroCactus_Leafless</leaflessGraphicPath> -->
 	  <harvestWork>210</harvestWork>
-	  <harvestYield>15</harvestYield>
+	  <harvestYield>25</harvestYield>
 	  <harvestMinGrowth>0.2</harvestMinGrowth>
 	  <topWindExposure>0.08</topWindExposure>
 	  <wildClusterRadius>-1</wildClusterRadius>

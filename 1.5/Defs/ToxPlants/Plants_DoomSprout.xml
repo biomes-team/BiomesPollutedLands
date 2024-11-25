@@ -3,16 +3,11 @@
 
   <!-- To-Do: Add mood debuff when harvest -->
   <ThingDef ParentName="BMT_PollutedLands_BushBase">
-	<defName>BMT_Plant_Rashroot</defName>
-	<label>rashroot</label>
-	<description>A shrub-like plant related to poison ivy. Touching it induces considerable itching.</description>
-	<statBases>
-	  <MaxHitPoints>120</MaxHitPoints>
-	  <Nutrition>1.0</Nutrition>
-	  <Mass>30</Mass>
-	</statBases>
+	<defName>BMT_Plant_Doomsprout</defName>
+	<label>doomsprout</label>
+	<description>Bulbous and filled with toxic gasses, this fungi spews them out when damaged.</description>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/Rashroot/Rashroot</texPath>
+	  <texPath>BMT_PollutedLands/Things/ToxPlants/Doomsprout/Doomsprout</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1.15</drawSize>
 	  <shadowData>
@@ -21,7 +16,7 @@
 	</graphicData>
 	<uiIconScale>0.85</uiIconScale>
 	<plant>
-	  <growDays>3</growDays>
+	  <growDays>10</growDays>
 	  <!-- <leaflessGraphicPath>Things/Plant/Bush_Leafless</leaflessGraphicPath> -->
 	</plant>
   </ThingDef>

@@ -2,11 +2,11 @@
 <Defs>
 
   <ThingDef ParentName="BMT_PollutedLands_DeciduousTreeBase">
-	<defName>BMT_Plant_TreeBlotBirch</defName>
-	<label>blot birch tree</label>
-	<description>A temperate-biome tree known for its thin, white, paper-like bark.</description>
+	<defName>BMT_Plant_BarbedLarch</defName>
+	<label>barbed larch tree</label>
+	<description>A colder-biome tree known for its barbed needles. Much like a porcupine's quills, it's unpleasant to get poked by as the needles have backwards facing barbs.</description>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/BlotBirch/BlotBirch</texPath>
+	  <texPath>BMT_PollutedLands/Things/ToxPlants/BarbedLarch/BarbedLarch</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
 	  <shadowData>
 		<volume>(0.15, 0.3, 0.1)</volume>
@@ -23,10 +23,9 @@
 	<ingestible />
 	<plant>
 	  <growDays>20</growDays>
-	  <harvestWork>800</harvestWork>
-	  <harvestYield>27</harvestYield>
+	  <harvestWork>400</harvestWork>
+	  <harvestYield>10</harvestYield>
 	  <!-- <immatureGraphicPath>Things/Plant/TreeBirch_Immature</immatureGraphicPath> -->
-	  <leaflessGraphicPath>BMT_PollutedLands/Things/ToxPlants/BlotBirch/BlotBirch_Leafless</leaflessGraphicPath>
 	</plant>
   </ThingDef>
 

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BMT_PollutedLands_PlantBase">
+		<defName>BMT_PlagueFans</defName>
+		<label>plague fans</label>
+		<description>A species of papyrus that lives in the foulest of waters.</description>
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Nutrition>0.3</Nutrition>
+		</statBases>
+		<pathCost>20</pathCost>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>BMT_PollutedLands/Things/ToxPlants/PlagueFans/PlagueFans</texPath>
+		</graphicData>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<terrainTags>
+					<li>Water</li>
+					<li>Shallow</li>
+					<li>ChestDeep</li>
+					<li>Deep</li>
+				</terrainTags>
+			</li>
+		</modExtensions>
+		<plant>
+			<growDays>4</growDays>
+			<visualSizeRange>1.2~1.5</visualSizeRange>
+			<topWindExposure>0.2</topWindExposure>
+			<wildClusterRadius>8</wildClusterRadius>
+			<wildClusterWeight>50</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+		
+	</ThingDef>
+
+</Defs>

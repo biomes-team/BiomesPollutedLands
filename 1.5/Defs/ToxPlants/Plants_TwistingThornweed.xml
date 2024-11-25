@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- To-Do: Add mood debuff when harvest -->
+  <ThingDef ParentName="BMT_PollutedLands_BushBase">
+	<defName>BMT_Plant_TwistingThornweed</defName>
+	<label>twisting thornweed</label>
+	<description>A bush-sized plant related to the Thornwood tree. It is thought to have been purposely engineered to survive on heavily polluted worlds.</description>
+	<graphicData>
+	  <texPath>BMT_PollutedLands/Things/ToxPlants/TwistingThornweed/TwistingThornweed</texPath>
+	  <graphicClass>Graphic_Random</graphicClass>
+	  <drawSize>1.15</drawSize>
+	  <shadowData>
+		<volume>(0.55, 0.2, 0.2)</volume>
+	  </shadowData>
+	</graphicData>
+	 <statBases>
+	  <MaxHitPoints>115</MaxHitPoints>
+	  <Nutrition>0.5</Nutrition>
+    </statBases>
+	<uiIconScale>0.85</uiIconScale>
+	<plant>
+	  <growDays>5</growDays>
+	  <!-- <leaflessGraphicPath>Things/Plant/Bush_Leafless</leaflessGraphicPath> -->
+	</plant>
+  </ThingDef>
+
+</Defs>

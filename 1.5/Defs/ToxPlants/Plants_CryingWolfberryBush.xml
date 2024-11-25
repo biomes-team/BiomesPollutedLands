@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BMT_PollutedLands_BushBase">
+	<defName>BMT_Plant_CryingWolfberryBush</defName>
+	<label>crying wolfberry bush</label>
+	<description>The color of the berries from this bush makes it look as though they would kill anyone that eats them, but they are both non-toxic and tasty. They do however have the strange effect of activating tearducts, except in canines.</description>
+	<statBases>
+	  <MaxHitPoints>85</MaxHitPoints>
+	  <Nutrition>0.175</Nutrition>
+	</statBases>
+	<graphicData>
+	  <texPath>BMT_PollutedLands/Things/ToxPlants/CryingWolfberryBush/CryingWolfberryBush</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<selectable>true</selectable>
+	<pathCost>14</pathCost>
+	<ingestible />
+	<plant>
+	  <immatureGraphicPath>BMT_PollutedLands/Things/ToxPlants/CryingWolfberryBush/CryingWolfberryBush_Immature</immatureGraphicPath>
+	  <leaflessGraphicPath>BMT_PollutedLands/Things/ToxPlants/CryingWolfberryBush/CryingWolfberryBush_Leafless</leaflessGraphicPath>
+	  <dieIfLeafless>true</dieIfLeafless>
+	  <maxMeshCount>4</maxMeshCount>
+	  <harvestTag>Standard</harvestTag>
+	  <harvestedThingDef>BMT_CryingWolfBerries</harvestedThingDef>
+	  <harvestYield>10</harvestYield>
+	  <sowTags>
+		<li>Ground</li>
+		<li>Hydroponic</li>
+	  </sowTags>
+	  <topWindExposure>0.1</topWindExposure>
+	  <growDays>6</growDays>
+	  <visualSizeRange>0.5~0.8</visualSizeRange>
+	  <wildOrder>2</wildOrder>
+	  <purpose>Food</purpose>
+	  <humanFoodPlant>true</humanFoodPlant>
+	</plant>
+  </ThingDef>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+	<defName>BMT_CryingWolfBerries</defName>
+	<label>crying berries</label>
+	<description>Small green berries from the crying berries plant. They are sweet but make eyes water when eaten.</description>
+	<soundInteract>Grain_Drop</soundInteract>
+	<soundDrop>Grain_Drop</soundDrop>
+	<graphicData>
+	  <texPath>BMT_PollutedLands/Things/Item/RawPlants/CryingBerries</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+	  <MarketValue>1.2</MarketValue>
+	  <Mass>0.027</Mass>
+	  <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+	</statBases>
+	<ingestible>
+	  <preferability>RawTasty</preferability>
+	  <tasteThought>My eyes are watering for some reason, but those green berries tasted pretty good.</tasteThought>
+	  <foodType>VegetableOrFruit</foodType>
+	</ingestible>
+	<comps>
+	  <li Class="CompProperties_Rottable">
+		<daysToRotStart>15</daysToRotStart>
+		<rotDestroys>true</rotDestroys>
+	  </li>
+	</comps>
+  </ThingDef>
+
+</Defs>

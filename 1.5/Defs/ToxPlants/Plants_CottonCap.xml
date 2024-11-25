@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BMT_PolluedLands_PlantBase">
+  <ThingDef ParentName="BMT_PollutedLands_PlantBase">
 	<defName>BMT_Plant_CottonCap</defName>
 	<label>cotton cap</label>
 	<!-- To-Do: Add desc -->

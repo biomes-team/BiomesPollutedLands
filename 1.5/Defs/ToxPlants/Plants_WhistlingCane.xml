@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BMT_PollutedLands_DeciduousTreeBase">
-	<defName>BMT_Plant_TreeWormoak</defName>
-	<label>wormoak tree</label>
-	<description>A hardwood tree. Wormoaks take a long time to grow, but their wood is so strong that 'oak' is used as a metaphor for strength across many cultures.</description>
+  <ThingDef ParentName="BMT_PollutedLands_TreeBase">
+	<defName>BMT_Plant_WhistlingCane</defName>
+	<label>whistling cane</label>
+	<description>Known for the soft whistling sound that occurs when the wind gusts through the holes in its stems, this species of bamboo can be found in polluted jungles.</description>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/Wormoak/Wormoak</texPath>
+	  <texPath>BMT_PollutedLands/Things/ToxPlants/WhistlingCane/WhistlingCane</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
 	  <shadowData>
 		<volume>(0.2, 0.35, 0.13)</volume>
@@ -16,13 +16,12 @@
 	<statBases>
 	  <Beauty>2</Beauty>
 	  <BeautyOutdoors>2</BeautyOutdoors>
-	  <MaxHitPoints>130</MaxHitPoints>
+	  <MaxHitPoints>110</MaxHitPoints>
 	  <Nutrition>2.0</Nutrition>
-	  <Mass>100</Mass>
+	  <Mass>70</Mass>
 	</statBases>
 	<plant>
 	  <growDays>30</growDays>
-	  <leaflessGraphicPath>BMT_PollutedLands/Things/ToxPlants/Wormoak/Wormoak_Leafless</leaflessGraphicPath>
 	  <!-- <immatureGraphicPath>Things/Plant/TreeOak_Immature</immatureGraphicPath> -->
 	  <harvestWork>1400</harvestWork>
 	  <harvestYield>46</harvestYield>
