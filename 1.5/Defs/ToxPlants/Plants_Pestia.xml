@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="BMT_PollutedLands_PlantBase">
-		<defName>BMT_Pestia</defName>
+		<defName>BMT_Plant_Pestia</defName>
 		<label>pestia</label>
 		<description>A small water plant that still retains some green in its leaves, unlike many other plants in toxic environments.</description>
 		<statBases>

@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="BMT_PollutedLands_TreeBase">
-	<defName>BMT_Plant_TwistingThornwood</defName>
+	<defName>BMT_Plant_TreeTwistingThornwood</defName>
 	<label>twisting thornwood</label>
 	<description>A large species of tree found in polluted arid environments. It is one of three closely related species of plant, alongside the thornweed and thorngrass. It is believed that each were engineered to survive human-caused pollution.</description>
 	<minifiedDef IsNull="True" />

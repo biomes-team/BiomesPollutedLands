@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="BMT_PollutedLands_TreeBase">
-	<defName>BMT_Plant_MartyrTree</defName>
+	<defName>BMT_Plant_TreeMartyr</defName>
 	<label>martyr tree</label>
 	<description>A large yucca-related plant originally native to arid Earth environments but now adapted to polluted soils. It yields a small amount of fibrous material that can be used like wood.</description>
 	<minifiedDef IsNull="True" />

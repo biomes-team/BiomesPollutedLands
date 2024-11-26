@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="BMT_PollutedLands_TreeBase">
-	<defName>BMT_Plant_WhistlingCane</defName>
+	<defName>BMT_Plant_TreeWhistlingCane</defName>
 	<label>whistling cane</label>
 	<description>Known for the soft whistling sound that occurs when the wind gusts through the holes in its stems, this species of bamboo can be found in polluted jungles.</description>
 	<graphicData>

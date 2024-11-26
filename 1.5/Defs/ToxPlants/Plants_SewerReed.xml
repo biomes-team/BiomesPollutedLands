@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="BMT_PollutedLands_PlantBase">
-		<defName>BMT_SewerReed</defName>
+		<defName>BMT_Plant_SewerReed</defName>
 		<label>sewer reed</label>
 		<description>A water plant that can survive harshly toxic conditions. It tends to look half dead.</description>
 		<statBases>

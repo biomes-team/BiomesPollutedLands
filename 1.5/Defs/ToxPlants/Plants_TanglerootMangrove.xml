@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="BMT_PollutedLands_TreeBase">
-		<defName>BMT_Plant_TanglerootMangrove</defName>
+		<defName>BMT_Plant_TreeTanglerootMangrove</defName>
 		<label>tangleroot mangrove</label>
 		<description>Adapted to survive in both toxic soil and water, the tangleroot mangrove provides a haven for many smaller animals.</description>
 		<statBases>

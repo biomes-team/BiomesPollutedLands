@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="BMT_PollutedLands_PlantBase">
-		<defName>BMT_PlagueFans</defName>
+		<defName>BMT_Plant_PlagueFans</defName>
 		<label>plague fans</label>
 		<description>A species of papyrus that lives in the foulest of waters.</description>
 		<statBases>

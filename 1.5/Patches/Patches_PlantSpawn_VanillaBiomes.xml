@@ -5,10 +5,15 @@
 	<Operation Class="PatchOperationAdd">
 	  <xpath>/Defs/BiomeDef[defName="TemperateForest"]/wildPlants</xpath>
 	  <value>
-		<BMT_Plant_TreeBlotBirch>0.5</BMT_Plant_TreeBlotBirch>
 		<BMT_Plant_TreeWormoak>0.5</BMT_Plant_TreeWormoak>
+		<BMT_Plant_TreeBlotBirch>0.5</BMT_Plant_TreeBlotBirch>
 		<BMT_Plant_Rashroot>1.0</BMT_Plant_Rashroot>
+		<BMT_Plant_TwistedDandelion>0.5</BMT_Plant_TwistedDandelion>
 		<BMT_Plant_ClawhandCitron>0.2</BMT_Plant_ClawhandCitron>
+		<BMT_Plant_SewerReed>0.4</BMT_Plant_SewerReed>
+		<BMT_Plant_EclipsusFlower>0.3</BMT_Plant_EclipsusFlower>
+		<BMT_Plant_EclipsusLeaves>0.4</BMT_Plant_EclipsusLeaves>
+		<BMT_Plant_Snaketails>0.4</BMT_Plant_Snaketails>
 	  </value>
 	</Operation>
 
@@ -16,7 +21,17 @@
 	<Operation Class="PatchOperationAdd">
 	  <xpath>/Defs/BiomeDef[defName="TropicalRainforest"]/wildPlants</xpath>
 	  <value>
-		<!-- <BMT_Plant_TreeMartyr>0.2</BMT_Plant_TreeMartyr> -->
+		<BMT_Plant_TreeSeepingEucalyptus>0.5</BMT_Plant_TreeSeepingEucalyptus>
+		<BMT_Plant_TreeWhistlingCane>0.5</BMT_Plant_TreeWhistlingCane>
+		<BMT_Plant_Mantrap>0.1</BMT_Plant_Mantrap>
+		<BMT_Plant_BloomingCorpse>0.025</BMT_Plant_BloomingCorpse>
+		<BMT_Plant_PigsEars>2.0</BMT_Plant_PigsEars>
+		<BMT_Plant_ToxicIvy>2.0</BMT_Plant_ToxicIvy>
+		<BMT_Plant_ClawhandCitron>0.2</BMT_Plant_ClawhandCitron>
+		<BMT_Plant_SewerReed>0.2</BMT_Plant_SewerReed>
+		<BMT_Plant_EclipsusFlower>0.3</BMT_Plant_EclipsusFlower>
+		<BMT_Plant_EclipsusLeaves>0.4</BMT_Plant_EclipsusLeaves>
+		<BMT_Plant_TumorbulbHyacinth>0.1</BMT_Plant_TumorbulbHyacinth>
 	  </value>
 	</Operation>
 
@@ -24,9 +39,16 @@
 	<Operation Class="PatchOperationAdd">
 	  <xpath>/Defs/BiomeDef[defName="TemperateSwamp"]/wildPlants</xpath>
 	  <value>
-		<BMT_Plant_TreeWormoak>0.5</BMT_Plant_TreeWormoak>
+		<BMT_Plant_TreeSnakeWillow>1</BMT_Plant_TreeSnakeWillow>
+		<BMT_Plant_TreeWormoak>1</BMT_Plant_TreeWormoak>
+		<BMT_Plant_Doomsprout>0.1</BMT_Plant_Doomsprout>
 		<BMT_Plant_Rashroot>1.0</BMT_Plant_Rashroot>
-		<BMT_Plant_ClawhandCitron>0.2</BMT_Plant_ClawhandCitron>
+		<BMT_Plant_Toxcaps>3.0</BMT_Plant_Toxcaps>
+		<BMT_Plant_ClawhandCitron>0.1</BMT_Plant_ClawhandCitron>
+		<BMT_Plant_SewerReed>0.6</BMT_Plant_SewerReed>
+		<BMT_Plant_EclipsusFlower>0.3</BMT_Plant_EclipsusFlower>
+		<BMT_Plant_EclipsusLeaves>0.4</BMT_Plant_EclipsusLeaves>
+		<BMT_Plant_Snaketails>0.6</BMT_Plant_Snaketails>
 	  </value>
 	</Operation>
 
@@ -34,15 +56,49 @@
 	<Operation Class="PatchOperationAdd">
 	  <xpath>/Defs/BiomeDef[defName="TropicalSwamp"]/wildPlants</xpath>
 	  <value>
+		<BMT_Plant_TreeSeepingEucalyptus>1.5</BMT_Plant_TreeSeepingEucalyptus>
+		<BMT_Plant_TreeTanglerootMangrove>1.5</BMT_Plant_TreeTanglerootMangrove>
+		<BMT_Plant_Doomsprout>0.2</BMT_Plant_Doomsprout>
+		<BMT_Plant_BloomingCorpse>0.025</BMT_Plant_BloomingCorpse>
+		<BMT_Plant_PigsEars>3.0</BMT_Plant_PigsEars>
+		<BMT_Plant_Toxcaps>4.0</BMT_Plant_Toxcaps>
+		<BMT_Plant_ToxicIvy>3.0</BMT_Plant_ToxicIvy>
 		<BMT_Plant_ClawhandCitron>0.2</BMT_Plant_ClawhandCitron>
+		<BMT_Plant_SewerReed>0.2</BMT_Plant_SewerReed>
+		<BMT_Plant_EclipsusFlower>0.3</BMT_Plant_EclipsusFlower>
+		<BMT_Plant_EclipsusLeaves>0.4</BMT_Plant_EclipsusLeaves>
+		<BMT_Plant_TumorbulbHyacinth>0.7</BMT_Plant_TumorbulbHyacinth>
 	  </value>
 	</Operation>
 
 	<!-- Desert -->
 	<Operation Class="PatchOperationAdd">
-	  <xpath>/Defs/BiomeDef[defName="Desert" or defName="ExtremeDesert"]/wildPlants</xpath>
+	  <xpath>/Defs/BiomeDef[defName="Desert"]/wildPlants</xpath>
 	  <value>
-		<!-- <BMT_Plant_TreeMartyr>0.2</BMT_Plant_TreeMartyr> -->
+		<BMT_Plant_TreeTwistingThornwood>0.3</BMT_Plant_TreeTwistingThornwood>
+		<BMT_Plant_TreeMartyr>0.4</BMT_Plant_TreeMartyr>
+		<BMT_Plant_ScorchedStars>1</BMT_Plant_ScorchedStars>
+		<BMT_Plant_TwistingThornweed>0.25</BMT_Plant_TwistingThornweed>
+		<BMT_Plant_TwistingThorngrass>0.2</BMT_Plant_TwistingThorngrass>
+		<BMT_Plant_PoxSorghum>0.2</BMT_Plant_PoxSorghum>
+		<BMT_Plant_SewerReed>0.2</BMT_Plant_SewerReed>
+		<BMT_Plant_Pestia>0.2</BMT_Plant_Pestia>
+		<BMT_Plant_PlagueFans>0.2</BMT_Plant_PlagueFans>
+	  </value>
+	</Operation>
+	
+		<!-- Extreme Desert -->
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef[defName="ExtremeDesert"]/wildPlants</xpath>
+	  <value>
+		<BMT_Plant_TreeTwistingThornwood>0.2</BMT_Plant_TreeTwistingThornwood>
+		<BMT_Plant_ScorchedStars>0.1</BMT_Plant_ScorchedStars>
+		<BMT_Plant_TwistingThornweed>0.1</BMT_Plant_TwistingThornweed>
+		<BMT_Plant_TwistingThorngrass>0.7</BMT_Plant_TwistingThorngrass>
+		<BMT_Plant_PoxSorghum>0.1</BMT_Plant_PoxSorghum>
+		<BMT_Plant_SewerReed>0.1</BMT_Plant_SewerReed>
+		<BMT_Plant_Pestia>0.1</BMT_Plant_Pestia>
+		<BMT_Plant_PlagueFans>0.1</BMT_Plant_PlagueFans>
 	  </value>
 	</Operation>
 
@@ -50,7 +106,16 @@
 	<Operation Class="PatchOperationAdd">
 	  <xpath>/Defs/BiomeDef[defName="AridShrubland"]/wildPlants</xpath>
 	  <value>
+		<BMT_Plant_TreeTwistingThornwood>0.2</BMT_Plant_TreeTwistingThornwood>
 		<BMT_Plant_TreeMartyr>0.2</BMT_Plant_TreeMartyr>
+		<BMT_Plant_TwistingThornweed>0.2</BMT_Plant_TwistingThornweed>
+		<BMT_Plant_ScorchedStars>0.5</BMT_Plant_ScorchedStars>
+		<BMT_Plant_TwistedDandelion>0.7</BMT_Plant_TwistedDandelion>
+		<BMT_Plant_PoxSorghum>0.1</BMT_Plant_PoxSorghum>
+		<BMT_Plant_SewerReed>0.2</BMT_Plant_SewerReed>
+		<BMT_Plant_Pestia>0.5</BMT_Plant_Pestia>
+		<BMT_Plant_PlagueFans>0.5</BMT_Plant_PlagueFans>
+		<BMT_Plant_TwistingThorngrass>5</BMT_Plant_TwistingThorngrass>
 	  </value>
 	</Operation>
 
@@ -58,15 +123,27 @@
 	<Operation Class="PatchOperationAdd">
 	  <xpath>/Defs/BiomeDef[defName="BorealForest"]/wildPlants</xpath>
 	  <value>
-		<BMT_Plant_TreeBlotBirch>0.5</BMT_Plant_TreeBlotBirch>
+		<BMT_Plant_TreeBarbedLarch>4.0</BMT_Plant_TreeBarbedLarch>
+		<BMT_Plant_TreeBlotBirch>4.0</BMT_Plant_TreeBlotBirch>
+		<BMT_Plant_GreyFern>2.0</BMT_Plant_GreyFern>
 		<BMT_Plant_Rashroot>1.0</BMT_Plant_Rashroot>
+		<BMT_Plant_PaganThorns>3.0</BMT_Plant_PaganThorns>
+		<BMT_Plant_CryingWolfberryBush>1.0</BMT_Plant_CryingWolfberryBush>
+		<BMT_Plant_SewerReed>0.2</BMT_Plant_SewerReed>
+		<BMT_Plant_GutterPlantain>0.5</BMT_Plant_GutterPlantain>
+		<BMT_Plant_Snaketails>0.6</BMT_Plant_Snaketails>
 	  </value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
 	  <xpath>/Defs/BiomeDef[defName="Tundra"]/wildPlants</xpath>
 	  <value>
-		<!-- <BMT_Plant_TreeBlotBirch>0.5</BMT_Plant_TreeBlotBirch> -->
+		<BMT_Plant_TreeBarbedLarch>0.05</BMT_Plant_TreeBarbedLarch>
 		<BMT_Plant_Rashroot>1.0</BMT_Plant_Rashroot>
+		<BMT_Plant_PaganThorns>3.0</BMT_Plant_PaganThorns>
+		<BMT_Plant_CryingWolfberryBush>0.06</BMT_Plant_CryingWolfberryBush>
+		<BMT_Plant_SewerReed>0.2</BMT_Plant_SewerReed>
+		<BMT_Plant_GutterPlantain>0.5</BMT_Plant_GutterPlantain>
+		<BMT_Plant_Snaketails>0.6</BMT_Plant_Snaketails>
 	  </value>
 	</Operation>
 
@@ -74,8 +151,15 @@
 	<Operation Class="PatchOperationAdd">
 	  <xpath>/Defs/BiomeDef[defName="ColdBog"]/wildPlants</xpath>
 	  <value>
-		<!-- <BMT_Plant_TreeMartyr>0.2</BMT_Plant_TreeMartyr> -->
-		<BMT_Plant_Rashroot>1.0</BMT_Plant_Rashroot>
+		<BMT_Plant_TreeSnakeWillow>0.5</BMT_Plant_TreeSnakeWillow>
+		<BMT_Plant_TreeScalpedCypress>0.5</BMT_Plant_TreeScalpedCypress>
+		<BMT_Plant_Doomsprout>0.2</BMT_Plant_Doomsprout>
+		<BMT_Plant_Rashroot>0.2</BMT_Plant_Rashroot>
+		<BMT_Plant_PaganThorns>3.0</BMT_Plant_PaganThorns>
+		<BMT_Plant_CryingWolfberryBush>0.07</BMT_Plant_CryingWolfberryBush>
+		<BMT_Plant_SewerReed>0.2</BMT_Plant_SewerReed>
+		<BMT_Plant_GutterPlantain>0.5</BMT_Plant_GutterPlantain>
+		<BMT_Plant_Snaketails>0.6</BMT_Plant_Snaketails>
 	  </value>
 	</Operation>
 
