@@ -118,7 +118,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef MayRequire="biomesteam.biomesislands" ParentName="AnimalKindBase">
+	<PawnKindDef MayRequire="biomesteam.biomesislands" ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_LyncusSeal</defName>
 		<label>lyncus seal</label>
 		<race>BMT_LyncusSeal</race>

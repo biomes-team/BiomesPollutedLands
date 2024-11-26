@@ -2,12 +2,11 @@
 <Defs>
 
 	<ThingDef ParentName="BMT_PollutedLands_BaseInsect">
-		<defName>BMT_Norphea</defName>
+		<defName>BMT_MutagenicNorphea</defName>
 		<label>mutagenic norphea</label>
-		<description>PLACEHOLDER</description>
+		<description>This unique insectoid's body is so adapted to environmental toxins that it cannot survive without them. </description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
-			<LeatherAmount>0</LeatherAmount>
 			<MarketValue>95</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
@@ -16,8 +15,6 @@
 		<race>
 			<body>BeetleLike</body>
 			<herdAnimal>true</herdAnimal>
-			<predator>false</predator>
-			<maxPreyBodySize>0.75</maxPreyBodySize>
 			<baseBodySize>0.32</baseBodySize>
 			<baseHealthScale>0.75</baseHealthScale>
 			<baseHungerRate>0.25</baseHungerRate>
@@ -27,7 +24,7 @@
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<leatherDef>BMT_FragileChitin</leatherDef>
 			<wildness>0.50</wildness>
-			<trainability>Advanced</trainability>
+			<trainability>None</trainability>
 			<lifeExpectancy>20</lifeExpectancy>
 			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.25</manhunterOnDamageChance>
@@ -115,10 +112,10 @@
 		</comps>
 	</ThingDef>
 
-	<PawnKindDef ParentName="BigBirdKindBase">
-		<defName>BMT_Norphea</defName>
-		<label>norphea</label>
-		<race>BMT_Norphea</race>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_MutagenicNorphea</defName>
+		<label>mutagenic norphea</label>
+		<race>BMT_MutagenicNorphea</race>
 		<combatPower>55</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<wildGroupSize>2~3</wildGroupSize>
