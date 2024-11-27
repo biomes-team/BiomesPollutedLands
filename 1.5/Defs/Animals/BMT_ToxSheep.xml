@@ -10,14 +10,13 @@
   <ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 	<defName>BMT_ToxSheep</defName>
 	<label>tox-wool sheep</label>
-	<!-- ToDo: Need to add a description. -->
-	<description>Sheep husbandry is practised throughout the majority of the inhabited worlds, however only recently it has been introduced to the rimworlds. Domestic sheep are relatively small herbivores, usually with yellowish wool and medium sized horns.</description>
+	<description>Most sheep produce wool, but only this breed produces wool that absorbs toxins, allowing unmodified humans to survive for longer in polluted lands were they to wear clothes made from it.</description>
 	<statBases>
 	  <MoveSpeed>5.1</MoveSpeed>
 	  <MarketValue>350</MarketValue>
 	  <ComfyTemperatureMin>-20</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
-	  <FilthRate>11</FilthRate>
+	  <FilthRate>10</FilthRate>
 	  <!-- <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance> -->
 	</statBases>
 	<uiIconScale>1.3</uiIconScale>
@@ -31,7 +30,7 @@
 	<race>
 	  <herdAnimal>true</herdAnimal>
 	  <body>QuadrupedAnimalWithHooves</body>
-	  <baseBodySize>0.70</baseBodySize>
+	  <baseBodySize>0.75</baseBodySize>
 	  <baseHealthScale>0.5</baseHealthScale>
 	  <baseHungerRate>0.125</baseHungerRate>
 	  <foodType>VegetarianRoughAnimal</foodType>
@@ -45,7 +44,7 @@
 		  <li>(2.0, 0)</li>
 		</points>
 	  </litterSizeCurve>
-	  <wildness>0</wildness>
+	  <wildness>0.2</wildness>
 	  <roamMtbDays>5</roamMtbDays>
 	  <trainability>None</trainability>
 	  <lifeExpectancy>12</lifeExpectancy>

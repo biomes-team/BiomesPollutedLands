@@ -33,6 +33,8 @@
 			<wildOrder>1</wildOrder>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 			<leaflessGraphicPath>BMT_PollutedLands/Things/Plant/_Leafless/SewerReed_Leafless</leaflessGraphicPath>
+			<pollution>PollutedOnly</pollution>
+			<fertilitySensitivity>0</fertilitySensitivity>
 		</plant>
 		
 	</ThingDef>

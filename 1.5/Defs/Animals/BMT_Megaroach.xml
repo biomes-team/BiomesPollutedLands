@@ -10,13 +10,14 @@
   <ThingDef ParentName="BMT_PollutedLands_BaseInsect">
 	<defName>BMT_Megaroach</defName>
 	<label>megaroach</label>
-	<description>This small, solitary radroach can swiftly hop away from danger.</description>
+	<description>This small, solitary roach can survive in nearly any polluted environment. While most roaches are considered pests, this species actually keeps colonies it lives in cleaner by chowing down on all kinds of filth.</description>
 	<uiIconScale>1.5</uiIconScale>
 	<statBases>
 	  <MoveSpeed>6.0</MoveSpeed>
 	  <MarketValue>50</MarketValue>
 	  <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>70</ComfyTemperatureMax>
+	  <FilthRate>0</FilthRate>
 	</statBases>
 	<tools>
 	  <li>
@@ -42,7 +43,7 @@
 	<race>
 	 <body>BeetleLike</body>
 	  <baseBodySize>0.2</baseBodySize>
-	  <baseHungerRate>0.115</baseHungerRate>
+	  <baseHungerRate>0.35</baseHungerRate>
 	  <baseHealthScale>0.4</baseHealthScale>
 	  <foodType>OmnivoreAnimal</foodType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
@@ -66,7 +67,7 @@
 		<li>(0.0, 0, -0.07)</li>
 		<li>(-0.19, 0, 0)</li>
 	  </headPosPerRotation>
-	  <lifeExpectancy>8</lifeExpectancy>
+	  <lifeExpectancy>1.5</lifeExpectancy>
 	  <lifeStageAges>
 		<li>
 		  <def>AnimalBaby</def>
@@ -158,7 +159,7 @@
 	<defName>BMT_Megaroach</defName>
 	<label>megaroach</label>
 	<race>BMT_Megaroach</race>
-	<wildGroupSize>6~17</wildGroupSize>
+	<wildGroupSize>10~12</wildGroupSize>
 	<lifeStages>
 	  <li>
 		<bodyGraphicData>

@@ -21,7 +21,7 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>BMT_Leather_Amphibian</leatherDef>
 			<useMeatFrom>BMT_Maxolotl</useMeatFrom>
-			<wildness>25</wildness>
+			<wildness>0.9</wildness>
 			<trainability>None</trainability>
 			<mateMtbHours>8</mateMtbHours>
 			<lifeExpectancy>0.1</lifeExpectancy>
@@ -245,11 +245,11 @@
 			<baseBodySize>0.3</baseBodySize>
 			<baseHealthScale>0.35</baseHealthScale>
 			<baseHungerRate>0.2</baseHungerRate>
-			<foodType>OmnivoreRoughAnimal</foodType>
+			<foodType>CarnivoreAnimal</foodType>
 			<leatherDef>BMT_Leather_Amphibian</leatherDef>
 			<useMeatFrom>BMT_Maxolotl</useMeatFrom>
-			<wildness>20</wildness>
-			<trainability>None</trainability>
+			<wildness>0.2</wildness>
+			<trainability>Intermediate</trainability>
 			<mateMtbHours>8</mateMtbHours>
 			<lifeExpectancy>10</lifeExpectancy>
 			<lifeStageAges>

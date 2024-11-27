@@ -18,7 +18,6 @@
     <hideAtSnowDepth>0.5</hideAtSnowDepth>
     <ingestible />
     <plant>
-      <fertilitySensitivity>0.0</fertilitySensitivity>
       <growDays>2.5</growDays>
       <sowTags>
         <li>Ground</li>
@@ -30,6 +29,9 @@
       <wildClusterWeight>8</wildClusterWeight>
       <wildOrder>1</wildOrder>
       <purpose>Beauty</purpose>
+	  <pollution>PollutedOnly</pollution>
+	  <fertilityMin>0.10</fertilityMin>
+      <fertilitySensitivity>0</fertilitySensitivity>
     </plant>
   </ThingDef>
 

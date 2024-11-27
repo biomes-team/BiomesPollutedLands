@@ -36,6 +36,9 @@
 			<wildClusterWeight>50</wildClusterWeight>
 			<wildOrder>1</wildOrder>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		    <pollution>PollutedOnly</pollution>
+			<fertilityMin>0.10</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
 		</plant>
 	</ThingDef>
 

@@ -18,6 +18,9 @@
 	<plant>
 	  <growDays>10</growDays>
 	  <!-- <leaflessGraphicPath>Things/Plant/Bush_Leafless</leaflessGraphicPath> -->
+	  <pollution>PollutedOnly</pollution>
+	  <fertilityMin>0.10</fertilityMin>
+      <fertilitySensitivity>0</fertilitySensitivity>
 	</plant>
   </ThingDef>
 

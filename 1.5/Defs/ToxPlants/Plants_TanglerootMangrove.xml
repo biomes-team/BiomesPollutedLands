@@ -28,8 +28,9 @@
 		</modExtensions>
 	<plant>
 	  <lifespanDaysPerGrowDays>40</lifespanDaysPerGrowDays>
+	  <pollution>PollutedOnly</pollution>
 	  <fertilityMin>0.05</fertilityMin>
-	  <fertilitySensitivity>0</fertilitySensitivity>
+      <fertilitySensitivity>0</fertilitySensitivity>
 	  <growDays>12</growDays>
 	  <harvestWork>210</harvestWork>
 	  <harvestYield>15</harvestYield>

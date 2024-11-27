@@ -10,7 +10,7 @@
   <ThingDef ParentName="BMT_PollutedLands_BaseInsect">
 	<defName>BMT_PustuleHornetQueen</defName>
 	<label>pustule hornet queen</label>
-	<description>Predatory and dangerous, these wasps release toxic gas should they be killed. They defend their hives and their queen with considerable ferocity.</description>
+	<description>Unlike most other insect queens, this matriarch is very dangerous. She is nearly as fast as her spawn and packs a greater punch with her stings. Her stings inject a more potent version her species' neurotoxin, allowing for her swarm to quickly overpower anything living in their way.</description>
 	<uiIconScale>1.5</uiIconScale>
 	<statBases>
 	  <MoveSpeed>3.0</MoveSpeed>
@@ -49,7 +49,7 @@
 				<extraMeleeDamages>
 					<li>
 						<def>BMT_Neurotoxin</def>
-						<amount>10</amount>
+						<amount>15</amount>
 					</li>
 				</extraMeleeDamages>
 			</li>
@@ -83,7 +83,7 @@
 		<li>(0.0, 0, -0.07)</li>
 		<li>(-0.19, 0, 0)</li>
 	  </headPosPerRotation>
-	  <lifeExpectancy>8</lifeExpectancy>
+	  <lifeExpectancy>4</lifeExpectancy>
 	  <lifeStageAges>
 		<li>
 		  <def>AnimalBaby</def>

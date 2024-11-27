@@ -54,7 +54,7 @@
 	  <li Class="CompProperties_EggLayer">
 		<eggFertilizedDef>BMT_EggTripleSnapperFertilized</eggFertilizedDef>
 		<eggFertilizationCountMax>1</eggFertilizationCountMax>
-		<eggLayIntervalDays>4.861</eggLayIntervalDays>
+		<eggLayIntervalDays>10</eggLayIntervalDays>
 		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 		<eggCountRange>1~2</eggCountRange>
 	  </li>

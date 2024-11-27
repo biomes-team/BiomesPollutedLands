@@ -33,7 +33,6 @@
 	<fillPercent>0.25</fillPercent>
 	<plant>
 	  <lifespanDaysPerGrowDays>40</lifespanDaysPerGrowDays>
-	  <fertilityMin>0.05</fertilityMin>
 	  <fertilitySensitivity>0</fertilitySensitivity>
 	  <growDays>35</growDays>
 	  <leaflessGraphicPath>BMT_PollutedLands/Things/Plant/_Leafless/ScalpedCypress_Leafless</leaflessGraphicPath>

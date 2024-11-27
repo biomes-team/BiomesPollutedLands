@@ -21,7 +21,9 @@
 	<pathCost>14</pathCost>
 	<ingestible />
 	<plant>
-	  <fertilitySensitivity>0.15</fertilitySensitivity>
+	  <pollution>PollutedOnly</pollution>
+	  <fertilityMin>0.10</fertilityMin>
+      <fertilitySensitivity>0</fertilitySensitivity>
 	  <growDays>6</growDays>
 	  <!-- <leaflessGraphicPath>Things/Plant/Ambrosia_Leafless</leaflessGraphicPath> -->
 	  <!-- <immatureGraphicPath>Things/Plant/Ambrosia_Immature</immatureGraphicPath> -->

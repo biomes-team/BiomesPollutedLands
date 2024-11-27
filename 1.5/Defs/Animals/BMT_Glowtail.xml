@@ -29,12 +29,12 @@
 	  <baseHealthScale>0.42</baseHealthScale>
 	  <foodType>CarnivoreAnimal</foodType>
 	  <leatherDef>Leather_Lizard</leatherDef>
-	  <wildness>0</wildness>
+	  <wildness>0.6</wildness>
 	  <petness>0.75</petness>
 	  <trainability>None</trainability>
 	  <nuzzleMtbHours>12</nuzzleMtbHours>
 	  <nameOnTameChance>1</nameOnTameChance>
-	  <lifeExpectancy>10</lifeExpectancy>
+	  <lifeExpectancy>15</lifeExpectancy>
 	  <lifeStageAges>
 		<li>
 		  <def>AnimalBaby</def>
