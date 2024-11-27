@@ -12,7 +12,7 @@
 		<pathCost>20</pathCost>
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
-			<texPath>BMT_PollutedLands/Things/ToxPlants/GutterPlantain/GutterPlantain</texPath>
+			<texPath>BMT_PollutedLands/Things/ToxPlants/GutterPlantain</texPath>
 		</graphicData>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">

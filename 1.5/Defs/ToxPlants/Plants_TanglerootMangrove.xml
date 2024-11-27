@@ -11,7 +11,6 @@
 			<Beauty>2</Beauty>
 			<BeautyOutdoors>2</BeautyOutdoors>
 		</statBases>
-		<pathCost>20</pathCost>
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
 			<texPath>BMT_PollutedLands/Things/ToxPlants/TanglerootMangrove/TanglerootMangrove</texPath>
@@ -28,9 +27,16 @@
 			</li>
 		</modExtensions>
 	<plant>
-	  <growDays>20</growDays>
-	  <harvestWork>600</harvestWork>
-	  <harvestYield>25</harvestYield></leaflessGraphicPath>
+	  <lifespanDaysPerGrowDays>40</lifespanDaysPerGrowDays>
+	  <fertilityMin>0.05</fertilityMin>
+	  <fertilitySensitivity>0</fertilitySensitivity>
+	  <growDays>12</growDays>
+	  <harvestWork>210</harvestWork>
+	  <harvestYield>15</harvestYield>
+	  <harvestMinGrowth>0.2</harvestMinGrowth>
+	  <topWindExposure>0.08</topWindExposure>
+	  <wildClusterRadius>-1</wildClusterRadius>
+	  <treeLoversCareIfChopped>true</treeLoversCareIfChopped>
 	</plant>
 	</ThingDef>
 

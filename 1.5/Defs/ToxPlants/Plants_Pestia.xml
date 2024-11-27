@@ -11,7 +11,7 @@
 		</statBases>
 		<pathCost>20</pathCost>
 		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_Random</graphicClass>
 			<texPath>BMT_PollutedLands/Things/ToxPlants/Pestia/Pestia</texPath>
 		</graphicData>
 		<modExtensions>

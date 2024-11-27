@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BMT_PollutedLands_BaseInsect">
 		<defName>BMT_MutagenicNorphea</defName>
 		<label>mutagenic norphea</label>
-		<description>This unique insectoid's body is so adapted to environmental toxins that it cannot survive without them. </description>
+		<description>This unique insectoid's body is so adapted to environmental toxins that it cannot survive without them.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<MarketValue>95</MarketValue>
@@ -102,7 +102,7 @@
 		<comps Inherit="False">
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>2</hatcherDaystoHatch>
-				<hatcherPawn>BMT_Norphea</hatcherPawn>
+				<hatcherPawn>BMT_MutagenicNorphea</hatcherPawn>
 			</li>
 			<li Class="CompProperties_TemperatureRuinable">
 				<minSafeTemperature>-25</minSafeTemperature>

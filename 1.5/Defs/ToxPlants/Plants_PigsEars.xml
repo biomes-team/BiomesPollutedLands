@@ -7,7 +7,7 @@
 	<label>pigs ears</label>
 	<description>A large leafy plant. It scrapes by even in areas so toxic most other plants cannot.</description>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/PigsEars/PigsEars</texPath>
+	  <texPath>BMT_PollutedLands/Things/ToxPlants/PigsEars</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1.15</drawSize>
 	  <shadowData>

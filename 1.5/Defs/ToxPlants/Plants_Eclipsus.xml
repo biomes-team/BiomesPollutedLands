@@ -11,8 +11,8 @@
 		</statBases>
 		<pathCost>20</pathCost>
 		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>BMT_PollutedLands/Things/ToxPlants/Eclipsus/Flowers</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>BMT_PollutedLands/Things/ToxPlants/Eclipsus/Eclipsus</texPath>
 		</graphicData>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
@@ -35,7 +35,7 @@
 		</plant>
 	</ThingDef>
 
-	<ThingDef ParentName="BMT_PolluedLands_PlantBase">
+	<ThingDef ParentName="BMT_PollutedLands_PlantBase">
 		<defName>BMT_Plant_EclipsusLeaves</defName>
 		<label>eclipsus</label>
 		<description>Water lillies adapted to horrible water conditions.</description>
@@ -45,8 +45,8 @@
 		</statBases>
 		<pathCost>20</pathCost>
 		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>BMT_PollutedLands/Things/ToxPlants/Eclipsus/Leaves</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>BMT_PollutedLands/Things/ToxPlants/Eclipsus/EclipsusLeaf</texPath>
 		</graphicData>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
