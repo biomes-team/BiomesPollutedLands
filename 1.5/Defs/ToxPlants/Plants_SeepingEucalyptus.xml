@@ -6,8 +6,8 @@
 	<label>seeping eucalyptus</label>
 	<description>A mutant eucalyptus tree species. It seeps colorful sap from cracks in its bark throughout its life.</description>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/SeepingEucalyptus/SeepingEucalyptus</texPath>
-	  <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>BMT_PollutedLands/Things/Plant/SeepingEucalyptus</texPath>
+	  <graphicClass>Graphic_Random</graphicClass>
 	  <shadowData>
 		<volume>(0.2, 0.35, 0.13)</volume>
 		<offset>(-0.03,0,-0.44)</offset>
@@ -22,6 +22,7 @@
 	  <!-- <immatureGraphicPath>Things/Plant/TreeOak_Immature</immatureGraphicPath> -->
 	  <harvestWork>1500</harvestWork>
 	  <harvestYield>50</harvestYield>
+	  <harvestedThingDef>BMT_Toxwood</harvestedThingDef>
 	  <wildClusterWeight>35</wildClusterWeight>
 	</plant>
   </ThingDef>

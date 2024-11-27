@@ -7,7 +7,7 @@
 	<label>doomsprout</label>
 	<description>Bulbous and filled with toxic gasses, this fungi spews them out when damaged.</description>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/Doomsprout/Doomsprout</texPath>
+	  <texPath>BMT_PollutedLands/Things/Plant/Doomsprout/Doomsprout</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1.15</drawSize>
 	  <shadowData>

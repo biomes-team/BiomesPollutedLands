@@ -7,7 +7,7 @@
 	<label>mantrap</label>
 	<description>Massive compared to its progenitor, the venus flytrap, the mantrap is named such due to its ability to snag prey the size of humans. This tends to terrify people.</description>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/Mantrap/Mantrap</texPath>
+	  <texPath>BMT_PollutedLands/Things/Plant/Mantrap/Mantrap</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1.15</drawSize>
 	  <shadowData>

@@ -12,7 +12,7 @@
       <Nutrition>0.05</Nutrition>
     </statBases>
     <graphicData>
-      <texPath>BMT_PollutedLands/Things/ToxPlants/PaganThorns/PaganThorns</texPath>
+      <texPath>BMT_PollutedLands/Things/Plant/PaganThorns</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>

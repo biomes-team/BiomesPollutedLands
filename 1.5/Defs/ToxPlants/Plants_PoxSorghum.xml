@@ -11,7 +11,7 @@
 	  <Nutrition>0.175</Nutrition>
 	</statBases>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/PoxSorghum/PoxSorghum</texPath>
+	  <texPath>BMT_PollutedLands/Things/Plant/PoxSorghum/PoxSorghum</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<selectable>true</selectable>
@@ -53,7 +53,7 @@
 	</statBases>
 	<ingestible>
 	  <preferability>RawTasty</preferability>
-	  <tasteThought>It has a bit of a gritty texture, but it's not bad.</tasteThought>
+	  <tasteThought></tasteThought>
 	  <foodType>VegetableOrFruit</foodType>
 	</ingestible>
 	<comps>

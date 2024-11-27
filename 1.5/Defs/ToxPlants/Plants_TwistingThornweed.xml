@@ -7,7 +7,7 @@
 	<label>twisting thornweed</label>
 	<description>A bush-sized plant related to the Thornwood tree. It is thought to have been purposely engineered to survive on heavily polluted worlds.</description>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/TwistingThornweed/TwistingThornweed</texPath>
+	  <texPath>BMT_PollutedLands/Things/Plant/TwistingThornweed</texPath>
 	  <graphicClass>Graphic_Random</graphicClass>
 	  <drawSize>1.15</drawSize>
 	  <shadowData>

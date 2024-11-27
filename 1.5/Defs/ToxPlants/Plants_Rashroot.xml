@@ -12,7 +12,7 @@
 	  <Mass>30</Mass>
 	</statBases>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/Rashroot/Rashroot</texPath>
+	  <texPath>BMT_PollutedLands/Things/Plant/Rashroot/Rashroot</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1.15</drawSize>
 	  <shadowData>

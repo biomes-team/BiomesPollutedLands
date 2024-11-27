@@ -134,10 +134,12 @@
 
   <!--================================================ -->
 
-  <PawnKindDef ParentName="HareBase">
+  <PawnKindDef ParentName="AnimalKindBase">
 	<defName>BMT_FamineLocust</defName>
 	<label>famine locust</label>
 	<race>BMT_FamineLocust</race>
+	<combatPower>60</combatPower>
+	<ecoSystemWeight>1.0</ecoSystemWeight>
 	<wildGroupSize>6~10</wildGroupSize>
 	<lifeStages>
 	  <li>

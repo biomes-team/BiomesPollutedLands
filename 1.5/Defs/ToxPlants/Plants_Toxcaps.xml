@@ -11,7 +11,7 @@
       <Nutrition>0.50</Nutrition>
     </statBases>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/Toxcaps/Toxcaps</texPath>
+	  <texPath>BMT_PollutedLands/Things/Plant/Toxcaps</texPath>
 	  <graphicClass>Graphic_Random</graphicClass>
 	  <drawSize>1.15</drawSize>
     </graphicData>

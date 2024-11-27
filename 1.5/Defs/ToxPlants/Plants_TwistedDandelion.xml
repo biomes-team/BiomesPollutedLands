@@ -12,7 +12,7 @@
       <Nutrition>0.05</Nutrition>
     </statBases>
     <graphicData>
-      <texPath>BMT_PollutedLands/Things/ToxPlants/TwistedDandelion/TwistedDandelion</texPath>
+      <texPath>BMT_PollutedLands/Things/Plant/TwistedDandelion</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>

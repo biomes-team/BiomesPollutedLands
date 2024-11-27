@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- Larvae -->
-	<ThingDef MayRequire="biomesteam.biomesislands" ParentName="BMT_PollutedLands_AnimalThingBase">
-		<defName>BMT_MutatingTumorfishStage1</defName>
+	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
+		<defName>BMT_MutatingTumorfishSpawn</defName>
 		<label>mutating tumorfish spawn</label>
 		<description>The first stage of the tumorfish life cycle. It is still fully aquatic and quite weak.</description>
 		<statBases>
@@ -51,10 +51,9 @@
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
 				<ageInDays>60</ageInDays>
-				<evolveIntoPawnKindDef>BMT_MutatingTumorfishStage2</evolveIntoPawnKindDef>
+				<evolveIntoPawnKindDef>BMT_MutatingTumorfishFry</evolveIntoPawnKindDef>
 			</li>
 		</comps>
-    <tools>
 		<tools>
 			<li>
 				<label>teeth</label>
@@ -100,10 +99,11 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	<PawnKindDef MayRequire="biomesteam.biomesislands" ParentName="AnimalKindBase">
-		<defName>BMT_MutatingTumorfishStage1</defName>
+	
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_MutatingTumorfishSpawn</defName>
 		<label>mutating tumorfish spawn</label>
-		<race>BMT_MutatingTumorfishStage1</race>
+		<race>BMT_MutatingTumorfishSpawn</race>
 		<combatPower>15</combatPower>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 		<wildGroupSize>5~6</wildGroupSize>
@@ -142,8 +142,8 @@
 		</lifeStages>
 	</PawnKindDef>
 	<!-- Pupa -->
-	<ThingDef MayRequire="biomesteam.biomesislands" ParentName="BMT_PollutedLands_AnimalThingBase">
-		<defName>BMT_MutatingTumorfishStage2</defName>
+	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
+		<defName>BMT_MutatingTumorfishFry</defName>
 		<label>mutating tumorfish fry</label>
 		<description>The second life stage of the tumorfish. It is now bigger and omnivorous, strong enough to hunt when necessary.</description>
 		<statBases>
@@ -187,7 +187,7 @@
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
 				<ageInDays>180</ageInDays>
-				<evolveIntoPawnKindDef>BMT_MutatingTumorfishStage3</evolveIntoPawnKindDef>
+				<evolveIntoPawnKindDef>BMT_MutatingTumorfishAdult</evolveIntoPawnKindDef>
 			</li>
 		</comps>
 		<tools>
@@ -235,10 +235,11 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	<PawnKindDef MayRequire="biomesteam.biomesislands" ParentName="AnimalKindBase">
-		<defName>BMT_MutatingTumorfishStage2</defName>
+	
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_MutatingTumorfishFry</defName>
 		<label>mutating tumorfish fry</label>
-		<race>BMT_MutatingTumorfishStage2</race>
+		<race>BMT_MutatingTumorfishFry</race>
 		<combatPower>12</combatPower>
 		<ecoSystemWeight>0.01</ecoSystemWeight>
 		<wildGroupSize>3~4</wildGroupSize>
@@ -277,8 +278,8 @@
 		</lifeStages>
 	</PawnKindDef>
 	<!-- Adult -->
-		<ThingDef MayRequire="biomesteam.biomesislands" ParentName="AnimalKindBase">
-		<defName>BMT_MutatingTumorfishStage3</defName>
+		<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
+		<defName>BMT_MutatingTumorfishAdult</defName>
 		<label>mutating tumorfish</label>
 		<description>The adult form of the tumorfish. Now adapted to an amphibious lifestyle, it can hunt in water as well as on land. Despite still being quite fishy, it can move with surprising dexterity out of water.</description>
 		<statBases>
@@ -318,6 +319,7 @@
 				</li>
 			</lifeStageAges>
 		</race>
+		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggMutatingTumorfish</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
@@ -364,10 +366,11 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	<PawnKindDef MayRequire="biomesteam.biomesislands" ParentName="AnimalKindBase">
-		<defName>BMT_MutatingTumorfishStage3</defName>
+	
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_MutatingTumorfishAdult</defName>
 		<label>mutating tumorfish</label>
-		<race>BMT_MutatingTumorfishStage3</race>
+		<race>BMT_MutatingTumorfishAdult</race>
 		<combatPower>60</combatPower>
 		<ecoSystemWeight>1.0</ecoSystemWeight>
 		<wildGroupSize>1~2</wildGroupSize>
@@ -405,6 +408,7 @@
 		</lifeStages>
 	</PawnKindDef>
 	<!-- Egg -->
+	
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggMutatingTumorfish</defName>
 		<label>mutating tumorfish egg (fert.)</label>
@@ -419,7 +423,7 @@
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>6</hatcherDaystoHatch>
-				<hatcherPawn>BMT_MutatingTumorfishStage1</hatcherPawn>
+				<hatcherPawn>BMT_MutatingTumorfishSpawn</hatcherPawn>
 			</li>
 		</comps>
 	</ThingDef>

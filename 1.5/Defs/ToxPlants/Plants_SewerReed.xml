@@ -11,8 +11,8 @@
 		</statBases>
 		<pathCost>20</pathCost>
 		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>BMT_PollutedLands/Things/ToxPlants/SewerReed/SewerReed</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>BMT_PollutedLands/Things/Plant/SewerReed</texPath>
 		</graphicData>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
@@ -32,7 +32,7 @@
 			<wildClusterWeight>50</wildClusterWeight>
 			<wildOrder>1</wildOrder>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
-			<leaflessGraphicPath>BMT_PollutedLands/Things/ToxPlants/SewerReed/SewerReed_Leafless</leaflessGraphicPath>
+			<leaflessGraphicPath>BMT_PollutedLands/Things/Plant/_Leafless/SewerReed_Leafless</leaflessGraphicPath>
 		</plant>
 		
 	</ThingDef>

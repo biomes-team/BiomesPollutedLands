@@ -7,7 +7,7 @@
 	<label>blooming corpse</label>
 	<description>Similar to the rafflesia, this flowering plant exhudes a disgusting scent. Unlike the corpseflower, however, it also produces rotstink as a natural byproduct.</description>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/BloomingCorpse/BloomingCorpse</texPath>
+	  <texPath>BMT_PollutedLands/Things/Plant/BloomingCorpse/BloomingCorpse</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>1.15</drawSize>
 	  <shadowData>

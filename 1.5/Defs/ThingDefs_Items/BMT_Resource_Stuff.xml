@@ -36,7 +36,7 @@
     <label>tox wood</label>
     <description>Wood from trees or other fibrous plants that live in polluted areas. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg. Due to its poor quality, anything made from it will be of lesser quality.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/WoodLog</texPath>
+      <texPath>BMT_PollutedLands/Things/Item/Toxwood</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>

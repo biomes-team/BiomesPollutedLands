@@ -6,8 +6,8 @@
 	<label>barbed larch tree</label>
 	<description>A colder-biome tree known for its barbed needles. Much like a porcupine's quills, it's unpleasant to get poked by as the needles have backwards facing barbs.</description>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/BarbedLarch/BarbedLarch</texPath>
-	  <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>BMT_PollutedLands/Things/Plant/BarbedLarch</texPath>
+	  <graphicClass>Graphic_Random</graphicClass>
 	  <shadowData>
 		<volume>(0.15, 0.3, 0.1)</volume>
 		<offset>(-0.03,0,-0.44)</offset>
@@ -25,6 +25,7 @@
 	  <growDays>20</growDays>
 	  <harvestWork>400</harvestWork>
 	  <harvestYield>10</harvestYield>
+	  <harvestedThingDef>BMT_Toxwood</harvestedThingDef>
 	  <!-- <immatureGraphicPath>Things/Plant/TreeBirch_Immature</immatureGraphicPath> -->
 	</plant>
   </ThingDef>

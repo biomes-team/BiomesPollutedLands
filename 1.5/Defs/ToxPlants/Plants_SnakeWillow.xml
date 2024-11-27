@@ -12,7 +12,7 @@
 	  <Mass>100</Mass>
 	</statBases>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/SnakeWillow/SnakeWillow</texPath>
+	  <texPath>BMT_PollutedLands/Things/Plant/SnakeWillow</texPath>
 	  <graphicClass>Graphic_Random</graphicClass>
 	  <shadowData>
 		<volume>(0.24, 0.3, 0.15)</volume>
@@ -27,12 +27,12 @@
 	  <growDays>13</growDays>
 	  <harvestWork>110</harvestWork>
 	  <harvestYield>10</harvestYield>
+	  <harvestedThingDef>BMT_Toxwood</harvestedThingDef>
 	  <harvestMinGrowth>0.2</harvestMinGrowth>
 	  <topWindExposure>0.08</topWindExposure>
 	  <wildClusterRadius>-1</wildClusterRadius>
 	  <treeLoversCareIfChopped>true</treeLoversCareIfChopped>
-	  <leaflessGraphicPath>BMT_PollutedLands/Things/ToxPlants/SnakeWillow/SnakeWillow_Leafless</leaflessGraphicPath>
-	  <harvestedThingDef>ToxWood</harvestedThingDef>
+	  <leaflessGraphicPath>BMT_PollutedLands/Things/Plant/_Leafless/SnakeWillow_Leafless</leaflessGraphicPath>
 	</plant>
   </ThingDef>
 

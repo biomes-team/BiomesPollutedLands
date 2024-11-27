@@ -11,15 +11,15 @@
 	  <Nutrition>0.175</Nutrition>
 	</statBases>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/ClawhandCitron/ClawhandCitron</texPath>
+	  <texPath>BMT_PollutedLands/Things/Plant/ClawhandCitron/ClawhandCitron</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<selectable>true</selectable>
 	<pathCost>14</pathCost>
 	<ingestible />
 	<plant>
-	  <immatureGraphicPath>BMT_PollutedLands/Things/ToxPlants/ClawhandCitron/ClawhandCitron_Immature</immatureGraphicPath>
-	  <leaflessGraphicPath>BMT_PollutedLands/Things/ToxPlants/ClawhandCitron/ClawhandCitron_Leafless</leaflessGraphicPath>
+	  <immatureGraphicPath>BMT_PollutedLands/Things/Plant/ClawhandCitron/ClawhandCitron_Immature</immatureGraphicPath>
+	  <leaflessGraphicPath>BMT_PollutedLands/Things/Plant/ClawhandCitron/ClawhandCitron_Leafless</leaflessGraphicPath>
 	  <dieIfLeafless>false</dieIfLeafless>
 	  <maxMeshCount>4</maxMeshCount>
 	  <harvestTag>Standard</harvestTag>
@@ -55,7 +55,7 @@
 	</statBases>
 	<ingestible>
 	  <preferability>RawTasty</preferability>
-	  <tasteThought>It's a weird sour-sweet, but tasty.</tasteThought>
+	  <tasteThought></tasteThought>
 	  <foodType>VegetableOrFruit</foodType>
 	</ingestible>
 	<comps>

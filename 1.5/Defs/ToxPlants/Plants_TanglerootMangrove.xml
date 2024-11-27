@@ -13,7 +13,7 @@
 		</statBases>
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
-			<texPath>BMT_PollutedLands/Things/ToxPlants/TanglerootMangrove/TanglerootMangrove</texPath>
+			<texPath>BMT_PollutedLands/Things/Plant/TanglerootMangrove</texPath>
 		</graphicData>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
@@ -33,6 +33,7 @@
 	  <growDays>12</growDays>
 	  <harvestWork>210</harvestWork>
 	  <harvestYield>15</harvestYield>
+	  <harvestedThingDef>BMT_Toxwood</harvestedThingDef>
 	  <harvestMinGrowth>0.2</harvestMinGrowth>
 	  <topWindExposure>0.08</topWindExposure>
 	  <wildClusterRadius>-1</wildClusterRadius>

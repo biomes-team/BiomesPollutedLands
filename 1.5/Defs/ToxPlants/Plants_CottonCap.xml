@@ -11,14 +11,14 @@
 	  <Nutrition>0.2</Nutrition>
 	</statBases>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/CottonCap/CottonCap</texPath>
+	  <texPath>BMT_PollutedLands/Things/Plant/CottonCap/CottonCap</texPath>
 	  <graphicClass>Graphic_Random</graphicClass>
 	</graphicData>
 	<selectable>true</selectable>
 	<pathCost>14</pathCost>
 	<ingestible />
 	<plant>
-	  <immatureGraphicPath>BMT_PollutedLands/Things/ToxPlants/CottonCap/CottonCap_Immature</immatureGraphicPath>
+	  <immatureGraphicPath>BMT_PollutedLands/Things/Plant/CottonCap/CottonCap_Immature</immatureGraphicPath>
 	  <growDays>6</growDays>
 	  <dieIfLeafless>true</dieIfLeafless>
 	  <harvestTag>Standard</harvestTag>

@@ -12,7 +12,7 @@
 	  <Mass>100</Mass>
 	</statBases>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/TwistingThornwood/TwistingThornwood</texPath>
+	  <texPath>BMT_PollutedLands/Things/Plant/TwistingThornwood</texPath>
 	  <graphicClass>Graphic_Random</graphicClass>
 	  <shadowData>
 		<volume>(0.24, 0.3, 0.15)</volume>
@@ -28,6 +28,7 @@
 	  <!-- <leaflessGraphicPath>Things/Plant/SaguaroCactus_Leafless</leaflessGraphicPath> -->
 	  <harvestWork>210</harvestWork>
 	  <harvestYield>25</harvestYield>
+	  <harvestedThingDef>BMT_Toxwood</harvestedThingDef>
 	  <harvestMinGrowth>0.2</harvestMinGrowth>
 	  <topWindExposure>0.08</topWindExposure>
 	  <wildClusterRadius>-1</wildClusterRadius>

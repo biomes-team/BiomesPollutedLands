@@ -10,7 +10,7 @@
 	  <Nutrition>0.2</Nutrition>
 	</statBases>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/ToxCotton</texPath>
+	  <texPath>BMT_PollutedLands/Things/Plant/ToxCotton</texPath>
 	  <graphicClass>Graphic_Random</graphicClass>
 	</graphicData>
 	<selectable>true</selectable>

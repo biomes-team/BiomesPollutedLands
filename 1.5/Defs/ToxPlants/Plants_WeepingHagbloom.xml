@@ -10,7 +10,7 @@
 	  <Nutrition>0.5</Nutrition>
 	</statBases>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/WeepingHagbloom</texPath>
+	  <texPath>BMT_PollutedLands/Things/Plant/WeepingHagbloom</texPath>
 	  <graphicClass>Graphic_Random</graphicClass>
 	  <shadowData>
 		<volume>(0.1, 0.2, 0.1)</volume>

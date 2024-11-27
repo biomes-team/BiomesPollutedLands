@@ -6,8 +6,8 @@
 	<label>blot birch tree</label>
 	<description>A temperate-biome tree known for its thin, white, paper-like bark.</description>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/BlotBirch/BlotBirch</texPath>
-	  <graphicClass>Graphic_Single</graphicClass>
+	  <texPath>BMT_PollutedLands/Things/Plant/BlotBirch</texPath>
+	  <graphicClass>Graphic_Random</graphicClass>
 	  <shadowData>
 		<volume>(0.15, 0.3, 0.1)</volume>
 		<offset>(-0.03,0,-0.44)</offset>
@@ -25,8 +25,9 @@
 	  <growDays>20</growDays>
 	  <harvestWork>800</harvestWork>
 	  <harvestYield>27</harvestYield>
+	  <harvestedThingDef>BMT_Toxwood</harvestedThingDef>
 	  <!-- <immatureGraphicPath>Things/Plant/TreeBirch_Immature</immatureGraphicPath> -->
-	  <leaflessGraphicPath>BMT_PollutedLands/Things/ToxPlants/BlotBirch/BlotBirch_Leafless</leaflessGraphicPath>
+	  <leaflessGraphicPath>BMT_PollutedLands/Things/Plant/_Leafless/BlotBirch_Leafless</leaflessGraphicPath>
 	</plant>
   </ThingDef>
 

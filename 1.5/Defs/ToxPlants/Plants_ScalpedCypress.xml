@@ -12,7 +12,7 @@
 	  <Mass>100</Mass>
 	</statBases>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/ToxPlants/ScalpedCypress/ScalpedCypress</texPath>
+	  <texPath>BMT_PollutedLands/Things/Plant/ScalpedCypress</texPath>
 	  <graphicClass>Graphic_Random</graphicClass>
 	  <shadowData>
 		<volume>(0.24, 0.3, 0.15)</volume>
@@ -36,9 +36,10 @@
 	  <fertilityMin>0.05</fertilityMin>
 	  <fertilitySensitivity>0</fertilitySensitivity>
 	  <growDays>35</growDays>
-	  <leaflessGraphicPath>BMT_PollutedLands/Things/ToxPlants/ScalpedCypress/ScalpedCypress_Leafless</leaflessGraphicPath>
+	  <leaflessGraphicPath>BMT_PollutedLands/Things/Plant/_Leafless/ScalpedCypress_Leafless</leaflessGraphicPath>
 	  <harvestWork>1700</harvestWork>
 	  <harvestYield>50</harvestYield>
+	  <harvestedThingDef>BMT_Toxwood</harvestedThingDef>
 	  <harvestMinGrowth>0.2</harvestMinGrowth>
 	  <topWindExposure>0.08</topWindExposure>
 	  <wildClusterRadius>-1</wildClusterRadius>
