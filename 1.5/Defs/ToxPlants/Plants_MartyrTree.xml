@@ -22,8 +22,9 @@
 	<fillPercent>0.35</fillPercent>
 	<plant>
 	  <lifespanDaysPerGrowDays>40</lifespanDaysPerGrowDays>
-	  <fertilityMin>0.05</fertilityMin>
-	  <fertilitySensitivity>0</fertilitySensitivity>
+	  <pollution>PollutedOnly</pollution>
+	  <fertilityMin>0.10</fertilityMin>
+      <fertilitySensitivity>0</fertilitySensitivity>
 	  <growDays>10</growDays>
 	  <!-- <leaflessGraphicPath>Things/Plant/SaguaroCactus_Leafless</leaflessGraphicPath> -->
 	  <harvestWork>210</harvestWork>

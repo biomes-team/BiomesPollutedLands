@@ -22,12 +22,11 @@
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<nuzzleMtbHours>6</nuzzleMtbHours>
 			<petness>0.5</petness>
-			<baseBodySize>0.7</baseBodySize>
+			<baseBodySize>0.5</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<baseHungerRate>0.25</baseHungerRate>
 			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>
 			<wildness>0.15</wildness>
-			<roamMtbDays>3</roamMtbDays>
 			<trainability>None</trainability>
 			<lifeExpectancy>0.25</lifeExpectancy>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
@@ -60,14 +59,6 @@
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
 				<ageInDays>10</ageInDays>
 				<evolveIntoPawnKindDef>BMT_SmogPupa</evolveIntoPawnKindDef>
-			</li>
-			<li Class="BiomesCore.CompProperties_LurePrey">
-				<shouldGlow>true</shouldGlow>
-				<!--<preyApproachTimeout>int</preyApproachTimeout>-->
-				<!--<attackOnDistance>int</attackOnDistance>-->
-			</li>
-			<li Class="CompProperties_Glower">
-				<compClass>BiomesCore.CompDefaultOffGlower</compClass>
 			</li>
 		</comps>
 		<tools>

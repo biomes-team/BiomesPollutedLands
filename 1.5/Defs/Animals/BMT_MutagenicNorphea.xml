@@ -25,7 +25,7 @@
 			<leatherDef>BMT_FragileChitin</leatherDef>
 			<wildness>0.50</wildness>
 			<trainability>None</trainability>
-			<lifeExpectancy>20</lifeExpectancy>
+			<lifeExpectancy>3</lifeExpectancy>
 			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.25</manhunterOnDamageChance>
 			<lifeStageAges>

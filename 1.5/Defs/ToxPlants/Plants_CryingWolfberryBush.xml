@@ -34,6 +34,9 @@
 	  <wildOrder>2</wildOrder>
 	  <purpose>Food</purpose>
 	  <humanFoodPlant>true</humanFoodPlant>
+	  <pollution>PollutedOnly</pollution>
+	  <fertilityMin>0.50</fertilityMin>
+      <fertilitySensitivity>0</fertilitySensitivity>
 	</plant>
   </ThingDef>
 

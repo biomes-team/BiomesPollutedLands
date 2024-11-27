@@ -17,6 +17,7 @@
 	  <MarketValue>50</MarketValue>
 	  <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>70</ComfyTemperatureMax>
+	  <FilthRate>5</FilthRate>
 	</statBases>
 	<tools>
 	  <li>
@@ -42,7 +43,7 @@
 	<race>
 	  <body>BeetleLike</body>
 	  <baseBodySize>0.32</baseBodySize>
-	  <baseHungerRate>0.45</baseHungerRate>
+	  <baseHungerRate>0.55</baseHungerRate>
 	  <baseHealthScale>0.4</baseHealthScale>
 	  <foodType>OmnivoreAnimal</foodType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
@@ -54,21 +55,13 @@
 	  <manhunterOnDamageChance>0.15</manhunterOnDamageChance>
 	  <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 	  <herdAnimal>true</herdAnimal>
-	  <litterSizeCurve>
-		<points>
-		  <li>(1.0, 0)</li>
-		  <li>(1.5, 1)</li>
-		  <li>(2.0, 1)</li>
-		  <li>(2.5, 0)</li>
-		</points>
-	  </litterSizeCurve>
 	  <headPosPerRotation>
 		<li>(0.0, 0, 0.07)</li>
 		<li>(0.19, 0, 0)</li>
 		<li>(0.0, 0, -0.07)</li>
 		<li>(-0.19, 0, 0)</li>
 	  </headPosPerRotation>
-	  <lifeExpectancy>8</lifeExpectancy>
+	  <lifeExpectancy>1</lifeExpectancy>
 	  <lifeStageAges>
 		<li>
 		  <def>AnimalBaby</def>

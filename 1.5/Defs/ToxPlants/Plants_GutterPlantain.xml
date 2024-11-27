@@ -34,7 +34,6 @@
 			<wildOrder>1</wildOrder>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 		</plant>
-		
 	</ThingDef>
 
 </Defs>

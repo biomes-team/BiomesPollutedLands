@@ -20,7 +20,7 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<wildness>0.2</wildness>
 			<trainability>None</trainability>
-			<lifeExpectancy>1.1</lifeExpectancy>
+			<lifeExpectancy>0.25</lifeExpectancy>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.30</manhunterOnDamageChance>
 			<specificMeatDef>BMT_FishMeat</specificMeatDef>
@@ -50,7 +50,7 @@
 		<!--uiIconScale>1.5</uiIconScale-->
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-				<ageInDays>60</ageInDays>
+				<ageInDays>12</ageInDays>
 				<evolveIntoPawnKindDef>BMT_MutatingTumorfishFry</evolveIntoPawnKindDef>
 			</li>
 		</comps>
@@ -164,29 +164,33 @@
 			<specificMeatDef>BMT_FishMeat</specificMeatDef>
 			<trainability>None</trainability>
 			<predator>true</predator>
-			<lifeExpectancy>2</lifeExpectancy>
+			<lifeExpectancy>0.50</lifeExpectancy>
 			<body>Biomes_FishBody</body>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 			<lifeStageAges>
 				<li>
-					<def>BiomesIslands_WhiteSharkBabyTiny</def>
+					<def>AnimalBabyTiny</def>
 					<minAge>0</minAge>
 				</li>
 				<li>
-					<def>BiomesIslands_WhiteSharkJuvenile</def>
-					<minAge>0.4</minAge>
+					<def>AnimalJuvenile</def>
+					<minAge>0.05</minAge>
 				</li>
 				<li>
-					<def>BiomesIslands_WhiteSharkAdult</def>
-					<minAge>0.8</minAge>
+					<def>AnimalAdult</def>
+					<minAge>0.2</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 		</race>
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
-				<ageInDays>180</ageInDays>
+				<ageInDays>18</ageInDays>
 				<evolveIntoPawnKindDef>BMT_MutatingTumorfishAdult</evolveIntoPawnKindDef>
 			</li>
 		</comps>

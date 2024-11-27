@@ -27,6 +27,9 @@
 	  <harvestYield>46</harvestYield>
 	  <harvestedThingDef>BMT_Toxwood</harvestedThingDef>
 	  <wildClusterWeight>35</wildClusterWeight>
+	  <pollution>PollutedOnly</pollution>
+	  <fertilityMin>0.10</fertilityMin>
+      <fertilitySensitivity>0</fertilitySensitivity>
 	</plant>
   </ThingDef>
 

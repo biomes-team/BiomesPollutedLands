@@ -28,12 +28,12 @@
     </comps>
     <race>
       <body>QuadrupedAnimalWithHooves</body>
-      <baseBodySize>0.75</baseBodySize>
+      <baseBodySize>1</baseBodySize>
       <baseHealthScale>0.7</baseHealthScale>
       <baseHungerRate>0.225</baseHungerRate>
       <foodType>VegetarianRoughAnimal</foodType>
-      <leatherDef>Leather_Plain</leatherDef>
-      <wildness>0</wildness>
+      <leatherDef>Leather_Light</leatherDef>
+      <wildness>0.75</wildness>
       <roamMtbDays>8</roamMtbDays>
       <trainability>None</trainability>
       <gestationPeriodDays>5.61</gestationPeriodDays>

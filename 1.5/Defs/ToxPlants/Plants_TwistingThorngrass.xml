@@ -24,6 +24,9 @@
       <visualSizeRange>0.4~0.6</visualSizeRange>
       <topWindExposure>0.4</topWindExposure>
       <wildOrder>1</wildOrder>
+	  <pollution>PollutedOnly</pollution>
+	  <fertilityMin>0.10</fertilityMin>
+      <fertilitySensitivity>0</fertilitySensitivity>
     </plant>
 	</ThingDef>
 

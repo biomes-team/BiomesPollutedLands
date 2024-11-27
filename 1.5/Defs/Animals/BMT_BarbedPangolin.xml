@@ -10,11 +10,13 @@
   <ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 	<defName>BMT_BarbedPangolin</defName>
 	<label>barbed pangolin</label>
-	<description>While passive in nature, this creature still has defenses. Its spiky plating has barbed edges, causing pain and bleeding to anything that tries to attack it and its tongue is covered with organic neurotoxins that cause rapid paralysis.</description>
+	<description>While passive in nature, this creature still has potent defenses. Its spiky plating has barbed edges, causing pain and bleeding to anything that tries to attack it and its tongue is covered with organic neurotoxins that cause rapid paralysis.</description>
 	<statBases>
 	  <MoveSpeed>3.6</MoveSpeed>
 	  <MarketValue>250</MarketValue>
 	  <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+	  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
 	  <FilthRate>3</FilthRate>
 	  <!-- <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance> -->
 	</statBases>
@@ -41,7 +43,7 @@
 		  <li>(3, 0)</li>
 		</points>
 	  </litterSizeCurve>
-	  <lifeExpectancy>15</lifeExpectancy>
+	  <lifeExpectancy>20</lifeExpectancy>
 	  <lifeStageAges>
 		<li>
 		  <def>AnimalBaby</def>
@@ -80,12 +82,22 @@
 				</graphicData>
 				<duration>750</duration>
 			</li>
+		<li Class="BiomesCore.CompProperties_BottomFeeder">
+			<feedingTerrainTag>Soil</feedingTerrainTag>
+			<consumingFoodReportString>Eating bugs.</consumingFoodReportString>
+		</li>
 		<li Class="BiomesCore.ThingComponents.CompProperties_CompSleepGraphic">
 			<graphicData>
 				<texPath>BMT_PollutedLands/Things/Animal/BarbedPangolin/BarbedPangolin_curled</texPath>
 			</graphicData>
 		</li>
 		</comps>
+	<modExtensions>
+		<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
+			<isCustomThingEater>true</isCustomThingEater>
+			<eatWhenFed>true</eatWhenFed>
+		</li>
+	</modExtensions>
 	<!-- ToDo: Change tags? -->
 	<tradeTags>
 	  <li>BMT_PollutedAnimalUncommon</li>

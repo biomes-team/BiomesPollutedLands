@@ -6,9 +6,12 @@
 		<description>Whether it is engineered or mutated from a wild animal is unknown, but this  massive insect-like creature can use its powerful claws to rend its way through steel almost as easily as flesh and bone. It does not breed in captivity.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
-			<MarketValue>2300</MarketValue>
+			<MarketValue>4300</MarketValue>
 			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
-			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
+			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.25</ArmorRating_Heat>
 			<FilthRate>16</FilthRate>
 			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
 		</statBases>
@@ -17,11 +20,13 @@
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<baseBodySize>4.0</baseBodySize>
 			<predator>true</predator>
-			<baseHealthScale>8</baseHealthScale>
+			<baseHealthScale>9</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
 			<leatherDef>BMT_RoyalChitin</leatherDef>
 			<meatLabel>bunker bug meat</meatLabel>
 			<trainability>Intermediate</trainability>
+			<wildness>0.985</wildness>
+			<lifeExpectancy>200</lifeExpectancy>
 			<packAnimal>false</packAnimal>
 			<manhunterOnDamageChance>0.9</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
@@ -46,6 +51,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalExotic</li>
+			<li>BMT_PollutedAnimalFighter</li>
 		</tradeTags>
 		<tools>
 			<li>

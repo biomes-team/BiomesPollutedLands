@@ -71,7 +71,7 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<packAnimal>false</packAnimal>
 			<wildness>0.60</wildness>
-			<lifeExpectancy>35</lifeExpectancy>
+			<lifeExpectancy>10</lifeExpectancy>
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>

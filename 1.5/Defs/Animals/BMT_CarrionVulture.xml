@@ -23,7 +23,7 @@
 			<leatherDef>Leather_Bird</leatherDef>
 			<wildness>0.75</wildness>
 			<trainability>Intermediate</trainability>
-			<lifeExpectancy>12</lifeExpectancy>
+			<lifeExpectancy>10</lifeExpectancy>
 			<body>Bird</body>
 			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>

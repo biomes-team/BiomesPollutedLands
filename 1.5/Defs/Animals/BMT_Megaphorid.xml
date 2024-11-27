@@ -1,10 +1,133 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
+		<defName>BMT_MegaphoridLarva</defName>
+		<label>megaphorid maggot</label>
+		<description>The larval form of the megaphorid fly. It is extremely ravenous and not very dangerous on its own, but they are rarely if ever found as such. They are most often found having burst out of an infected animal.</description>
+		<statBases>
+			<MoveSpeed>0.3</MoveSpeed>
+			<LeatherAmount>2</LeatherAmount>
+			<MarketValue>100</MarketValue>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<FilthRate>2</FilthRate>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+		</statBases>
+		<race>
+			<hasGenders>false</hasGenders>
+			<leatherDef>BMT_FragileChitin</leatherDef>
+			<fleshType>Insectoid</fleshType>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<baseBodySize>0.2</baseBodySize>
+			<baseHealthScale>0.8</baseHealthScale>
+			<baseHungerRate>0.65</baseHungerRate>
+			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>
+			<wildness>1</wildness>
+			<trainability>None</trainability>
+			<lifeExpectancy>0.25</lifeExpectancy>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.40</manhunterOnDamageChance>
+			<!-- <body>BeetleLike</body> -->
+			<body>BMT_LarvaLike</body>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<lifeStageAges>
+				<li>
+					<def>BMT_InsectLarvalFirst</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>BMT_InsectLarvalSecound</def>
+					<minAge>0.05</minAge>
+				</li>
+				<li>
+					<def>BMT_InsectLarvalThird</def>
+					<minAge>0.1</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+		</race>
+		<comps>
+			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
+				<ageInDays>10</ageInDays>
+				<evolveIntoPawnKindDef>BMT_Megaphorid</evolveIntoPawnKindDef>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>proboscis</label>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3.5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_MegaphoridLarva</defName>
+		<label>megaphorid maggot</label>
+		<race>BMT_MegaphoridLarva</race>
+		<combatPower>5</combatPower>
+		<ecoSystemWeight>0.4</ecoSystemWeight>
+		<wildGroupSize>2~12</wildGroupSize>
+		<canArriveManhunter>true</canArriveManhunter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/Megaphorid/MegaphoridLarva</texPath>
+					<drawSize>0.4</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/Megaphorid/MegaphoridLarva_Dessicated</texPath>
+					<drawSize>0.4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/Megaphorid/MegaphoridLarva</texPath>
+					<drawSize>0.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/Megaphorid/MegaphoridLarva_Dessicated</texPath>
+					<drawSize>0.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/Megaphorid/MegaphoridLarva</texPath>
+					<drawSize>1.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/Megaphorid/MegaphoridLarva_Dessicated</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
 	<ThingDef ParentName="BMT_PollutedLands_BaseInsect">
 		<defName>BMT_Megaphorid</defName>
 		<label>megaphorid</label>
-		<description>PLACEHOLDER</description>
+		<description>A glass cannon of an creature, this disgusting bug attacks animals many times its size and tends to die in the process. Unbeknownst to the attacked, they have usually been injected with the phorid's young, which will slowly devour them from the inside out.</description>
 		<uiIconScale>1.5</uiIconScale>
 		<statBases>
 			<MoveSpeed>6.0</MoveSpeed>
@@ -62,7 +185,7 @@
 				<li>(0.0, 0, -0.07)</li>
 				<li>(-0.19, 0, 0)</li>
 			</headPosPerRotation>
-			<lifeExpectancy>8</lifeExpectancy>
+			<lifeExpectancy>1</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -100,29 +223,29 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/Megaroach/Megaroach</texPath>
+					<texPath>BMT_PollutedLands/Things/Animal/Megaphorid/Megaphorid</texPath>
 					<drawSize>1</drawSize>
 					<color>(130,127,106)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/Megaroach/Megaroach_dessicated</texPath>
+					<texPath>BMT_PollutedLands/Things/Animal/Megaphorid/Megaroach_dessicated</texPath>
 					<drawSize>1.0</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/Megaroach/Megaroach</texPath>
+					<texPath>BMT_PollutedLands/Things/Animal/Megaphorid/Megaphorid</texPath>
 					<drawSize>1.25</drawSize>
 					<color>(130,127,106)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/Megaroach/Megaroach_dessicated</texPath>
+					<texPath>BMT_PollutedLands/Things/Animal/Megaphorid/Megaroach_dessicated</texPath>
 					<drawSize>1.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/Megaroach/Megaroach</texPath>
+					<texPath>BMT_PollutedLands/Things/Animal/Megaphorid/Megaphorid</texPath>
 					<drawSize>1.5</drawSize>
 					<color>(130,127,106)</color>
 					<shadowData>

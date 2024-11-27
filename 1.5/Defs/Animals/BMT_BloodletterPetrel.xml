@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_BloodletterPetrel</defName>
 		<label>bloodletter petrel</label>
-		<description>PLACEHOLDER</description>
+		<description>Uniquely adapted amongst the other wild creatures in polluted environments. Rather than feeding off potentially toxic flesh or plant matter, it instead prefers to feed off the blood of its prey.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<MarketValue>95</MarketValue>
@@ -23,7 +23,7 @@
 			<leatherDef>Leather_Bird</leatherDef>
 			<wildness>0.75</wildness>
 			<trainability>Intermediate</trainability>
-			<lifeExpectancy>12</lifeExpectancy>
+			<lifeExpectancy>30</lifeExpectancy>
 			<body>Bird</body>
 			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
@@ -159,11 +159,11 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/BloodletterPetrel/BloodletterPetrel</texPath>
-					<drawSize>0.8</drawSize>
+					<drawSize>1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/BloodletterPetrel/BloodletterPetrel_dessicated</texPath>
-					<drawSize>0.8</drawSize>
+					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

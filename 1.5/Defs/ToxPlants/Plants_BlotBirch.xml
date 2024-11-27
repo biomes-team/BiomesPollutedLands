@@ -28,6 +28,9 @@
 	  <harvestedThingDef>BMT_Toxwood</harvestedThingDef>
 	  <!-- <immatureGraphicPath>Things/Plant/TreeBirch_Immature</immatureGraphicPath> -->
 	  <leaflessGraphicPath>BMT_PollutedLands/Things/Plant/_Leafless/BlotBirch_Leafless</leaflessGraphicPath>
+	  <pollution>PollutedOnly</pollution>
+	  <fertilityMin>0.10</fertilityMin>
+      <fertilitySensitivity>0</fertilitySensitivity>
 	</plant>
   </ThingDef>
 
