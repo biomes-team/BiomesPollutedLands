@@ -5,7 +5,7 @@
 	<defName>BMT_Plant_PoxSorghum</defName>
 	<label>pox sorghum</label>
 	<!-- To-Do: Add desc -->
-	<description>Able to survive despite toxic conditions, this grain plant is used on many worlds with inhospitably toxic environments.</description>
+	<description>Able to survive despite toxic conditions, this grain plant is used on many urb worlds with highly toxic environments.</description>
 	<statBases>
 	  <MaxHitPoints>85</MaxHitPoints>
 	  <Nutrition>0.175</Nutrition>

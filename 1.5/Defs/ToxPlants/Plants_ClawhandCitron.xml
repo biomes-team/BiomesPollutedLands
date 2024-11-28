@@ -4,8 +4,7 @@
   <ThingDef ParentName="BMT_PollutedLands_TreeBase">
 	<defName>BMT_Plant_TreeClawhandCitron</defName>
 	<label>clawhand citron</label>
-	<!-- To-Do: Add desc -->
-	<description>Fast-growing crop that yields edible fruits.</description>
+	<description>A fast-growing species of citrus tree. Its fruits grow in a strange clawed shape.</description>
 	<statBases>
 	  <MaxHitPoints>85</MaxHitPoints>
 	  <Nutrition>0.175</Nutrition>
@@ -21,7 +20,6 @@
 	  <immatureGraphicPath>BMT_PollutedLands/Things/Plant/ClawhandCitron/ClawhandCitron_Immature</immatureGraphicPath>
 	  <leaflessGraphicPath>BMT_PollutedLands/Things/Plant/ClawhandCitron/ClawhandCitron_Leafless</leaflessGraphicPath>
 	  <dieIfLeafless>false</dieIfLeafless>
-	  <maxMeshCount>4</maxMeshCount>
 	  <harvestTag>Standard</harvestTag>
 	  <harvestedThingDef>BMT_ClawhandCitron</harvestedThingDef>
 	  <harvestYield>7</harvestYield>
@@ -30,7 +28,7 @@
 		<li>Hydroponic</li>
 	  </sowTags>
 	  <topWindExposure>0.1</topWindExposure>
-	  <growDays>4</growDays>
+	  <growDays>6</growDays>
 	  <visualSizeRange>0.5~0.8</visualSizeRange>
 	  <wildOrder>2</wildOrder>
 	  <purpose>Food</purpose>
@@ -44,7 +42,7 @@
   <ThingDef ParentName="PlantFoodRawBase">
 	<defName>BMT_ClawhandCitron</defName>
 	<label>clawed citrons</label>
-	<description>Raw clawed citrons.</description>
+	<description>Raw clawed citrons. Pawns will happily eat them raw. They rot slightly faster than some other fruits.</description>
 	<soundInteract>Grain_Drop</soundInteract>
 	<soundDrop>Grain_Drop</soundDrop>
 	<graphicData>
@@ -63,7 +61,7 @@
 	</ingestible>
 	<comps>
 	  <li Class="CompProperties_Rottable">
-		<daysToRotStart>40</daysToRotStart>
+		<daysToRotStart>12</daysToRotStart>
 		<rotDestroys>true</rotDestroys>
 	  </li>
 	</comps>

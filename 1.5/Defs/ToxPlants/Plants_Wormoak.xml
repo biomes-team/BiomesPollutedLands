@@ -4,7 +4,7 @@
   <ThingDef ParentName="BMT_PollutedLands_DeciduousTreeBase">
 	<defName>BMT_Plant_TreeWormoak</defName>
 	<label>wormoak tree</label>
-	<description>A hardwood tree. Wormoaks take a long time to grow, but their wood is so strong that 'oak' is used as a metaphor for strength across many cultures.</description>
+	<description>Named for the writhing worm-like patterns its branches grow in, the worm oak is a staple of any wood-using colony in more temperate polluted environments.</description>
 	<graphicData>
 	  <texPath>BMT_PollutedLands/Things/Plant/Wormoak</texPath>
 	  <graphicClass>Graphic_Random</graphicClass>
