@@ -15,7 +15,7 @@
 				<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
 				<BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_WasteHound>
 				<BMT_ToxSheep MayRequire="Ludeon.RimWorld.Biotech">0.7</BMT_ToxSheep>
-				<BMT_DoubledDeer MayRequire="Ludeon.RimWorld.Biotech">0.8</BMT_DoubledDeer>
+				<!-- <BMT_DoubledDeer MayRequire="Ludeon.RimWorld.Biotech">0.8</BMT_DoubledDeer> -->
 				<BMT_Glowtail MayRequire="Ludeon.RimWorld.Biotech">0.4</BMT_Glowtail>
 				<BMT_SmogMoth MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_SmogMoth>
 				<BMT_SmogMothLarvae MayRequire="Ludeon.RimWorld.Biotech">0.05</BMT_SmogMothLarvae>
@@ -34,7 +34,7 @@
 			  <xpath>/Defs/BiomeDef[defName="Mashed_Ashlands_MeadowAshlands"]/pollutionWildAnimals</xpath>
 			  <value>
 				<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
-				<BMT_VenomPede MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_VenomPede>
+				<!-- <BMT_VenomPede MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_VenomPede> -->
 				<BMT_ToxSheep MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_ToxSheep>
 				<BMT_Glowtail MayRequire="Ludeon.RimWorld.Biotech">0.8</BMT_Glowtail>
 				<BMT_SmogMoth MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_SmogMoth>

@@ -7,7 +7,7 @@
 <!-- Does it spawn in packs? No. -->
 <!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. It should be half-decent for meat but give fairly weak leather. -->
 
-	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
+	<ThingDef MayRequire="biomesteam.biomesislands" ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_LyncusSeal</defName>
 		<label>lyncus seal</label>
 		<description>Intelligent but territorial when it comes to its own species, lyncus seal males will try to kill each other almost on sight. Clubbing its babies is not a good idea.</description>
@@ -118,7 +118,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<PawnKindDef ParentName="AnimalKindBase">
+	<PawnKindDef MayRequire="biomesteam.biomesislands" ParentName="AnimalKindBase">
 		<defName>BMT_LyncusSeal</defName>
 		<label>lyncus seal</label>
 		<race>BMT_LyncusSeal</race>

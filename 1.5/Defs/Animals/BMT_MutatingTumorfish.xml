@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- Larvae -->
-	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
+	<ThingDef MayRequire="biomesteam.biomesislands" ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_MutatingTumorfishSpawn</defName>
 		<label>mutating tumorfish spawn</label>
 		<description>The first stage of the tumorfish life cycle. It is still fully aquatic and quite weak.</description>
@@ -87,7 +87,7 @@
 			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
 				<movementDef>PF_Movement_Aquatic</movementDef>
 			</li>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
 					<li>PF_TerrainTag_WaterShallow</li>
 					<li>PF_TerrainTag_WaterChest</li>
@@ -100,7 +100,7 @@
 		</modExtensions>
 	</ThingDef>
 	
-	<PawnKindDef ParentName="AnimalKindBase">
+	<PawnKindDef MayRequire="biomesteam.biomesislands" ParentName="AnimalKindBase">
 		<defName>BMT_MutatingTumorfishSpawn</defName>
 		<label>mutating tumorfish spawn</label>
 		<race>BMT_MutatingTumorfishSpawn</race>
@@ -142,7 +142,7 @@
 		</lifeStages>
 	</PawnKindDef>
 	<!-- Pupa -->
-	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
+	<ThingDef MayRequire="biomesteam.biomesislands" ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_MutatingTumorfishFry</defName>
 		<label>mutating tumorfish fry</label>
 		<description>The second life stage of the tumorfish. It is now bigger and omnivorous, strong enough to hunt when necessary.</description>
@@ -227,7 +227,7 @@
 			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
 				<movementDef>PF_Movement_Aquatic</movementDef>
 			</li>
-			<li Class="PathfindingFramework.TerrainTagGraphicExtension">
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
 					<li>PF_TerrainTag_WaterShallow</li>
 					<li>PF_TerrainTag_WaterChest</li>
@@ -240,7 +240,7 @@
 		</modExtensions>
 	</ThingDef>
 	
-	<PawnKindDef ParentName="AnimalKindBase">
+	<PawnKindDef MayRequire="biomesteam.biomesislands" ParentName="AnimalKindBase">
 		<defName>BMT_MutatingTumorfishFry</defName>
 		<label>mutating tumorfish fry</label>
 		<race>BMT_MutatingTumorfishFry</race>
@@ -282,7 +282,7 @@
 		</lifeStages>
 	</PawnKindDef>
 	<!-- Adult -->
-		<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
+		<ThingDef MayRequire="biomesteam.biomesislands" ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_MutatingTumorfishAdult</defName>
 		<label>mutating tumorfish</label>
 		<description>The adult form of the tumorfish. Now adapted to an amphibious lifestyle, it can hunt in water as well as on land. Despite still being quite fishy, it can move with surprising dexterity out of water.</description>
@@ -371,7 +371,7 @@
 		</modExtensions>
 	</ThingDef>
 	
-	<PawnKindDef ParentName="AnimalKindBase">
+	<PawnKindDef MayRequire="biomesteam.biomesislands" ParentName="AnimalKindBase">
 		<defName>BMT_MutatingTumorfishAdult</defName>
 		<label>mutating tumorfish</label>
 		<race>BMT_MutatingTumorfishAdult</race>
@@ -413,7 +413,7 @@
 	</PawnKindDef>
 	<!-- Egg -->
 	
-	<ThingDef ParentName="EggFertBase">
+	<ThingDef MayRequire="biomesteam.biomesislands" ParentName="EggFertBase">
 		<defName>BMT_EggMutatingTumorfish</defName>
 		<label>mutating tumorfish egg (fert.)</label>
 		<description>A fertilized tumorfish egg. If all goes well, it should hatch into a baby tumorfish. It can be eaten raw, but it's much better cooked.</description>
