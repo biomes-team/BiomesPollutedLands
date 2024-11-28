@@ -5,7 +5,7 @@
   <ThingDef ParentName="BMT_PollutedLands_BushBase">
 	<defName>BMT_Plant_Rashroot</defName>
 	<label>rashroot</label>
-	<description>A shrub-like plant related to poison ivy. Touching it induces considerable itching.</description>
+	<description>A shrub-like plant related to poison ivy. Touching it induces considerable itching. The oils on its leaves do however cause them to be simple antiseptic.</description>
 	<statBases>
 	  <MaxHitPoints>120</MaxHitPoints>
 	  <Nutrition>1.0</Nutrition>
@@ -26,7 +26,82 @@
 	  <pollution>PollutedOnly</pollution>
 	  <fertilityMin>0.10</fertilityMin>
       <fertilitySensitivity>0</fertilitySensitivity>
+	  <maxMeshCount>1</maxMeshCount>
+	  <sowWork>800</sowWork>
+	  <sowMinSkill>8</sowMinSkill>
+	  <sowTags>
+		<li>Ground</li>
+		<li>Hydroponic</li>
+	  </sowTags>
+	  <harvestTag>Standard</harvestTag>
+	  <harvestedThingDef>MedicineHerbal</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+	  <purpose>Health</purpose>
 	</plant>
+		<comps>
+				<li Class="BiomesCore.CompProperties_PlantReleaseSpore">
+				<moteDef>Mote_SkulltopSpores</moteDef>
+				<hediffDef>BMT_ItchinessHediff</hediffDef>
+				<partsToAffect>
+					<li>Lung</li>
+				</partsToAffect>
+				<countToAffect>2</countToAffect>
+				<cellsToFill>2</cellsToFill>
+				<baseSeverity>0.2</baseSeverity>
+				<growthProgress>1</growthProgress>
+				<statDef>ToxicEnvironmentResistance</statDef>
+			</li>
+		</comps>
   </ThingDef>
+  
+  <!--Itchiness Hediff -->
+    <HediffDef ParentName="InfectionBase">
+    <defName>BMT_ItchinessHediff</defName>
+    <label>itchiness</label>
+    <description>Intense itching from multiple potential sources. Some plants and animals use this as a sort of defense mechanism.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <makesSickThought>false</makesSickThought>
+    <tendable>true</tendable>
+    <stages>
+      <li>
+        <painOffset>0.01</painOffset>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.5</severityPerDay>
+      </li>
+    </comps>
+  </HediffDef>
+  
+  <!--Thought Def -->
+  
+    <ThoughtDef>
+    <defName>BMT_ItchinessThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>BMT_ItchinessHediff</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>intense itching</label>
+        <description>My skin itches so bad. I hate it!</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 
+	<ThingDef ParentName="MoteBase">
+		<defName>Mote_ItchyOil</defName>
+		<graphicData>
+			<texPath>BMT_Caverns/Things/Mote/BMT_BadSpores</texPath>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>10</fadeInTime>
+			<solidTime>15</solidTime>
+			<fadeOutTime>10</fadeOutTime>
+			<growthRate>0.05</growthRate>
+		</mote>
+	</ThingDef>
 </Defs>

@@ -122,6 +122,7 @@
 	  <baseHealthScale>1.5</baseHealthScale>
 	  <foodType>CarnivoreAnimal</foodType>
 	  <predator>true</predator>
+      <maxPreyBodySize>1.2</maxPreyBodySize>
 	  <leatherDef>Leather_Lizard</leatherDef>
 	  <wildness>0.85</wildness>
 	  <trainability>Intermediate</trainability>

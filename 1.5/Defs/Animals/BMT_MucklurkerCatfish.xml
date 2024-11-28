@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Larvae -->
+	<ThingDef MayRequire="biomesteam.biomesislands" ParentName="BMT_PollutedLands_AnimalThingBase">
+		<defName>BMT_MucklurkerCatfish</defName>
+		<label>mucklurker catfish</label>
+		<description>Huge yet slow, the mucklurker catfish waits along the filthy bottom of waterways for its prey to come to it, luring them in using the glowing tips of its whiskers.</description>
+		<statBases>
+			<MoveSpeed>2</MoveSpeed>
+			<MarketValue>100</MarketValue>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<FilthRate>0</FilthRate>
+			<Flammability>0.0</Flammability>
+		</statBases>
+		<race>
+			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
+			<baseBodySize>0.85</baseBodySize>
+			<baseHealthScale>0.8</baseHealthScale>
+			<baseHungerRate>0.25</baseHungerRate>
+			<foodType>CarnivoreAnimal</foodType>
+			<predator>true</predator>
+			<maxPreyBodySize>0.32</maxPreyBodySize>
+			<wildness>0.75</wildness>
+			<trainability>None</trainability>
+			<lifeExpectancy>70</lifeExpectancy>
+			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.30</manhunterOnDamageChance>
+			<specificMeatDef>BMT_FishMeat</specificMeatDef>
+			<body>Biomes_FishBody</body>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBabyTiny</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.05</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.2</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+		</race>
+	<comps>
+      <li Class="CompProperties_Devourer">
+        <messageDigested>A mucklurker catfish swallowed {PAWN_nameDef} whole! Kill the fish before it digests {PAWN_nameDef}.</messageDigested>
+        <messageEmerged>{PAWN_nameDef} emerged from the catfish.</messageEmerged>
+        <messageEmergedCorpse>{PAWN_nameDef} emerged from the catfish's corpse.</messageEmergedCorpse>
+        <messageDigestionCompleted>The mucklurker catfish has regurgitated {PAWN_nameDef}.</messageDigestionCompleted>
+        <digestingInspector>Digesting {PAWN_nameDef}: {SECONDS} seconds left</digestingInspector>
+        <completeDigestionDamage>400</completeDigestionDamage>
+        <bodySizeDigestTimeCurve>
+          <points>
+            <li>(0.2, 10)</li>
+            <li>(1, 30)</li>
+            <li>(3.5, 60)</li>
+          </points>
+        </bodySizeDigestTimeCurve>
+        <timeDamageCurve>
+          <points>
+            <li>(0, 10)</li>
+            <li>(60, 40)</li>
+          </points>
+        </timeDamageCurve>
+			</li>
+	  			<li Class="BiomesCore.CompProperties_LurePrey">
+				<preyApproachTimeout>5000</preyApproachTimeout>
+				<attackOnDistance>2</attackOnDistance>
+				<shouldGlow>true</shouldGlow>
+			</li>
+			<li Class="CompProperties_Glower">
+				<compClass>BiomesCore.CompDefaultOffGlower</compClass>
+			</li>
+		</comps>
+		<!--uiIconScale>1.5</uiIconScale-->
+		<tools>
+			<li>
+				<label>teeth</label>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>1.0</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>15</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+				<!-- <chanceFactor>0.2</chanceFactor> -->
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<modExtensions>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Aquatic</movementDef>
+			</li>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish_submerged</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<PawnKindDef MayRequire="biomesteam.biomesislands" ParentName="AnimalKindBase">
+		<defName>BMT_MucklurkerCatfish</defName>
+		<label>mucklurker catfish</label>
+		<race>BMT_MucklurkerCatfish</race>
+		<combatPower>75</combatPower>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<canArriveManhunter>false</canArriveManhunter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish</texPath>
+					<drawSize>0.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish_dessicated</texPath>
+					<drawSize>0.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish</texPath>
+					<drawSize>0.70</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish_dessicated</texPath>
+					<drawSize>0.70</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish</texPath>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MucklurkerCatfish_dessicated</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

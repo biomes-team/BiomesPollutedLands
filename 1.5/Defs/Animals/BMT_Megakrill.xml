@@ -8,23 +8,23 @@
 <!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. They should be decent for ranching, giving a fair amount of meat per slaughter and able to breed quite fast. Their eggs should be able to survive in pretty much any temp range. -->
 
   <ThingDef ParentName="BMT_PollutedLands_BaseInsect">
-	<defName>BMT_FamineLocust</defName>
-	<label>famine locust</label>
-	<description>While small and weak, the famine locust can devastate colonies as easily as any raiders as they devour their way through fields of crops.</description>
+	<defName>BMT_Megakrill</defName>
+	<label>megakrill</label>
+	<description>While much larger than traditional krill, the megakrill is nearly as harmless. It eats the likes of algae from polluted ponds and rivers. Some colonies keep swarms of them as emergency food.</description>
 	<uiIconScale>1.5</uiIconScale>
 	<statBases>
 	  <MoveSpeed>5.0</MoveSpeed>
 	  <MarketValue>50</MarketValue>
 	  <ComfyTemperatureMin>-60</ComfyTemperatureMin>
-	  <ComfyTemperatureMax>70</ComfyTemperatureMax>
-	  <FilthRate>5</FilthRate>
+	  <ComfyTemperatureMax>40</ComfyTemperatureMax>
+	  <FilthRate>0</FilthRate>
 	</statBases>
 	<tools>
 	  <li>
 		<capacities>
 		  <li>Bite</li>
 		</capacities>
-		<power>3.4</power>
+		<power>1</power>
 		<cooldownTime>2</cooldownTime>
 		<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 	  </li>
@@ -33,7 +33,7 @@
 		<capacities>
 		  <li>Blunt</li>
 		</capacities>
-		<power>1.5</power>
+		<power>1</power>
 		<cooldownTime>2</cooldownTime>
 		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -41,19 +41,19 @@
 	  </li>
 	</tools>
 	<race>
-	  <body>BeetleLike</body>
-	  <baseBodySize>0.32</baseBodySize>
+	  <body>BeetleLikeWithClaw</body>
+	  <baseBodySize>0.2</baseBodySize>
 	  <baseHungerRate>0.55</baseHungerRate>
 	  <baseHealthScale>0.4</baseHealthScale>
-	  <foodType>OmnivoreAnimal</foodType>
+	  <foodType>VegetarianRoughAnimal</foodType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
 	  <wildness>0.75</wildness>
 	  <trainability>None</trainability>
 	  <!-- <mateMtbHours>8</mateMtbHours> -->
 	  <!-- <gestationPeriodDays>5.661</gestationPeriodDays> -->
 	  <soundEating>Rodent_Eat</soundEating>
-	  <manhunterOnDamageChance>0.15</manhunterOnDamageChance>
-	  <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+	  <manhunterOnDamageChance>0.0</manhunterOnDamageChance>
+	  <manhunterOnTameFailChance>0.0</manhunterOnTameFailChance>
 	  <herdAnimal>true</herdAnimal>
 	  <headPosPerRotation>
 		<li>(0.0, 0, 0.07)</li>
@@ -89,10 +89,10 @@
 	</tradeTags>
 	<comps>
 		<li Class="CompProperties_EggLayer">
-			<eggFertilizedDef>BMT_EggFamineLocustFertilized</eggFertilizedDef>
-			<eggLayIntervalDays>7</eggLayIntervalDays>
+			<eggFertilizedDef>BMT_EggMegakrillFertilized</eggFertilizedDef>
+			<eggLayIntervalDays>5</eggLayIntervalDays>
 			<!-- <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax> -->
-			<eggCountRange>2~5</eggCountRange>
+			<eggCountRange>2~3</eggCountRange>
 		</li>
 
 	</comps>
@@ -100,26 +100,26 @@
  
 
   <ThingDef ParentName="EggFertBase">
-	<defName>BMT_EggFamineLocustFertilized</defName>
-	<label>megaroach egg (fert.)</label>
-	<description>A fertilized famine locust egg. If all goes well, it should hatch into a baby famine locust. It can be eaten raw, but it's much better cooked.</description>
+	<defName>BMT_EggMegakrillFertilized</defName>
+	<label>megakrill egg (fert.)</label>
+	<description>A fertilized megakrill egg. If all goes well, it should hatch into a baby megakrill. It can be eaten raw, but it's much better cooked.</description>
 	<graphicData>
 		<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
 		<color>(167,198,153)</color>
 		<drawSize>0.7</drawSize>
 	</graphicData>
 	<statBases>
-		<MarketValue>4.0</MarketValue>
+		<MarketValue>3.0</MarketValue>
 		<DeteriorationRate>0</DeteriorationRate>
 	</statBases>
 	<comps Inherit="False">
 	  <li Class="CompProperties_Hatcher">
 		<hatcherDaystoHatch>2</hatcherDaystoHatch>
-		<hatcherPawn>BMT_FamineLocust</hatcherPawn>
+		<hatcherPawn>BMT_Megakrill</hatcherPawn>
 	  </li>
 	  <li Class="CompProperties_TemperatureRuinable">
 		<minSafeTemperature>-60</minSafeTemperature>
-		<maxSafeTemperature>80</maxSafeTemperature>
+		<maxSafeTemperature>40</maxSafeTemperature>
 		<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
 	  </li>
 	</comps>
@@ -128,47 +128,44 @@
   <!--================================================ -->
 
   <PawnKindDef ParentName="AnimalKindBase">
-	<defName>BMT_FamineLocust</defName>
-	<label>famine locust</label>
-	<race>BMT_FamineLocust</race>
-	<combatPower>60</combatPower>
+	<defName>BMT_Megakrill</defName>
+	<label>megakrill</label>
+	<race>BMT_Megakrill</race>
+	<combatPower>20</combatPower>
 	<ecoSystemWeight>1.0</ecoSystemWeight>
-	<wildGroupSize>6~10</wildGroupSize>
+	<wildGroupSize>7~8</wildGroupSize>
 	<lifeStages>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/SwarmingLocust/SwarmingLocust</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill</texPath>
 		  <drawSize>1</drawSize>
-		  <color>(130,127,106)</color>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/SwarmingLocust/SwarmingLocust_dessicated</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill_Dessicated</texPath>
 		  <drawSize>1.0</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/SwarmingLocust/SwarmingLocust</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill</texPath>
 		  <drawSize>1.25</drawSize>
-		  <color>(130,127,106)</color>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/SwarmingLocust/SwarmingLocust_dessicated</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill_dessicated</texPath>
 		  <drawSize>1.25</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/SwarmingLocust/SwarmingLocust</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill</texPath>
 		  <drawSize>1.5</drawSize>
-		  <color>(130,127,106)</color>
 		  <shadowData>
 			<volume>(0.32, 0.35, 0.32)</volume>
 			<offset>(0,0,0)</offset>
 		  </shadowData>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/SwarmingLocust/SwarmingLocust_dessicated</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill_dessicated</texPath>
 		  <drawSize>1.5</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
