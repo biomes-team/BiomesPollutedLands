@@ -4,8 +4,7 @@
   <ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 	<defName>BMT_TripleSnapper</defName>
 	<label>triple snapper</label>
-	<!-- ToDo: Need to add a description. -->
-	<description>PLACEHOLDER</description>
+	<description>With three heads comes the ability to attack fast and see in almost every direction. The triple snapper is an apex predator of polluted waters.</description>
 	<statBases>
 	  <MoveSpeed>1.0</MoveSpeed>
 	  <MarketValue>300</MarketValue>
@@ -108,6 +107,16 @@
 		<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
 			<movementDef>PF_Movement_Amphibious</movementDef>
 		</li>
+				<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/Triplesnapper/Triplesnapper_submerged</texPath>
+				</bodyGraphicData>
+				</li>
 	</modExtensions>
   </ThingDef>
   
@@ -122,27 +131,27 @@
 	  <li>
 		<bodyGraphicData>
 		  <texPath>BMT_PollutedLands/Things/Animal/TripleSnapper/TripleSnapper</texPath>
-		  <drawSize>2</drawSize>
+		  <drawSize>3</drawSize>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
 		  <texPath>BMT_PollutedLands/Things/Animal/TripleSnapper/TripleSnapper_Dessicated</texPath>
-		  <drawSize>2</drawSize>
+		  <drawSize>3</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
 		  <texPath>BMT_PollutedLands/Things/Animal/TripleSnapper/TripleSnapper</texPath>
-		  <drawSize>2.25</drawSize>
+		  <drawSize>3.5</drawSize>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
 		  <texPath>BMT_PollutedLands/Things/Animal/TripleSnapper/TripleSnapper_Dessicated</texPath>
-		  <drawSize>2.25</drawSize>
+		  <drawSize>3.5</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
 		  <texPath>BMT_PollutedLands/Things/Animal/TripleSnapper/TripleSnapper</texPath>
-		  <drawSize>2.5</drawSize>
+		  <drawSize>4.5</drawSize>
 		  <shadowData>
 			<volume>(0.25, 0.3, 0.25)</volume>
 			<offset>(0,0,0)</offset>
@@ -150,7 +159,7 @@
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
 		  <texPath>BMT_PollutedLands/Things/Animal/TripleSnapper/TripleSnapper_Dessicated</texPath>
-		  <drawSize>2.5</drawSize>
+		  <drawSize>4.5</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
 	</lifeStages>
