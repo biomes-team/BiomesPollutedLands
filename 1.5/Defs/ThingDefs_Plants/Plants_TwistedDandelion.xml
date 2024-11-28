@@ -17,6 +17,7 @@
     </graphicData>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>
     <ingestible />
+	<selectable>false</selectable>
     <plant>
       <growDays>2.5</growDays>
       <sowTags>

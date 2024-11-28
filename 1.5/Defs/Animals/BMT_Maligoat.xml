@@ -119,7 +119,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>BMT_PollutedLands/Things/Animal/Maligoat/Dessicated_MaligoatMale</texPath>
+          <texPath>BMT_PollutedLands/Things/Animal/Maligoat/MaligoatMale</texPath>
           <drawSize>1.15</drawSize>
           <shadowData>
             <volume>(0.375, 0.375, 0.375)</volume>
@@ -145,7 +145,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>BMT_PollutedLands/Things/Animal/Maligoat/Dessicated_MaligoatMale</texPath>
+          <texPath>BMT_PollutedLands/Things/Animal/Maligoat/MaligoatMale</texPath>
           <drawSize>1.42</drawSize>
           <shadowData>
             <volume>(0.5, 0.5, 0.5)</volume>

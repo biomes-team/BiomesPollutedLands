@@ -248,7 +248,7 @@
 			<foodType>CarnivoreAnimal</foodType>
 			<leatherDef>BMT_Leather_Amphibian</leatherDef>
 			<useMeatFrom>BMT_Maxolotl</useMeatFrom>
-			<wildness>0.2</wildness>
+			<wildness>0.75</wildness>
 			<trainability>Intermediate</trainability>
 			<mateMtbHours>8</mateMtbHours>
 			<lifeExpectancy>10</lifeExpectancy>

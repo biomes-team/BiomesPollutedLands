@@ -6,6 +6,10 @@
 	<defName>BMT_Plant_Doomsprout</defName>
 	<label>doomsprout</label>
 	<description>Bulbous and filled with toxic gasses, this fungi spews them out when damaged.</description>
+	<statBases>
+	  <MaxHitPoints>85</MaxHitPoints>
+	  <Nutrition>0.2</Nutrition>
+	</statBases>
 	<graphicData>
 	  <texPath>BMT_PollutedLands/Things/Plant/Doomsprout/Doomsprout</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
@@ -22,6 +26,13 @@
 	  <fertilityMin>0.10</fertilityMin>
       <fertilitySensitivity>0</fertilitySensitivity>
 	</plant>
+	 <comps>
+      <li Class="CompProperties_GasOnDamage">
+        <type>ToxGas</type>
+        <damageFactor>6</damageFactor>
+        <useStackCountAsFactor>true</useStackCountAsFactor>
+      </li>
+	  </comps>
   </ThingDef>
 
 </Defs>

@@ -112,5 +112,55 @@
       </li>
     </modExtensions>
   </ThingDef>
+  
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>BMT_RegalMilk</defName>
+    <label>regal milk</label>
+    <description>Regal milk from the hideous maligoat. It is delightfully delicious when eaten raw.</description>
+    <graphicData>
+      <texPath>BMT_PollutedLands/Things/Item/RegalMilk</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+	  <drawSize>0.75</drawSize>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>2.0</MarketValue> <!-- Gives a mood buff liike a fine meal -->
+      <Mass>0.045</Mass>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <Nutrition>0.1</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.0</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <foodType>AnimalProduct, Fluid</foodType>
+	  <tasteThought>BMT_DrankRegalMilk</tasteThought>
+      <babiesCanIngest>true</babiesCanIngest>
+    </ingestible>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+    </thingCategories>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+  
+  <!-- Milk Thought -->
+  
+  <ThoughtDef>
+    <defName>BMT_DrankRegalMilk</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>drank regal milk</label>
+        <description>That milk was amazing. It was like a fine meal unto itself.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 
 </Defs>

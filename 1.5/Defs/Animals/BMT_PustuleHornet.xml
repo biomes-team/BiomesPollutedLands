@@ -106,6 +106,13 @@
 	  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 	  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 	</race>
+	<comps>
+	  <li Class="CompProperties_GasOnDamage">
+        <type>ToxGas</type>
+        <damageFactor>4</damageFactor>
+        <useStackCountAsFactor>true</useStackCountAsFactor>
+      </li>
+	</comps>
 	<tradeTags>
 	  <li>BMT_PollutedAnimalUncommon</li>
 	  <li>BMT_PollutedAnimalFighter</li>

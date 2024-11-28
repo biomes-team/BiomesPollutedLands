@@ -108,6 +108,11 @@
 	</race>
 	<comps>
 		<li Class="BiomesCore.CompProperties_PermanentManhunter" />
+	  <li Class="CompProperties_GasOnDamage">
+        <type>ToxGas</type>
+        <damageFactor>6</damageFactor>
+        <useStackCountAsFactor>true</useStackCountAsFactor>
+      </li>
 	</comps>
 	<tradeTags>
 	  <li>BMT_PollutedAnimalUncommon</li>

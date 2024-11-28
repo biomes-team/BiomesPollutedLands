@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BMT_PollutedLands_TreeBase">
-	<defName>BMT_Plant_TreeWhistlingCane</defName>
-	<label>whistling cane</label>
-	<description>Known for the soft whistling sound that occurs when the wind gusts through the holes in its stems, this species of bamboo can be found in polluted jungles.</description>
+  <ThingDef ParentName="BMT_PollutedLands_DeciduousTreeBase">
+	<defName>BMT_Plant_TreeWormoak</defName>
+	<label>wormoak tree</label>
+	<description>Named for the writhing worm-like patterns its branches grow in, the worm oak is a staple of any wood-using colony in more temperate polluted environments.</description>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/Plant/WhistlingCane</texPath>
+	  <texPath>BMT_PollutedLands/Things/Plant/Wormoak</texPath>
 	  <graphicClass>Graphic_Random</graphicClass>
 	  <shadowData>
 		<volume>(0.2, 0.35, 0.13)</volume>
@@ -16,16 +16,18 @@
 	<statBases>
 	  <Beauty>2</Beauty>
 	  <BeautyOutdoors>2</BeautyOutdoors>
-	  <MaxHitPoints>110</MaxHitPoints>
+	  <MaxHitPoints>130</MaxHitPoints>
 	  <Nutrition>2.0</Nutrition>
-	  <Mass>70</Mass>
+	  <Mass>100</Mass>
 	</statBases>
 	<plant>
 	  <growDays>30</growDays>
+	  <leaflessGraphicPath>BMT_PollutedLands/Things/Plant/_Leafless/Wormoak_Leafless</leaflessGraphicPath>
 	  <!-- <immatureGraphicPath>Things/Plant/TreeOak_Immature</immatureGraphicPath> -->
 	  <harvestWork>1400</harvestWork>
 	  <harvestYield>46</harvestYield>
 	  <harvestedThingDef>BMT_Toxwood</harvestedThingDef>
+	  <visualSizeRange>1.3~3.0</visualSizeRange>
 	  <wildClusterWeight>35</wildClusterWeight>
 	  <pollution>PollutedOnly</pollution>
 	  <fertilityMin>0.10</fertilityMin>

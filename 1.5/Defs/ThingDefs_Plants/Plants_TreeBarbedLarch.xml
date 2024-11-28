@@ -2,11 +2,11 @@
 <Defs>
 
   <ThingDef ParentName="BMT_PollutedLands_DeciduousTreeBase">
-	<defName>BMT_Plant_TreeBlotBirch</defName>
-	<label>blot birch tree</label>
-	<description>A species of birch trees that have managed to survive and adapt to poisonous environments. Its bark has a blotched pattern rather than the striped of other birches.</description>
+	<defName>BMT_Plant_TreeBarbedLarch</defName>
+	<label>barbed larch tree</label>
+	<description>A colder-biome tree known for its barbed needles. Much like a porcupine's quills, the needles have backwards facing barbs.</description>
 	<graphicData>
-	  <texPath>BMT_PollutedLands/Things/Plant/BlotBirch</texPath>
+	  <texPath>BMT_PollutedLands/Things/Plant/BarbedLarch</texPath>
 	  <graphicClass>Graphic_Random</graphicClass>
 	  <shadowData>
 		<volume>(0.15, 0.3, 0.1)</volume>
@@ -23,11 +23,11 @@
 	<ingestible />
 	<plant>
 	  <growDays>20</growDays>
-	  <harvestWork>800</harvestWork>
-	  <harvestYield>27</harvestYield>
+	  <harvestWork>400</harvestWork>
+	  <harvestYield>10</harvestYield>
 	  <harvestedThingDef>BMT_Toxwood</harvestedThingDef>
+	  <visualSizeRange>1.3~3.0</visualSizeRange>
 	  <!-- <immatureGraphicPath>Things/Plant/TreeBirch_Immature</immatureGraphicPath> -->
-	  <leaflessGraphicPath>BMT_PollutedLands/Things/Plant/_Leafless/BlotBirch_Leafless</leaflessGraphicPath>
 	  <pollution>PollutedOnly</pollution>
 	  <fertilityMin>0.10</fertilityMin>
       <fertilitySensitivity>0</fertilitySensitivity>

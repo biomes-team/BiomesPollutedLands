@@ -9,7 +9,7 @@
 			<MoveSpeed>3</MoveSpeed>
 			<MarketValue>95</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
-			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<ComfyTemperatureMax>70</ComfyTemperatureMax>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
 		</statBases>
 		<race>
@@ -78,7 +78,7 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>4</power>
+				<power>6</power>
 				<cooldownTime>3</cooldownTime>
 				<chanceFactor>0.2</chanceFactor>
 				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
@@ -96,7 +96,7 @@
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>7</power>
+				<power>9</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -113,7 +113,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>2</power>
+				<power>4</power>
 				<cooldownTime>1.8</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -129,7 +129,7 @@
 		<defName>BMT_CarrionVulture</defName>
 		<label>carrion vulture</label>
 		<race>BMT_CarrionVulture</race>
-		<combatPower>45</combatPower>
+		<combatPower>50</combatPower>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 		<wildGroupSize>3~5</wildGroupSize>
 		<lifeStages>
@@ -137,31 +137,31 @@
 				<label>carrion vulture chick</label>
 				<bodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/CarrionVulture/CarrionVulture</texPath>
-					<drawSize>0.5</drawSize>
+					<drawSize>0.75</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/CarrionVulture/CarrionVulture_dessicated</texPath>
-					<drawSize>0.5</drawSize>
+					<drawSize>0.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/CarrionVulture/CarrionVulture</texPath>
-					<drawSize>0.7</drawSize>
+					<drawSize>1.0</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/CarrionVulture/CarrionVulture_dessicated</texPath>
-					<drawSize>0.7</drawSize>
+					<drawSize>1.0</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/CarrionVulture/CarrionVulture</texPath>
-					<drawSize>0.8</drawSize>
+					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/CarrionVulture/CarrionVulture_dessicated</texPath>
-					<drawSize>0.8</drawSize>
+					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -181,7 +181,7 @@
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggCarrionVultureFertilized</defName>
 		<label>carrion vulture egg (fert.)</label>
-		<description>A fertilized carrion vulture egg. If all goes well, it should hatch into a carrion vulture. It can be eaten raw, but it's much better cooked.</description>
+		<description>A fertilized carrion vulture egg. If all goes well, it should hatch into a baby carrion vulture. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
 			<color>(255,255,255)</color>
 			<drawSize>0.7</drawSize>
