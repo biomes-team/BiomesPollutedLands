@@ -58,7 +58,7 @@
     <HediffDef ParentName="InfectionBase">
     <defName>BMT_ItchinessHediff</defName>
     <label>itchiness</label>
-    <description>Intense itching from multiple potential sources. Some plants and animals use this as a sort of defense mechanism.</description>
+    <description>Intense itching from multiple potential sources. Some plants and animals use this as a defense mechanism.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <makesSickThought>false</makesSickThought>
     <tendable>true</tendable>
@@ -94,7 +94,7 @@
 	<ThingDef ParentName="MoteBase">
 		<defName>Mote_ItchyOil</defName>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Mote/BMT_BadSpores</texPath>
+			<texPath>BiomesCore_Things/Effects/FishingEffect</texPath>
 		</graphicData>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<mote>
