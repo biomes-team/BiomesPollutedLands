@@ -149,6 +149,7 @@
 	<defName>BMT_PustuleHornet</defName>
 	<label>pustule hornet</label>
 	<race>BMT_PustuleHornet</race>
+	<combatPower>75</combatPower>
 	<wildGroupSize>6~17</wildGroupSize>
 	<lifeStages>
 	  <li>
@@ -509,6 +510,7 @@
 	<defName>BMT_ColonyPustuleHornet</defName>
 	<label>domesticated pustule hornet</label>
 	<race>BMT_ColonyPustuleHornet</race>
+	<combatPower>75</combatPower>
 	<wildGroupSize>6~17</wildGroupSize>
 	<lifeStages>
 	  <li>
