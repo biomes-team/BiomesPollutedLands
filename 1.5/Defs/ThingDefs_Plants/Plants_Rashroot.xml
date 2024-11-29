@@ -38,20 +38,6 @@
       <harvestYield>1</harvestYield>
 	  <purpose>Health</purpose>
 	</plant>
-		<comps>
-				<li Class="BiomesCore.CompProperties_PlantReleaseSpore">
-				<!-- <moteDef>Mote_SkulltopSpores</moteDef> -->
-				<hediffDef>BMT_ItchinessHediff</hediffDef>
-				<partsToAffect>
-					<li>Lung</li>
-				</partsToAffect>
-				<countToAffect>2</countToAffect>
-				<cellsToFill>2</cellsToFill>
-				<baseSeverity>0.2</baseSeverity>
-				<growthProgress>1</growthProgress>
-				<statDef>ToxicEnvironmentResistance</statDef>
-			</li>
-		</comps>
   </ThingDef>
   
   <!--Itchiness Hediff -->
@@ -94,7 +80,7 @@
 	<ThingDef ParentName="MoteBase">
 		<defName>Mote_ItchyOil</defName>
 		<graphicData>
-			<texPath>BMT_Caverns/Things/Mote/BMT_BadSpores</texPath>
+			<texPath>BiomesCore_Things/Effects/FishingEffect</texPath>
 		</graphicData>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<mote>
@@ -105,3 +91,17 @@
 		</mote>
 	</ThingDef>
 </Defs>
+	<!--	<comps>
+				<li Class="BiomesCore.CompProperties_PlantReleaseSpore">
+				<moteDef>Mote_SkulltopSpores</moteDef> 
+				<hediffDef>BMT_ItchinessHediff</hediffDef>
+				<partsToAffect>
+					<li>Lung</li>
+				</partsToAffect>
+				<countToAffect>2</countToAffect>
+				<cellsToFill>2</cellsToFill>
+				<baseSeverity>0.2</baseSeverity>
+				<growthProgress>1</growthProgress>
+				<statDef>ToxicEnvironmentResistance</statDef>
+			</li>
+		</comps> -->

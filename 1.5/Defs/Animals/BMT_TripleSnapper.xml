@@ -103,21 +103,6 @@
 	<tradeTags>
 	  <li>BMT_PollutedAnimalUncommon</li>
 	</tradeTags>
-	<modExtensions>
-		<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-			<movementDef>PF_Movement_Amphibious</movementDef>
-		</li>
-				<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<bodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/Triplesnapper/Triplesnapper_submerged</texPath>
-				</bodyGraphicData>
-				</li>
-	</modExtensions>
   </ThingDef>
   
   <PawnKindDef ParentName="AnimalKindBase">
@@ -163,6 +148,21 @@
 		</dessicatedBodyGraphicData>
 	  </li>
 	</lifeStages>
+		<modExtensions>
+		<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+			<movementDef>PF_Movement_Amphibious</movementDef>
+		</li>
+				<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/TripleSnapper/TripleSnapper_submerged</texPath>
+				</bodyGraphicData>
+				</li>
+	</modExtensions>
   </PawnKindDef>
 
   <ThingDef ParentName="EggFertBase">

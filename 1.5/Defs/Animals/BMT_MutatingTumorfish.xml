@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- Larvae -->
-	<ThingDef MayRequire="biomesteam.biomesislands" ParentName="BMT_PollutedLands_AnimalThingBase">
+	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_MutatingTumorfishSpawn</defName>
 		<label>mutating tumorfish spawn</label>
 		<description>The first stage of the tumorfish life cycle. It is still fully aquatic and quite weak.</description>
@@ -13,7 +13,7 @@
 			<FilthRate>4</FilthRate>
 		</statBases>
 		<race>
-			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
+			<leatherDef>BMT_Fishskin</leatherDef>
 			<baseBodySize>0.8</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<baseHungerRate>0.25</baseHungerRate>
@@ -23,8 +23,8 @@
 			<lifeExpectancy>0.25</lifeExpectancy>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.30</manhunterOnDamageChance>
-			<specificMeatDef>BMT_FishMeat</specificMeatDef>
-			<body>Biomes_FishBody</body>
+			<specificMeatDef>BMT_FishMeatCore</specificMeatDef>
+			<body>BMT_FishBody</body>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
@@ -83,21 +83,6 @@
 				<chanceFactor>0.1</chanceFactor>
 			</li>
 		</tools>
-		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Aquatic</movementDef>
-			</li>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<bodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Stage1_Submerged</texPath>
-				</bodyGraphicData>
-			</li>
-		</modExtensions>
 	</ThingDef>
 	
 	<PawnKindDef MayRequire="biomesteam.biomesislands" ParentName="AnimalKindBase">
@@ -140,6 +125,21 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Aquatic</movementDef>
+			</li>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Stage1_Submerged</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Pupa -->
 	<ThingDef MayRequire="biomesteam.biomesislands" ParentName="BMT_PollutedLands_AnimalThingBase">
@@ -161,11 +161,11 @@
 			<wildness>0.5</wildness>
 			<manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.3</manhunterOnDamageChance>
-			<specificMeatDef>BMT_FishMeat</specificMeatDef>
+			<specificMeatDef>BMT_FishMeatCore</specificMeatDef>
 			<trainability>None</trainability>
 			<predator>true</predator>
 			<lifeExpectancy>0.50</lifeExpectancy>
-			<body>Biomes_FishBody</body>
+			<body>BMT_FishBody</body>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
@@ -223,21 +223,6 @@
 				<chanceFactor>0.1</chanceFactor>
 			</li>
 		</tools>
-		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Aquatic</movementDef>
-			</li>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<bodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Stage2_Submerged</texPath>
-				</bodyGraphicData>
-			</li>
-		</modExtensions>
 	</ThingDef>
 	
 	<PawnKindDef MayRequire="biomesteam.biomesislands" ParentName="AnimalKindBase">
@@ -280,6 +265,21 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Aquatic</movementDef>
+			</li>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Stage2_Submerged</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Adult -->
 		<ThingDef MayRequire="biomesteam.biomesislands" ParentName="BMT_PollutedLands_AnimalThingBase">
@@ -293,7 +293,7 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 		</statBases>
 		<race>
-			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
+			<leatherDef>BMT_Fishskin</leatherDef>
 			<baseBodySize>1.8</baseBodySize>
 			<baseHealthScale>1</baseHealthScale>
 			<baseHungerRate>0.8</baseHungerRate>
@@ -302,9 +302,10 @@
 			<wildness>0.9</wildness>
 			<trainability>Intermediate</trainability>
 			<lifeExpectancy>6</lifeExpectancy>
+			<specificMeatDef>BMT_FishMeatCore</specificMeatDef>
 			<manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.40</manhunterOnDamageChance>
-			<body>Biomes_FishBody</body>
+			<body>BMT_FishBody</body>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
@@ -410,6 +411,21 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Aquatic</movementDef>
+			</li>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Stage3_Submerged</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Egg -->
 	

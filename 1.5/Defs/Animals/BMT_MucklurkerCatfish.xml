@@ -110,6 +110,47 @@
 				<chanceFactor>0.1</chanceFactor>
 			</li>
 		</tools>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_MucklurkerCatfish</defName>
+		<label>mucklurker catfish</label>
+		<race>BMT_MucklurkerCatfish</race>
+		<combatPower>75</combatPower>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<canArriveManhunter>false</canArriveManhunter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish</texPath>
+					<drawSize>0.75</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish_dessicated</texPath>
+					<drawSize>0.75</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish</texPath>
+					<drawSize>1.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish_dessicated</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish</texPath>
+					<drawSize>1.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MucklurkerCatfish_dessicated</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
 		<modExtensions>
 			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
 				<movementDef>PF_Movement_Aquatic</movementDef>
@@ -125,47 +166,6 @@
 				</bodyGraphicData>
 			</li>
 		</modExtensions>
-	</ThingDef>
-	
-	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>BMT_MucklurkerCatfish</defName>
-		<label>mucklurker catfish</label>
-		<race>BMT_MucklurkerCatfish</race>
-		<combatPower>75</combatPower>
-		<ecoSystemWeight>0.3</ecoSystemWeight>
-		<canArriveManhunter>false</canArriveManhunter>
-		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish</texPath>
-					<drawSize>0.5</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish_dessicated</texPath>
-					<drawSize>0.5</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish</texPath>
-					<drawSize>0.70</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish_dessicated</texPath>
-					<drawSize>0.70</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish</texPath>
-					<drawSize>1</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MucklurkerCatfish_dessicated</texPath>
-					<drawSize>1</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-		</lifeStages>
 	</PawnKindDef>
 
 </Defs>
