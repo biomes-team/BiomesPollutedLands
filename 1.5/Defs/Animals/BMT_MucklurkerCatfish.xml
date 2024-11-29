@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!-- Larvae -->
-	<ThingDef MayRequire="biomesteam.biomesislands" ParentName="BMT_PollutedLands_AnimalThingBase">
+
+	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_MucklurkerCatfish</defName>
 		<label>mucklurker catfish</label>
 		<description>Huge yet slow, the mucklurker catfish waits along the filthy bottom of waterways for its prey to come to it, luring them in using the glowing tips of its whiskers.</description>
@@ -11,10 +11,9 @@
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<FilthRate>0</FilthRate>
-			<Flammability>0.0</Flammability>
 		</statBases>
 		<race>
-			<leatherDef>BiomesIslands_Leather_Fishskin</leatherDef>
+			<leatherDef>BMT_Fishskin</leatherDef>
 			<baseBodySize>0.85</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
 			<baseHungerRate>0.25</baseHungerRate>
@@ -26,8 +25,8 @@
 			<lifeExpectancy>70</lifeExpectancy>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.30</manhunterOnDamageChance>
-			<specificMeatDef>BMT_FishMeat</specificMeatDef>
-			<body>Biomes_FishBody</body>
+			<specificMeatDef>BMT_FishMeatCore</specificMeatDef>
+			<body>BMT_FishBody</body>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
@@ -51,7 +50,15 @@
 			</lifeStageAges>
 		</race>
 	<comps>
-      <li Class="CompProperties_Devourer">
+			<li Class="BiomesCore.CompProperties_LurePrey">
+				<preyApproachTimeout>5000</preyApproachTimeout>
+				<attackOnDistance>2</attackOnDistance>
+				<shouldGlow>true</shouldGlow>
+			</li>
+			<li Class="CompProperties_Glower">
+				<compClass>BiomesCore.CompDefaultOffGlower</compClass>
+			</li>
+     <li Class="CompProperties_Devourer">
         <messageDigested>A mucklurker catfish swallowed {PAWN_nameDef} whole! Kill the fish before it digests {PAWN_nameDef}.</messageDigested>
         <messageEmerged>{PAWN_nameDef} emerged from the catfish.</messageEmerged>
         <messageEmergedCorpse>{PAWN_nameDef} emerged from the catfish's corpse.</messageEmergedCorpse>
@@ -71,15 +78,7 @@
             <li>(60, 40)</li>
           </points>
         </timeDamageCurve>
-			</li>
-	  			<li Class="BiomesCore.CompProperties_LurePrey">
-				<preyApproachTimeout>5000</preyApproachTimeout>
-				<attackOnDistance>2</attackOnDistance>
-				<shouldGlow>true</shouldGlow>
-			</li>
-			<li Class="CompProperties_Glower">
-				<compClass>BiomesCore.CompDefaultOffGlower</compClass>
-			</li>
+		</li>
 		</comps>
 		<!--uiIconScale>1.5</uiIconScale-->
 		<tools>
@@ -122,13 +121,13 @@
 					<li>PF_TerrainTag_WaterDeep</li>
 				</terrainTags>
 				<bodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish_submerged</texPath>
+					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish_Submerged</texPath>
 				</bodyGraphicData>
 			</li>
 		</modExtensions>
 	</ThingDef>
 	
-	<PawnKindDef MayRequire="biomesteam.biomesislands" ParentName="AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_MucklurkerCatfish</defName>
 		<label>mucklurker catfish</label>
 		<race>BMT_MucklurkerCatfish</race>

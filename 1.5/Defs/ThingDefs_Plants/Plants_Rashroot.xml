@@ -40,7 +40,7 @@
 	</plant>
 		<comps>
 				<li Class="BiomesCore.CompProperties_PlantReleaseSpore">
-				<moteDef>Mote_SkulltopSpores</moteDef>
+				<!-- <moteDef>Mote_SkulltopSpores</moteDef> -->
 				<hediffDef>BMT_ItchinessHediff</hediffDef>
 				<partsToAffect>
 					<li>Lung</li>
@@ -94,7 +94,7 @@
 	<ThingDef ParentName="MoteBase">
 		<defName>Mote_ItchyOil</defName>
 		<graphicData>
-			<texPath>BiomesCore_Things/Effects/FishingEffect</texPath>
+			<texPath>BMT_Caverns/Things/Mote/BMT_BadSpores</texPath>
 		</graphicData>
 		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<mote>
