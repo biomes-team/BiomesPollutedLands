@@ -65,6 +65,14 @@
 					<!-- Sound to play when a new pawn is created. -->
 				<spawnSound>Hive_Spawn</spawnSound>
 			</li>
+			  <li Class="CompProperties_Spawner">
+				<thingToSpawn>InsectJelly</thingToSpawn>
+				<spawnCount>20</spawnCount>
+				<spawnIntervalRange>26000~30000</spawnIntervalRange>
+				<spawnMaxAdjacent>40</spawnMaxAdjacent>
+				<spawnForbidden>true</spawnForbidden>
+				<saveKeysPrefix>jelly</saveKeysPrefix>
+			  </li>
 			<li Class="CompProperties_HeatPusher">
 				<heatPerSecond>6</heatPerSecond>
 				<heatPushMaxTemperature>38</heatPushMaxTemperature>
