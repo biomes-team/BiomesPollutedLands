@@ -143,7 +143,7 @@
 		<label>tox lamb</label>
 		<labelPlural>tox lambs</labelPlural>
 		<bodyGraphicData>
-		  <texPath>Things/Pawn/Animal/Sheep/SheepFemale</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/ToxwoolSheep/ToxwoolSheepFemale</texPath>
 		  <drawSize>0.6</drawSize>
 		  <shadowData>
 			<volume>(0.4, 0.3, 0.3)</volume>
@@ -151,13 +151,13 @@
 		  </shadowData>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepFemale</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/ToxwoolSheep/ToxwoolSheepFemale_dessicated</texPath>
 		  <drawSize>0.6</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>Things/Pawn/Animal/Sheep/SheepMale</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/ToxwoolSheep/ToxwoolSheepMale</texPath>
 		  <drawSize>1.30</drawSize>
 		  <shadowData>
 			<volume>(0.6, 0.45, 0.45)</volume>
@@ -165,7 +165,7 @@
 		  </shadowData>
 		</bodyGraphicData>
 		<femaleGraphicData>
-		  <texPath>Things/Pawn/Animal/Sheep/SheepFemale</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/ToxwoolSheep/ToxwoolSheepFemale</texPath>
 		  <drawSize>1.30</drawSize>
 		  <shadowData>
 			<volume>(0.6, 0.45, 0.45)</volume>
@@ -173,17 +173,17 @@
 		  </shadowData>
 		</femaleGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepMale</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/ToxwoolSheep/ToxwoolSheepMale_dessicated</texPath>
 		  <drawSize>1.30</drawSize>
 		</dessicatedBodyGraphicData>
 		<femaleDessicatedBodyGraphicData>
-		  <texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepFemale</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/ToxwoolSheep/ToxwoolSheepFemale_dessicated</texPath>
 		  <drawSize>1.30</drawSize>
 		</femaleDessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>Things/Pawn/Animal/Sheep/SheepMale</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/ToxwoolSheep/ToxwoolSheepMale</texPath>
 		  <drawSize>1.75</drawSize>
 		  <shadowData>
 			<volume>(0.6, 0.45, 0.45)</volume>
@@ -191,7 +191,7 @@
 		  </shadowData>
 		</bodyGraphicData>
 		<femaleGraphicData>
-		  <texPath>Things/Pawn/Animal/Sheep/SheepFemale</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/ToxwoolSheep/ToxwoolSheepFemale</texPath>
 		  <drawSize>1.70</drawSize>
 		  <shadowData>
 			<volume>(0.6, 0.45, 0.45)</volume>
@@ -199,11 +199,11 @@
 		  </shadowData>
 		</femaleGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepMale</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/ToxwoolSheep/ToxwoolSheepMale_dessicated</texPath>
 		  <drawSize>1.75</drawSize>
 		</dessicatedBodyGraphicData>
 		<femaleDessicatedBodyGraphicData>
-		  <texPath>Things/Pawn/Animal/Sheep/Dessicated_SheepFemale</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/ToxwoolSheep/ToxwoolSheepFemale_dessicated</texPath>
 		  <drawSize>1.70</drawSize>
 		</femaleDessicatedBodyGraphicData>
 	  </li>

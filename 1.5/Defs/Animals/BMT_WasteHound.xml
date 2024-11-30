@@ -70,6 +70,7 @@
 	  <!-- <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance> -->
 	</statBases>
 	<race>
+	  <herdAnimal>true</herdAnimal>
 	  <animalType>Canine</animalType>
 	  <body>QuadrupedAnimalWithPawsAndTail</body>
 	  <predator>true</predator>
