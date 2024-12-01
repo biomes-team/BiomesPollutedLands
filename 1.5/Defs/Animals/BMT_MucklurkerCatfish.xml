@@ -49,6 +49,11 @@
 				</li>
 			</lifeStageAges>
 		</race>
+		<modExtensions>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Aquatic</movementDef>
+			</li>
+		</modExtensions>	
 	<comps>
 			<li Class="BiomesCore.CompProperties_LurePrey">
 				<preyApproachTimeout>5000</preyApproachTimeout>
@@ -79,6 +84,13 @@
           </points>
         </timeDamageCurve>
 		</li>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggMucklurkerCatfish</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>15</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>2~3</eggCountRange>
+			</li>
 		</comps>
 		<!--uiIconScale>1.5</uiIconScale-->
 		<tools>
@@ -152,9 +164,6 @@
 			</li>
 		</lifeStages>
 		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Aquatic</movementDef>
-			</li>
 			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
 					<li>PF_TerrainTag_WaterShallow</li>
@@ -168,4 +177,22 @@
 		</modExtensions>
 	</PawnKindDef>
 
+	<ThingDef MayRequire="biomesteam.biomesislands" ParentName="EggFertBase">
+		<defName>BMT_EggMucklurkerCatfish</defName>
+		<label>mucklurker catfish egg (fert.)</label>
+		<description>A fertilized mucklurker catfish egg. If all goes well, it should hatch into a baby catfish. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(137,147,108)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>4.5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_MucklurkerCatfish</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>

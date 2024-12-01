@@ -47,6 +47,11 @@
 				</li>
 			</lifeStageAges>
 		</race>
+		<modExtensions>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Aquatic</movementDef>
+			</li>
+		</modExtensions>	
 		<!--uiIconScale>1.5</uiIconScale-->
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
@@ -126,9 +131,6 @@
 			</li>
 		</lifeStages>
 		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Aquatic</movementDef>
-			</li>
 			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
 					<li>PF_TerrainTag_WaterShallow</li>
@@ -188,6 +190,11 @@
 				</li>
 			</lifeStageAges>
 		</race>
+		<modExtensions>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Aquatic</movementDef>
+			</li>
+		</modExtensions>	
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
 				<ageInDays>18</ageInDays>
@@ -266,9 +273,6 @@
 			</li>
 		</lifeStages>
 		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Aquatic</movementDef>
-			</li>
 			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
 					<li>PF_TerrainTag_WaterShallow</li>
@@ -412,9 +416,6 @@
 			</li>
 		</lifeStages>
 		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Aquatic</movementDef>
-			</li>
 			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
 					<li>PF_TerrainTag_WaterShallow</li>

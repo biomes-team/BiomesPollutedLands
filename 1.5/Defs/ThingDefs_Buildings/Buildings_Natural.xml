@@ -92,7 +92,7 @@
 	<killedLeavings>
       <ChunkSlagSteel>4</ChunkSlagSteel>
       <Steel>60</Steel>
-	  <BMT_PustuleHornetQueen>1</BMT_PustuleHornetQueen>
+	  <BMT_EggPustuleHornetQueenFertilized>1</BMT_EggPustuleHornetQueenFertilized>
     </killedLeavings>
 	<passability>Impassable</passability>
 	<size>(2,2)</size>

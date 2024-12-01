@@ -84,6 +84,11 @@
 	  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 	  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 	</race>
+		<modExtensions>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Aquatic</movementDef>
+			</li>
+		</modExtensions>	
 	<tradeTags>
 	  <li>BMT_PollutedCommon</li>
 	</tradeTags>
@@ -170,9 +175,6 @@
 	  </li>
 	</lifeStages>
 		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Aquatic</movementDef>
-			</li>
 			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
 				<terrainTags>
 					<li>PF_TerrainTag_WaterShallow</li>
