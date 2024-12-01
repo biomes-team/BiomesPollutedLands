@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <HediffDef ParentName="ChronicDiseaseBase">
+  <HediffDef ParentName="InfectionBase">
     <defName>BMT_MegaphoridParasiticLarvae</defName>
     <label>megaphorid infestation</label>
     <labelNoun>an infestation of megaphorid larvae</labelNoun>
-    <description>An infection of parasitic larvae from the megaphorid. Without treatment, the larvae will grow over time, slowly devouring the infected body part, causing worsening symptoms and eventually killing the patient.
+    <description>An infection of parasitic larvae from the megaphorid. Without treatment, the larvae will grow over time, slowly devouring the infected, causing worsening symptoms and eventually killing the patient.
 \nA skilled doctor can excise the larvae. An unskilled doctor may be able to simply amputate the body part which contains the growing larvae. Unless it's the head or torso, in which case, good luck.
 \nOn exceptionally rare occasion, the body's immune system will manage to fight off the larvae by itself.</description>
     <hediffClass>HediffWithComps</hediffClass>
-    <initialSeverity>0.25</initialSeverity>
+    <initialSeverity>0.01</initialSeverity>
     <chanceToCauseNoPain>0.3</chanceToCauseNoPain>
     <tendable>true</tendable>
     <removeOnQuestLodgers>true</removeOnQuestLodgers>
+	<lethalSeverity>1</lethalSeverity>
     <stages>
       <li>
         <label>minor</label>
@@ -129,7 +130,7 @@
         </capMods>
       </li>
       <li>
-        <minSeverity>1</minSeverity>
+        <minSeverity>0.90</minSeverity>
         <lifeThreatening>true</lifeThreatening>
         <vomitMtbDays>0.75</vomitMtbDays>
         <label>extreme</label>

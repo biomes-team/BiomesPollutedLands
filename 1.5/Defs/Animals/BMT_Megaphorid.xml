@@ -166,7 +166,7 @@
 				<extraMeleeDamages>
 					<li>
 						<def>BMT_PhoridSting</def>
-						<amount>5</amount>
+						<amount>0.5</amount>
 					</li>
 				</extraMeleeDamages>
 			</li>
