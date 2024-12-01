@@ -257,7 +257,7 @@
 	  <foodType>CarnivoreAnimal</foodType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
 	  <predator>true</predator>
-	  <wildness>1</wildness>
+	  <wildness>0.10</wildness>
 	  <trainability>None</trainability>
 	  <!-- <mateMtbHours>8</mateMtbHours> -->
 	  <!-- <gestationPeriodDays>5.661</gestationPeriodDays> -->
@@ -300,7 +300,6 @@
 	  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 	</race>
 	<comps>
-		<li Class="BiomesCore.CompProperties_PermanentManhunter" />
 	  <li Class="CompProperties_GasOnDamage">
         <type>ToxGas</type>
         <damageFactor>6</damageFactor>
