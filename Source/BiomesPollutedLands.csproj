@@ -70,10 +70,12 @@
     <Compile Include="Hediffs\HediffComp_RemoveIfGeneIsNotActive.cs" />
     <Compile Include="Hediffs\HediffComp_ReturnDamage.cs" />
     <Compile Include="Hediffs\HediffComp_SeverityChangeWhenWet.cs" />
+    <Compile Include="Hediffs\Hediff_ToxinDependence.cs" />
     <Compile Include="JobDriver_BloodVomit.cs" />
     <Compile Include="JobDriver_EatCorpseTarget.cs" />
     <Compile Include="ModExtension.cs" />
     <Compile Include="ModSettings.cs" />
+    <Compile Include="Need_ToxinDependence.cs" />
     <Compile Include="PawnRenderNode_FurIsSkin.cs" />
     <Compile Include="BMT_AnimalsDefOf.cs" />
     <Compile Include="PostInitializationStartup.cs" />
