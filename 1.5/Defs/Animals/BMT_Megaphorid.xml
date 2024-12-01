@@ -20,9 +20,9 @@
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<baseBodySize>0.2</baseBodySize>
+			<baseBodySize>0.32</baseBodySize>
 			<baseHealthScale>0.8</baseHealthScale>
-			<baseHungerRate>0.65</baseHungerRate>
+			<baseHungerRate>4.0</baseHungerRate>
 			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>
 			<wildness>1</wildness>
 			<trainability>None</trainability>
@@ -127,7 +127,7 @@
 	<ThingDef ParentName="BMT_PollutedLands_BaseInsect">
 		<defName>BMT_Megaphorid</defName>
 		<label>megaphorid</label>
-		<description>A glass cannon of an creature, this disgusting bug attacks animals many times its size and tends to die in the process. Unbeknownst to the attacked, they have usually been injected with the phorid's young, which will slowly devour them from the inside out.</description>
+		<description>A glass cannon of an creature, this disgusting bug attacks animals many times its size and tends to die in the process. Unbeknownst to the attacked, they have usually been injected with the phorid's young, which will slowly devour them from the inside out. It can survive in all but the most cold and barren environments.</description>
 		<uiIconScale>1.5</uiIconScale>
 		<statBases>
 			<MoveSpeed>6.0</MoveSpeed>
@@ -174,7 +174,7 @@
 		<race>
 			<body>BMT_BeetleLikeWithStinger</body>
 			<predator>true</predator>
-			<baseBodySize>0.32</baseBodySize>
+			<baseBodySize>0.6</baseBodySize>
 			<baseHungerRate>1</baseHungerRate>
 			<baseHealthScale>1</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
