@@ -156,6 +156,7 @@
 	<label>pustule hornet queen</label>
 	<race>BMT_PustuleHornetQueen</race>
 	<combatPower>150</combatPower>
+    <defaultFactionType>BMT_PustuleHornets</defaultFactionType>
 	<lifeStages>
 	  <li>
 		<bodyGraphicData>

@@ -152,6 +152,7 @@
 	<race>BMT_PustuleHornet</race>
 	<combatPower>75</combatPower>
 	<wildGroupSize>6~17</wildGroupSize>
+	<defaultFactionType>BMT_PustuleHornets</defaultFactionType>
 	<lifeStages>
 	  <li>
 		<bodyGraphicData>
@@ -332,6 +333,7 @@
 	<race>BMT_PustuleHornetSpawned</race>
 	<combatPower>75</combatPower>
 	<wildGroupSize>6~17</wildGroupSize>
+	<defaultFactionType>BMT_PustuleHornets</defaultFactionType>
 	<lifeStages>
 	  <li>
 		<bodyGraphicData>

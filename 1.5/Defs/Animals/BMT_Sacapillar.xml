@@ -76,7 +76,7 @@
 			</li>
 			<li Class="BiomesCore.ThingComponents.CompProperties_SpawnGasOnTakeDamage">
 				<gasType>RotStink</gasType>
-				<chance>0.75</chance>
+				<chance>1.0</chance>
 				<amount>255</amount>
 			</li>
 		</comps>
