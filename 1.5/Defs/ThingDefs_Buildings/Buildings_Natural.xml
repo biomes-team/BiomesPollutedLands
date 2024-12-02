@@ -2,7 +2,7 @@
 <Defs>
 
 	<!--================================ Coal Ore ======================================-->
-	<ThingDef ParentName="BuildingNaturalBase" Name="DankPyon_HornetNestBase">
+	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>BMT_PustuleHornetHive</defName>
 		<label>pustule hornet hive</label>
 		<description>A hive of giant mutated insects that has been built into an ancient ruined mech. When destroyed the queen will emerge alongside her swarm.</description>
@@ -28,7 +28,7 @@
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_CanBeDormant">
-				<startsDormant>false</startsDormant>
+				<startsDormant>true</startsDormant>
 				<canWakeUpFogged>false</canWakeUpFogged>
 			</li>
 			<li Class="CompProperties_WakeUpDormant"/>
@@ -42,7 +42,7 @@
 				<spawnMaxAdjacent>13</spawnMaxAdjacent>
 				<spawnForbidden>true</spawnForbidden>
 			</li> -->
-    <!--  <li Class="CompProperties_SpawnerPawn">
+      <li Class="CompProperties_SpawnerPawn">
         <spawnablePawnKinds>
           <li>BMT_PustuleHornet</li>
         </spawnablePawnKinds>
@@ -50,21 +50,7 @@
         <spawnSound>Hive_Spawn</spawnSound>
         <initialPawnsPoints>200</initialPawnsPoints>
         <maxSpawnedPawnsPoints>500</maxSpawnedPawnsPoints>
-      </li>  Does not quite do what we need for the hornets -->
-	  
-			<li Class="BiomesCore.ThingComponents.CompProperties_CompAnimalsAroundThing">
-					<!-- Pawn to spawn. -->
-				<pawnDef>BMT_PustuleHornet</pawnDef> 
-					<!--
-					When this thing spawns, it will automatically spawn 1 pawn.
-					Then it will periodically spawn more until reaching 4.
-					-->
-				<pawnCount>4~6</pawnCount>
-					<!-- Will try to spawn another pawn after this time interval. --> 
-				<pawnSpawnIntervalDays>1.0~1.5</pawnSpawnIntervalDays>
-					<!-- Sound to play when a new pawn is created. -->
-				<spawnSound>Hive_Spawn</spawnSound>
-			</li>
+      </li> 
 			  <li Class="CompProperties_Spawner">
 				<thingToSpawn>InsectJelly</thingToSpawn>
 				<spawnCount>20</spawnCount>
@@ -94,7 +80,7 @@
       <Steel>60</Steel>
 	  <BMT_EggPustuleHornetQueenFertilized>1</BMT_EggPustuleHornetQueenFertilized>
     </killedLeavings>
-	<passability>Impassable</passability>
+	<passability>PassThroughOnly</passability>
 	<size>(2,2)</size>
 	</ThingDef>
 
