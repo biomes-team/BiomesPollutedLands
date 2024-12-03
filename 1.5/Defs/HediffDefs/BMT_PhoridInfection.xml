@@ -210,12 +210,15 @@
   </RecipeDef>
   <!-- Thought Def -->
   
-      <ThoughtDef>
+   <ThoughtDef>
     <defName>BMT_PhoridInfection</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
     <hediff>BMT_MegaphoridParasiticLarvae</hediff>
     <validWhileDespawned>true</validWhileDespawned>
     <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+	<nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
     <stages>
       <li>
         <label>megaphorid parasitic infection</label>
