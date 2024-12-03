@@ -91,7 +91,7 @@
 		</tools>
 	</ThingDef>
 	
-	<PawnKindDef MayRequire="biomesteam.biomesislands" ParentName="AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_MutatingTumorfishSpawn</defName>
 		<label>mutating tumorfish spawn</label>
 		<race>BMT_MutatingTumorfishSpawn</race>
@@ -145,7 +145,7 @@
 		</modExtensions>
 	</PawnKindDef>
 	<!-- Pupa -->
-	<ThingDef MayRequire="biomesteam.biomesislands" ParentName="BMT_PollutedLands_AnimalThingBase">
+	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_MutatingTumorfishFry</defName>
 		<label>mutating tumorfish fry</label>
 		<description>The second life stage of the tumorfish. It is now bigger and omnivorous, strong enough to hunt when necessary.</description>
@@ -233,7 +233,7 @@
 		</tools>
 	</ThingDef>
 	
-	<PawnKindDef MayRequire="biomesteam.biomesislands" ParentName="AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_MutatingTumorfishFry</defName>
 		<label>mutating tumorfish fry</label>
 		<race>BMT_MutatingTumorfishFry</race>
@@ -287,7 +287,7 @@
 		</modExtensions>
 	</PawnKindDef>
 	<!-- Adult -->
-		<ThingDef MayRequire="biomesteam.biomesislands" ParentName="BMT_PollutedLands_AnimalThingBase">
+		<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_MutatingTumorfishAdult</defName>
 		<label>mutating tumorfish</label>
 		<description>The adult form of the tumorfish. Now adapted to an amphibious lifestyle, it can hunt in water as well as on land. Despite still being quite fishy, it can move with surprising dexterity out of water.</description>
@@ -377,7 +377,7 @@
 		</modExtensions>
 	</ThingDef>
 	
-	<PawnKindDef MayRequire="biomesteam.biomesislands" ParentName="AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_MutatingTumorfishAdult</defName>
 		<label>mutating tumorfish</label>
 		<race>BMT_MutatingTumorfishAdult</race>
@@ -431,7 +431,7 @@
 	</PawnKindDef>
 	<!-- Egg -->
 	
-	<ThingDef MayRequire="biomesteam.biomesislands" ParentName="EggFertBase">
+	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggMutatingTumorfish</defName>
 		<label>mutating tumorfish egg (fert.)</label>
 		<description>A fertilized tumorfish egg. If all goes well, it should hatch into a baby tumorfish. It can be eaten raw, but it's much better cooked.</description>

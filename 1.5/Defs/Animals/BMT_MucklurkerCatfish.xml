@@ -178,7 +178,7 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<ThingDef MayRequire="biomesteam.biomesislands" ParentName="EggFertBase">
+	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggMucklurkerCatfish</defName>
 		<label>mucklurker catfish egg (fert.)</label>
 		<description>A fertilized mucklurker catfish egg. If all goes well, it should hatch into a baby catfish. It can be eaten raw, but it's much better cooked.</description>
