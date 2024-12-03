@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BMT_PollutedLands_BaseInsect">
 		<defName>BMT_Sacapillar</defName>
 		<label>sacapillar</label>
-		<description>Timid by nature, this larva-like bug has a large thorax filled with putrescent gasses, allowing it to move about and escape attackers while barely touching the ground It releases these gasses when attacked, often allowing it to escape unharmed.</description>
+		<description>Timid by nature, this larva-like bug has a large thorax filled with putrescent gasses, allowing it to move about and escape attackers while barely touching the ground. It releases these gasses when attacked, often allowing it to escape unharmed.</description>
 		<statBases>
 			<MoveSpeed>2</MoveSpeed>
 			<LeatherAmount>0</LeatherAmount>
@@ -13,6 +13,7 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<FilthRate>3</FilthRate>
 			<CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
+		    <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
 		</statBases>
 		<race>
 			<herdAnimal>true</herdAnimal>
@@ -24,12 +25,11 @@
 			<baseHungerRate>0.25</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<wildness>0.6</wildness>
-			<!-- <roamMtbDays>4</roamMtbDays> -->
 			<trainability>Intermediate</trainability>
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>5</lifeExpectancy>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>0.40</manhunterOnDamageChance>
+			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
 			<!-- <body>BeetleLike</body> -->
 			<body>BMT_LarvaLike</body>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
@@ -63,7 +63,7 @@
 					<li>Jog</li>
 					<li>Sprint</li>
 				</locomotionUrgencies>
-				<moveSpeedMultiplier>3</moveSpeedMultiplier>
+				<moveSpeedMultiplier>2</moveSpeedMultiplier>
 			</li>
 		</modExtensions>
 		<comps>

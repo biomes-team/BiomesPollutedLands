@@ -10,7 +10,7 @@
   <ThingDef ParentName="BMT_PollutedLands_BaseInsect">
 	<defName>BMT_Megakrill</defName>
 	<label>megakrill</label>
-	<description>While much larger than traditional krill, the megakrill is nearly as harmless. It eats the likes of algae from polluted ponds and rivers. Some colonies keep swarms of them as emergency food.</description>
+	<description>While much larger than traditional krill, the megakrill is nearly as harmless. It eats algae and the like from polluted ponds and rivers. Some colonies keep swarms of them in ponds as emergency food.</description>
 	<uiIconScale>1.5</uiIconScale>
 	<statBases>
 	  <MoveSpeed>5.0</MoveSpeed>
@@ -18,6 +18,7 @@
 	  <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>40</ComfyTemperatureMax>
 	  <FilthRate>0</FilthRate>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
 	</statBases>
 	<tools>
 	  <li>

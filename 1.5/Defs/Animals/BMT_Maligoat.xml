@@ -16,6 +16,7 @@
       <ComfyTemperatureMin>-20</ComfyTemperatureMin>
       <MarketValue>220</MarketValue>
       <FilthRate>8</FilthRate>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
     </statBases>
     <uiIconScale>1.2</uiIconScale>
     <comps>

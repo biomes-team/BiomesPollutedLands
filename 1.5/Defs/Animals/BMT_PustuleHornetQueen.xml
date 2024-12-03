@@ -17,6 +17,7 @@
 	  <MarketValue>150</MarketValue>
 	  <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>70</ComfyTemperatureMax>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
 	</statBases>
 	<tools>
 	  <li>
@@ -209,6 +210,7 @@
 	  <MarketValue>150</MarketValue>
 	  <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>70</ComfyTemperatureMax>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
 	</statBases>
 	<tools>
 	  <li>

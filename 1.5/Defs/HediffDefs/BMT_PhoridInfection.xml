@@ -168,6 +168,14 @@
         <severityPerDayGrowingRandomFactor>0.45~1.65</severityPerDayGrowingRandomFactor>
         <severityPerDayRemissionRandomFactor>0.5~1.0</severityPerDayRemissionRandomFactor>
       </li>
+	   <li Class="BiomesCore.HediffCompProperties_CorpseSpawner">
+        <pawn>BMT_MegaphoridLarva</pawn> <!-- must be set to a pawnkinddef -->
+		<pawnCountRange>10~12</pawnCountRange> <!-- default 1 -->
+		<bloodCountRange>16~30</bloodCountRange> <!-- default 3~6 -->
+		<bloodRadius>2</bloodRadius> <!-- default 2 -->
+		<forceParentFaction>false</forceParentFaction> <!-- default false -->
+		<bloodDef>Filth_Blood</bloodDef> <!-- default Filth_Blood -->
+      </li>
     </comps>
   </HediffDef>
 

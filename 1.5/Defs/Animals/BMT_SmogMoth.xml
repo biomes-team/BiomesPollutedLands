@@ -6,7 +6,7 @@
 		<label>smog caterpillar</label>
 		<description>The larval form of the smog moth. To deter predators, it uses toxic colors.</description>
 		<statBases>
-			<MoveSpeed>0.3</MoveSpeed>
+			<MoveSpeed>1.5</MoveSpeed>
 			<LeatherAmount>2</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>

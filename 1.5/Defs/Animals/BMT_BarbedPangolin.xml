@@ -18,7 +18,7 @@
 	  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
 	  <FilthRate>3</FilthRate>
-	  <!-- <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance> -->
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
 	</statBases>
 	<race>
 	  <body>QuadrupedAnimalWithPawsAndTail</body>

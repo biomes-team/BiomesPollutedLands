@@ -12,7 +12,7 @@
       <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
 	  <ComfyTemperatureMin>0</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>50</ComfyTemperatureMax>
-	  <!-- <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance> -->
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
 	</statBases>
 	<race>
       <body>TurtleLike</body>

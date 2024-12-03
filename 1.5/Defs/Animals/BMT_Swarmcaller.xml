@@ -10,13 +10,14 @@
   <ThingDef ParentName="BMT_PollutedLands_BaseInsect">
 	<defName>BMT_Swarmcaller</defName>
 	<label>swarmcaller</label>
-	<description>Found only in polluted areas, this insectoid feeds on otherwise inedible waste. Unfortunately for any humanoids around it, eating said waste tends to lure in other insectoids.</description>
+	<description>Found only in polluted areas, this insectoid feeds on otherwise inedible toxic waste. Unfortunately for any humanoids around it, eating said waste tends to lure in other insectoids.</description>
 	<uiIconScale>1.5</uiIconScale>
 	<statBases>
 	  <MoveSpeed>3.0</MoveSpeed>
 	  <MarketValue>50</MarketValue>
 	  <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>70</ComfyTemperatureMax>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
 	</statBases>
 	<tools>
 	  <li>
@@ -51,17 +52,7 @@
 	  <wildness>1</wildness>
 	  <trainability>None</trainability>
 	  <petness>0.08</petness>
-	  <!-- <mateMtbHours>8</mateMtbHours> -->
-	  <!-- <gestationPeriodDays>5.661</gestationPeriodDays> -->
 	  <soundEating>Rodent_Eat</soundEating>
-	  <litterSizeCurve>
-		<points>
-		  <li>(1.0, 0)</li>
-		  <li>(1.5, 1)</li>
-		  <li>(2.0, 1)</li>
-		  <li>(2.5, 0)</li>
-		</points>
-	  </litterSizeCurve>
 	  <headPosPerRotation>
 		<li>(0.0, 0, 0.07)</li>
 		<li>(0.19, 0, 0)</li>
@@ -98,7 +89,7 @@
 		<li Class="CompProperties_EggLayer">
 			<eggFertilizedDef>BMT_EggSwarmcallerFertilized</eggFertilizedDef>
 			<eggLayIntervalDays>7</eggLayIntervalDays>
-			<!-- <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax> -->
+			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 			<eggCountRange>2~5</eggCountRange>
 		</li>
 	</comps>

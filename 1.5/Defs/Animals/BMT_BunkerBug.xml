@@ -15,6 +15,7 @@
 			<ArmorRating_Heat>0.25</ArmorRating_Heat>
 			<FilthRate>16</FilthRate>
 			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+		    <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
 		</statBases>
 		<race>
 			<body>BeetleLikeWithClaw</body>

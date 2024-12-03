@@ -12,8 +12,7 @@
   <ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 	<defName>BMT_BiliousVarog</defName>
 	<label>bilious varog</label>
-	<!-- ToDo: Need to add a description. -->
-	<description>Adapted to disgustingly toxic waters, this relative of the common crocodile is highly dangerous when hungry. Alongside its razor sharp teeth, its powerful jaws also contain acid glands for spewing acid onto prey.</description>
+	<description>Adapted to disgustingly toxic waters, this relative of the common crocodile is highly dangerous when hungry. Alongside its razor sharp teeth, its powerful jaws also contain acid glands for drooling acid onto prey.</description>
 	<statBases>
 	  <MoveSpeed>3.0</MoveSpeed>
 	  <MarketValue>100</MarketValue>
@@ -23,6 +22,7 @@
 	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
 	  <LeatherAmount>160</LeatherAmount>
 	  <IncomingDamageFactor>0.8</IncomingDamageFactor>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
 	</statBases>
 	<tools>
 	  <li>
@@ -196,7 +196,6 @@
 	<race>BMT_BiliousVarog</race>
 	<combatPower>80</combatPower>
 	<ecoSystemWeight>0.30</ecoSystemWeight>
-	<!-- ToDo: Change textures -->
 	<lifeStages>
 	  <li>
 		<bodyGraphicData>

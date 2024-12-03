@@ -6,7 +6,7 @@
 		<label>megaphorid maggot</label>
 		<description>The larval form of the megaphorid fly. It is extremely ravenous and not very dangerous on its own, but they are rarely if ever found as such. They are most often found having burst out of an infected animal.</description>
 		<statBases>
-			<MoveSpeed>0.3</MoveSpeed>
+			<MoveSpeed>3</MoveSpeed>
 			<LeatherAmount>2</LeatherAmount>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
@@ -21,9 +21,9 @@
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<baseBodySize>0.32</baseBodySize>
-			<baseHealthScale>0.8</baseHealthScale>
-			<baseHungerRate>4.0</baseHungerRate>
-			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>
+			<baseHealthScale>1.0</baseHealthScale>
+			<baseHungerRate>2.0</baseHungerRate>
+			<foodType>OmnivoreAnimal</foodType>
 			<wildness>1</wildness>
 			<trainability>None</trainability>
 			<lifeExpectancy>0.25</lifeExpectancy>
@@ -58,6 +58,7 @@
 				<ageInDays>10</ageInDays>
 				<evolveIntoPawnKindDef>BMT_Megaphorid</evolveIntoPawnKindDef>
 			</li>
+			<li Class="BiomesCore.CompProperties_PermanentManhunter" />
 		</comps>
 		<tools>
 			<li>
@@ -71,7 +72,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>3.5</power>
+				<power>5</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -94,21 +95,21 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/Megaphorid/MegaphoridLarva</texPath>
-					<drawSize>0.4</drawSize>
+					<drawSize>1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/Megaphorid/MegaphoridLarva_Dessicated</texPath>
-					<drawSize>0.4</drawSize>
+					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/Megaphorid/MegaphoridLarva</texPath>
-					<drawSize>0.7</drawSize>
+					<drawSize>1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/Megaphorid/MegaphoridLarva_Dessicated</texPath>
-					<drawSize>0.7</drawSize>
+					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
@@ -136,25 +137,6 @@
 			<ComfyTemperatureMax>70</ComfyTemperatureMax>
 		</statBases>
 		<tools>
-			<li>
-				<capacities>
-					<li>Bite</li>
-				</capacities>
-				<power>3.4</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>head</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>1.5</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>
-			</li>
 	  		<li>
 				<label>stinger</label>
 				<capacities>
