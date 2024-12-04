@@ -26,7 +26,7 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<wildness>0.6</wildness>
 			<trainability>Intermediate</trainability>
-			<packAnimal>true</packAnimal>
+			<packAnimal>false</packAnimal> <!-- We need a pack texture!!! -->
 			<lifeExpectancy>5</lifeExpectancy>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
@@ -123,21 +123,21 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/SacaPillar/SacaPillar</texPath>
-					<drawSize>0.8</drawSize>
+					<drawSize>1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/SacaPillar/Dessicated_SacaPillar</texPath>
-					<drawSize>0.8</drawSize>
+					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/SacaPillar/SacaPillar</texPath>
-					<drawSize>1.2</drawSize>
+					<drawSize>2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/SacaPillar/Dessicated_SacaPillar</texPath>
-					<drawSize>1.2</drawSize>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
