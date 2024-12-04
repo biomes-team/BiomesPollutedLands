@@ -14,7 +14,7 @@
 		<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_SludgeCrawler>
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.08</BMT_Polluwog>
 		<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_GastroToad>
-		<BMT_TripleSnapper MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_TripleSnapper>
+		<BMT_TripleSnapper MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_TripleSnapper>
 		<BMT_MutagenicNorphea MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_MutagenicNorphea>
 		<BMT_Swarmcaller MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Swarmcaller>
         </value>
@@ -33,7 +33,7 @@
 		<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_SludgeCrawler>
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.08</BMT_Polluwog>
 		<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_GastroToad>
-		<BMT_TripleSnapper MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_TripleSnapper>
+		<BMT_TripleSnapper MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_TripleSnapper>
 		<BMT_MutagenicNorphea MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_MutagenicNorphea>
 		<BMT_Swarmcaller MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Swarmcaller>
 	  </value>
@@ -51,7 +51,7 @@
 		<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_SludgeCrawler>
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.08</BMT_Polluwog>
 		<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_GastroToad>
-		<BMT_TripleSnapper MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_TripleSnapper>
+		<BMT_TripleSnapper MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_TripleSnapper>
 		<BMT_MutagenicNorphea MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_MutagenicNorphea>
 		<BMT_Swarmcaller MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Swarmcaller>
 	  </value>
@@ -70,7 +70,7 @@
 		<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_SludgeCrawler>
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.08</BMT_Polluwog>
 		<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_GastroToad>
-		<BMT_TripleSnapper MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_TripleSnapper>
+		<BMT_TripleSnapper MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_TripleSnapper>
 		<BMT_MutagenicNorphea MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_MutagenicNorphea>
 		<BMT_Swarmcaller MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Swarmcaller>
 	  </value>

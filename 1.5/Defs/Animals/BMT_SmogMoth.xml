@@ -285,7 +285,12 @@
 				<power>10</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
-				<chanceFactor>0.85</chanceFactor>
+			</li>
+			<li>
+				<label>wing</label>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>BMT_MothWing</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<label>head</label>
@@ -296,7 +301,6 @@
 				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.1</chanceFactor>
 			</li>
 		</tools>
 			<tradeTags>

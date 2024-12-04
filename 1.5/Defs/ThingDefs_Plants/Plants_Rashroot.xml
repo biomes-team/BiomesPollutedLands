@@ -14,7 +14,7 @@
 	<graphicData>
 	  <texPath>BMT_PollutedLands/Things/Plant/Rashroot/Rashroot</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>1.15</drawSize>
+	  <drawSize>1</drawSize>
 	  <shadowData>
 		<volume>(0.55, 0.2, 0.2)</volume>
 	  </shadowData>

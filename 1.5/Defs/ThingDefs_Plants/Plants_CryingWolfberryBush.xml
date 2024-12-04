@@ -20,8 +20,9 @@
 	  <immatureGraphicPath>BMT_PollutedLands/Things/Plant/CryingWolfberryBush/CryingWolfberryBush_Immature</immatureGraphicPath>
 	  <leaflessGraphicPath>BMT_PollutedLands/Things/Plant/CryingWolfberryBush/CryingWolfberryBush_Leafless</leaflessGraphicPath>
 	  <dieIfLeafless>true</dieIfLeafless>
-	  <maxMeshCount>4</maxMeshCount>
+	  <maxMeshCount>1</maxMeshCount>
 	  <harvestTag>Standard</harvestTag>
+	  <harvestAfterGrowth>0.1</harvestAfterGrowth>
 	  <harvestedThingDef>BMT_CryingWolfBerries</harvestedThingDef>
 	  <harvestYield>10</harvestYield>
 	  <sowTags>

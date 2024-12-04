@@ -15,6 +15,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
 			<texPath>BMT_PollutedLands/Things/Plant/TumorbulbHyacinth</texPath>
+			<drawSize>0.75</drawSize>
 		</graphicData>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
