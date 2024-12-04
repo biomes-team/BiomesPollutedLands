@@ -6,7 +6,7 @@
 		<label>mantrap</label>
 		<description>Massive compared to its progenitor, the venus flytrap, the mantrap is named such due to its ability to snag prey the size of humans. This variant has managed to develop proto-feet and can move very slowly to more food-rich environments. This all tends to terrify people.</description>
 		<statBases>
-			<MoveSpeed>0.0001</MoveSpeed>
+			<MoveSpeed>0.00001</MoveSpeed>
 			<MarketValue>200</MarketValue>
 			<ComfyTemperatureMin>10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>70</ComfyTemperatureMax>

@@ -30,7 +30,7 @@
 		<li>Hydroponic</li>
 	  </sowTags>
 	  <topWindExposure>0.1</topWindExposure>
-	  <growDays>6</growDays>
+	  <growDays>8</growDays>
 	  <visualSizeRange>0.5~0.8</visualSizeRange>
 	  <wildOrder>2</wildOrder>
 	  <purpose>Food</purpose>
