@@ -70,6 +70,8 @@
 	  <wildness>0.75</wildness>
 	  <trainability>Intermediate</trainability>
 	  <petness>0.02</petness>
+	  <manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
+	  <manhunterOnDamageChance>0.40</manhunterOnDamageChance>
 	  <lifeExpectancy>180</lifeExpectancy>
 	  <lifeStageAges>
 		<li>

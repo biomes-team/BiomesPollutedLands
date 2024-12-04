@@ -60,7 +60,7 @@
     <healthAffectsPrice>false</healthAffectsPrice>
     <minRewardCount>10</minRewardCount>
     <stuffProps>
-      <stuffAdjective>wooden</stuffAdjective>
+      <stuffAdjective>tox-wooden</stuffAdjective>
       <categories>
         <li>Woody</li>
       </categories>
