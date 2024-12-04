@@ -12,6 +12,7 @@
 	<graphicData>
 	  <texPath>BMT_PollutedLands/Things/Plant/CryingWolfberryBush/CryingWolfberryBush</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.2</drawSize>
 	</graphicData>
 	<selectable>true</selectable>
 	<pathCost>14</pathCost>

@@ -51,6 +51,8 @@
 	  <wildness>0.75</wildness>
 	  <trainability>None</trainability>
 	  <petness>0.08</petness>
+	  <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+	  <manhunterOnDamageChance>0.10</manhunterOnDamageChance>
 	  <!-- <mateMtbHours>8</mateMtbHours> -->
 	  <!-- <gestationPeriodDays>5.661</gestationPeriodDays> -->
 	  <soundEating>Rodent_Eat</soundEating>
