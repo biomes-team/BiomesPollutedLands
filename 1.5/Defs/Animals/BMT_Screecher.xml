@@ -7,9 +7,9 @@
 		<description>Mutated by pollution, this corvid has gained the ability to stun its prey using its cries while it attacks. It tends to hunt in packs.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
-			<MarketValue>95</MarketValue>
-			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
-			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<MarketValue>455</MarketValue>
+			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<ComfyTemperatureMax>30</ComfyTemperatureMax>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
 		</statBases>
 		<race>
@@ -93,14 +93,12 @@
 				<cooldownTime>3</cooldownTime>
 				<chanceFactor>0.2</chanceFactor>
 				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
-				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
 							<amount>15</amount>
 						</li>
 					</extraMeleeDamages>
-				</surpriseAttack>
 			</li>
 			<li>
 				<label>beak</label>
@@ -110,14 +108,12 @@
 				<power>11</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
-				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
 							<amount>25</amount>
 						</li>
 					</extraMeleeDamages>
-				</surpriseAttack>
 			</li>
 			<li>
 				<label>head</label>
@@ -149,31 +145,31 @@
 				<label>screecher chick</label>
 				<bodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/Screecher/Screecher</texPath>
-					<drawSize>0.8</drawSize>
+					<drawSize>1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/Screecher/Screecher_dessicated</texPath>
-					<drawSize>0.8</drawSize>
+					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/Screecher/Screecher</texPath>
-					<drawSize>1.0</drawSize>
+					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/Screecher/Screecher_dessicated</texPath>
-					<drawSize>1.0</drawSize>
+					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/Screecher/Screecher</texPath>
-					<drawSize>1.2</drawSize>
+					<drawSize>1.8</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/Screecher/Screecher_dessicated</texPath>
-					<drawSize>1.2</drawSize>
+					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

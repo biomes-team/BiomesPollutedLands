@@ -22,6 +22,7 @@
       <foodType>OmnivoreRoughAnimal</foodType>
       <leatherDef>Leather_Lizard</leatherDef>
       <wildness>0.75</wildness>
+	  <trainability>Intermediate</trainability>
       <lifeExpectancy>150</lifeExpectancy>
       <lifeStageAges>
         <li>

@@ -24,6 +24,7 @@
 			<MoveSpeed>6.0</MoveSpeed>
 			<MarketValue>50</MarketValue>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<ComfyTemperatureMax>30</ComfyTemperatureMax>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
 		</statBases>
 		<tools>

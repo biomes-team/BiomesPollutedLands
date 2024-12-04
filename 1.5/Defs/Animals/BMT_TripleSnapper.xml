@@ -4,10 +4,10 @@
   <ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 	<defName>BMT_TripleSnapper</defName>
 	<label>triple snapper</label>
-	<description>With three heads comes the ability to attack fast and see in almost every direction. The triple snapper is an apex predator of polluted waters.</description>
+	<description>With three heads comes the ability to attack fast and see in almost every direction. The triple snapper is an apex predator of polluted waters. It cannot, however, move very fast on land.</description>
 	<statBases>
 	  <MoveSpeed>1.0</MoveSpeed>
-	  <MarketValue>300</MarketValue>
+	  <MarketValue>500</MarketValue>
 	  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
 	  <ComfyTemperatureMin>0</ComfyTemperatureMin>

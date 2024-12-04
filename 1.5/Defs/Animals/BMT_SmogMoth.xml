@@ -224,6 +224,7 @@
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>57</ComfyTemperatureMax>
 			<FilthRate>2</FilthRate>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
 		</statBases>
 		<race>
 			<!-- <body>BeetleLike</body> -->
@@ -288,9 +289,9 @@
 			</li>
 			<li>
 				<label>wing</label>
-				<power>10</power>
+				<power>8</power>
 				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>BMT_MothWing</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<label>head</label>
