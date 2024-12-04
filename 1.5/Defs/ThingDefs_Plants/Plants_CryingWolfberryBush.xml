@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BMT_PollutedLands_BushBase">
+  <ThingDef ParentName="BMT_PollutedLands_TreeBase">
 	<defName>BMT_Plant_CryingWolfberryBush</defName>
 	<label>crying wolfberry bush</label>
 	<description>The color of the berries from this bush makes it look as though they would kill anyone that eats them, but they are both non-toxic and tasty. They do however have the strange effect of activating tearducts, except in canines.</description>
