@@ -21,7 +21,7 @@
 	  <dieIfLeafless>true</dieIfLeafless>
 	  <maxMeshCount>4</maxMeshCount>
 	  <harvestTag>Standard</harvestTag>
-	  <harvestedThingDef>BMT_ClawhandCitron</harvestedThingDef>
+	  <harvestedThingDef>BMT_PoxSorghumHarvested</harvestedThingDef>
 	  <harvestYield>7</harvestYield>
 	  <sowTags>
 		<li>Ground</li>
