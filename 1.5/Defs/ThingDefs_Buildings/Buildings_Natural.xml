@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--================================ Coal Ore ======================================-->
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>BMT_PustuleHornetHive</defName>
 		<label>pustule hornet hive</label>
@@ -28,52 +27,28 @@
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_CanBeDormant">
-				<startsDormant>true</startsDormant>
+				<startsDormant>false</startsDormant>
 				<canWakeUpFogged>false</canWakeUpFogged>
 			</li>
 			<li Class="CompProperties_WakeUpDormant"/>
 			<li Class="CompProperties_SelfhealHitpoints">
 				<ticksPerHeal>6000</ticksPerHeal>
 			</li>
-		<!--	<li Class="CompProperties_Spawner">
-				<thingToSpawn>DankPyon_HornetJelly</thingToSpawn>
-				<spawnCount>10</spawnCount>
-				<spawnIntervalRange>26000~30000</spawnIntervalRange>
-				<spawnMaxAdjacent>13</spawnMaxAdjacent>
-				<spawnForbidden>true</spawnForbidden>
-			</li> -->
-      <li Class="CompProperties_SpawnerPawn">
-        <spawnablePawnKinds>
-          <li>BMT_PustuleHornet</li>
-        </spawnablePawnKinds>
-        <lordJob>LordJob_DefendAndExpandHive</lordJob>
-        <spawnSound>Hive_Spawn</spawnSound>
-        <initialPawnsPoints>200</initialPawnsPoints>
-        <maxSpawnedPawnsPoints>500</maxSpawnedPawnsPoints>
-      </li> 
-			  <li Class="CompProperties_Spawner">
-				<thingToSpawn>InsectJelly</thingToSpawn>
-				<spawnCount>20</spawnCount>
-				<spawnIntervalRange>26000~30000</spawnIntervalRange>
-				<spawnMaxAdjacent>40</spawnMaxAdjacent>
-				<spawnForbidden>true</spawnForbidden>
-				<saveKeysPrefix>jelly</saveKeysPrefix>
-			  </li>
-			<li Class="CompProperties_HeatPusher">
-				<heatPerSecond>6</heatPerSecond>
-				<heatPushMaxTemperature>38</heatPushMaxTemperature>
-			</li>
-			<li Class="CompProperties_SpawnerFilth">
-				<filthDef>Filth_Slime</filthDef>
-				<spawnCountOnSpawn>10</spawnCountOnSpawn>
-				<spawnMtbHours>4</spawnMtbHours>
-				<spawnRadius>5</spawnRadius>
-			</li>
-			<!--li Class="CompProperties_Maintainable">
-				<ticksHealthy>60000</ticksHealthy>
-				<ticksNeedsMaintenance>60000</ticksNeedsMaintenance>
-				<damagePerTickRare>10</damagePerTickRare>
-			</li-->
+		<li Class="BiomesCore.CompProperties_HiveSpawner">
+			<spawnablePawnKinds>
+				<!-- Any number of PawnKindDefs. A random one is selected upon spawn. -->
+				<li>BMT_PustuleHornet</li>
+			</spawnablePawnKinds>
+			<spawnSound>Hive_Spawn</spawnSound>
+			<!-- If greater than 0, then when the hive first spawns, the hive will immediately spawn the specified number of insects. -->
+			<initialPawnCount>3</initialPawnCount>
+			<maxPawnCount>3</maxPawnCount>
+			<pawnSpawnIntervalDays>2~3</pawnSpawnIntervalDays>
+			<defendRadius>1</defendRadius>
+			<!-- The faction to which the insect will belong. The faction is mandatory, since without it the AI most likely will not work. -->
+			<faction>BMT_PustuleHornets</faction>
+			<!-- In theory, a custom faction is not needed. And the hive can easily work with the vanilla faction. -->
+		</li>
 		</comps>
 	<killedLeavings>
       <ChunkSlagSteel>4</ChunkSlagSteel>

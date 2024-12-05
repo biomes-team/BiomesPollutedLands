@@ -243,6 +243,11 @@
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>5~6</eggCountRange>
 			</li>
+			<li Class="BiomesCore.CompProperties_BottomFeeder">
+				<feedingTerrainTag>Soil</feedingTerrainTag>
+				<consumingFoodReportString>Eating tiny prey.</consumingFoodReportString>
+				<effecterDef>EatFish</effecterDef>
+			</li>
 		</comps>
 		<race>
 			<body>QuadrupedAnimalWithPaws</body>
@@ -288,6 +293,9 @@
 		<modExtensions>
 			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
 				<movementDef>PF_Movement_Amphibious</movementDef>
+			</li>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
+				<isBottomFeeder>true</isBottomFeeder>
 			</li>
 		</modExtensions>
 	</ThingDef>

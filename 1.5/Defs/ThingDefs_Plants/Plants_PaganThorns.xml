@@ -26,7 +26,7 @@
         <li>Ground</li>
 		<li>Decorative</li>
       </sowTags>
-      <maxMeshCount>3</maxMeshCount>
+      <maxMeshCount>4</maxMeshCount>
       <visualSizeRange>0.3~0.4</visualSizeRange>
       <topWindExposure>0.3</topWindExposure>
       <wildClusterRadius>4</wildClusterRadius>
