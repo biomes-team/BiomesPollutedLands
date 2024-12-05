@@ -206,7 +206,8 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
 		<tradeTags>
-			<li>BMT_PollutedUnCommon</li>
+			<li>AnimalUncommon</li>
+			<li>BMT_PollutedUncommon</li>
 		</tradeTags>
 	</ThingDef>
 

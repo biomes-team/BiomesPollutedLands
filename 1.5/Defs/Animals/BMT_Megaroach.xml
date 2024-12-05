@@ -94,7 +94,10 @@
 	  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 	</race>
 	<tradeTags>
-	  <li>BMT_PollutedCommon</li>
+		<li>AnimalCommon</li>
+		<li>AnimalFarm</li>
+		<li>BMT_PollutedAnimalCommon</li>
+		<li>BMT_PollutedAnimalInsect</li>
 	</tradeTags>
 	<comps>
 		<li Class="CompProperties_EggLayer">

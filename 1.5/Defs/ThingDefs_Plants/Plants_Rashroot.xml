@@ -40,6 +40,46 @@
 	</plant>
   </ThingDef>
   
+  <!-- Wild Rashroot -->
+    <ThingDef ParentName="BMT_PollutedLands_BushBase">
+	<defName>BMT_Plant_WildRashroot</defName>
+	<label>wild rashroot</label>
+	<description>A shrub-like plant related to poison ivy. Touching it induces considerable itching. The oils on its leaves do however cause them to be simple antiseptic.</description>
+	<statBases>
+	  <MaxHitPoints>120</MaxHitPoints>
+	  <Nutrition>1.0</Nutrition>
+	  <Mass>30</Mass>
+	</statBases>
+	<graphicData>
+	  <texPath>BMT_PollutedLands/Things/Plant/Rashroot/Rashroot</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1</drawSize>
+	  <shadowData>
+		<volume>(0.55, 0.2, 0.2)</volume>
+	  </shadowData>
+	</graphicData>
+	<uiIconScale>0.85</uiIconScale>
+	<plant>
+	  <growDays>7</growDays>
+	  <!-- <leaflessGraphicPath>Things/Plant/Bush_Leafless</leaflessGraphicPath> -->
+	  <pollution>PollutedOnly</pollution>
+	  <fertilityMin>0.10</fertilityMin>
+      <fertilitySensitivity>0</fertilitySensitivity>
+	  <maxMeshCount>1</maxMeshCount>
+	  <sowWork>800</sowWork>
+	  <sowMinSkill>8</sowMinSkill>
+	  <sowTags>
+		<li>Ground</li>
+		<li>Hydroponic</li>
+	  </sowTags>
+	  <harvestTag>Standard</harvestTag>
+	  <harvestedThingDef>MedicineHerbal</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+	  <purpose>Health</purpose>
+	</plant>
+  </ThingDef>
+  
+  
   <!--Itchiness Hediff -->
     <HediffDef ParentName="InfectionBase">
     <defName>BMT_ItchinessHediff</defName>

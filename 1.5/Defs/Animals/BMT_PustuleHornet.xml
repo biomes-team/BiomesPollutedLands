@@ -383,7 +383,7 @@
 	<uiIconScale>1.5</uiIconScale>
 	<statBases>
 	  <MoveSpeed>4.0</MoveSpeed>
-	  <MarketValue>150</MarketValue>
+	  <MarketValue>10</MarketValue>
 	  <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>70</ComfyTemperatureMax>
 	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>

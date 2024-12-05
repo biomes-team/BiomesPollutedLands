@@ -100,6 +100,8 @@
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
 			<tradeTags>
+				<li>AnimalUncommon</li>
+				<li>AnimalFarm</li>
 				<li>BMT_PollutedAnimalCommon</li>
 				<li>BMT_PollutedAnimalInsect</li>
 			</tradeTags>

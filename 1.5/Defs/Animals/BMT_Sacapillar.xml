@@ -99,6 +99,12 @@
 				<chanceFactor>0.1</chanceFactor>
 			</li>
 		</tools>
+			<tradeTags>
+				<li>AnimalUncommon</li>
+				<li>AnimalFarm</li>
+				<li>BMT_PollutedAnimalCommon</li>
+				<li>BMT_PollutedAnimalInsect</li>
+			</tradeTags>
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">

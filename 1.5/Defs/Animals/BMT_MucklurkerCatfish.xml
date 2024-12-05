@@ -50,6 +50,10 @@
 				</li>
 			</lifeStageAges>
 		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>BMT_PollutedUncommon</li>
+		</tradeTags>
 		<modExtensions>
 			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
 				<movementDef>PF_Movement_Aquatic</movementDef>

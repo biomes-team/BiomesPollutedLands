@@ -305,6 +305,8 @@
 			</li>
 		</tools>
 			<tradeTags>
+				<li>AnimalCommon</li>
+				<li>AnimalInsect</li>
 				<li>BMT_PollutedAnimalCommon</li>
 				<li>BMT_PollutedAnimalInsect</li>
 			</tradeTags>

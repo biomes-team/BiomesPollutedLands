@@ -82,6 +82,7 @@
 			</li>
 		</comps>
 		<tradeTags>
+			<li>AnimalExotic</li>
 			<li>BMT_PollutedCommon</li>
 		</tradeTags>
 	</ThingDef>

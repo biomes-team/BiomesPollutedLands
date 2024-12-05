@@ -7,7 +7,7 @@
 	  <value>
 		<BMT_Plant_TreeWormoak>0.5</BMT_Plant_TreeWormoak>
 		<BMT_Plant_TreeBlotBirch>0.5</BMT_Plant_TreeBlotBirch>
-		<BMT_Plant_Rashroot>0.5</BMT_Plant_Rashroot>
+		<BMT_Plant_WildRashroot>0.5</BMT_Plant_WildRashroot>
 		<BMT_Plant_TwistedDandelion>0.5</BMT_Plant_TwistedDandelion>
 		<BMT_Plant_TreeClawhandCitron>0.05</BMT_Plant_TreeClawhandCitron>
 		<BMT_Plant_SewerReed>0.4</BMT_Plant_SewerReed>
@@ -42,7 +42,7 @@
 		<BMT_Plant_TreeSnakeWillow>1</BMT_Plant_TreeSnakeWillow>
 		<BMT_Plant_TreeWormoak>1</BMT_Plant_TreeWormoak>
 		<BMT_Plant_Doomsprout>0.1</BMT_Plant_Doomsprout>
-		<BMT_Plant_Rashroot>0.5</BMT_Plant_Rashroot>
+		<BMT_Plant_WildRashroot>0.5</BMT_Plant_WildRashroot>
 		<BMT_Plant_Toxcaps>3.0</BMT_Plant_Toxcaps>
 		<BMT_Plant_TreeClawhandCitron>0.05</BMT_Plant_TreeClawhandCitron>
 		<BMT_Plant_SewerReed>0.6</BMT_Plant_SewerReed>
@@ -126,7 +126,7 @@
 		<BMT_Plant_TreeBarbedLarch>4.0</BMT_Plant_TreeBarbedLarch>
 		<BMT_Plant_TreeBlotBirch>4.0</BMT_Plant_TreeBlotBirch>
 		<BMT_Plant_GreyFern>2.0</BMT_Plant_GreyFern>
-		<BMT_Plant_Rashroot>1.0</BMT_Plant_Rashroot>
+		<BMT_Plant_WildRashroot>1.0</BMT_Plant_WildRashroot>
 		<BMT_Plant_PaganThorns>3.0</BMT_Plant_PaganThorns>
 		<BMT_Plant_CryingWolfberryBush>1.0</BMT_Plant_CryingWolfberryBush>
 		<BMT_Plant_SewerReed>0.2</BMT_Plant_SewerReed>
@@ -138,7 +138,7 @@
 	  <xpath>/Defs/BiomeDef[defName="Tundra"]/wildPlants</xpath>
 	  <value>
 		<BMT_Plant_TreeBarbedLarch>0.05</BMT_Plant_TreeBarbedLarch>
-		<BMT_Plant_Rashroot>1.0</BMT_Plant_Rashroot>
+		<BMT_Plant_WildRashroot>1.0</BMT_Plant_WildRashroot>
 		<BMT_Plant_PaganThorns>3.0</BMT_Plant_PaganThorns>
 		<BMT_Plant_CryingWolfberryBush>0.06</BMT_Plant_CryingWolfberryBush>
 		<BMT_Plant_SewerReed>0.2</BMT_Plant_SewerReed>
@@ -154,7 +154,7 @@
 		<BMT_Plant_TreeSnakeWillow>0.5</BMT_Plant_TreeSnakeWillow>
 		<BMT_Plant_TreeScalpedCypress>0.5</BMT_Plant_TreeScalpedCypress>
 		<BMT_Plant_Doomsprout>0.2</BMT_Plant_Doomsprout>
-		<BMT_Plant_Rashroot>0.2</BMT_Plant_Rashroot>
+		<BMT_Plant_WildRashroot>0.2</BMT_Plant_WildRashroot>
 		<BMT_Plant_PaganThorns>3.0</BMT_Plant_PaganThorns>
 		<BMT_Plant_CryingWolfberryBush>0.07</BMT_Plant_CryingWolfberryBush>
 		<BMT_Plant_SewerReed>0.2</BMT_Plant_SewerReed>

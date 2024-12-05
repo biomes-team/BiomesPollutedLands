@@ -104,7 +104,8 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
 		<tradeTags>
-			<li>BMT_PollutedAnimalCommon</li>
+			<li>AnimalUncommon</li>
+			<li>BMT_PollutedAnimalUncommon</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">

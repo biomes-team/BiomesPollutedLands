@@ -78,8 +78,8 @@
 	</race>
 	<!-- ToDo: Change tags? -->
 	<tradeTags>
-	  <!-- <li>AnimalCommon</li> -->
-	  <!-- <li>AnimalFarm</li> -->
+	  <li>AnimalCommon</li>
+	  <li>AnimalFarm</li>
 	  <li>BMT_PollutedCommon</li>
 	  <li>BMT_PollutedAnimalFarm</li>
 	  <!-- <li>BMT_PollutedLands_AllAnimals</li> -->

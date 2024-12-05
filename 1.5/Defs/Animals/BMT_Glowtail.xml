@@ -65,6 +65,8 @@
 	</race>
 	<!-- ToDo: Change tags? -->
 	<tradeTags>
+	  <li>AnimalCommon</li>
+	  <li>AnimalPet</li>
 	  <li>BMT_PollutedAnimalCommon</li>
 	  <li>BMT_PollutedAnimalPet</li>
 	</tradeTags>

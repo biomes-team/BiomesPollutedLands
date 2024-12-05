@@ -123,6 +123,7 @@
 			</li>
 		</tools>
 		<tradeTags>
+			<li>AnimalUncommon</li>
 			<li>BMT_PollutedAnimalUncommon</li>
 		</tradeTags>
 	</ThingDef>

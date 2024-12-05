@@ -84,7 +84,14 @@
 	</race>
 	<tradeTags>
 	  <li>BMT_PollutedCommon</li>
+	  <li>AnimalCommon</li>
+	  <li>AnimalInsect</li>
 	</tradeTags>
+<!--	<modExtensions>
+    <li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" MayRequire="BiomesTeam.BiomesCore">
+        <isCustomThingEater>true</isCustomThingEater>
+    </li>
+	</modExtensions> -->
 	<comps>
 		<li Class="CompProperties_EggLayer">
 			<eggFertilizedDef>BMT_EggSwarmcallerFertilized</eggFertilizedDef>
@@ -92,6 +99,11 @@
 			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 			<eggCountRange>2~5</eggCountRange>
 		</li>
+	<!--	<li Class="BiomesCore.CompProperties_CustomThingEater">
+        <thingsToNutritionMapper>
+            <li>Wastepack~2</li> 
+        </thingsToNutritionMapper>
+    </li> -->
 	</comps>
 
   </ThingDef>

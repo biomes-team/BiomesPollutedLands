@@ -47,6 +47,10 @@
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
+		<tradeTags>
+			<li>AnimalCommon</li>
+			<li>BMT_PollutedAnimalCommon</li>
+		</tradeTags>
 		<!--uiIconScale>1.5</uiIconScale-->
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
@@ -278,6 +282,7 @@
 			<BMT_BufoBile>2</BMT_BufoBile>
 		</butcherProducts>
 		<tradeTags>
+			<li>AnimalCommon</li>
 			<li>BMT_PollutedAnimalCommon</li>
 		</tradeTags>
 		<modExtensions>

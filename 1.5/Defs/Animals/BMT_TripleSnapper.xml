@@ -104,6 +104,8 @@
 	</race>
 	<!-- ToDo: Change tags? -->
 	<tradeTags>
+	  <li>AnimalUncommon</li>
+	  <li>AnimalFighter</li>
 	  <li>BMT_PollutedAnimalUncommon</li>
 	</tradeTags>
   </ThingDef>

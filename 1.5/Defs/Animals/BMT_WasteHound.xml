@@ -141,6 +141,8 @@
 	</comps>
 	<!-- ToDo: Change tags? -->
 	<tradeTags>
+	  <li>AnimalUncommon</li>	
+	  <li>AnimalFighter</li>
 	  <li>BMT_PollutedAnimalUncommon</li>
 	  <li>BMT_PollutedAnimalFighter</li>
 	  <!-- <li>BMT_PollutedLands_AllAnimals</li> -->

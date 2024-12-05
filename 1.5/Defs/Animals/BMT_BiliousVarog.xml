@@ -158,6 +158,8 @@
 	</race>
 	<!-- ToDo: Change tags? -->
 	<tradeTags>
+	  <li>AnimalFighter</li>
+	  <li>AnimalUncommon</li>
 	  <li>BMT_PollutedAnimalUncommon</li>
 	  <li>BMT_PollutedAnimalFighter</li>
 	</tradeTags>
