@@ -26,7 +26,7 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<wildness>0.6</wildness>
 			<trainability>Intermediate</trainability>
-			<packAnimal>false</packAnimal> <!-- We need a pack texture!!! -->
+			<packAnimal>true</packAnimal> <!-- We need a pack texture!!! -->
 			<lifeExpectancy>5</lifeExpectancy>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>

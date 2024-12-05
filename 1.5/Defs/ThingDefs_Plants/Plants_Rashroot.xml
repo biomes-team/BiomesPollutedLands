@@ -66,12 +66,6 @@
 	  <fertilityMin>0.10</fertilityMin>
       <fertilitySensitivity>0</fertilitySensitivity>
 	  <maxMeshCount>1</maxMeshCount>
-	  <sowWork>800</sowWork>
-	  <sowMinSkill>8</sowMinSkill>
-	  <sowTags>
-		<li>Ground</li>
-		<li>Hydroponic</li>
-	  </sowTags>
 	  <harvestTag>Standard</harvestTag>
 	  <harvestedThingDef>MedicineHerbal</harvestedThingDef>
       <harvestYield>1</harvestYield>

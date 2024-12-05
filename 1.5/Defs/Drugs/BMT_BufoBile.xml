@@ -50,7 +50,7 @@
         </li>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>PsychiteTolerance</hediffDef>
-          <severity>0.1</severity>
+          <severity>0.05</severity>
           <divideByBodySize>true</divideByBodySize>
           <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
         </li>
@@ -68,10 +68,10 @@
         <addictiveness>0.1</addictiveness>
         <existingAddictionSeverityOffset>0.10</existingAddictionSeverityOffset>
         <needLevelOffset>0.9</needLevelOffset>
-        <isCombatEnhancingDrug>false</isCombatEnhancingDrug>
+        <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
         <listOrder>100</listOrder>
-        <overdoseSeverityOffset>0.45~0.65</overdoseSeverityOffset>
-        <largeOverdoseChance>0.01</largeOverdoseChance>
+        <overdoseSeverityOffset>0.10~0.25</overdoseSeverityOffset>
+        <largeOverdoseChance>0.005</largeOverdoseChance>
       </li>
     </comps>
     <allowedArchonexusCount>200</allowedArchonexusCount>

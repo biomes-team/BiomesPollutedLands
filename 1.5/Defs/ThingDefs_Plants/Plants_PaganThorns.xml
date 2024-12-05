@@ -11,6 +11,7 @@
       <BeautyOutdoors>3</BeautyOutdoors>
       <Nutrition>0.05</Nutrition>
     </statBases>
+	<altitudeLayer>Building</altitudeLayer>
     <graphicData>
       <texPath>BMT_PollutedLands/Things/Plant/PaganThorns</texPath>
       <graphicClass>Graphic_Random</graphicClass>
