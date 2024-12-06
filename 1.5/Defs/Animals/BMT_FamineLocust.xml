@@ -103,7 +103,7 @@
 
   <ThingDef ParentName="EggFertBase">
 	<defName>BMT_EggFamineLocustFertilized</defName>
-	<label>megaroach egg (fert.)</label>
+	<label>famine locust egg (fert.)</label>
 	<description>A fertilized famine locust egg. If all goes well, it should hatch into a baby famine locust. It can be eaten raw, but it's much better cooked.</description>
 	<graphicData>
 		<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
