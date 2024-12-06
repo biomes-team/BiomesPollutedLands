@@ -32,6 +32,7 @@
 	  </sowTags>
 	  <topWindExposure>0.1</topWindExposure>
 	  <growDays>8</growDays>
+	  <lifespanDaysPerGrowDays>5</lifespanDaysPerGrowDays>
 	  <visualSizeRange>0.8~1.4</visualSizeRange>
 	  <wildOrder>2</wildOrder>
 	  <purpose>Food</purpose>

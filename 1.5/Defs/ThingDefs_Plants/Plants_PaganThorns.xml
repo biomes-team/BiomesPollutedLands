@@ -25,7 +25,6 @@
       <growDays>2.5</growDays>
       <sowTags>
         <li>Ground</li>
-		<li>Decorative</li>
       </sowTags>
       <maxMeshCount>4</maxMeshCount>
       <visualSizeRange>0.3~0.4</visualSizeRange>
