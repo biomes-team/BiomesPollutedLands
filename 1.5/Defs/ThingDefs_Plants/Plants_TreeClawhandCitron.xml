@@ -31,7 +31,6 @@
 	  <topWindExposure>0.1</topWindExposure>
 	  <visualSizeRange>1.3~3.0</visualSizeRange>
 	  <growDays>6</growDays>
-	  <lifespanDaysPerGrowDays>20</lifespanDaysPerGrowDays>
 	  <wildOrder>2</wildOrder>
 	  <purpose>Food</purpose>
 	  <humanFoodPlant>true</humanFoodPlant>
