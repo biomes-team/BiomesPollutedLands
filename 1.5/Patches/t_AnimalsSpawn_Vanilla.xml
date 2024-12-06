@@ -6,7 +6,7 @@
         <value>
 		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_Megaroach>
 		<BMT_Megaphorid MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_Megaphorid>   		
-		<BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_WasteHound>
+		<BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound>
 		<BMT_ToxSheep MayRequire="Ludeon.RimWorld.Biotech">0.7</BMT_ToxSheep>
 		<BMT_Glowtail MayRequire="Ludeon.RimWorld.Biotech">0.4</BMT_Glowtail>
 		<BMT_SmogMoth MayRequire="Ludeon.RimWorld.Biotech">0.05</BMT_SmogMoth>
@@ -119,7 +119,7 @@
 	  <value>
 		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_Megaroach>
 		<BMT_Megaphorid MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_Megaphorid>  
-		<BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.5</BMT_WasteHound>
+		<BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound>
 		<BMT_Glowtail MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_Glowtail>
 		<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.02</BMT_SludgeCrawler>
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_Polluwog>
@@ -135,7 +135,7 @@
 	  <value>
 		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_Megaroach>
 		<BMT_Megaphorid MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_Megaphorid>  
-		<BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.4</BMT_WasteHound>
+		<BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound>
 		<BMT_ToxSheep MayRequire="Ludeon.RimWorld.Biotech">0.8</BMT_ToxSheep>
 		<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_SludgeCrawler>
 		<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_Polluwog>
