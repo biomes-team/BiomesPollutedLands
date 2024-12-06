@@ -39,12 +39,13 @@
 				<!-- Any number of PawnKindDefs. A random one is selected upon spawn. -->
 				<li>BMT_PustuleHornet</li>
 			</spawnablePawnKinds>
+			<pawnKindSpawnAfterKill>BMT_PustuleHornetQueen</pawnKindSpawnAfterKill>
 			<spawnSound>Hive_Spawn</spawnSound>
 			<!-- If greater than 0, then when the hive first spawns, the hive will immediately spawn the specified number of insects. -->
 			<initialPawnCount>3</initialPawnCount>
 			<maxPawnCount>3</maxPawnCount>
 			<pawnSpawnIntervalDays>2~3</pawnSpawnIntervalDays>
-			<defendRadius>1</defendRadius>
+			<defendRadius>5</defendRadius>
 			<!-- The faction to which the insect will belong. The faction is mandatory, since without it the AI most likely will not work. -->
 			<faction>BMT_PustuleHornets</faction>
 			<!-- In theory, a custom faction is not needed. And the hive can easily work with the vanilla faction. -->
