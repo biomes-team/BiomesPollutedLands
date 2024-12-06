@@ -435,7 +435,7 @@
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggMutatingTumorfish</defName>
 		<label>mutating tumorfish egg (fert.)</label>
-		<description>A fertilized tumorfish egg. If all goes well, it should hatch into a baby tumorfish. It can be eaten raw, but it's much better cooked.</description>
+		<description>A fertilized tumorfish egg. If all goes well, it should hatch into a baby tumorfish. It can be eaten raw, but it's much better cooked. This egg needs to be kept in water to survive.</description>
 		<graphicData>
 			<color>(96,70,70)</color>
 			<drawSize>1.2</drawSize>
@@ -447,6 +447,11 @@
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>6</hatcherDaystoHatch>
 				<hatcherPawn>BMT_MutatingTumorfishSpawn</hatcherPawn>
+			</li>
+			<li Class="BiomesCore.CompProperties_RuinedWithoutWater">
+				<minSafeTemperature>-10</minSafeTemperature>
+				<maxSafeTemperature>40</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
 			</li>
 		</comps>
 	</ThingDef>

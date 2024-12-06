@@ -189,7 +189,7 @@
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggMucklurkerCatfish</defName>
 		<label>mucklurker catfish egg (fert.)</label>
-		<description>A fertilized mucklurker catfish egg. If all goes well, it should hatch into a baby catfish. It can be eaten raw, but it's much better cooked.</description>
+		<description>A fertilized mucklurker catfish egg. If all goes well, it should hatch into a baby catfish. It can be eaten raw, but it's much better cooked. This egg needs to be kept in water to survive.</description>
 		<graphicData>
 			<color>(137,147,108)</color>
 			<drawSize>1.2</drawSize>
@@ -202,6 +202,11 @@
 				<hatcherDaystoHatch>4.5</hatcherDaystoHatch>
 				<hatcherPawn>BMT_MucklurkerCatfish</hatcherPawn>
 			</li>
+		  <li Class="BiomesCore.CompProperties_RuinedWithoutWater">
+			<minSafeTemperature>-10</minSafeTemperature>
+			<maxSafeTemperature>40</maxSafeTemperature>
+			<progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
+		  </li>
 		</comps>
 	</ThingDef>
 </Defs>

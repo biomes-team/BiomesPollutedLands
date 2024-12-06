@@ -348,7 +348,7 @@
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggGastroToadFertilized</defName>
 		<label>gastro toad egg (fert.)</label>
-		<description>A fertilized gastro toad egg. If all goes well, it should hatch into a gastro toad. It can be eaten raw, but it's much better cooked.</description>
+		<description>A fertilized gastro toad egg. If all goes well, it should hatch into a gastro toad. It can be eaten raw, but it's much better cooked. This egg needs to be kept in water to survive.</description>
 		<graphicData>
 			<texPath>BMT_PollutedLands/Things/Item/Eggs/GastroToadEggs</texPath>
 			<drawSize>0.75</drawSize>
@@ -361,6 +361,11 @@
 				<hatcherDaystoHatch>3.5</hatcherDaystoHatch>
 				<hatcherPawn>BMT_Polluwog</hatcherPawn>
 			</li>
+		  <li Class="BiomesCore.CompProperties_RuinedWithoutWater">
+			<minSafeTemperature>-1</minSafeTemperature>
+			<maxSafeTemperature>32</maxSafeTemperature>
+			<progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
+		  </li>
 		</comps>
 	</ThingDef>
 

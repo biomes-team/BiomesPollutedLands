@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BMT_PollutedLands_BaseInsect">
 		<defName>BMT_MutagenicNorphea</defName>
 		<label>mutagenic norphea</label>
-		<description>This unique insectoid's body is so adapted to environmental toxins that it cannot survive without them.</description>
+		<description>This unique insectoid's body is so adapted to environmental toxins that it cannot survive without them. It periodically produces a liquid that can induce mutations in humans.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<MarketValue>95</MarketValue>
@@ -153,6 +153,12 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+	<startingHediffs>
+      <li>
+        <def>ToxinDependence</def>
+        <severity>0.50</severity>
+      </li>
+    </startingHediffs>
 	</PawnKindDef>
 
 </Defs>
