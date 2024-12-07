@@ -42,7 +42,7 @@
 			<pawnKindSpawnAfterKill>BMT_PustuleHornetQueen</pawnKindSpawnAfterKill>
 			<spawnSound>Hive_Spawn</spawnSound>
 			<!-- If greater than 0, then when the hive first spawns, the hive will immediately spawn the specified number of insects. -->
-			<initialPawnCount>2</initialPawnCount>
+			<initialPawnCount>2~3</initialPawnCount>
 			<!-- Limit for all insects on the map, for all hives. -->
 			<maxPawnCount>5</maxPawnCount>
 			<pawnSpawnIntervalDays>2~3</pawnSpawnIntervalDays>
