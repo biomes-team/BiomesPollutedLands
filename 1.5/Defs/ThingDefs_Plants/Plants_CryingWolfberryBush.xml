@@ -26,7 +26,7 @@
 	  <harvestAfterGrowth>0.1</harvestAfterGrowth>
 	  <harvestedThingDef>BMT_CryingWolfBerries</harvestedThingDef>
 	  <harvestYield>10</harvestYield>
-	  <mustBeWildToSow>true</mustBeWildToSow>
+	  <mustBeWildToSow>false</mustBeWildToSow>
 	  <sowTags>
 		<li>Ground</li>
 		<li>Hydroponic</li>
