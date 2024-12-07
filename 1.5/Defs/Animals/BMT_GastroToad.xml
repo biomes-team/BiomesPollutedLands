@@ -361,11 +361,11 @@
 				<hatcherDaystoHatch>3.5</hatcherDaystoHatch>
 				<hatcherPawn>BMT_Polluwog</hatcherPawn>
 			</li>
-		<!-- <li Class="BiomesCore.ThingComponents.CompProperties_RuinedWithoutWater">
+		 <li Class="BiomesCore.ThingComponents.CompProperties_RuinedWithoutWater">
 			<minSafeTemperature>-1</minSafeTemperature>
 			<maxSafeTemperature>32</maxSafeTemperature>
 			<progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
-		  </li> -->
+		  </li> 
 		</comps>
 	</ThingDef>
 

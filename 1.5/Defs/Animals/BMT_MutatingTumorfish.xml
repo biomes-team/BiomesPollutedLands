@@ -448,11 +448,11 @@
 				<hatcherDaystoHatch>6</hatcherDaystoHatch>
 				<hatcherPawn>BMT_MutatingTumorfishSpawn</hatcherPawn>
 			</li>
-		<!--	<li Class="BiomesCore.ThingComponents.CompProperties_RuinedWithoutWater">
+			<li Class="BiomesCore.ThingComponents.CompProperties_RuinedWithoutWater">
 				<minSafeTemperature>-10</minSafeTemperature>
 				<maxSafeTemperature>40</maxSafeTemperature>
 				<progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
-			</li> -->
+			</li> 
 		</comps>
 	</ThingDef>
 
