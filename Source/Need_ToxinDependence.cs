@@ -1,4 +1,5 @@
 using RimWorld;
+using System.Collections.Generic;
 using Verse;
 
 namespace BMT_PollutedLands;
@@ -46,7 +47,7 @@ public class Need_ToxinDependence : Need
 
     public Need_ToxinDependence(Pawn pawn) : base(pawn)
     {
-        this.threshPercents = [0.1f];
+        this.threshPercents = new List<float> { 0.1f };
     }
 
     public override void SetInitialLevel()

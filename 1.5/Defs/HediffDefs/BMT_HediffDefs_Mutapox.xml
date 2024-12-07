@@ -1,26 +1,58 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- DEV -->
-  <!-- <HediffDef ParentName="BMT_PollutionLands_Hediffs_Base"> -->
-	<!-- <defName>BMT_Mutapox</defName> -->
-	<!-- <label>mutapox (TEST)</label> -->
-	<!-- <description>Genetically caused chronic pain.</description> -->
-	<!-- <initialSeverity>0.5</initialSeverity> -->
-	<!-- <minSeverity>0.0</minSeverity> -->
-	<!-- <maxSeverity>1.25</maxSeverity> -->
-	<!-- <stages> -->
-	  <!-- <li> -->
-		<!-- <label>minor</label> -->
-		<!-- <minSeverity>0.0</minSeverity> -->
-	  <!-- </li> -->
-	<!-- </stages> -->
-	<!-- <comps> -->
-	  <!-- <li Class="HediffCompProperties_Disappears"> -->
-		<!-- <disappearsAfterTicks>12000~34000</disappearsAfterTicks> -->
-		<!-- <showRemainingTime>true</showRemainingTime> -->
-	  <!-- </li> -->
-	<!-- </comps> -->
-  <!-- </HediffDef> -->
+<!--   DEV -->  
+   <HediffDef ParentName="InfectionBase">
+	 <defName>BMT_Mutapox</defName> 
+	 <hediffClass>BMT_PollutedLands.Hediff_Mutapox</hediffClass>
+	 <label>mutapox</label> 
+	 <description>Genetically caused chronic pain.</description> 
+    <makesSickThought>true</makesSickThought>
+    <tendable>true</tendable>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>12</baseTendDurationHours>
+        <severityPerDayTended>-0.53</severityPerDayTended>
+      </li>
+      <li Class="HediffCompProperties_Immunizable">
+        <severityPerDayNotImmune>0.84</severityPerDayNotImmune>
+        <immunityPerDaySick>0.6441</immunityPerDaySick>
+        <severityPerDayImmune>-0.70</severityPerDayImmune>
+        <immunityPerDayNotSick>-0.40</immunityPerDayNotSick>
+      </li>
+	  <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>900000~1800000</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>minor</label>
+	  </li>
+      <li>
+        <minSeverity>0.333</minSeverity>
+        <label>major</label>
+        <vomitMtbDays>1.5</vomitMtbDays>
+		<painOffset>0.05</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.733</minSeverity>
+        <label>extreme</label>
+        <vomitMtbDays>0.75</vomitMtbDays>
+        <painOffset>0.10</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.15</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
 
 </Defs>

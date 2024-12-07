@@ -8,5 +8,9 @@
 	<!-- <BMT_PL_OverdevelopedOrganHP>Absorb HP</BMT_PL_OverdevelopedOrganHP> -->
 
 	<BMT_PL_MessageWrongRottingStage>The target has an inappropriate rotting stage.</BMT_PL_MessageWrongRottingStage>
+	
+	<BMT_LetterLabelMutaPoxMutation>Mutation</BMT_LetterLabelMutaPoxMutation>
+    <BMT_LetterMutaPoxMutation>{PAWN_nameFull} has mutated the {0} gene due to Mutapox.</BMT_LetterMutaPoxMutation>
+  
 
 </LanguageData>

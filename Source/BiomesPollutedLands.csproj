@@ -14,6 +14,7 @@
     <Deterministic>true</Deterministic>
     <LangVersion>8</LangVersion>
     <LangVersion>preview</LangVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
@@ -71,6 +72,8 @@
     <Compile Include="Hediffs\HediffComp_RemoveIfGeneIsNotActive.cs" />
     <Compile Include="Hediffs\HediffComp_ReturnDamage.cs" />
     <Compile Include="Hediffs\HediffComp_SeverityChangeWhenWet.cs" />
+    <Compile Include="Hediffs\HediffGiver_PollutedOnly.cs" />
+    <Compile Include="Hediffs\Hediff_Mutapox.cs" />
     <Compile Include="Hediffs\Hediff_ToxinDependence.cs" />
     <Compile Include="JobDriver_BloodVomit.cs" />
     <Compile Include="JobDriver_EatCorpseTarget.cs" />
