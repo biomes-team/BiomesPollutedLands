@@ -147,21 +147,21 @@
 	<lifeStages>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/Glowtail/Glowtail</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/Glowtail/GlowtailBaby</texPath>
 		  <drawSize>0.6</drawSize>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/Glowtail/Dessicated_Glowtail</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/Glowtail/Dessicated_GlowtailBaby</texPath>
 		  <drawSize>0.6</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
 	  <li>
 		<bodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/Glowtail/Glowtail</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/Glowtail/GlowtailBaby</texPath>
 		  <drawSize>0.8</drawSize>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/Glowtail/Dessicated_Glowtail</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/Glowtail/Dessicated_GlowtailBaby</texPath>
 		  <drawSize>0.8</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
