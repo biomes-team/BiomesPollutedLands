@@ -50,6 +50,8 @@
   <ItemGroup>
     <Compile Include="Abilities\CompAbility_Validators.cs" />
     <Compile Include="Abilities\CompProperties_CorpseEater.cs" />
+    <Compile Include="BMT_HediffDefOf.cs" />
+    <Compile Include="BMT_MentalStateDefOf.cs" />
     <Compile Include="Genes\Gene_AddOrRemoveHediff.cs" />
     <Compile Include="Genes\Gene_BloodExplusion.cs" />
     <Compile Include="Genes\Gene_CarrionMetabolism.cs" />
@@ -75,6 +77,7 @@
     <Compile Include="Hediffs\HediffGiver_PollutedOnly.cs" />
     <Compile Include="Hediffs\Hediff_Mutapox.cs" />
     <Compile Include="Hediffs\Hediff_ToxinDependence.cs" />
+    <Compile Include="IncidentWorker_HungryLocusts.cs" />
     <Compile Include="JobDriver_BloodVomit.cs" />
     <Compile Include="JobDriver_EatCorpseTarget.cs" />
     <Compile Include="ModExtension.cs" />

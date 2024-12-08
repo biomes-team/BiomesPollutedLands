@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <IncidentDef>
+    <defName>BMT_HungryLocusts</defName>
+    <label>hungry locusts</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>BMT_PollutedLands.IncidentWorker_HungryLocusts</workerClass>
+    <baseChance>1.8</baseChance>
+    <category>ThreatBig</category>
+    <pointsScaleable>true</pointsScaleable>
+    <tale>ManhunterPack</tale>
+    <letterHyperlinkHediffDefs>
+      <li>BMT_HungeringHediff</li>
+    </letterHyperlinkHediffDefs>
+  </IncidentDef>
+</Defs>
