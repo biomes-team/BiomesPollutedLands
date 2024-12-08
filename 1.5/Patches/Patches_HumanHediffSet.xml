@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<Operation Class="PatchOperationAdd">
-	  <xpath>/Defs/HediffGiverSetDef[defName="OrganicStandard"]/hediffGivers</xpath>
+	  <xpath>/Defs/HediffGiverSetDef[defName="Human"]/hediffGivers</xpath>
 	  <value>
 		  <li Class="BMT_PollutedLands.HediffGiver_PollutedOnly">
 			<hediff>BMT_Mutapox</hediff>
