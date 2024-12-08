@@ -86,6 +86,8 @@
     <Compile Include="PawnRenderNode_FurIsSkin.cs" />
     <Compile Include="BMT_AnimalsDefOf.cs" />
     <Compile Include="PostInitializationStartup.cs" />
+    <Compile Include="QuestNode_Root_MutapoxWanderer.cs" />
+    <Compile Include="QuestNode_SetHediff.cs" />
     <Compile Include="RitualOutcomeComp_Quality.cs" />
     <Compile Include="Utility\GeneUtility.cs" />
     <Compile Include="Utility\HediffUtility.cs" />

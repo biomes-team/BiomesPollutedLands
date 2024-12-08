@@ -12,5 +12,6 @@ namespace BMT_PollutedLands
     public static class BMT_HediffDefOf
     {
         public static HediffDef BMT_HungeringHediff;
+        public static HediffDef BMT_Mutapox;
     }
 }
