@@ -8,6 +8,7 @@
 	 <label>mutapox</label> 
 	 <description>Genetically caused chronic pain.</description> 
     <makesSickThought>true</makesSickThought>
+	<lethalSeverity>1</lethalSeverity>
     <tendable>true</tendable>
     <comps>
       <li Class="HediffCompProperties_TendDuration">
