@@ -22,7 +22,7 @@
 	  <xpath>/Defs/StatDef[defName="ToxicEnvironmentResistance"]/parts</xpath>
 	  <value>
 		  <li Class="StatPart_GearStatOffset">
-			<apparelStat>ToxicEnvironmentResistance</apparelStat>
+			<apparelStat>BMT_Stuff_ToxicEnvironmentResistance</apparelStat>
 		  </li>
 	  </value>
 	</Operation>

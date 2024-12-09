@@ -5,18 +5,18 @@
   <ThingDef ParentName="WoolBase">
 	<defName>BMT_ToxWoolSheep</defName>
 	<label>tox-sheep wool</label>
-	<description>Tox-sheep's wool. It provides good insulation.</description>
+	<description>Tox-sheep's wool. It provides good insulation and protects against environmental toxins.</description>
 	<possessionCount>30</possessionCount>
 	<statBases>
 	  <StuffPower_Insulation_Cold>26</StuffPower_Insulation_Cold>
 	  <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
-	  <ToxicEnvironmentResistance>1.25</ToxicEnvironmentResistance> 
+	  <!-- <ToxicEnvironmentResistance>1.25</ToxicEnvironmentResistance>  -->
 	</statBases>
 	<stuffProps>
 	  <color>(164,212,150)</color>
 	  <commonality>0.04</commonality>
 	  <statOffsets>
-		<ToxicEnvironmentResistance>0.25</ToxicEnvironmentResistance>
+		<BMT_Stuff_ToxicEnvironmentResistance>0.25</BMT_Stuff_ToxicEnvironmentResistance>
 	  </statOffsets>
 	</stuffProps>
 	<graphicData>
@@ -30,6 +30,19 @@
 	  </li>
 	</comps>
   </ThingDef>
+
+  <StatDef>
+	<defName>BMT_Stuff_ToxicEnvironmentResistance</defName>
+	<label>toxic environment resistance</label>
+	<description>How well this clothing protects against environmental toxins. This protects against toxic fallout and rot stink exposure, but not against direct attacks with venom or injected poison.</description>
+	<category>Apparel</category>
+	<hideAtValue>0</hideAtValue>
+	<toStringStyle>PercentZero</toStringStyle>
+	<defaultBaseValue>0</defaultBaseValue>
+	<minValue>-1</minValue>
+	<maxValue>1</maxValue>
+	<displayPriorityInCategory>80</displayPriorityInCategory>
+  </StatDef>
 
   <!-- <StatDef> -->
     <!-- <defName>BMT_StuffPower_ToxicEnvironmentResistance</defName> -->
