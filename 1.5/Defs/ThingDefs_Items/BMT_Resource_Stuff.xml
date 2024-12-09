@@ -10,7 +10,7 @@
 	<statBases>
 	  <StuffPower_Insulation_Cold>26</StuffPower_Insulation_Cold>
 	  <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
-	  <!-- <ToxicEnvironmentResistance>1.25</ToxicEnvironmentResistance> -->
+	  <ToxicEnvironmentResistance>1.25</ToxicEnvironmentResistance> 
 	</statBases>
 	<stuffProps>
 	  <color>(164,212,150)</color>
@@ -62,6 +62,13 @@
       <texPath>BMT_PollutedLands/Things/Item/Toxwood</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
+	<comps>
+	  <li Class="CompProperties_GasOnDamage">
+		<type>ToxGas</type>
+		<damageFactor>6</damageFactor>
+		<useStackCountAsFactor>true</useStackCountAsFactor>
+	  </li>
+	</comps>
     <equippedAngleOffset>-20</equippedAngleOffset>
     <soundInteract>Wood_Drop</soundInteract>
     <soundDrop>Wood_Drop</soundDrop>
