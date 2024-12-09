@@ -1,32 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!-- <Operation Class="PatchOperationSequence"> -->
-		<!-- <success>Always</success> -->
-		<!-- <operations> -->
-			<!-- <li Class="PatchOperationTest"> -->
-			  <!-- <xpath>/Defs/StatDef[defName="ToxicEnvironmentResistance"]/parts</xpath> -->
-			  <!-- <success>Invert</success> -->
-			<!-- </li> -->
-			<!-- <li Class="PatchOperationAdd"> -->
-			  <!-- <xpath>/Defs/StatDef[defName="ToxicEnvironmentResistance"]</xpath> -->
-			  <!-- <success>Always</success> -->
-			  <!-- <value> -->
-				<!-- <parts/> -->
-			  <!-- </value> -->
-			<!-- </li> -->
-		<!-- </operations> -->
-	<!-- </Operation> -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>/Defs/StatDef[defName="ToxicEnvironmentResistance"]/parts</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+			  <xpath>/Defs/StatDef[defName="ToxicEnvironmentResistance"]</xpath>
+			  <success>Always</success>
+			  <value>
+				<parts/>
+			  </value>
+			</li>
+		</operations>
+	</Operation>
 
-	<!-- <Operation Class="PatchOperationAdd"> -->
-	  <!-- <xpath>/Defs/StatDef[defName="ToxicEnvironmentResistance"]/parts</xpath> -->
-	  <!-- <value> -->
-		  <!-- <li Class="StatPart_Stuff"> -->
-			<!-- <priority>100</priority> -->
-			<!-- <stuffPowerStat>BMT_StuffPower_ToxicEnvironmentResistance</stuffPowerStat> -->
-			<!-- <multiplierStat>BMT_StuffEffectMultiplierToxicEnvironmentResistance</multiplierStat> -->
-		  <!-- </li> -->
-	  <!-- </value> -->
-	<!-- </Operation> -->
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/StatDef[defName="ToxicEnvironmentResistance"]/parts</xpath>
+	  <value>
+		  <li Class="StatPart_GearStatOffset">
+			<apparelStat>ToxicEnvironmentResistance</apparelStat>
+		  </li>
+	  </value>
+	</Operation>
 
 </Patch>
