@@ -14,6 +14,25 @@ namespace BMT_PollutedLands
 
         float threshold = 0.4f;
 
+        static IEnumerable<GeneDef> _validGenes;
+        static IEnumerable<GeneDef> validGenes
+        {
+            get
+            {
+                if (_validGenes == null)
+                {
+                    GeneCategoryDef category = DefDatabase<GeneCategoryDef>.GetNamed("BMT_MutaGenes");
+                    _validGenes = DefDatabase<GeneDef>.AllDefsListForReading.Where(x =>
+                    {
+                        return x.displayCategory == category;
+
+                    });
+                    Log.Message("valid genes:" + _validGenes.Count());
+                }
+                return _validGenes;
+            }
+        }
+
         public override void Tick()
         {
             if(Severity < threshold)
@@ -24,12 +43,9 @@ namespace BMT_PollutedLands
 
             if (Rand.MTBEventOccurs(mtbMutDays / num, 60000f, 1f))
             {
-                Log.Message("chance: " + 1 / (60000f *(mtbMutDays / num)));
-                List<GeneDef> defs = DefDatabase<GeneDef>.AllDefsListForReading;
-
 
                 Random r = new Random();
-                foreach (GeneDef def in defs.OrderBy(x => r.Next()))
+                foreach (GeneDef def in validGenes.OrderBy(x => r.Next()))
                 {
                     if (pawn.genes.HasEndogene(def))
                     {
