@@ -2,7 +2,7 @@
 <Defs>
 	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_Polluwog</defName>
-		<label>Polluwog</label>
+		<label>polluwog</label>
 		<description>The larval form of the gastro toad. It lives in the disgusting waters of polluted biomes, feeding off any detritus and plants it can reach. It often lives in large groups.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
@@ -308,7 +308,7 @@
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 		<lifeStages>
 			<li>
-				<label>polluwog</label>
+				<label>gastro toadlet</label>
 				<bodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/GastroToad/GastroToad</texPath>
 					<drawSize>0.45</drawSize>
