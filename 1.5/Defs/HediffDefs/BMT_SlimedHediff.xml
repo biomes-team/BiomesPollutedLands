@@ -10,8 +10,10 @@
 	<tendable>true</tendable>
 		<comps>
 			<li Class="HediffCompProperties_TendDuration">
-				<baseTendDurationHours>48</baseTendDurationHours>
-				<disappearsAtTotalTendQuality>4</disappearsAtTotalTendQuality>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>48</baseTendDurationHours>
+        <severityPerDayTended>-1</severityPerDayTended>
+      </li>
 			</li>
           <li Class="BMT_PollutedLands.HediffCompProperties_SeverityChangeWhenWet">
             <isWetChangePerDay>-2</isWetChangePerDay>

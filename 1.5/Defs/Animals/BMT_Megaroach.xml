@@ -73,11 +73,11 @@
 	  <lifeExpectancy>1.5</lifeExpectancy>
 	  <lifeStageAges>
 		<li>
-		  <def>AnimalBaby</def>
+		  <def>EusocialInsectLarva</def>
 		  <minAge>0</minAge>
 		</li>
 		<li>
-		  <def>AnimalJuvenile</def>
+		  <def>EusocialInsectJuvenile</def>
 		  <minAge>0.1</minAge>
 		</li>
 		<li>
