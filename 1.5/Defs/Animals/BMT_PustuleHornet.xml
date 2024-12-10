@@ -126,7 +126,6 @@
 		<li Class="BiomesCore.CompProperties_PackHunter">
 			<joinHuntRange>20</joinHuntRange>
 		</li>
-		<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
 	</comps>
 	<tradeTags>
 	  <li>BMT_PollutedAnimalUncommon</li>
@@ -143,6 +142,7 @@
 				</locomotionUrgencies>
 				<moveSpeedMultiplier>2</moveSpeedMultiplier>
 			</li>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
 		</modExtensions>
   </ThingDef>
   
