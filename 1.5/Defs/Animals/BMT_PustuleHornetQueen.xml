@@ -147,6 +147,7 @@
 				</locomotionUrgencies>
 				<moveSpeedMultiplier>1.5</moveSpeedMultiplier>
 			</li>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
 		</modExtensions>
   </ThingDef>
   
@@ -339,6 +340,7 @@
 				</locomotionUrgencies>
 				<moveSpeedMultiplier>1.5</moveSpeedMultiplier>
 			</li>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
 		</modExtensions>
   </ThingDef>
   
