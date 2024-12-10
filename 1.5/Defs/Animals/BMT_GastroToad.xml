@@ -158,7 +158,7 @@
 	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_GastroToad</defName>
 		<label>gastro toad</label>
-		<description>A funny looking toad bigger than some rabbits. It uses its sticky acidic tongue and wide maw to snag small prey. Some waster colonies tame and raise them for their meat.</description>
+		<description>A funny looking toad bigger than some rabbits. It uses its sticky acidic tongue and wide maw to snag small prey. Some waster colonies tame and raise them for their meat as well as the drug-like bile they produce.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<MarketValue>50</MarketValue>
