@@ -64,6 +64,8 @@
 	  <baseBodySize>1</baseBodySize>
 	  <baseHungerRate>0.115</baseHungerRate>
 	  <baseHealthScale>0.8</baseHealthScale>
+	  <predator>true</predator>
+	  <maxPreyBodySize>2.0</maxPreyBodySize>
 	  <foodType>CarnivoreAnimal</foodType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
 	  <predator>true</predator>
@@ -260,6 +262,8 @@
 	  <baseBodySize>1</baseBodySize>
 	  <baseHungerRate>0.115</baseHungerRate>
 	  <baseHealthScale>0.8</baseHealthScale>
+	  <predator>true</predator>
+	  <maxPreyBodySize>2.0</maxPreyBodySize>
 	  <foodType>CarnivoreAnimal</foodType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
 	  <predator>true</predator>

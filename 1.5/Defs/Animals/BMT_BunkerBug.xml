@@ -21,6 +21,7 @@
 			<body>BeetleLikeWithClaw</body>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<baseBodySize>4.0</baseBodySize>
+			<maxPreyBodySize>3.0</maxPreyBodySize>
 			<predator>true</predator>
 			<baseHealthScale>9</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>

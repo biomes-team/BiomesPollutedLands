@@ -46,7 +46,7 @@
 	  <baseBodySize>0.32</baseBodySize>
 	  <baseHungerRate>0.55</baseHungerRate>
 	  <baseHealthScale>0.4</baseHealthScale>
-	  <foodType>OmnivoreAnimal</foodType>
+	  <foodType>OmnivoreRoughAnimal</foodType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
 	  <wildness>0.75</wildness>
 	  <trainability>None</trainability>
