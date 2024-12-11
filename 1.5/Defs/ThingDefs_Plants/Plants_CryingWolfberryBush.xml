@@ -41,6 +41,7 @@
 	  <pollution>PollutedOnly</pollution>
 	  <fertilityMin>0.50</fertilityMin>
       <fertilitySensitivity>0</fertilitySensitivity>
+	  <interferesWithRoof>false</interferesWithRoof>
 	</plant>
   </ThingDef>
 
