@@ -46,6 +46,7 @@
 	  <baseBodySize>0.2</baseBodySize>
 	  <baseHungerRate>0.35</baseHungerRate>
 	  <baseHealthScale>0.4</baseHealthScale>
+	  <fleshType>Insectoid</fleshType>
 	  <foodType>OmnivoreAnimal</foodType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
 	  <wildness>0.75</wildness>
