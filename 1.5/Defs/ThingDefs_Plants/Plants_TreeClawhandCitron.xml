@@ -26,7 +26,6 @@
 	  <harvestYield>20</harvestYield>
 	  <sowTags>
 		<li>Ground</li>
-		<li>Hydroponic</li>
 	  </sowTags>
 	  <mustBeWildToSow>false</mustBeWildToSow>
 	  <topWindExposure>0.1</topWindExposure>

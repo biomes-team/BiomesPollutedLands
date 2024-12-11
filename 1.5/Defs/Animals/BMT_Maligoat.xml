@@ -22,7 +22,7 @@
     <comps>
       <!-- TODO: move this to prime milk -->
       <li Class="CompProperties_Milkable">
-        <milkDef>Milk</milkDef>
+        <milkDef>BMT_RegalMilk</milkDef>
         <milkIntervalDays>3</milkIntervalDays>
         <milkAmount>12</milkAmount>
       </li>
