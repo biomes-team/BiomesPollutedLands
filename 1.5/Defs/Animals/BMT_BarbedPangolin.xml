@@ -219,6 +219,7 @@
 		<defName>BMT_PangolinDefense</defName>
 		<label>curled up</label>
 		<description>Curled up for defense.</description>
+		<hediffClass>HediffWithComps</hediffClass>
 		<stages>
 			<li>
 				<capMods>
@@ -236,6 +237,12 @@
 				</statFactors>
 			</li>
 		</stages>
+		<comps>
+		  <li Class="BMT_PollutedLands.HediffCompProperties_ReturnDamage">
+			<damageDef>Cut</damageDef>
+			<damageAmount>2</damageAmount>
+		  </li>
+		</comps>
 	</HediffDef>
 
 </Defs>
