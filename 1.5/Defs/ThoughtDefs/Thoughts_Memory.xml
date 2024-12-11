@@ -3,7 +3,7 @@
     <ThoughtDef>
         <defName>BMT_ObservedMaligoat</defName>
         <thoughtClass>Thought_MemoryObservation</thoughtClass>
-        <durationDays>1</durationDays>
+        <durationDays>0.25</durationDays>
         <stages>
             <li>
                 <label>observed maligoat</label>
