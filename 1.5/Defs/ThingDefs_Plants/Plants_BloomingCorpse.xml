@@ -28,6 +28,14 @@
 	  <fertilityMin>0.10</fertilityMin>
       <fertilitySensitivity>0</fertilitySensitivity>
 	</plant>
+	<comps>
+		<li Class="BiomesCore.CompProperties_PlantReleaseGas">
+			<gasType>RotStink</gasType>
+			<cellsToFill>5</cellsToFill>
+			<effecterReleasing>GasReleasing</effecterReleasing>
+			<growthProgress>0.20</growthProgress>
+		</li>
+	</comps>
   </ThingDef>
 
 </Defs>

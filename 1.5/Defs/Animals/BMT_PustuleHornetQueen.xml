@@ -66,6 +66,7 @@
 	  <baseHealthScale>0.8</baseHealthScale>
 	  <predator>true</predator>
 	  <maxPreyBodySize>2.0</maxPreyBodySize>
+	  <useMeatFrom>Megaspider</useMeatFrom>
 	  <foodType>CarnivoreAnimal</foodType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
 	  <wildness>1</wildness>
@@ -263,6 +264,7 @@
 	  <baseHealthScale>0.8</baseHealthScale>
 	  <predator>true</predator>
 	  <maxPreyBodySize>2.0</maxPreyBodySize>
+	  <useMeatFrom>Megaspider</useMeatFrom>
 	  <foodType>CarnivoreAnimal</foodType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
 	  <wildness>0.10</wildness>

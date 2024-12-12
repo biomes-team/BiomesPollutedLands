@@ -46,10 +46,10 @@
 	  <baseBodySize>0.32</baseBodySize>
 	  <baseHungerRate>0.55</baseHungerRate>
 	  <baseHealthScale>0.4</baseHealthScale>
-	  <fleshType>Insectoid</fleshType>
 	  <foodType>OmnivoreRoughAnimal</foodType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
 	  <wildness>0.75</wildness>
+	  <useMeatFrom>Megaspider</useMeatFrom>
 	  <trainability>None</trainability>
 	  <!-- <mateMtbHours>8</mateMtbHours> -->
 	  <!-- <gestationPeriodDays>5.661</gestationPeriodDays> -->

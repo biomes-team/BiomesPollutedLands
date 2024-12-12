@@ -27,11 +27,18 @@
       <fertilitySensitivity>0</fertilitySensitivity>
 	</plant>
 	 <comps>
-      <li Class="CompProperties_GasOnDamage">
-        <type>ToxGas</type>
-        <damageFactor>6</damageFactor>
-        <useStackCountAsFactor>true</useStackCountAsFactor>
-      </li>
+		<li Class="BiomesCore.CompProperties_PlantReleaseGasOnDeath">
+			<gasType>ToxGas</gasType>
+			<cellsToFill>6</cellsToFill>
+			<effecterReleasing>GasReleasing</effecterReleasing>
+			<growthProgress>0.25</growthProgress>
+		</li>
+	  <li Class="BiomesCore.CompProperties_PlantReleaseGasOnDamage">
+		<gasType>ToxGas</gasType>
+		<cellsToFill>6</cellsToFill>
+		<effecterReleasing>GasReleasing</effecterReleasing>
+		<growthProgress>0.25</growthProgress>
+	</li>
 	  </comps>
   </ThingDef>
 

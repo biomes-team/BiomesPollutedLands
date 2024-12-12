@@ -38,6 +38,11 @@
       <harvestYield>1</harvestYield>
 	  <purpose>Health</purpose>
 	</plant>
+	<modExtensions>
+	<li Class="BiomesCore.DefModExtensions.PlantHarvestMemoryExtension">
+		<ThoughtDef>BMT_ItchinessThought</ThoughtDef>
+	</li>
+	</modExtensions>
   </ThingDef>
   
   <!-- Wild Rashroot -->
@@ -71,6 +76,11 @@
       <harvestYield>1</harvestYield>
 	  <purpose>Health</purpose>
 	</plant>
+	<modExtensions>
+	<li Class="BiomesCore.DefModExtensions.PlantHarvestMemoryExtension">
+		<ThoughtDef>BMT_ItchinessThought</ThoughtDef>
+	</li>
+	</modExtensions>
   </ThingDef>
   
   
