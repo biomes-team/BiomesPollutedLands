@@ -15,7 +15,7 @@
 			  </points>
 			</pollutionAmountCurve>
 			
-			<mtbDays>70</mtbDays>
+			<mtbDays>120</mtbDays>
 		  </li>
 	  </value>
 	</Operation>

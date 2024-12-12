@@ -68,7 +68,6 @@
 	  <maxPreyBodySize>2.0</maxPreyBodySize>
 	  <foodType>CarnivoreAnimal</foodType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
-	  <predator>true</predator>
 	  <wildness>1</wildness>
 	  <trainability>None</trainability>
 	  <!-- <mateMtbHours>8</mateMtbHours> -->
@@ -266,7 +265,6 @@
 	  <maxPreyBodySize>2.0</maxPreyBodySize>
 	  <foodType>CarnivoreAnimal</foodType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
-	  <predator>true</predator>
 	  <wildness>0.10</wildness>
 	  <trainability>None</trainability>
 	  <!-- <mateMtbHours>8</mateMtbHours> -->

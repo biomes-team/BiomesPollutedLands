@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- drug -->
+
+	<!-- hediff -->
+	<ThingDef ParentName="DrugBase">
+    <defName>BMT_MutapoxVial</defName>
+    <label>mutapox vial</label>
+    <description>A potent liquid form of the mutapox virus. It can be milked from a strange insectoid from polluted biomes. Weirdly, it is somewhat enjoyable to consume.</description>
+    <descriptionHyperlinks>
+      <HediffDef>BMT_Mutapox</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>BMT_PollutedLands/Things/Item/MutapoxVial</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.75</drawSize>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>35</MarketValue>
+      <Mass>0.05</Mass>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <minRewardCount>10</minRewardCount>
+    <ingestible>
+      <foodType>Processed</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.10</joy>
+      <drugCategory>Hard</drugCategory>
+      <baseIngestTicks>150</baseIngestTicks>
+      <ingestSound>Ingest_Snort</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.21,0,0.05)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Snort {0}</ingestCommandString>
+      <ingestReportString>Snorting {0}.</ingestReportString>
+      <useEatingSpeedStat>true</useEatingSpeedStat>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>BMT_Mutapox</hediffDef>
+          <severity>0.75</severity>
+          <toleranceChemical>Psychite</toleranceChemical>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Psychite</chemical>
+        <addictiveness>0.0001</addictiveness>
+        <existingAddictionSeverityOffset>0.01</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <isCombatEnhancingDrug>false</isCombatEnhancingDrug>
+        <listOrder>100</listOrder>
+        <overdoseSeverityOffset>0.01~0.025</overdoseSeverityOffset>
+        <largeOverdoseChance>0.005</largeOverdoseChance>
+      </li>
+    </comps>
+    <allowedArchonexusCount>200</allowedArchonexusCount>
+  </ThingDef>
+	
+</Defs>

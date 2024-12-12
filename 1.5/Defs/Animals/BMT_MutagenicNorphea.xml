@@ -80,6 +80,11 @@
 				<!-- <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax> -->
 				<eggCountRange>2~5</eggCountRange>
 			</li>
+			<li Class="CompProperties_Milkable">
+				<milkDef>BMT_MutapoxVial</milkDef>
+				<milkIntervalDays>15</milkIntervalDays>
+				<milkAmount>1</milkAmount>
+			</li>
 		</comps>
 		<tradeTags>
 			<li>AnimalExotic</li>
