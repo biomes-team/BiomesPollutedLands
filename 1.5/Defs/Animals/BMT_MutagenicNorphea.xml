@@ -84,6 +84,7 @@
 				<milkDef>BMT_MutapoxVial</milkDef>
 				<milkIntervalDays>15</milkIntervalDays>
 				<milkAmount>1</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
 			</li>
 		</comps>
 		<tradeTags>
