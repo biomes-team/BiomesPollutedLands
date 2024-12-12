@@ -6,7 +6,7 @@
 	 <defName>BMT_Mutapox</defName> 
 	 <hediffClass>BMT_PollutedLands.Hediff_Mutapox</hediffClass>
 	 <label>mutapox</label> 
-	 <description>Genetically caused chronic pain.</description> 
+	 <description>A novel virus found only in polluted areas. It can cause genetic mutations in those afflicted if they survive its negative effects.</description> 
     <makesSickThought>true</makesSickThought>
 	<lethalSeverity>1</lethalSeverity>
     <tendable>true</tendable>
