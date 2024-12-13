@@ -4,7 +4,7 @@
   <GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_ImpalingClaws</defName>
 	<label>impaling claws</label>
-	<description>Carriers of this gene grow two claws on their backs.</description>
+	<description>Carriers of this gene grow two claws on their backs that act as natural weapons.</description>
 	<geneClass>BMT_PollutedLands.Gene_AddOrRemoveHediff</geneClass>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_ImpalingClaws</iconPath>
     <iconColor>(0.75, 0.75, 0.75)</iconColor>

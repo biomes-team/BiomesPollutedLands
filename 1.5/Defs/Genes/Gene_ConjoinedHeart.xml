@@ -4,7 +4,7 @@
   <GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_ConjoinedHeart</defName>
 	<label>conjoined heart</label>
-	<description>Carriers of this gene have a blood growth on the heart that serves to urgently replenish blood during bleeding.</description>
+	<description>Carriers of this gene have a growth on the heart that rapidly replenishes blood when bleeding out. It does however have a chance to cause a heart attack due to the cardiovascular stress.</description>
 	<geneClass>BMT_PollutedLands.Gene_ConjoinedHeart</geneClass>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_ConjoinedHearts</iconPath>
 	<customEffectDescriptions>

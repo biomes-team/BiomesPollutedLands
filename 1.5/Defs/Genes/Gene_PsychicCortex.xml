@@ -4,7 +4,7 @@
   <GeneDef MayRequire="ludeon.rimworld.royalty" ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_PsychicCortex</defName>
 	<label>psychic cortex</label>
-	<description>Carriers of this gene have enhanced psychic abilities and can create a skipshield for quite a long period of time.</description>
+	<description>Carriers of this gene have enhanced psychic abilities and can create an immobile skipshield that lasts roughly a day.</description>
 	<geneClass>Gene</geneClass>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_PsychicCortex</iconPath>
 	<abilities>

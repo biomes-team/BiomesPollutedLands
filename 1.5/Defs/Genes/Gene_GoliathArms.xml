@@ -4,7 +4,7 @@
   <GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_GoliathArms</defName>
 	<label>goliath arms</label>
-	<description>Carriers of this gene have huge, oversized hands. Their strength is much higher, but their agility leaves much to be desired.</description>
+	<description>Carriers of this gene have huge, oversized arms and hands. Their strength is much higher, but their agility leaves much to be desired.</description>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_GoliathArms</iconPath>
 	<biostatCpx>2</biostatCpx>
 	<biostatMet>-2</biostatMet>

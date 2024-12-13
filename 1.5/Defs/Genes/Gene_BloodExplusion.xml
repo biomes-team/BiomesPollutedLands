@@ -13,7 +13,7 @@
 	  <li>Whenever a carrier is sick, the gene causes them to randomly puke bloody vomit.</li>
 	</customEffectDescriptions>
 	<statOffsets>
-	  <ImmunityGainSpeed>0.12</ImmunityGainSpeed>
+	  <ImmunityGainSpeed>0.15</ImmunityGainSpeed>
 	</statOffsets>
 	<modExtensions>
 		<li Class="BMT_PollutedLands.GeneExtension">

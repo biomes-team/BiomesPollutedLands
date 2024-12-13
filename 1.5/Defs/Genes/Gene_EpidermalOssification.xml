@@ -4,7 +4,7 @@
   <GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_EpidermalOssification</defName>
 	<label>epidermal ossification</label>
-	<description>Carriers of this gene have bone growths on some parts of their body.</description>
+	<description>Carriers of this gene have bone growths protecting much of their body while also making it harder to move.</description>
 	<geneClass>Gene</geneClass>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_EpidermalOssification</iconPath>
 	<painOffset>0.05</painOffset>

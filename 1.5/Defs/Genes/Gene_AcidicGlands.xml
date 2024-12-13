@@ -5,7 +5,7 @@
   <GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_AcidicGlands</defName>
 	<label>acidic glands</label>
-	<description>Carriers of this gene have acid glands covering most of their body. These glands release acid when in danger.</description>
+	<description>Carriers of this gene have acid glands covering most of their body that expel acid onto anything attacking them in melee.</description>
 	<geneClass>BMT_PollutedLands.Gene_AddOrRemoveHediff</geneClass>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_AcidicGlands</iconPath>
 	<biostatCpx>1</biostatCpx>
