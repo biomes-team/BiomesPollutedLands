@@ -4,7 +4,8 @@
   <GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_ClusterEyes</defName>
 	<label>cluster eyes</label>
-	<description>Carriers of this gene have cluster eyes located on the forehead.</description>
+	<!-- <description>Carriers of this gene have cluster eyes located on the forehead.</description> -->
+	<description>Carriers of this gene have cluster eyes.</description>
 	<geneClass>Gene</geneClass>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_ClusterEyes</iconPath>
 	<customEffectDescriptions>
@@ -21,37 +22,60 @@
 	  <ImmunityGainSpeed>-0.05</ImmunityGainSpeed>
 	  <PawnBeauty>-1</PawnBeauty>
 	</statOffsets>
+	<!-- <renderNodeProperties> -->
+	  <!-- <li> -->
+		<!-- <nodeClass>PawnRenderNode_AttachmentHead</nodeClass> -->
+		<!-- <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass> -->
+		<!-- <texPaths> -->
+		  <!-- <li>BMT_PollutedLands/Things/Pawn/Humanlike/BodyAttachments/ClusterEyes/ClusterEyes</li> -->
+		<!-- </texPaths> -->
+		<!-- <color>(255, 255, 255)</color> -->
+		<!-- <parentTagDef>Head</parentTagDef> -->
+		<!-- <drawData> -->
+		  <!-- <defaultData> -->
+			<!-- <layer>80</layer> -->
+		  <!-- </defaultData> -->
+		  <!-- <dataSouth> -->
+			<!-- <offset>(0, 0, 0.13)</offset> -->
+		  <!-- </dataSouth> -->
+		  <!-- <dataEast> -->
+			<!-- <offset>(0, 0, 0.13)</offset> -->
+		  <!-- </dataEast> -->
+		  <!-- <dataWest> -->
+			<!-- <offset>(0, 0, 0.13)</offset> -->
+		  <!-- </dataWest> -->
+		<!-- </drawData> -->
+	  <!-- </li> -->
+	<!-- </renderNodeProperties> -->
 	<renderNodeProperties>
 	  <li>
 		<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 		<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+		<parentTagDef>Head</parentTagDef>
+		<colorType>Custom</colorType>
+		<color>(255, 255, 255)</color>
+		<useRottenColor>true</useRottenColor>
+		<useSkinShader>true</useSkinShader>
+		<rotDrawMode>Fresh, Rotting</rotDrawMode>
 		<texPaths>
 		  <li>BMT_PollutedLands/Things/Pawn/Humanlike/BodyAttachments/ClusterEyes/ClusterEyes</li>
 		</texPaths>
-		<color>(255, 255, 255)</color>
-		<parentTagDef>Head</parentTagDef>
+		<visibleFacing>
+		  <li>East</li>
+		  <li>South</li>
+		  <li>West</li>
+		</visibleFacing>
+		<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
 		<drawData>
 		  <defaultData>
-			<layer>80</layer>
+			<layer>52</layer>
 		  </defaultData>
-		  <!-- <dataNorth> -->
-			<!-- <offset>(0, 0, -0.04)</offset> -->
-			<!-- <layer>10</layer> -->
-		  <!-- </dataNorth> -->
-		  <dataSouth>
-			<offset>(0, 0, 0.13)</offset>
-		  </dataSouth>
-		  <dataEast>
-			<offset>(0, 0, 0.13)</offset>
-		  </dataEast>
-		  <dataWest>
-			<offset>(0, 0, 0.13)</offset>
-		  </dataWest>
 		</drawData>
 	  </li>
 	</renderNodeProperties>
 	<exclusionTags>
-	  <li>Headbone</li>
+	  <!-- <li>Headbone</li> -->
+	  <li>EyeColor</li>
 	</exclusionTags>
   </GeneDef>
 
