@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <IncidentDef>
+    <defName>BMT_HungryLocusts</defName>
+    <label>hungry locusts</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>BMT_PollutedLands.IncidentWorker_HungryLocusts</workerClass>
+    <baseChance>1.8</baseChance>
+    <category>ThreatBig</category>
+    <pointsScaleable>true</pointsScaleable>
+    <tale>ManhunterPack</tale>
+    <letterHyperlinkHediffDefs>
+      <li>BMT_HungeringHediff</li>
+    </letterHyperlinkHediffDefs>
+  </IncidentDef>
+  
+    <IncidentDef>
+    <defName>BMT_HagbloomSprout</defName>
+    <label>hagbloom sprout</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>IncidentWorker_AmbrosiaSprout</workerClass>
+    <baseChance>1.0</baseChance>
+    <letterLabel>Hagbloom sprout</letterLabel>
+    <letterText>A grove of the mysterious ambrosia bush has sprouted nearby! If you wait for the plants to grow, you'll be able to harvest the delicious, pleasurable, and slightly addictive fruit.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <allowedBiomes>
+      <li>TropicalRainforest</li>
+      <li>TropicalSwamp</li>
+      <li>TemperateForest</li>
+      <li>TemperateSwamp</li>
+      <li>BorealForest</li>
+      <li>AridShrubland</li>
+    </allowedBiomes>
+  </IncidentDef>
+  
+    <IncidentDef>
+    <defName>BMT_BunkerBugPasses</defName>
+    <label>bunker bug pass</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>BMT_PollutedLands.IncidentWorker_BunkerBugPasses</workerClass>
+    <baseChance>0.7</baseChance>
+    <minRefireDays>13</minRefireDays>
+  </IncidentDef>
+  
+</Defs>

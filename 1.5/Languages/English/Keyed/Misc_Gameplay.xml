@@ -19,4 +19,10 @@
     <BMT_LetterLabelMutapoxJoins>Mutapox Infected Wanderer joins: {PAWN_nameDef}</BMT_LetterLabelMutapoxJoins>
     <BMT_LetterMutapoxJoins>A {PAWN_title} named {PAWN_nameDef} has arrived and wants to join the colony.\n\n[PAWN_pronoun] was infected with Mutapox, and so was exiled from their last colony, but is willing to contribute, but will not leave voluntarily, claiming to have nowhere else to go. You can choose to turn {PAWN_objective} down and send {PAWN_objective} away. However, your colonists will be disturbed at sending someone away in need. If you accept, you'll have to treat - or dont treat - their Mutapox to stop it from causing massive mutations to them.</BMT_LetterMutapoxJoins>
 
+    <!-- Thrumbo passes -->
+    <BMT_LetterLabelBunkerBugPasses>Bunker bugs</BMT_LetterLabelBunkerBugPasses>
+    <BMT_LetterBunkerBugPasses>PLACEHOLDER TEXT PLEASE REPLACE\n\nA small herd of bunker bugs have wandered into the area.\n\nPeaceful by nature, these rare creatures are extremely dangerous when confronted. Some traders are willing to pay a lot of money for their precious leather and horn.\n\nThrumbos will leave the area in a few days.</BMT_LetterBunkerBugPasses>
+  
+
+
 </LanguageData>
