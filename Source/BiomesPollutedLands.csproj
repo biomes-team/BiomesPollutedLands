@@ -80,6 +80,7 @@
     <Compile Include="IncidentWorker_BunkerBugPasses.cs" />
     <Compile Include="IncidentWorker_HagbloomSprout.cs" />
     <Compile Include="IncidentWorker_HungryLocusts.cs" />
+    <Compile Include="IngestionOutcomeDoer_RemoveHediff.cs" />
     <Compile Include="JobDriver_BloodVomit.cs" />
     <Compile Include="JobDriver_EatCorpseTarget.cs" />
     <Compile Include="ModExtension.cs" />
