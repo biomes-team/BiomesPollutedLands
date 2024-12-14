@@ -2,12 +2,12 @@
 <Defs>
   <ThingDef ParentName="MakeableDrugPillBase">
     <defName>BMT_ToxClear</defName>
-    <label>tox clear</label>
+    <label>tox-clear</label>
     <description>A drug that removes all traces of toxins from a body - often violently, causing vomiting.</description>
     <possessionCount>10</possessionCount>
     <descriptionHyperlinks><HediffDef>BMT_ToxClearHigh</HediffDef></descriptionHyperlinks>
     <graphicData>
-      <texPath>Things/Item/Drug/Penoxycyline</texPath>
+      <texPath>BMT_PollutedLands/Things/Item/ToxClear</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <socialPropernessMatters>false</socialPropernessMatters>
@@ -52,8 +52,8 @@
   <HediffDef>
     <defName>BMT_ToxClearHigh</defName>
     <hediffClass>Hediff_High</hediffClass>
-    <label>tox clear</label>
-    <description>Vomiting and sickness induced by Tox Clear, violently expelling toxins from the body.</description>
+    <label>tox cleanse</label>
+    <description>Vomiting and sickness induced by tox-clear, violently expelling toxins from the body.</description>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
