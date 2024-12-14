@@ -4,8 +4,7 @@
   <GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_ProtectiveLeprosy</defName>
 	<label>protective leprosy</label>
-	<!-- To-Do: Add desc -->
-	<!-- <description>Dummy gene. Background and icon test.</description> -->
+	<description>Carriers of this gene have an immune defense mechanism that sheds infected organs and body parts, preventing the disease from spreading further.</description>
 	<geneClass>BMT_PollutedLands.Gene_ProtectiveLeprosy</geneClass>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_ProtectiveLeprosy</iconPath>
 	<biostatCpx>3</biostatCpx>
