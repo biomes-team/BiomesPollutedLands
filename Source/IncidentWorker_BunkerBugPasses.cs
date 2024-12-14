@@ -15,7 +15,7 @@ namespace BMT_PollutedLands
         {
             Map target = (Map)parms.target;
             
-            return target.pollutionGrid.TotalPollutionPercent > 0.7f && !target.gameConditionManager.ConditionIsActive(GameConditionDefOf.ToxicFallout) && (!ModsConfig.BiotechActive || !target.gameConditionManager.ConditionIsActive(GameConditionDefOf.NoxiousHaze)) && target.mapTemperature.SeasonAndOutdoorTemperatureAcceptableFor(ThingDef.Named("BMT_BunkerBug")) && this.TryFindEntryCell(target, out IntVec3 _);
+            return Rand.Chance(target.pollutionGrid.TotalPollutionPercent) && !target.gameConditionManager.ConditionIsActive(GameConditionDefOf.ToxicFallout) && (!ModsConfig.BiotechActive || !target.gameConditionManager.ConditionIsActive(GameConditionDefOf.NoxiousHaze)) && target.mapTemperature.SeasonAndOutdoorTemperatureAcceptableFor(ThingDef.Named("BMT_BunkerBug")) && this.TryFindEntryCell(target, out IntVec3 _);
         }
 
         protected override bool TryExecuteWorker(IncidentParms parms)

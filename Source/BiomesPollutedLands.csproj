@@ -78,6 +78,7 @@
     <Compile Include="Hediffs\Hediff_Mutapox.cs" />
     <Compile Include="Hediffs\Hediff_ToxinDependence.cs" />
     <Compile Include="IncidentWorker_BunkerBugPasses.cs" />
+    <Compile Include="IncidentWorker_HagbloomSprout.cs" />
     <Compile Include="IncidentWorker_HungryLocusts.cs" />
     <Compile Include="JobDriver_BloodVomit.cs" />
     <Compile Include="JobDriver_EatCorpseTarget.cs" />

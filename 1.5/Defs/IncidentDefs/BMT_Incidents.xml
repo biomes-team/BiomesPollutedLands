@@ -23,10 +23,10 @@
     <targetTags>
       <li>Map_PlayerHome</li>
     </targetTags>
-    <workerClass>IncidentWorker_AmbrosiaSprout</workerClass>
+    <workerClass>BMT_PollutedLands.IncidentWorker_HagbloomSprout</workerClass>
     <baseChance>1.0</baseChance>
     <letterLabel>Hagbloom sprout</letterLabel>
-    <letterText>A grove of the mysterious ambrosia bush has sprouted nearby! If you wait for the plants to grow, you'll be able to harvest the delicious, pleasurable, and slightly addictive fruit.</letterText>
+    <letterText>A grove of the mysterious hagbloom has sprouted nearby! If you wait for the plants to grow, you'll be able to harvest the delicious, pleasurable, and slightly addictive fruit.</letterText>
     <letterDef>PositiveEvent</letterDef>
     <allowedBiomes>
       <li>TropicalRainforest</li>
