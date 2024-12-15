@@ -31,7 +31,7 @@
 	<comps>
 		<li Class="BiomesCore.CompProperties_PlantReleaseGas">
 			<gasType>RotStink</gasType>
-			<cellsToFill>2</cellsToFill>
+			<cellsToFill>1</cellsToFill>
 			<growthProgress>0.20</growthProgress>
 		</li>
 	</comps>
