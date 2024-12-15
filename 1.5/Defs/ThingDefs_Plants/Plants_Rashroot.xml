@@ -40,7 +40,7 @@
 	</plant>
 	<modExtensions>
 	<li Class="BiomesCore.DefModExtensions.PlantHarvestMemoryExtension">
-		<ThoughtDef>BMT_ItchinessThought</ThoughtDef>
+		<memory>BMT_ItchinessThought</memory>
 	</li>
 	</modExtensions>
   </ThingDef>
@@ -78,14 +78,14 @@
 	</plant>
 	<modExtensions>
 	<li Class="BiomesCore.DefModExtensions.PlantHarvestMemoryExtension">
-		<ThoughtDef>BMT_ItchinessThought</ThoughtDef>
+		<memory>BMT_ItchinessThought</memory>
 	</li>
 	</modExtensions>
   </ThingDef>
   
   
   <!--Itchiness Hediff -->
-    <HediffDef ParentName="InfectionBase">
+    <!--<HediffDef ParentName="InfectionBase">
     <defName>BMT_ItchinessHediff</defName>
     <label>itchiness</label>
     <description>Intense itching from multiple potential sources. Some plants and animals use this as a defense mechanism.</description>
@@ -102,23 +102,23 @@
         <severityPerDay>-0.5</severityPerDay>
       </li>
     </comps>
-  </HediffDef>
+  </HediffDef>-->
   
   <!--Thought Def -->
   
     <ThoughtDef>
-    <defName>BMT_ItchinessThought</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>BMT_ItchinessHediff</hediff>
-    <validWhileDespawned>true</validWhileDespawned>
-    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
-    <stages>
-      <li>
-        <label>intense itching</label>
-        <description>My skin itches so bad. I hate it!</description>
-        <baseMoodEffect>-5</baseMoodEffect>
-      </li>
-    </stages>
+    	<defName>BMT_ItchinessThought</defName>
+	    <thoughtClass>Thought_Memory</thoughtClass>
+	    <durationDays>5</durationDays>
+    	<validWhileDespawned>true</validWhileDespawned>
+    	<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+		  <li>
+			<label>intense itching</label>
+			<description>My skin itches so bad. I hate it!</description>
+			<baseMoodEffect>-5</baseMoodEffect>
+		  </li>
+		</stages>
   </ThoughtDef>
 
 	<ThingDef ParentName="MoteBase">
