@@ -30,13 +30,11 @@
 		<li Class="BiomesCore.CompProperties_PlantReleaseGasOnDeath">
 			<gasType>ToxGas</gasType>
 			<cellsToFill>6</cellsToFill>
-			<effecterReleasing>GasReleasing</effecterReleasing>
 			<growthProgress>0.25</growthProgress>
 		</li>
 	  <li Class="BiomesCore.CompProperties_PlantReleaseGasOnDamage">
 		<gasType>ToxGas</gasType>
 		<cellsToFill>6</cellsToFill>
-		<effecterReleasing>GasReleasing</effecterReleasing>
 		<growthProgress>0.25</growthProgress>
 	</li>
 	  </comps>
