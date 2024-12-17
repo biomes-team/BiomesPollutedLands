@@ -57,6 +57,6 @@ public class Hediff_ToxinDependence : HediffWithComps
 
     public void Notify_NeedCategoryChanged()
     {
-        this.pawn.health.Notify_HediffChanged(this);
+        this.pawn?.health.Notify_HediffChanged(this);
     }
 }
