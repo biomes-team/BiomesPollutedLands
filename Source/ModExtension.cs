@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Verse;
 
-// namespace WVC
 namespace BMT_PollutedLands
 {
 
