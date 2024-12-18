@@ -8,7 +8,7 @@
 	<ThingDef ParentName="VCEF_RawFishBase">
 		<defName>BMT_Tumorfish</defName>
 		<label>tumorfish</label>
-		<description>Raw tumorfish.</description>
+		<description>Despite their bodies being lumpy and gross-looking, they are fairly nutritious.</description>
 		<graphicData>
 			<texPath>BMT_PollutedLands/Things/Item/Fishes/Tumorfish</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -29,7 +29,7 @@
 	<ThingDef ParentName="VCEF_RawFishBase">
 		<defName>BMT_Megaleech</defName>
 		<label>megaleech</label>
-		<description>Raw megaleech.</description>
+		<description>Thankfully these leeches are not currently filled with blood, but they are filled with nutrients.</description>
 		<graphicData>
 			<texPath>BMT_PollutedLands/Things/Item/Fishes/Megaleech</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -50,7 +50,7 @@
 	<ThingDef ParentName="VCEF_RawFishBase">
 		<defName>BMT_Gaspar</defName>
 		<label>gaspar</label>
-		<description>Raw gaspar.</description>
+		<description>With a body covered in toxic pustules, it has to be cooked properly to prevent food poisoning.</description>
 		<graphicData>
 			<texPath>BMT_PollutedLands/Things/Item/Fishes/Gaspar</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
