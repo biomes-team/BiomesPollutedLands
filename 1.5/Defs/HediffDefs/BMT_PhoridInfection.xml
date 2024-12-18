@@ -189,6 +189,11 @@
     <removesHediff>BMT_MegaphoridParasiticLarvae</removesHediff>
     <successfullyRemovedHediffMessage>{0} has successfully excised {1}'s parasitic infection.</successfullyRemovedHediffMessage>
     <deathOnFailedSurgeryChance>0.25</deathOnFailedSurgeryChance>
+    <targetsBodyPart>false</targetsBodyPart>
+    <recipeUsers>
+      <li>Human</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+    </recipeUsers>
     <skillRequirements>
       <Medicine>12</Medicine>
     </skillRequirements>
