@@ -1,9 +1,6 @@
 ﻿using RimWorld;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
@@ -14,8 +11,14 @@ namespace BMT_PollutedLands
         protected override bool CanFireNowSub(IncidentParms parms)
         {
             Map target = (Map)parms.target;
-            
-            return Rand.Chance(target.pollutionGrid.TotalPollutionPercent) && !target.gameConditionManager.ConditionIsActive(GameConditionDefOf.ToxicFallout) && (!ModsConfig.BiotechActive || !target.gameConditionManager.ConditionIsActive(GameConditionDefOf.NoxiousHaze)) && target.mapTemperature.SeasonAndOutdoorTemperatureAcceptableFor(ThingDef.Named("BMT_BunkerBug")) && this.TryFindEntryCell(target, out IntVec3 _);
+
+            return !target.gameConditionManager.ConditionIsActive(GameConditionDefOf.ToxicFallout) && (!ModsConfig.BiotechActive || !target.gameConditionManager.ConditionIsActive(GameConditionDefOf.NoxiousHaze)) && target.mapTemperature.SeasonAndOutdoorTemperatureAcceptableFor(ThingDef.Named("BMT_BunkerBug")) && this.TryFindEntryCell(target, out IntVec3 _);
+        }
+
+        public override float ChanceFactorNow(IIncidentTarget target)
+        {
+            Map map = (Map)target;
+            return map.pollutionGrid.TotalPollutionPercent;
         }
 
         protected override bool TryExecuteWorker(IncidentParms parms)

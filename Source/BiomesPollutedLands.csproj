@@ -69,6 +69,7 @@
     <Compile Include="Harmony\Harmony_CompWakeUpDormant.cs" />
     <Compile Include="Harmony\Harmony_GeneOverride.cs" />
     <Compile Include="Harmony\Harmony_GiveObservedThought.cs" />
+    <Compile Include="Harmony\Harmony_ThrumboPassPatch.cs" />
     <Compile Include="Hediffs\HediffComp_MutagenicFertility.cs" />
     <Compile Include="Hediffs\HediffComp_OverdevelopedOrgan.cs" />
     <Compile Include="Hediffs\HediffComp_RemoveIfGeneIsNotActive.cs" />
