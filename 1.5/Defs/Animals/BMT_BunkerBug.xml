@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BMT_PollutedLands_BaseInsect">
 		<defName>BMT_BunkerBug</defName>
 		<label>bunker bug</label>
-		<description>Whether it is engineered or mutated from a wild animal is unknown, but this  massive insect-like creature can use its powerful claws to rend its way through steel almost as easily as flesh and bone. It does not breed in captivity.</description>
+		<description>Whether it is engineered or mutated from a wild animal is unknown, but this massive insect-like creature can use its powerful claws to rend its way through steel almost as easily as flesh and bone. It does not breed in captivity.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
