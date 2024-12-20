@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <IncidentDef>
+<!-- Disabling Locusts event until it's less annoying -->
+<!--  <IncidentDef>
     <defName>BMT_HungryLocusts</defName>
     <label>hungry locusts</label>
     <targetTags>
@@ -14,7 +15,7 @@
     <letterHyperlinkHediffDefs>
       <li>BMT_HungeringHediff</li>
     </letterHyperlinkHediffDefs>
-  </IncidentDef>
+  </IncidentDef> -->
   
     <IncidentDef>
     <defName>BMT_HagbloomSprout</defName>

@@ -148,7 +148,7 @@
 				<extraMeleeDamages>
 					<li>
 						<def>BMT_PhoridSting</def>
-						<amount>0.5</amount>
+						<amount>1.0</amount>
 					</li>
 				</extraMeleeDamages>
 			</li>
@@ -225,7 +225,7 @@
 					<drawSize>1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/Megaphorid/Megaroach_dessicated</texPath>
+					<texPath>BMT_PollutedLands/Things/Animal/Megaphorid/Megaphorid_Dessicated</texPath>
 					<drawSize>1.0</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -235,7 +235,7 @@
 					<drawSize>1.25</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/Megaphorid/Megaroach_dessicated</texPath>
+					<texPath>BMT_PollutedLands/Things/Animal/Megaphorid/Megaphorid_Dessicated</texPath>
 					<drawSize>1.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -249,7 +249,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/Megaroach/Megaroach_dessicated</texPath>
+					<texPath>BMT_PollutedLands/Things/Animal/Megaroach/Megaphorid_Dessicated</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
