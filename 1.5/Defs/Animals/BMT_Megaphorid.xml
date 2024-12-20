@@ -17,7 +17,6 @@
 		<race>
 			<hasGenders>false</hasGenders>
 			<leatherDef>BMT_FragileChitin</leatherDef>
-			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<baseBodySize>0.32</baseBodySize>
@@ -161,6 +160,7 @@
 			<baseHealthScale>1</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
 			<leatherDef>BMT_FragileChitin</leatherDef>
+			<useMeatFrom>Megaspider</useMeatFrom>
 			<maxPreyBodySize>1.2</maxPreyBodySize>
 			<wildness>1</wildness>
 			<trainability>None</trainability>
