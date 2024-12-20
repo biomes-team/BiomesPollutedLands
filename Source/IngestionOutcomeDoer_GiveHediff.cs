@@ -19,7 +19,7 @@ namespace BMT_PollutedLands
             float effect = ((!(severity > 0f)) ? hediffDef.initialSeverity : severity);
             if (statDef != null)
             {
-                effect *= pawn.GetStatValue(statDef);
+                effect *= 1f - pawn.GetStatValue(statDef);
             }
             AddictionUtility.ModifyChemicalEffectForToleranceAndBodySize_NewTemp(pawn, toleranceChemical, ref effect, multiplyByGeneToleranceFactors, divideByBodySize);
             hediff.Severity = effect;
