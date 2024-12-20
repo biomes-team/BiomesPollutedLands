@@ -156,7 +156,6 @@
 	<label>pustule hornet</label>
 	<race>BMT_PustuleHornet</race>
 	<combatPower>75</combatPower>
-	<wildGroupSize>6~17</wildGroupSize>
 	<defaultFactionType>BMT_PustuleHornets</defaultFactionType>
 	<lifeStages>
 	  <li>
@@ -342,7 +341,6 @@
 	<label>pustule hornet</label>
 	<race>BMT_PustuleHornetSpawned</race>
 	<combatPower>75</combatPower>
-	<wildGroupSize>6~17</wildGroupSize>
 	<defaultFactionType>BMT_PustuleHornets</defaultFactionType>
 	<lifeStages>
 	  <li>
@@ -531,7 +529,7 @@
 	<label>domesticated pustule hornet</label>
 	<race>BMT_ColonyPustuleHornet</race>
 	<combatPower>75</combatPower>
-	<wildGroupSize>6~17</wildGroupSize>
+	<wildGroupSize>1~2</wildGroupSize>
 	<lifeStages>
 	  <li>
 		<bodyGraphicData>

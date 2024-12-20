@@ -35,6 +35,7 @@
 	  <baseHungerRate>0.125</baseHungerRate>
 	  <foodType>VegetarianRoughAnimal</foodType>
 	  <leatherDef>Leather_Plain</leatherDef>
+	  <useMeatFrom>Sheep</useMeatFrom>
 	  <gestationPeriodDays>5.661</gestationPeriodDays>
 	  <litterSizeCurve>
 		<points>

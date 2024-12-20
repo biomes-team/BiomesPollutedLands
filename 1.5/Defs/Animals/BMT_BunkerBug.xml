@@ -26,7 +26,7 @@
 			<baseHealthScale>9</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
 			<leatherDef>BMT_RoyalChitin</leatherDef>
-			<meatLabel>bunker bug meat</meatLabel>
+			<useMeatFrom>Megaspider</useMeatFrom>
 			<trainability>Intermediate</trainability>
 			<wildness>0.985</wildness>
 			<lifeExpectancy>200</lifeExpectancy>
