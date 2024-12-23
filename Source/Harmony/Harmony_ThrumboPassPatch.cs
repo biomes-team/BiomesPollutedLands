@@ -4,13 +4,18 @@ using Verse;
 
 namespace BMT_PollutedLands
 {
-    [HarmonyPatch(typeof(IncidentWorker_ThrumboPasses), nameof(IncidentWorker_ThrumboPasses.ChanceFactorNow))]
+    [HarmonyPatch(typeof(IncidentWorker), nameof(IncidentWorker.ChanceFactorNow))]
     public class Harmony_ThrumboPassPatch
     {
-        public static void Postfix(IIncidentTarget target, ref float __result)
+        public static bool Prefix(IncidentWorker __instance, IIncidentTarget target, ref float __result)
         {
-            Map map = (Map)target;
-            __result = 1 - map.pollutionGrid.TotalPollutionPercent;
+            if(__instance is IncidentWorker_ThrumboPasses)
+            {
+                Map map = (Map)target;
+                __result = 1 - map.pollutionGrid.TotalPollutionPercent;
+                return true;
+            }
+            return false;
         }
     }
 }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="PenoxycylineHigh"]/stages/li/makeImmuneTo</xpath>
+		<order>Prepend</order>
+		<value>
+			<li>BMT_Mutapox</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+		<xpath>Defs/GeneDef[defName="PerfectImmunity"]/makeImmuneTo</xpath>
+		<order>Prepend</order>
+		<value>
+			<li>BMT_Mutapox</li>
+		</value>
+	</Operation>
+</Patch>
