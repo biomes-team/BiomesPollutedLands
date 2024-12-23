@@ -69,7 +69,7 @@
       <fixedParams>
         <filter>
           <thingDefs>
-            <li>BMT_PustuleHornetStinger</li>
+            <!-- <li>BMT_PustuleHornetStinger</li> -->
           </thingDefs>
         </filter>
       </fixedParams>

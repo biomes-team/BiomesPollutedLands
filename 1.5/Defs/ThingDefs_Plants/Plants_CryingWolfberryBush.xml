@@ -18,7 +18,6 @@
 	<pathCost>14</pathCost>
 	<ingestible />
 	<plant>
-	  <lifespanDaysPerGrowDays>10</lifespanDaysPerGrowDays>
 	  <immatureGraphicPath>BMT_PollutedLands/Things/Plant/CryingWolfberryBush/CryingWolfberryBush_Immature</immatureGraphicPath>
 	  <leaflessGraphicPath>BMT_PollutedLands/Things/Plant/CryingWolfberryBush/CryingWolfberryBush_Leafless</leaflessGraphicPath>
 	  <dieIfLeafless>true</dieIfLeafless>

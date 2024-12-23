@@ -17,7 +17,6 @@
 	<pathCost>14</pathCost>
 	<ingestible />
 	<plant>
-	  <lifespanDaysPerGrowDays>10</lifespanDaysPerGrowDays>
 	  <immatureGraphicPath>BMT_PollutedLands/Things/Plant/ClawhandCitron/ClawhandCitron_Immature</immatureGraphicPath>
 	  <leaflessGraphicPath>BMT_PollutedLands/Things/Plant/ClawhandCitron/ClawhandCitron_Leafless</leaflessGraphicPath>
 	  <dieIfLeafless>false</dieIfLeafless>
