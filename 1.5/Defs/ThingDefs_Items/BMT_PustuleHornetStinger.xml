@@ -14,7 +14,7 @@
 		<soundDrop>Standard_Pickup</soundDrop>
 		<statBases>
 			<MarketValue>100</MarketValue>
-			<MaxHitPoints>50</MaxHitPoints>
+			<MaxHitPoints>150</MaxHitPoints>
 			<Mass>3</Mass>
 			<Flammability>0.4</Flammability>
 			<DeteriorationRate>0.5</DeteriorationRate>

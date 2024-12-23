@@ -20,6 +20,7 @@
 		<race>
 			<body>BeetleLikeWithClaw</body>
 			<canBePredatorPrey>false</canBePredatorPrey>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<baseBodySize>4.0</baseBodySize>
 			<maxPreyBodySize>3.0</maxPreyBodySize>
 			<predator>true</predator>
@@ -127,6 +128,10 @@
 		  <texPath>BMT_PollutedLands/Things/Animal/BunkerBug/Dessicated_BunkerBug</texPath>
 		  <drawSize>4</drawSize>
 		</dessicatedBodyGraphicData>
+		  <butcherBodyPart>
+          <bodyPartGroup>HeadClaw</bodyPartGroup>
+          <thing>BMT_BunkerClaw</thing>
+        </butcherBodyPart>
 	  </li>
 	</lifeStages>
   </PawnKindDef>
