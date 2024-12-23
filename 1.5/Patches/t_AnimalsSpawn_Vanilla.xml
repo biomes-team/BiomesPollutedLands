@@ -2,7 +2,7 @@
 <Patch>
 		<!-- Temp forest -->
 	  <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/BiomeDef[defName="TemperateForest"]/pollutionWildAnimals</xpath>
+        <xpath>/Defs/BiomeDef[defName="TemperateForest" or defName="BiomesIslands_TemperateIslandBase"]/pollutionWildAnimals</xpath>
         <value>
 		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_Megaroach>
 		<BMT_Megaphorid MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_Megaphorid>   		
@@ -22,7 +22,7 @@
 	  
 	  	<!-- Trop forest -->
 	<Operation Class="PatchOperationAdd">
-	  <xpath>/Defs/BiomeDef[defName="TropicalRainforest"]/pollutionWildAnimals</xpath>
+	  <xpath>/Defs/BiomeDef[defName="TropicalRainforest" or defName="BiomesIslands_TropicalIslandBase" or defName="BiomesIslands_Atoll"]/pollutionWildAnimals</xpath>
 	  <value>
 		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_Megaroach>
 		<BMT_Megaphorid MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_Megaphorid>  
@@ -87,7 +87,7 @@
 	
 	<!-- Desert -->
 	<Operation Class="PatchOperationAdd">
-	  <xpath>/Defs/BiomeDef[defName="Desert"]/pollutionWildAnimals</xpath>
+	  <xpath>/Defs/BiomeDef[defName="Desert" or defName="BiomesIslands_DesertIslandBase"]/pollutionWildAnimals</xpath>
 	  <value>
 		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_Megaroach>
 		<BMT_Megaphorid MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_Megaphorid>  
@@ -131,7 +131,7 @@
 
 	<!-- Cold Forest -->
 	<Operation Class="PatchOperationAdd">
-	  <xpath>/Defs/BiomeDef[defName="BorealForest"]/pollutionWildAnimals</xpath>
+	  <xpath>/Defs/BiomeDef[defName="BorealForest" or defName="BiomesIslands_BorealIsland"]/pollutionWildAnimals</xpath>
 	  <value>
 		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_Megaroach>
 		<BMT_Megaphorid MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_Megaphorid>  
@@ -150,7 +150,7 @@
 	
 		<!-- Tundra -->
 	<Operation Class="PatchOperationAdd">
-	  <xpath>/Defs/BiomeDef[defName="Tundra"]/pollutionWildAnimals</xpath>
+	  <xpath>/Defs/BiomeDef[defName="Tundra" or defName="BiomesIslands_TundraIslandBase"]/pollutionWildAnimals</xpath>
 	  <value>
 		<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_Megaroach>
 		<BMT_Megaphorid MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_Megaphorid>  
