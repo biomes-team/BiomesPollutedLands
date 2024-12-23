@@ -307,7 +307,9 @@
         <damageFactor>4</damageFactor>
         <useStackCountAsFactor>true</useStackCountAsFactor>
       </li>
-		<li Class="BiomesCore.CompProperties_PermanentManhunter" />
+		<li Class="BiomesCore.CompProperties_PermanentManhunter">
+			<sendLetter>false</sendLetter>
+		</li>
 		<li Class="BiomesCore.CompProperties_PackDefense">
 			<baseChance>1.0</baseChance>
 			<canBashFences>true</canBashFences>

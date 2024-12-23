@@ -112,7 +112,7 @@
 	  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 	</race>
 	<comps>
-		<li Class="BiomesCore.CompProperties_PermanentManhunter" />
+		<li Class="BiomesCore.CompProperties_PermanentManhunter"/>
 	  <li Class="CompProperties_GasOnDamage">
         <type>ToxGas</type>
         <damageFactor>6</damageFactor>
