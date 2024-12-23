@@ -18,6 +18,7 @@
 	<pathCost>14</pathCost>
 	<ingestible />
 	<plant>
+	  <immatureGraphicPath>BMT_PollutedLands/Things/Plant/PoxSorghum/PoxSorghum_Immature</immatureGraphicPath>
 	  <dieIfLeafless>true</dieIfLeafless>
 	  <maxMeshCount>4</maxMeshCount>
 	  <harvestTag>Standard</harvestTag>
