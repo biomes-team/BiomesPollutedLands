@@ -18,11 +18,13 @@ namespace BMT_PollutedLands
 
 		private List<Thing> spawnedHives = new();
 
-		//private const int MinDistToOpenSpace = 10;
+        //private const int MinDistToOpenSpace = 10;
 
-		//private const int MinDistFromFactionBase = 50;
+        //private const int MinDistFromFactionBase = 50;
 
-		//private const float CaveCellsPerHive = 1000f;
+        //private const float CaveCellsPerHive = 1000f;
+
+        public bool ignoreTempMaps = true;
 
         public int pollutionNone = 0;
 
@@ -36,7 +38,11 @@ namespace BMT_PollutedLands
 
 		public override void Generate(Map map, GenStepParams parms)
         {
-			TryFindFaction(out Faction faction, factionDef);
+            if (ignoreTempMaps && map.IsTempIncidentMap)
+            {
+                return;
+            }
+            TryFindFaction(out Faction faction, factionDef);
 			//Log.Error("0");
             if (faction == null)
             {

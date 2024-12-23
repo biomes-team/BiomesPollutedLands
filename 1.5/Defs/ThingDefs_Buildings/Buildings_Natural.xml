@@ -31,7 +31,7 @@
 				<canWakeUpFogged>false</canWakeUpFogged>
 			</li>
 			<li Class="CompProperties_WakeUpDormant"/>
-			<li Class="BiomesCore.CompProperties_CantSpawnOnTempMap"/>
+			<!-- <li Class="BiomesCore.CompProperties_CantSpawnOnTempMap"/> -->
 			<li Class="CompProperties_SelfhealHitpoints">
 				<ticksPerHeal>6000</ticksPerHeal>
 			</li>
