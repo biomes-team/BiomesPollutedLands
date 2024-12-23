@@ -402,7 +402,7 @@
 		<label>pustule hornet queen egg (fert.)</label>
 		<description>A fertilized pustule hornet queen egg. If all goes well, it should hatch into a young queen loyal to the humans who hatched her. It can be eaten raw, but it's much better cooked.</description>
 		<graphicData>
-			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<texPath>BMT_PollutedLands/Things/Item/Eggs/HornetQueenEgg</texPath>
 			<color>(140,159,105)</color>
 			<drawSize>0.8</drawSize>
 		</graphicData>
