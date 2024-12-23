@@ -56,7 +56,7 @@
 			<!-- <rotationOffset>60</rotationOffset> -->
 		  </dataEast>
 		  <dataWest>
-			<offset>(0.06, -0.1, -0.06)</offset>
+			<offset>(0.06, 0.2, -0.06)</offset>
 			<flip>true</flip>
 			<!-- <rotationOffset>60</rotationOffset> -->
 		  </dataWest>
@@ -92,7 +92,7 @@
 			<rotationOffset>-50</rotationOffset>
 		  </dataSouth>
 		  <dataEast>
-			<offset>(-0.06, -0.1, -0.06)</offset>
+			<offset>(-0.06, 0.2, -0.06)</offset>
 			<!-- <rotationOffset>60</rotationOffset> -->
 		  </dataEast>
 		  <dataWest>
