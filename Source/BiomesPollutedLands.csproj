@@ -52,7 +52,6 @@
     <Compile Include="Abilities\CompProperties_CorpseEater.cs" />
     <Compile Include="BMT_HediffDefOf.cs" />
     <Compile Include="BMT_MentalStateDefOf.cs" />
-    <Compile Include="CompDisableComplexInsectSpawn.cs" />
     <Compile Include="Genes\Gene_AddOrRemoveHediff.cs" />
     <Compile Include="Genes\Gene_BloodExplusion.cs" />
     <Compile Include="Genes\Gene_CarrionMetabolism.cs" />
@@ -70,7 +69,6 @@
     <Compile Include="Harmony\Harmony_CompWakeUpDormant.cs" />
     <Compile Include="Harmony\Harmony_GeneOverride.cs" />
     <Compile Include="Harmony\Harmony_GiveObservedThought.cs" />
-    <Compile Include="Harmony\Harmony_SleepingInsectsComplex_BunkerBugs.cs" />
     <Compile Include="Harmony\Harmony_ThrumboPassPatch.cs" />
     <Compile Include="Hediffs\HediffComp_MutagenicFertility.cs" />
     <Compile Include="Hediffs\HediffComp_OverdevelopedOrgan.cs" />

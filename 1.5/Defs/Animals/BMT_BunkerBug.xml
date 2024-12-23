@@ -77,9 +77,12 @@
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<comps>
-			<li Class="BMT_PollutedLands.CompProperties_DisableComplexInsectSpawn"/>
-		</comps>
+		<!-- <comps> -->
+			<!-- <li Class="BMT_PollutedLands.CompProperties_DisableComplexInsectSpawn"/> -->
+		<!-- </comps> -->
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
 		<butcherProducts>
 			<ChunkSlagSteel>5</ChunkSlagSteel>
 		</butcherProducts>
