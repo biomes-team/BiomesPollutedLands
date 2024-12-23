@@ -3,7 +3,7 @@
   <ThingDef ParentName="MakeableDrugPillBase">
     <defName>BMT_ToxClear</defName>
     <label>tox-clear</label>
-    <description>A drug that removes all traces of toxins from a body - often violently, causing vomiting.</description>
+    <description>A tablet containing a mixture of activated carbon and purging agents, instantly removing all traces of toxins from a body upon ingestion - often violently, causing vomiting.</description>
     <possessionCount>10</possessionCount>
     <descriptionHyperlinks><HediffDef>BMT_ToxClearHigh</HediffDef></descriptionHyperlinks>
     <graphicData>
