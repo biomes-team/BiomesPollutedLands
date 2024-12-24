@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BMT_PollutedLands_BaseInsect">
 		<defName>BMT_Sacapillar</defName>
 		<label>sacapillar</label>
-		<description>Timid by nature, this larva-like bug has a large thorax filled with putrescent gasses, allowing it to move about and escape attackers while barely touching the ground. It releases these gasses when attacked, often allowing it to escape unharmed.</description>
+		<description>Timid by nature, this larva-like bug has a large thorax filled with putrescent gasses, allowing it to move about and escape attackers while barely touching the ground. It releases these gasses when attacked, often allowing it to escape unharmed. The gasses it contains also permit it to carry large loads, and many colonies in polluted areas use them as ridable pack animals.</description>
 		<statBases>
 			<MoveSpeed>2</MoveSpeed>
 			<LeatherAmount>0</LeatherAmount>
