@@ -22,6 +22,12 @@
 			<packageId>Ludeon.RimWorld.Biotech</packageId>
 			<displayName>Biotech</displayName>
 		</li>
+		<li>
+		  <packageId>pathfinding.framework</packageId>
+		  <displayName>Pathfinding Framework</displayName>
+		  <steamWorkshopUrl>steam://url/CommunityFilePage/3070914628</steamWorkshopUrl>
+		  <downloadUrl>https://github.com/joseasoler/Pathfinding-Framework</downloadUrl>
+		</li> 
 	</modDependencies>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
