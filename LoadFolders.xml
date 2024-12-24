@@ -3,7 +3,6 @@
 	<v1.5>
 		<li>1.5</li>
 		<li>\</li>
-		<li IfModActive="pathfinding.framework">1.5/Mods/PathfindingFramework</li>
 		<li IfModActive="vanillaexpanded.vcef">1.5/Mods/VanillaFishingExpanded</li>
 	</v1.5>
 </loadFolders>
