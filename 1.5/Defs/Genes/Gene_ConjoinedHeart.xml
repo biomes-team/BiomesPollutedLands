@@ -8,7 +8,7 @@
 	<geneClass>BMT_PollutedLands.Gene_ConjoinedHeart</geneClass>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_ConjoinedHearts</iconPath>
 	<customEffectDescriptions>
-	  <li>When a pawn is &lt;color=#8a8ae6&gt;close to bleeding out&lt;/color&gt; reseting bloodloss, with an 21% chance of also causing a &lt;color=#8a8ae6&gt;heart attack&lt;/color&gt;. It have around 1 day cooldown.</li>
+	  <li>When a pawn is &lt;color=#8a8ae6&gt;close to bleeding out,&lt;/color&gt; it instead has its blood loss reset.When this happens, there is a 21% chance of also causing a &lt;color=#8a8ae6&gt;heart attack&lt;/color&gt;. This has around a 1 day cooldown.</li>
 	</customEffectDescriptions>
 	<biostatCpx>3</biostatCpx>
 	<biostatMet>1</biostatMet>

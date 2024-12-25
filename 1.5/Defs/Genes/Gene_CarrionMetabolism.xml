@@ -19,7 +19,7 @@
 	<resourceLossPerDay>0.75</resourceLossPerDay>
 	<customEffectDescriptions>
 	  <li>Receive &lt;color=#8a8ae6&gt;more nutrition&lt;/color&gt; from &lt;color=#8a8ae6&gt;corpses&lt;/color&gt;, at the cost of receiving &lt;color=#8a8ae6&gt;-25% nutrition&lt;/color&gt; from &lt;color=#8a8ae6&gt;food&lt;/color&gt;.</li>
-	  <li>&lt;color=#ff8585&gt;If hungry, the pawn may automatically try to eat random corpse.&lt;/color&gt;</li>
+	  <li>&lt;color=#ff8585&gt;If hungry, the pawn may automatically try to eat a random corpse.&lt;/color&gt;</li>
 	</customEffectDescriptions>
 	<abilities>
 	  <li>BMT_CarrionMetabolism</li>

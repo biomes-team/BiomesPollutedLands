@@ -10,7 +10,7 @@
   <ThingDef ParentName="BMT_PollutedLands_BaseInsect">
 	<defName>BMT_PustuleHornet</defName>
 	<label>pustule hornet</label>
-	<description>Predatory and dangerous, these hornets release toxic gas should they be harmed or killed. They defend their hives and their queen with considerable ferocity baked up by stings laced with potent neurotoxin.\n\nThey do not reproduce outside of their hives and give very little meat or chitin.</description>
+	<description>Predatory and dangerous, these hornets release toxic gas should they be harmed or killed. They defend their hives and their queen with considerable ferocity backed up by stings laced with potent neurotoxin.\n\nThey do not reproduce outside of their hives and give very little meat or chitin.</description>
 	<uiIconScale>1.5</uiIconScale>
 	<statBases>
 	  <MoveSpeed>4.0</MoveSpeed>
@@ -200,7 +200,7 @@
   <ThingDef ParentName="BMT_PollutedLands_BaseInsect">
 	<defName>BMT_PustuleHornetSpawned</defName>
 	<label>pustule hornet</label>
-	<description>Predatory and dangerous, these wasps release toxic gas should they be killed. They defend their hives and their queen with considerable ferocity baked up by stings laced with potent neurotoxin.\n\nThey do not reproduce outside of their hives and give very little meat or chitin.</description>
+	<description>Predatory and dangerous, these wasps release toxic gas should they be killed. They defend their hives and their queen with considerable ferocity backed up by stings laced with potent neurotoxin.\n\nThey do not reproduce outside of their hives and give very little meat or chitin.</description>
 	<uiIconScale>1.5</uiIconScale>
 	<statBases>
 	  <MoveSpeed>4.0</MoveSpeed>
@@ -387,7 +387,7 @@
     <ThingDef ParentName="BMT_PollutedLands_BaseInsect">
 	<defName>BMT_ColonyPustuleHornet</defName>
 	<label>domesticated pustule hornet</label>
-	<description>Predatory and dangerous, these hornets release toxic gas should they be harmed or killed. They defend their hives and their queen with considerable ferocity baked up by stings laced with potent neurotoxin.\n\nThey do not reproduce outside of their hives and give very little meat or chitin. This variety is loyal to the domesticated queen.</description>
+	<description>Predatory and dangerous, these hornets release toxic gas should they be harmed or killed. They defend their hives and their queen with considerable ferocity backed up by stings laced with potent neurotoxin.\n\nThey do not reproduce outside of their hives and give very little meat or chitin. This variety is loyal to the domesticated queen.</description>
 	<uiIconScale>1.5</uiIconScale>
 	<statBases>
 	  <MoveSpeed>4.0</MoveSpeed>

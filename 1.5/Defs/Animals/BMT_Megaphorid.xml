@@ -127,7 +127,7 @@
 	<ThingDef ParentName="BMT_PollutedLands_BaseInsect">
 		<defName>BMT_Megaphorid</defName>
 		<label>megaphorid</label>
-		<description>A glass cannon of an creature, this disgusting bug attacks animals many times its size and tends to die in the process. Unbeknownst to the attacked, they have usually been injected with the phorid's young, which will slowly devour them from the inside out. It can survive in all but the most cold and barren environments.</description>
+		<description>A glass cannon of a creature, this disgusting bug attacks animals many times its size and tends to die in the process. Unbeknownst to the attacked, they have usually been injected with the phorid's young, which will slowly devour them from the inside out. It can survive in all but the most cold and barren environments.</description>
 		<uiIconScale>1.5</uiIconScale>
 		<statBases>
 			<MoveSpeed>6.0</MoveSpeed>

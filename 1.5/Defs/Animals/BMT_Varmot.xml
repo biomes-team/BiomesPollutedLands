@@ -19,7 +19,7 @@
 	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_Varmot</defName>
 		<label>varmot</label>
-		<description>A small herbivore that can often be found near human settlements in colder climates For some reason, it tries to get towards human crops and stored food before any local plants.</description>
+		<description>A small herbivore that can often be found near human settlements in colder climates. For some reason, it tries to get towards human crops and stored food before any local plants.</description>
 		<statBases>
 			<MoveSpeed>6.0</MoveSpeed>
 			<MarketValue>50</MarketValue>
