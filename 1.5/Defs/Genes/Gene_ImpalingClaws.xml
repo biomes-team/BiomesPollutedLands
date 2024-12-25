@@ -103,6 +103,10 @@
 		</drawData>
 	  </li>
 	</renderNodeProperties>
+	<exclusionTags>
+	  <li>BMT_ImpalingClaws</li>
+	  <li>ToughspikeSpikes</li>
+	</exclusionTags>
 	<modExtensions>
 		<li Class="BMT_PollutedLands.GeneExtension">
 			<hediffDef>BMT_ImpalingClaws</hediffDef>
