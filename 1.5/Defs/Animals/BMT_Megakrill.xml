@@ -160,7 +160,7 @@
 		  <drawSize>1.25</drawSize>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill_dessicated</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill_Dessicated</texPath>
 		  <drawSize>1.25</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
@@ -174,7 +174,7 @@
 		  </shadowData>
 		</bodyGraphicData>
 		<dessicatedBodyGraphicData>
-		  <texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill_dessicated</texPath>
+		  <texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill_Dessicated</texPath>
 		  <drawSize>1.5</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>

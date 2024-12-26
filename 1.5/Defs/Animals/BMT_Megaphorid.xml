@@ -249,7 +249,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/Megaroach/Megaphorid_Dessicated</texPath>
+					<texPath>BMT_PollutedLands/Things/Animal/Megaphorid/Megaphorid_Dessicated</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

@@ -5,7 +5,7 @@
 	<defName>BMT_ClusterEyes</defName>
 	<label>cluster eyes</label>
 	<!-- <description>Carriers of this gene have cluster eyes located on the forehead.</description> -->
-	<description>Carriers of this gene have cluster eyes.</description>
+	<description>Carriers of this gene have cluster eyes, allowing them to see in multiple directions at once. This makes them more effective in melee.</description>
 	<geneClass>Gene</geneClass>
 	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_ClusterEyes</iconPath>
 	<customEffectDescriptions>
