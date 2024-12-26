@@ -18,7 +18,7 @@ namespace BMT_PollutedLands
         public override float ChanceFactorNow(IIncidentTarget target)
         {
             Map map = (Map)target;
-            return map.pollutionGrid.TotalPollutionPercent;
+            return base.ChanceFactorNow(target) * map.pollutionGrid.TotalPollutionPercent;
         }
 
         protected override bool TryExecuteWorker(IncidentParms parms)

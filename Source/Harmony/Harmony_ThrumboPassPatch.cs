@@ -12,7 +12,7 @@ namespace BMT_PollutedLands
             if(__instance is IncidentWorker_ThrumboPasses)
             {
                 Map map = (Map)target;
-                __result = 1 - map.pollutionGrid.TotalPollutionPercent;
+                __result *= 1 - map.pollutionGrid.TotalPollutionPercent;
                 return true;
             }
             return false;
