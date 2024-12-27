@@ -14,6 +14,7 @@
 				<li>(1, 0.8)</li>
 			  </points>
 			</pollutionAmountCurve>
+			<!-- If mtbDays 240 mutapox chance => ~0.008 per day. Without taking into account the chance from pollution and resistance. -->
 			<mtbDays>240</mtbDays>
 		  </li>
 	  </value>
