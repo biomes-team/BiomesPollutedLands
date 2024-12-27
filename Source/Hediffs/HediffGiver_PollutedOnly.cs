@@ -5,6 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using RimWorld;
+using RimWorld.Planet;
 using UnityEngine;
 using Verse;
 using Verse.AI.Group;
@@ -22,7 +23,24 @@ namespace BMT_PollutedLands
         public override void OnIntervalPassed(Pawn pawn, Hediff cause)
         {
             // This event doesn't make sense to do often, as it is designed for the pawn to live in a toxic settlement, and not just pass by.
-            if (!Rand.MTBEventOccurs(mtbDays, 60000f, 10000f))
+            //Log.Error("Tick");
+            //if (!Rand.MTBEventOccurs(mtbDays, 60000f, 10000f))
+            //{
+            //    return;
+            //}
+            if (!pawn.IsHashIntervalTick(30000))
+            {
+                return;
+            }
+            //Log.Error("0");
+            // Mutapox chance if mtbDays 240 => ~0.004
+            if (!Rand.Chance(1f / mtbDays))
+            {
+                return;
+            }
+            //Log.Error("1");
+            // Skip visitors factions
+            if (pawn.Faction != null && pawn.Faction != Faction.OfPlayer && !pawn.Faction.HostileTo(Faction.OfPlayer))
             {
                 return;
             }
@@ -32,12 +50,6 @@ namespace BMT_PollutedLands
             }
             // Immunity check
             if (pawn.health.immunity.AnyGeneMakesFullyImmuneTo(hediff))
-            {
-                return;
-            }
-            // Vanilla usually relies on Pollution Level, we will do the same.
-            PollutionLevel pollutionLevel1 = Find.WorldGrid[pawn.Map.Tile].PollutionLevel();
-            if (pollutionLevel1 == PollutionLevel.Light || pollutionLevel1 == PollutionLevel.None)
             {
                 return;
             }
@@ -54,6 +66,7 @@ namespace BMT_PollutedLands
             }
             if (TryApply(pawn))
             {
+                //Log.Error("Mutapox");
                 SendLetter(pawn, cause);
             }
         }
