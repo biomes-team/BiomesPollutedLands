@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+
 	<Operation Class="PatchOperationAdd">
 	  <xpath>/Defs/HediffGiverSetDef[defName="Human"]/hediffGivers</xpath>
 	  <value>
@@ -19,4 +20,15 @@
 		  </li>
 	  </value>
 	</Operation>
+
+	<!-- <Operation Class="PatchOperationAdd"> -->
+	  <!-- <xpath>/Defs/BiomeDef/diseases</xpath> -->
+	  <!-- <value> -->
+		  <!-- <li> -->
+			<!-- <diseaseInc>BMT_Disease_Mutapox</diseaseInc> -->
+			<!-- <commonality>30</commonality> -->
+		  <!-- </li> -->
+	  <!-- </value> -->
+	<!-- </Operation> -->
+
 </Patch>

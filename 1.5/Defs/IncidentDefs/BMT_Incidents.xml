@@ -51,4 +51,18 @@
     <minRefireDays>13</minRefireDays>
   </IncidentDef>
   
+  <!-- <IncidentDef ParentName="DiseaseIncident"> -->
+	<!-- <defName>BMT_Disease_Mutapox</defName> -->
+	<!-- <label>mutapox</label> -->
+	<!-- <workerClass>BMT_PollutedLands.IncidentWorker_Mutapox</workerClass> -->
+	<!-- <diseaseIncident>BMT_Mutapox</diseaseIncident> -->
+	<!-- <letterLabel>Disease: Mutapox</letterLabel> -->
+	<!-- <targetTags Inherit="False"> -->
+	  <!-- <li>Map_PlayerHome</li> -->
+	  <!-- <li>Map_TempIncident</li> -->
+	  <!-- <li>Map_Misc</li> -->
+	  <!-- <li>Map_RaidBeacon</li> -->
+	<!-- </targetTags> -->
+  <!-- </IncidentDef> -->
+  
 </Defs>
