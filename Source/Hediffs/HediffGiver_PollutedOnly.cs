@@ -13,6 +13,7 @@ using Verse.Noise;
 
 namespace BMT_PollutedLands
 {
+
     public class HediffGiver_PollutedOnly : HediffGiver
     {
 
@@ -72,4 +73,55 @@ namespace BMT_PollutedLands
         }
 
     }
+
+    public class IncidentWorker_Mutapox : IncidentWorker_DiseaseHuman
+    {
+        protected override IEnumerable<Pawn> PotentialVictimCandidates(IIncidentTarget target)
+        {
+            List<Pawn> newList = [];
+            foreach (Pawn pawn in base.PotentialVictimCandidates(target))
+            {
+                if (CanGetMutapox(pawn))
+                {
+                    newList.Add(pawn);
+                }
+            }
+            return newList;
+        }
+
+        public static bool CanGetMutapox(Pawn pawn)
+        {
+            if (pawn.Map == null)
+            {
+                return false;
+            }
+            // Immunity check
+            if (pawn.health.immunity.AnyGeneMakesFullyImmuneTo(BMT_HediffDefOf.BMT_Mutapox))
+            {
+                return false;
+            }
+            SimpleCurve pollutionAmountCurve =
+            [
+                new CurvePoint(0, 0f),
+                new CurvePoint(0.25f, 0.25f),
+                new CurvePoint(0.5f, 0.4f),
+                new CurvePoint(0.8f, 0.6f),
+                new CurvePoint(1f, 0.8f),
+            ];
+            // Calculate the impact of pollution on the pawn.
+            float pollutionLevel = pawn.Map.pollutionGrid.TotalPollutionPercent;
+            // Check both stats and take the best one.
+            float toxResist = pawn.GetStatValue(StatDefOf.ToxicResistance);
+            float enviResist = pawn.GetStatValue(StatDefOf.ToxicEnvironmentResistance);
+            float finalPollutionLevel = pollutionAmountCurve.Evaluate(pollutionLevel) * (1f - (toxResist > enviResist ? toxResist : enviResist));
+            // We use the level of pollution vs resistance for randomization. It should give a fairer chance to get a mutapox, but not make it an assache.
+            if (!Rand.Chance(finalPollutionLevel))
+            {
+                return false;
+            }
+            return true;
+        }
+
+    }
+
 }
