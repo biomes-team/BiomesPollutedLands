@@ -14,9 +14,9 @@ namespace BMT_PollutedLands
 
         //private List<IntVec3> rockCells = new List<IntVec3>();
 
-		private List<IntVec3> possibleSpawnCells = new List<IntVec3>();
+		private List<IntVec3> possibleSpawnCells = [];
 
-		private List<Thing> spawnedHives = new();
+		private List<Thing> spawnedHives = [];
 
         //private const int MinDistToOpenSpace = 10;
 
@@ -76,7 +76,7 @@ namespace BMT_PollutedLands
         private void TrySpawnHive(Map map, Faction faction)
         {
             //Log.Error("3");
-            if (TryFindHiveSpawnCell(map, out var spawnCell))
+            if (TryFindHiveSpawnCell(out var spawnCell))
             {
                 //Log.Error("5");
                 possibleSpawnCells.Remove(spawnCell);
@@ -91,7 +91,7 @@ namespace BMT_PollutedLands
             return Find.FactionManager.GetFactions(allowHidden: true).Where((Faction faction) => faction.def == factionDef).ToList().TryRandomElement(out faction);
         }
 
-        private bool TryFindHiveSpawnCell(Map map, out IntVec3 spawnCell)
+        private bool TryFindHiveSpawnCell(out IntVec3 spawnCell)
 		{
 			float num = -1f;
 			IntVec3 intVec = IntVec3.Invalid;
