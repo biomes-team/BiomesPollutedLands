@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<Operation Class="PatchOperationAdd">
-	  <xpath>/Defs/HediffGiverSetDef[defName="Human"]/hediffGivers</xpath>
-	  <value>
-		  <li Class="BMT_PollutedLands.HediffGiver_PollutedOnly">
-			<hediff>BMT_Mutapox</hediff>
-			<pollutionAmountCurve>
-			  <points>
-				<li>(0, 0)</li>
-				<li>(0.25, 0.25)</li>
-				<li>(0.5, 0.4)</li>
-				<li>(0.8, 0.6)</li>
-				<li>(1, 0.8)</li>
-			  </points>
-			</pollutionAmountCurve>
-			<!-- If mtbDays 240 mutapox chance => ~0.008 per day. Without taking into account the chance from pollution and resistance. -->
-			<mtbDays>240</mtbDays>
-		  </li>
-	  </value>
-	</Operation>
-
 	<!-- <Operation Class="PatchOperationAdd"> -->
-	  <!-- <xpath>/Defs/BiomeDef/diseases</xpath> -->
+	  <!-- <xpath>/Defs/HediffGiverSetDef[defName="Human"]/hediffGivers</xpath> -->
 	  <!-- <value> -->
-		  <!-- <li> -->
-			<!-- <diseaseInc>BMT_Disease_Mutapox</diseaseInc> -->
-			<!-- <commonality>30</commonality> -->
+		  <!-- <li Class="BMT_PollutedLands.HediffGiver_PollutedOnly"> -->
+			<!-- <hediff>BMT_Mutapox</hediff> -->
+			<!-- <pollutionAmountCurve> -->
+			  <!-- <points> -->
+				<!-- <li>(0, 0)</li> -->
+				<!-- <li>(0.25, 0.25)</li> -->
+				<!-- <li>(0.5, 0.4)</li> -->
+				<!-- <li>(0.8, 0.6)</li> -->
+				<!-- <li>(1, 0.8)</li> -->
+			  <!-- </points> -->
+			<!-- </pollutionAmountCurve> -->
+			<!-- If mtbDays 240 mutapox chance => ~0.008 per day. Without taking into account the chance from pollution and resistance. -->
+			<!-- <mtbDays>240</mtbDays> -->
 		  <!-- </li> -->
 	  <!-- </value> -->
 	<!-- </Operation> -->
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/BiomeDef/diseases</xpath>
+	  <value>
+		  <li>
+			<diseaseInc>BMT_Disease_Mutapox</diseaseInc>
+			<!-- Affects how often this disease will be selected.  -->
+			<!-- 50 is more common than mechanites diseases, but less common than flu -->
+			<commonality>50</commonality>
+		  </li>
+	  </value>
+	</Operation>
 
 </Patch>

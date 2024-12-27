@@ -20,6 +20,7 @@ namespace BMT_PollutedLands
 		public float birthQualityOffset = 0f;
 		public bool furIsSkin = false;
 		public bool furIsSkinWithHair = false;
-	}
+		public SimpleCurve pollutionAmountCurve;
+    }
 
 }

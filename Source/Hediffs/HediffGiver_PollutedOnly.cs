@@ -13,7 +13,7 @@ using Verse.Noise;
 
 namespace BMT_PollutedLands
 {
-
+    // Old mutapox event
     public class HediffGiver_PollutedOnly : HediffGiver
     {
 
@@ -74,14 +74,18 @@ namespace BMT_PollutedLands
 
     }
 
+    // New mutapox event
     public class IncidentWorker_Mutapox : IncidentWorker_DiseaseHuman
     {
+
+        public GeneExtension Props => def?.GetModExtension<GeneExtension>();
+
         protected override IEnumerable<Pawn> PotentialVictimCandidates(IIncidentTarget target)
         {
             List<Pawn> newList = [];
             foreach (Pawn pawn in base.PotentialVictimCandidates(target))
             {
-                if (CanGetMutapox(pawn))
+                if (CanGetMutapox(pawn, Props.pollutionAmountCurve))
                 {
                     newList.Add(pawn);
                 }
@@ -89,7 +93,7 @@ namespace BMT_PollutedLands
             return newList;
         }
 
-        public static bool CanGetMutapox(Pawn pawn)
+        public static bool CanGetMutapox(Pawn pawn, SimpleCurve pollutionAmountCurve)
         {
             if (pawn.Map == null)
             {
@@ -100,14 +104,6 @@ namespace BMT_PollutedLands
             {
                 return false;
             }
-            SimpleCurve pollutionAmountCurve =
-            [
-                new CurvePoint(0, 0f),
-                new CurvePoint(0.25f, 0.25f),
-                new CurvePoint(0.5f, 0.4f),
-                new CurvePoint(0.8f, 0.6f),
-                new CurvePoint(1f, 0.8f),
-            ];
             // Calculate the impact of pollution on the pawn.
             float pollutionLevel = pawn.Map.pollutionGrid.TotalPollutionPercent;
             // Check both stats and take the best one.

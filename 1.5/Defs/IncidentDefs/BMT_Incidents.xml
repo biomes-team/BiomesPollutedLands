@@ -51,18 +51,36 @@
     <minRefireDays>13</minRefireDays>
   </IncidentDef>
   
-  <!-- <IncidentDef ParentName="DiseaseIncident"> -->
-	<!-- <defName>BMT_Disease_Mutapox</defName> -->
-	<!-- <label>mutapox</label> -->
-	<!-- <workerClass>BMT_PollutedLands.IncidentWorker_Mutapox</workerClass> -->
-	<!-- <diseaseIncident>BMT_Mutapox</diseaseIncident> -->
-	<!-- <letterLabel>Disease: Mutapox</letterLabel> -->
-	<!-- <targetTags Inherit="False"> -->
-	  <!-- <li>Map_PlayerHome</li> -->
-	  <!-- <li>Map_TempIncident</li> -->
-	  <!-- <li>Map_Misc</li> -->
-	  <!-- <li>Map_RaidBeacon</li> -->
-	<!-- </targetTags> -->
-  <!-- </IncidentDef> -->
+  <IncidentDef ParentName="DiseaseIncident">
+	<defName>BMT_Disease_Mutapox</defName>
+	<label>mutapox</label>
+	<workerClass>BMT_PollutedLands.IncidentWorker_Mutapox</workerClass>
+	<diseaseIncident>BMT_Mutapox</diseaseIncident>
+	<letterLabel>Disease: Mutapox</letterLabel>
+	<letterText>Due to excessive pollution of the region {0} of your {1} have gotten sick from {2}.\n\nThis is a very dangerous disease and without proper treatment it is guaranteed to lead to death. However, it can provide some benefits if the patient can survive.\n\nThe following {1} have gotten sick</letterText>
+	<targetTags Inherit="False">
+	  <li>Map_PlayerHome</li>
+	  <li>Map_TempIncident</li>
+	  <li>Map_Misc</li>
+	  <li>Map_RaidBeacon</li>
+	</targetTags>
+	<modExtensions>
+		<li Class="BMT_PollutedLands.GeneExtension">
+			<!-- Chance of mutapox  -->
+			<!-- The higher the percentage of pollution, the higher the chance of disease -->
+			<!-- Tox resist and tox env resist reduce this chance as a factor. -->
+			<!-- Current pollution * (1 - resist) -->
+			<pollutionAmountCurve>
+			  <points>
+				<li>(0, 0)</li>
+				<li>(0.25, 0.02)</li>
+				<li>(0.5, 0.1)</li>
+				<li>(0.8, 0.6)</li>
+				<li>(1, 0.8)</li>
+			  </points>
+			</pollutionAmountCurve>
+		</li>
+	</modExtensions>
+  </IncidentDef>
   
 </Defs>
