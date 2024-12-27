@@ -34,7 +34,7 @@
   <ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
     <defName>BMT_FenridStoat</defName>
     <label>fenrid stoat</label>
-    <description>A large species of mustelid that can survive both toxic habitats as well as fights with most other native predators. Its preferred prey is varmots and they are often tamed for the express purpose of keeping varmots out of farms and granaries.</description>
+    <description>A large species of mustelid that can survive both toxic habitats as well as fights with most other native predators. Its preferred prey is varmots and they are often tamed for the express purpose of keeping varmots out of farms and granaries. It is known for digging up previously buried varmot corpses, much to the surprise of new tamers.</description>
     <statBases>
       <MoveSpeed>5.0</MoveSpeed>
       <MarketValue>450</MarketValue>
