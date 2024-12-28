@@ -38,7 +38,7 @@ namespace BMT_PollutedLands
 
 		public override void Generate(Map map, GenStepParams parms)
         {
-            if (ignoreTempMaps && map.IsTempIncidentMap)
+            if (ignoreTempMaps && !map.IsPlayerHome)
             {
                 return;
             }
