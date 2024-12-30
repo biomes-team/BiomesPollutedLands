@@ -9,7 +9,7 @@
 				<li Class="BiomesCore.JobGiver_DigUpCorpse">
           <!--This giver will create a corpse when the job is done. It picks a random animal from corpseKinds to dig up and kill-->
           <onlyNaturalTerrain>True</onlyNaturalTerrain> <!--Set to false if you want to be able to dig up from any terrain which passes the fertility check-->
-          <hashInterval>60</hashInterval> <!--This adds a bit of randomness so the animal won't constantly run around creating corpses. Making it too low can result in too many jobs being created at once-->
+          <hashInterval>120</hashInterval> <!--This adds a bit of randomness so the animal won't constantly run around creating corpses. Making it too low can result in too many jobs being created at once-->
           <minFertility>0.7</minFertility> <!--Stops the pawn from digging something up in a stone/sandy terrain, along with any other terrains that the target animal would be unlikely to live in-->
           <diggerKinds>
             <li>BMT_FenridStoat</li><!--List the PawnKindDefs that can dig up a corpse-->
