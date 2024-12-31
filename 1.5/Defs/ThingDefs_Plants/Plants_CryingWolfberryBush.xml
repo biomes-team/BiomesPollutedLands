@@ -15,6 +15,7 @@
 	  <drawSize>1.2</drawSize>
 	</graphicData>
 	<selectable>true</selectable>
+	<neverMultiSelect>false</neverMultiSelect>
 	<pathCost>14</pathCost>
 	<ingestible />
 	<plant>
