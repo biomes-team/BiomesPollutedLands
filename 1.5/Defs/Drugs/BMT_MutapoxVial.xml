@@ -42,7 +42,7 @@
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>BMT_Mutapox</hediffDef>
-          <severity>0.05</severity>
+          <severity>0.01</severity>
           <toleranceChemical>Psychite</toleranceChemical>
         </li>
       </outcomeDoers>
