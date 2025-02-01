@@ -205,10 +205,10 @@
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
-		<tradeTags>
-			<li>AnimalUncommon</li>
-			<li>BMT_PollutedUncommon</li>
-		</tradeTags>
+		<!-- <tradeTags> -->
+			<!-- <li>AnimalUncommon</li> -->
+			<!-- <li>BMT_PollutedUncommon</li> -->
+		<!-- </tradeTags> -->
 	</ThingDef>
 
 	<!--================================================ -->

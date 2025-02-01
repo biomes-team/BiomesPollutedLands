@@ -128,10 +128,10 @@
 			<joinHuntRange>20</joinHuntRange>
 		</li>
 	</comps>
-	<tradeTags>
-	  <li>BMT_PollutedAnimalUncommon</li>
-	  <li>BMT_PollutedAnimalFighter</li>
-	</tradeTags>
+	<!-- <tradeTags> -->
+	  <!-- <li>BMT_PollutedAnimalUncommon</li> -->
+	  <!-- <li>BMT_PollutedAnimalFighter</li> -->
+	<!-- </tradeTags> -->
 		<modExtensions>
 			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
 				<movementDef>PF_Movement_Flying</movementDef>
@@ -315,10 +315,10 @@
 			<canBashFences>true</canBashFences>
 		</li>
 	</comps>
-	<tradeTags>
-	  <li>BMT_PollutedAnimalUncommon</li>
-	  <li>BMT_PollutedAnimalFighter</li>
-	</tradeTags>
+	<!-- <tradeTags> -->
+	  <!-- <li>BMT_PollutedAnimalUncommon</li> -->
+	  <!-- <li>BMT_PollutedAnimalFighter</li> -->
+	<!-- </tradeTags> -->
 		<modExtensions>
 			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
 				<movementDef>PF_Movement_Flying</movementDef>
@@ -503,10 +503,10 @@
 			<joinHuntRange>20</joinHuntRange>
 		</li>
 	</comps>
-	<tradeTags>
-	  <li>BMT_PollutedAnimalUncommon</li>
-	  <li>BMT_PollutedAnimalFighter</li>
-	</tradeTags>
+	<!-- <tradeTags> -->
+	  <!-- <li>BMT_PollutedAnimalUncommon</li> -->
+	  <!-- <li>BMT_PollutedAnimalFighter</li> -->
+	<!-- </tradeTags> -->
 		<modExtensions>
 			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
 				<movementDef>PF_Movement_Flying</movementDef>

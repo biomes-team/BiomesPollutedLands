@@ -132,12 +132,12 @@
 		<spawnSound>Hive_Spawn</spawnSound>
 	  </li>
 	</comps>
-	<tradeTags>
-	  <li>AnimalUncommon</li>
-	  <li>AnimalFighter</li>
-	  <li>BMT_PollutedAnimalUncommon</li>
-	  <li>BMT_PollutedAnimalFighter</li>
-	</tradeTags>
+	<!-- <tradeTags> -->
+	  <!-- <li>AnimalUncommon</li> -->
+	  <!-- <li>AnimalFighter</li> -->
+	  <!-- <li>BMT_PollutedAnimalUncommon</li> -->
+	  <!-- <li>BMT_PollutedAnimalFighter</li> -->
+	<!-- </tradeTags> -->
 		<modExtensions>
 			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
 				<movementDef>PF_Movement_Flying</movementDef>
@@ -329,10 +329,10 @@
 		<spawnSound>Hive_Spawn</spawnSound>
 	  </li>
 	</comps>
-	<tradeTags>
-	  <li>BMT_PollutedAnimalUncommon</li>
-	  <li>BMT_PollutedAnimalFighter</li>
-	</tradeTags>
+	<!-- <tradeTags> -->
+	  <!-- <li>BMT_PollutedAnimalUncommon</li> -->
+	  <!-- <li>BMT_PollutedAnimalFighter</li> -->
+	<!-- </tradeTags> -->
 		<modExtensions>
 			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
 				<movementDef>PF_Movement_Flying</movementDef>
