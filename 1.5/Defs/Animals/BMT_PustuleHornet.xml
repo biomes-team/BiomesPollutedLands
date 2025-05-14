@@ -386,7 +386,9 @@
   
     <ThingDef ParentName="BMT_PollutedLands_BaseInsect">
 	<defName>BMT_ColonyPustuleHornet</defName>
-	<label>domesticated pustule hornet</label>
+	<!-- too long. out of name field -->
+	<!-- <label>domesticated pustule hornet</label> -->
+	<label>pustule hornet</label>
 	<description>Predatory and dangerous, these hornets release toxic gas should they be harmed or killed. They defend their hives and their queen with considerable ferocity backed up by stings laced with potent neurotoxin.\n\nThey do not reproduce outside of their hives and give very little meat or chitin. This variety is loyal to the domesticated queen.</description>
 	<uiIconScale>1.5</uiIconScale>
 	<statBases>
@@ -502,6 +504,7 @@
 		<li Class="BiomesCore.CompProperties_PackHunter">
 			<joinHuntRange>20</joinHuntRange>
 		</li>
+		<li Class="BMT_PollutedLands.CompProperties_AutoTame"/>
 	</comps>
 	<!-- <tradeTags> -->
 	  <!-- <li>BMT_PollutedAnimalUncommon</li> -->
@@ -528,7 +531,9 @@
 
   <PawnKindDef ParentName="AnimalKindBase">
 	<defName>BMT_ColonyPustuleHornet</defName>
-	<label>domesticated pustule hornet</label>
+	<!-- too long. out of name field -->
+	<!-- <label>domesticated pustule hornet</label> -->
+	<label>pustule hornet</label>
 	<race>BMT_ColonyPustuleHornet</race>
 	<combatPower>75</combatPower>
 	<wildGroupSize>1~2</wildGroupSize>

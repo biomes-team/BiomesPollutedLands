@@ -9,7 +9,9 @@
 
   <ThingDef ParentName="BMT_PollutedLands_BaseInsect">
 	<defName>BMT_PustuleHornetQueen</defName>
-	<label>pustule hornet queen</label>
+	<!-- too long. out of name field -->
+	<!-- <label>pustule hornet queen</label> -->
+	<label>pustule queen</label>
 	<description>Unlike most other insect queens, this matriarch is very dangerous. She is nearly as fast as her spawn and packs a greater punch with her stings. Her stings inject a more potent version her species' neurotoxin, allowing for her swarm to quickly overpower anything living in their way.</description>
 	<uiIconScale>1.5</uiIconScale>
 	<statBases>
@@ -159,7 +161,9 @@
 
   <PawnKindDef ParentName="AnimalKindBase">
 	<defName>BMT_PustuleHornetQueen</defName>
-	<label>pustule hornet queen</label>
+	<!-- too long. out of name field -->
+	<!-- <label>pustule hornet queen</label> -->
+	<label>pustule queen</label>
 	<race>BMT_PustuleHornetQueen</race>
 	<combatPower>150</combatPower>
     <defaultFactionType>BMT_PustuleHornets</defaultFactionType>
@@ -207,7 +211,9 @@
   
     <ThingDef ParentName="BMT_PollutedLands_BaseInsect">
 	<defName>BMT_ColonyPustuleHornetQueen</defName>
-	<label>pustule hornet queen</label>
+	<!-- too long. out of name field -->
+	<!-- <label>pustule hornet queen</label> -->
+	<label>pustule queen</label>
 	<description>Unlike most other insect queens, this matriarch is very dangerous. She is nearly as fast as her spawn and packs a greater punch with her stings. Her stings inject a more potent version her species' neurotoxin, allowing for her swarm to quickly overpower anything living in their way.</description>
 	<uiIconScale>1.5</uiIconScale>
 	<statBases>
@@ -354,7 +360,9 @@
 
   <PawnKindDef ParentName="AnimalKindBase">
 	<defName>BMT_ColonyPustuleHornetQueen</defName>
-	<label>domesticated pustule hornet queen</label>
+	<!-- too long. out of name field -->
+	<!-- <label>domesticated pustule hornet queen</label> -->
+	<label>pustule queen</label>
 	<race>BMT_ColonyPustuleHornetQueen</race>
 	<combatPower>100</combatPower>
 	<lifeStages>

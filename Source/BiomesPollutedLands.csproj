@@ -52,6 +52,7 @@
     <Compile Include="Abilities\CompProperties_CorpseEater.cs" />
     <Compile Include="BMT_HediffDefOf.cs" />
     <Compile Include="BMT_MentalStateDefOf.cs" />
+    <Compile Include="CompProperties_AutoTame.cs" />
     <Compile Include="Genes\Gene_AddOrRemoveHediff.cs" />
     <Compile Include="Genes\Gene_BloodExplusion.cs" />
     <Compile Include="Genes\Gene_CarrionMetabolism.cs" />
