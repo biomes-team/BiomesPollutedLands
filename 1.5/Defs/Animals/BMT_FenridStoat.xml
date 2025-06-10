@@ -19,7 +19,7 @@
 					</corpseKinds>
           <jobDef>BMT_DigUpCorpse</jobDef>
           <!--JobDef to assign. The job receives a pawn kind def and duration, and should probably use the related driver class. Report string is flexible-->
-          <jobTicks>625</jobTicks> <!--Time it takes. Ideally not a multiple of the interval to avoid repeatedly digging up corpses-->
+          <jobTicks>60000</jobTicks> <!--Time it takes. Ideally not a multiple of the interval to avoid repeatedly digging up corpses-->
 				</li>
 			</subNodes>
 		</thinkRoot>
