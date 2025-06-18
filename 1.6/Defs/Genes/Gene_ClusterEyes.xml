@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef ParentName="BMT_MutaGenes_Base">
+	<defName>BMT_ClusterEyes</defName>
+	<label>cluster eyes</label>
+	<!-- <description>Carriers of this gene have cluster eyes located on the forehead.</description> -->
+	<description>Carriers of this gene have cluster eyes, allowing them to see in multiple directions at once. This makes them more effective in melee.</description>
+	<geneClass>Gene</geneClass>
+	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_ClusterEyes</iconPath>
+	<customEffectDescriptions>
+	  <!-- <li>When a pawn is close to bleeding out reseting bloodloss, with an 21% chance of also causing a heart attack. It have around 1 day cooldown.</li> -->
+	</customEffectDescriptions>
+	<capMods>
+	  <li>
+		<capacity>Sight</capacity>
+		<offset>0.10</offset>
+	  </li>
+	</capMods>
+	<statOffsets>
+	  <MeleeDodgeChance>0.05</MeleeDodgeChance>
+	  <ImmunityGainSpeed>-0.05</ImmunityGainSpeed>
+	  <PawnBeauty>-1</PawnBeauty>
+	</statOffsets>
+	<!-- <renderNodeProperties> -->
+	  <!-- <li> -->
+		<!-- <nodeClass>PawnRenderNode_AttachmentHead</nodeClass> -->
+		<!-- <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass> -->
+		<!-- <texPaths> -->
+		  <!-- <li>BMT_PollutedLands/Things/Pawn/Humanlike/BodyAttachments/ClusterEyes/ClusterEyes</li> -->
+		<!-- </texPaths> -->
+		<!-- <color>(255, 255, 255)</color> -->
+		<!-- <parentTagDef>Head</parentTagDef> -->
+		<!-- <drawData> -->
+		  <!-- <defaultData> -->
+			<!-- <layer>80</layer> -->
+		  <!-- </defaultData> -->
+		  <!-- <dataSouth> -->
+			<!-- <offset>(0, 0, 0.13)</offset> -->
+		  <!-- </dataSouth> -->
+		  <!-- <dataEast> -->
+			<!-- <offset>(0, 0, 0.13)</offset> -->
+		  <!-- </dataEast> -->
+		  <!-- <dataWest> -->
+			<!-- <offset>(0, 0, 0.13)</offset> -->
+		  <!-- </dataWest> -->
+		<!-- </drawData> -->
+	  <!-- </li> -->
+	<!-- </renderNodeProperties> -->
+	<renderNodeProperties>
+	  <li>
+		<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+		<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+		<parentTagDef>Head</parentTagDef>
+		<colorType>Custom</colorType>
+		<color>(255, 255, 255)</color>
+		<useRottenColor>true</useRottenColor>
+		<useSkinShader>true</useSkinShader>
+		<rotDrawMode>Fresh, Rotting</rotDrawMode>
+		<texPaths>
+		  <li>BMT_PollutedLands/Things/Pawn/Humanlike/BodyAttachments/ClusterEyes/ClusterEyes</li>
+		</texPaths>
+		<visibleFacing>
+		  <li>East</li>
+		  <li>South</li>
+		  <li>West</li>
+		</visibleFacing>
+		<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+		<drawData>
+		  <defaultData>
+			<layer>55</layer>
+		  </defaultData>
+		</drawData>
+	  </li>
+	</renderNodeProperties>
+	<exclusionTags>
+	  <!-- <li>Headbone</li> -->
+	  <li>EyeColor</li>
+	</exclusionTags>
+  </GeneDef>
+
+</Defs>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef ParentName="BMT_MutaGenes_Base">
+	<defName>BMT_EpidermalOssification</defName>
+	<label>epidermal ossification</label>
+	<description>Carriers of this gene have bone growths protecting much of their body while also making it harder to move.</description>
+	<geneClass>Gene</geneClass>
+	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_EpidermalOssification</iconPath>
+	<painOffset>0.05</painOffset>
+	<biostatCpx>1</biostatCpx>
+	<biostatMet>-3</biostatMet>
+	<statOffsets>
+	  <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+	  <ImmunityGainSpeed>-0.05</ImmunityGainSpeed>
+	</statOffsets>
+	<capMods>
+	  <li>
+		<capacity>Moving</capacity>
+		<offset>-0.10</offset>
+	  </li>
+	</capMods>
+  </GeneDef>
+
+</Defs>

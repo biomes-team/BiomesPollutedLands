@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Need a body and flies -->
+  <!-- <GeneDef ParentName="BMT_MutaGenes_Base"> -->
+	<!-- <defName>BMT_PestilentSymbiosis</defName> -->
+	<!-- <label>pestilent symbiosis</label> -->
+	<!-- <description>Dummy gene. Background and icon test.</description> -->
+	<!-- <geneClass>Gene</geneClass> -->
+	<!-- <iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_PsychicCortex</iconPath> -->
+	<!-- <painOffset>0.05</painOffset> -->
+	<!-- <statOffsets> -->
+	  <!-- <ImmunityGainSpeed>-0.1</ImmunityGainSpeed> -->
+	  <!-- <HuntingStealth>0.2</HuntingStealth> -->
+	<!-- </statOffsets> -->
+	<!-- <customEffectDescriptions> -->
+	  <!-- <li>TEST.</li> -->
+	<!-- </customEffectDescriptions> -->
+	<!-- <exclusionTags> -->
+	  <!-- <li>Fur</li> -->
+	  <!-- <li>AG_Bodies</li> -->
+	  <!-- <li>Bodies</li> -->
+	<!-- </exclusionTags> -->
+	<!-- <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor> -->
+	<!-- <fur>BMT_PestilentSymbiosis</fur> -->
+	<!-- <abilities> -->
+	  <!-- <li>BMT_PestilentSymbiosis</li> -->
+	<!-- </abilities> -->
+	<!-- <renderNodeProperties> -->
+	  <!-- <li> -->
+		<!-- <nodeClass>BMT_PollutedLands.PawnRenderNode_FurIsSkin</nodeClass> -->
+		<!-- <workerClass>PawnRenderNodeWorker_Fur</workerClass> -->
+		<!-- <baseLayer>1</baseLayer> -->
+		<!-- <rotDrawMode>Fresh, Rotting</rotDrawMode> -->
+		<!-- <parentTagDef>Body</parentTagDef> -->
+	  <!-- </li> -->
+	<!-- </renderNodeProperties> -->
+  <!-- </GeneDef> -->
+
+  <!-- <AbilityDef MayRequire="ludeon.rimworld.royalty"> -->
+	<!-- <defName>BMT_PestilentSymbiosis</defName> -->
+	<!-- <label>toxflies</label> -->
+	<!-- <description>TEST.</description> -->
+	<!-- <iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_PsychicCortex</iconPath> -->
+	<!-- <cooldownTicksRange>240000</cooldownTicksRange> -->
+	<!-- <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted> -->
+	<!-- <disableGizmoWhileUndrafted>true</disableGizmoWhileUndrafted> -->
+	<!-- <targetRequired>false</targetRequired> -->
+	<!-- <hostile>false</hostile> -->
+	<!-- <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence> -->
+	<!-- <verbProperties> -->
+	  <!-- <verbClass>Verb_CastAbility</verbClass> -->
+	  <!-- <warmupTime>0.5</warmupTime> -->
+	  <!-- <requireLineOfSight>false</requireLineOfSight> -->
+	  <!-- <drawAimPie>false</drawAimPie> -->
+	  <!-- <range>2.9</range> -->
+	  <!-- <targetParams> -->
+		<!-- <canTargetSelf>true</canTargetSelf> -->
+	  <!-- </targetParams> -->
+	<!-- </verbProperties> -->
+	<!-- <comps> -->
+	  <!-- <li Class="CompProperties_AbilitySpawn"> -->
+		<!-- <thingDef>BMT_Toxflies</thingDef> -->
+	  <!-- </li> -->
+	<!-- </comps> -->
+  <!-- </AbilityDef> -->
+
+  <!-- <FurDef> -->
+	<!-- <defName>BMT_PestilentSymbiosis</defName> -->
+	<!-- <noGraphic>true</noGraphic> -->
+	<!-- <bodyTypeGraphicPaths> -->
+	  <!-- <Male>Things/Pawn/Humanlike/Bodies/Naked_Male</Male> -->
+	  <!-- <Female>Things/Pawn/Humanlike/Bodies/Naked_Female</Female> -->
+	  <!-- <Hulk>Things/Pawn/Humanlike/Bodies/Naked_Hulk</Hulk> -->
+	  <!-- <Fat>Things/Pawn/Humanlike/Bodies/Naked_Fat</Fat> -->
+	  <!-- <Thin>Things/Pawn/Humanlike/Bodies/Naked_Thin</Thin> -->
+	  <!-- <Child>Things/Pawn/Humanlike/Bodies/Naked_Child</Child> -->
+	  <!-- <Baby>Things/Pawn/Humanlike/Bodies/Naked_Child</Baby> -->
+	<!-- </bodyTypeGraphicPaths> -->
+	<!-- <modExtensions> -->
+		<!-- <li Class="BMT_PollutedLands.GeneExtension"> -->
+			<!-- <furIsSkin>true</furIsSkin> -->
+		<!-- </li> -->
+	<!-- </modExtensions> -->
+  <!-- </FurDef> -->
+
+</Defs>

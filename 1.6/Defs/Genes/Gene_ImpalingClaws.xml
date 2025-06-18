@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef ParentName="BMT_MutaGenes_Base">
+	<defName>BMT_ImpalingClaws</defName>
+	<label>impaling claws</label>
+	<description>Carriers of this gene grow two claws on their backs that act as natural weapons.</description>
+	<geneClass>BMT_PollutedLands.Gene_AddOrRemoveHediff</geneClass>
+	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_ImpalingClaws</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+	<customEffectDescriptions>
+	  <li>Carrier can attack with claws in melee.</li>
+	</customEffectDescriptions>
+	<capMods>
+	  <li>
+		<capacity>Manipulation</capacity>
+		<offset>0.10</offset>
+	  </li>
+	</capMods>
+	<statOffsets>
+	  <ImmunityGainSpeed>-0.1</ImmunityGainSpeed>
+	  <PawnBeauty>-1</PawnBeauty>
+	</statOffsets>
+	<renderNodeProperties>
+	  <!-- Old -->
+	  <!-- <li Class="PawnRenderNodeProperties_Spastic"> -->
+		<!-- <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass> -->
+		<!-- <texPaths> -->
+		  <!-- <li>BMT_PollutedLands/Things/Pawn/Humanlike/BodyAttachments/ImplaingClawLimb/ImpalingClaw</li> -->
+		<!-- </texPaths> -->
+		<!-- <drawSize>1.0</drawSize> -->
+		<!-- <colorType>Skin</colorType> -->
+		<!-- <rotDrawMode>Fresh, Rotting</rotDrawMode> -->
+		<!-- <useSkinShader>true</useSkinShader> -->
+		<!-- <useRottenColor>true</useRottenColor> -->
+		<!-- <rotationRange>-30~30</rotationRange> -->
+		<!-- <durationTicksRange>10~35</durationTicksRange> -->
+		<!-- <nextSpasmTicksRange>10~50</nextSpasmTicksRange> -->
+		<!-- <drawData> -->
+		  <!-- <scaleOffsetByBodySize>true</scaleOffsetByBodySize> -->
+		  <!-- <defaultData> -->
+			<!-- <layer>-2</layer> -->
+		  <!-- </defaultData> -->
+		  <!-- <dataNorth> -->
+			<!-- <offset>(0.20, 0.2, -0.06)</offset> -->
+			<!-- <layer>90</layer> -->
+			<!-- <rotationOffset>50</rotationOffset> -->
+		  <!-- </dataNorth> -->
+		  <!-- <dataSouth> -->
+			<!-- <offset>(0.20, -0.1, -0.06)</offset> -->
+			<!-- <rotationOffset>50</rotationOffset> -->
+		  <!-- </dataSouth> -->
+		  <!-- <dataEast> -->
+			<!-- <offset>(-0.06, -0.1, -0.06)</offset> -->
+		  <!-- </dataEast> -->
+		  <!-- <dataWest> -->
+			<!-- <offset>(0.06, 0.2, -0.06)</offset> -->
+			<!-- <flip>true</flip> -->
+		  <!-- </dataWest> -->
+		<!-- </drawData> -->
+	  <!-- </li> -->
+	  <!-- <li Class="PawnRenderNodeProperties_Spastic"> -->
+		<!-- <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass> -->
+		<!-- <texPaths> -->
+		  <!-- <li>BMT_PollutedLands/Things/Pawn/Humanlike/BodyAttachments/ImplaingClawLimb/ImpalingClaw</li> -->
+		<!-- </texPaths> -->
+		<!-- <drawSize>1.0</drawSize> -->
+		<!-- <colorType>Skin</colorType> -->
+		<!-- <rotDrawMode>Fresh, Rotting</rotDrawMode> -->
+		<!-- <useSkinShader>true</useSkinShader> -->
+		<!-- <useRottenColor>true</useRottenColor> -->
+		<!-- <rotationRange>-30~30</rotationRange> -->
+		<!-- <durationTicksRange>10~35</durationTicksRange> -->
+		<!-- <nextSpasmTicksRange>10~50</nextSpasmTicksRange> -->
+		<!-- <drawData> -->
+		  <!-- <scaleOffsetByBodySize>true</scaleOffsetByBodySize> -->
+		  <!-- <defaultData> -->
+			<!-- <layer>-2</layer> -->
+		  <!-- </defaultData> -->
+		  <!-- <dataNorth> -->
+			<!-- <offset>(-0.20, 0.2, -0.06)</offset> -->
+			<!-- <flip>true</flip> -->
+			<!-- <layer>90</layer> -->
+			<!-- <rotationOffset>-50</rotationOffset> -->
+		  <!-- </dataNorth> -->
+		  <!-- <dataSouth> -->
+			<!-- <offset>(-0.20, -0.1, -0.06)</offset> -->
+			<!-- <flip>true</flip> -->
+			<!-- <rotationOffset>-50</rotationOffset> -->
+		  <!-- </dataSouth> -->
+		  <!-- <dataEast> -->
+			<!-- <offset>(-0.06, 0.2, -0.06)</offset> -->
+		  <!-- </dataEast> -->
+		  <!-- <dataWest> -->
+			<!-- <offset>(0.06, -0.1, -0.06)</offset> -->
+			<!-- <flip>true</flip> -->
+		  <!-- </dataWest> -->
+		<!-- </drawData> -->
+	  <!-- </li> -->
+	  <!-- New -->
+	  <li>
+		<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+		<!-- The animation has too many visual problems.  -->
+		<!-- For example, the center of the texture starts to float, plus on some bodytypes the coordinates start to diverge.  -->
+		<!-- Humans are not suitable for animation. -->
+		 <!-- Class="PawnRenderNodeProperties_Spastic" -->
+		<!-- <rotationRange>-30~30</rotationRange> -->
+		<!-- <durationTicksRange>10~35</durationTicksRange> -->
+		<!-- <nextSpasmTicksRange>10~50</nextSpasmTicksRange> -->
+		<!-- <rotateFacing>false</rotateFacing> -->
+		<debugLabel>SpikeL</debugLabel>
+		<texPath>BMT_PollutedLands/Things/Pawn/Humanlike/BodyAttachments/ImplaingClawLimb/ImpalingClaw</texPath>
+		<rotDrawMode>Fresh, Rotting</rotDrawMode>
+		<baseLayer>10</baseLayer>
+		<colorType>Skin</colorType>
+		<parentTagDef>Body</parentTagDef>
+		<useRottenColor>true</useRottenColor>
+		<overrideMeshSize>(1.0, 1.0)</overrideMeshSize>
+		<drawSize>1.1</drawSize>
+		<visibleFacing>
+		  <li>South</li>
+		  <li>North</li>
+		  <li>West</li>
+		</visibleFacing>
+		<drawData>
+			<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+			<dataNorth>
+			  <offset>(-0.14, 0.4, 0.07)</offset>
+			  <rotationOffset>-80</rotationOffset>
+			</dataNorth>
+			<dataSouth>
+			  <offset>(0.25, -0.4, 0.07)</offset>
+			  <rotationOffset>50</rotationOffset>
+			</dataSouth>
+			<dataWest>
+			  <offset>(0.15, 0.4, 0.15)</offset>
+			  <rotationOffset>60</rotationOffset>
+			  <flip>true</flip>
+			</dataWest>
+		</drawData>
+	  </li>
+	  <li>
+		<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+		 <!-- Class="PawnRenderNodeProperties_Spastic" -->
+		<!-- <rotationRange>-30~30</rotationRange> -->
+		<!-- <durationTicksRange>10~35</durationTicksRange> -->
+		<!-- <nextSpasmTicksRange>10~50</nextSpasmTicksRange> -->
+		<!-- <rotateFacing>false</rotateFacing> -->
+		<debugLabel>SpikeR</debugLabel>
+		<texPath>BMT_PollutedLands/Things/Pawn/Humanlike/BodyAttachments/ImplaingClawLimb/ImpalingClaw</texPath>
+		<rotDrawMode>Fresh, Rotting</rotDrawMode>
+		<baseLayer>10</baseLayer>
+		<colorType>Skin</colorType>
+		<parentTagDef>Body</parentTagDef>
+		<useRottenColor>true</useRottenColor>
+		<overrideMeshSize>(1.0, 1.0)</overrideMeshSize>
+		<drawSize>1.1</drawSize>
+		<visibleFacing>
+		  <li>South</li>
+		  <li>North</li>
+		  <li>East</li>
+		</visibleFacing>
+		<drawData>
+			<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+			<dataNorth>
+			  <offset>(0.14, 0.4, 0.07)</offset>
+			  <rotationOffset>80</rotationOffset>
+			  <flip>true</flip>
+			</dataNorth>
+			<dataSouth>
+			  <offset>(-0.25, -0.4, 0.07)</offset>
+			  <rotationOffset>-50</rotationOffset>
+			  <flip>true</flip>
+			</dataSouth>
+			<dataEast>
+			  <offset>(-0.15, 0.4, 0.15)</offset>
+			  <rotationOffset>-60</rotationOffset>
+			</dataEast>
+		</drawData>
+	  </li>
+	</renderNodeProperties>
+	<exclusionTags>
+	  <li>BMT_ImpalingClaws</li>
+	  <li>ToughspikeSpikes</li>
+	</exclusionTags>
+	<modExtensions>
+		<li Class="BMT_PollutedLands.GeneExtension">
+			<hediffDef>BMT_ImpalingClaws</hediffDef>
+			<bodyparts>
+			  <li>Torso</li>
+			</bodyparts>
+		</li>
+	</modExtensions>
+  </GeneDef>
+
+</Defs>

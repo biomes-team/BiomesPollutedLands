@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneCategoryDef>
+	<defName>BMT_MutaGenes</defName>
+	<label>mutagenes</label>
+	<displayPriorityInXenotype>510.8853270623</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <GeneDef Name="BMT_MutaGenes_Base" Abstract="True">
+	<description>Carriers of this gene have...</description>
+	<displayCategory>BMT_MutaGenes</displayCategory>
+	<selectionWeight>0.00025</selectionWeight>
+	<canGenerateInGeneSet>true</canGenerateInGeneSet>
+	<marketValueFactor>1.5</marketValueFactor>
+	<minAgeActive>0</minAgeActive>
+	<randomChosen>false</randomChosen>
+	<biostatCpx>3</biostatCpx>
+	<biostatMet>1</biostatMet>
+  </GeneDef>
+
+</Defs>

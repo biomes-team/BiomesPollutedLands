@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BMT_PollutedLands_TreeBase">
+	<defName>BMT_Plant_TreeSeepingEucalyptus</defName>
+	<label>seeping eucalyptus</label>
+	<description>A mutant eucalyptus tree species. It seeps colorful sap from cracks in its bark throughout its life.</description>
+	<graphicData>
+	  <texPath>BMT_PollutedLands/Things/Plant/SeepingEucalyptus</texPath>
+	  <graphicClass>Graphic_Random</graphicClass>
+	  <shadowData>
+		<volume>(0.2, 0.35, 0.13)</volume>
+		<offset>(-0.03,0,-0.44)</offset>
+	  </shadowData>
+	</graphicData>
+	<statBases>
+	  <Beauty>2</Beauty>
+	  <BeautyOutdoors>2</BeautyOutdoors>
+	</statBases>
+	<plant>
+	  <growDays>30</growDays>
+	  <!-- <immatureGraphicPath>Things/Plant/TreeOak_Immature</immatureGraphicPath> -->
+	  <harvestWork>1500</harvestWork>
+	  <harvestYield>50</harvestYield>
+	  <harvestedThingDef>BMT_Toxwood</harvestedThingDef>
+	  <wildClusterWeight>35</wildClusterWeight>
+	  <visualSizeRange>1.3~3.0</visualSizeRange>
+	  <pollution>PollutedOnly</pollution>
+	  <fertilityMin>0.10</fertilityMin>
+      <fertilitySensitivity>0</fertilitySensitivity>
+	</plant>
+  </ThingDef>
+
+</Defs>

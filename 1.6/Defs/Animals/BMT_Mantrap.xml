@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
+		<defName>BMT_Creature_Mantrap</defName>
+		<label>mantrap</label>
+		<description>Massive compared to its progenitor, the venus flytrap, the mantrap is named such due to its ability to snag prey the size of humans. This variant has managed to develop proto-feet and can move very slowly to more food-rich environments. This all tends to terrify people.</description>
+		<statBases>
+			<MoveSpeed>0.00001</MoveSpeed>
+			<MarketValue>200</MarketValue>
+			<ComfyTemperatureMin>10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>70</ComfyTemperatureMax>
+			<LeatherAmount>0</LeatherAmount>
+			<MeatAmount>0</MeatAmount>
+			<FilthRate>0</FilthRate>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+		</statBases>
+		<race>
+			<body>BMT_MantisLike</body>
+			<leatherDef>BMT_ToxiChitin</leatherDef>
+			<herdAnimal>false</herdAnimal>
+			<baseBodySize>0.77</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<baseHungerRate>0.05</baseHungerRate>
+			<foodType>CarnivoreAnimal</foodType>
+			<predator>true</predator>
+			<maxPreyBodySize>1</maxPreyBodySize>
+			<wildness>0.99</wildness>
+			<lifeExpectancy>7</lifeExpectancy>
+			<manhunterOnTameFailChance>0.0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+			<trainability>None</trainability>
+			<bloodDef>Filth_BloodInsect</bloodDef>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<comps>
+
+			<li Class="BiomesCore.CompProperties_LurePrey">
+				<preyApproachTimeout>5000</preyApproachTimeout>
+				<attackOnDistance>1</attackOnDistance>
+				<shouldGlow>false</shouldGlow>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>left maw</label>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>BMT_FrontLeftScythe</linkedBodyPartsGroup>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>25</amount>
+						</li>
+						<li>
+							<def>AcidBurn</def>
+							<amount>15</amount>
+						 </li>
+					</extraMeleeDamages>
+			</li>
+			<li>
+				<label>right maw</label>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>BMT_FrontRightScythe</linkedBodyPartsGroup>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>25</amount>
+						</li>
+						<li>
+							<def>AcidBurn</def>
+							<amount>15</amount>
+						 </li>
+					</extraMeleeDamages>
+			</li>
+		</tools>
+			<tradeTags>
+				<li>AnimalFighter</li>
+				<li>BMT_PollutedAnimalFighter</li>
+			</tradeTags>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_Creature_Mantrap</defName>
+		<label>mantrap</label>
+		<race>BMT_Creature_Mantrap</race>
+		<combatPower>75</combatPower>
+		<wildGroupSize>1</wildGroupSize>
+		<canArriveManhunter>false</canArriveManhunter>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MantrapCreature/Mantrap</texPath>
+					<drawSize>1.7</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MantrapCreature/Dessicated_Mantrap</texPath>
+					<drawSize>1.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

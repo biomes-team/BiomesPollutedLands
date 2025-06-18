@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- How big is it? About rabbit sized. -->
+<!-- What does it eat? (is it a predator?) Omnivore, eats literally anything they can, even filth. If possible filth should come last though in their food priority.  -->
+<!-- Where does it live? Spawns in all polluted biomes. -->
+<!-- Does it spawn in packs? Yes, in fairly large groups. -->
+<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. They should be decent for ranching, giving a fair amount of meat per slaughter and able to breed quite fast. Their eggs should be able to survive in pretty much any temp range. -->
+
+  <ThingDef ParentName="BMT_PollutedLands_BaseInsect">
+	<defName>BMT_Megaroach</defName>
+	<label>megaroach</label>
+	<description>This small, solitary roach can survive in nearly any polluted environment. While most roaches are considered pests, this species actually keeps colonies it lives in cleaner by chowing down on all kinds of filth.</description>
+	<uiIconScale>1.5</uiIconScale>
+	<statBases>
+	  <MoveSpeed>6.0</MoveSpeed>
+	  <MarketValue>50</MarketValue>
+	  <ComfyTemperatureMin>-60</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>70</ComfyTemperatureMax>
+	  <FilthRate>0</FilthRate>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	</statBases>
+	<tools>
+	  <li>
+		<capacities>
+		  <li>Bite</li>
+		</capacities>
+		<power>3.4</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+	  </li>
+	  <li>
+		<label>head</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>1.5</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<chanceFactor>0.2</chanceFactor>
+	  </li>
+	</tools>
+	<race>
+	 <body>BeetleLike</body>
+	  <baseBodySize>0.2</baseBodySize>
+	  <baseHungerRate>0.35</baseHungerRate>
+	  <baseHealthScale>0.4</baseHealthScale>
+	  <useMeatFrom>Megaspider</useMeatFrom>
+	  <foodType>OmnivoreAnimal</foodType>
+	  <leatherDef>BMT_FragileChitin</leatherDef>
+	  <wildness>0.75</wildness>
+	  <trainability>None</trainability>
+	  <petness>0.08</petness>
+	  <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+	  <manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+	  <!-- <mateMtbHours>8</mateMtbHours> -->
+	  <!-- <gestationPeriodDays>5.661</gestationPeriodDays> -->
+	  <soundEating>Rodent_Eat</soundEating>
+	  <litterSizeCurve>
+		<points>
+		  <li>(1.0, 0)</li>
+		  <li>(1.5, 1)</li>
+		  <li>(2.0, 1)</li>
+		  <li>(2.5, 0)</li>
+		</points>
+	  </litterSizeCurve>
+	  <headPosPerRotation>
+		<li>(0.0, 0, 0.07)</li>
+		<li>(0.19, 0, 0)</li>
+		<li>(0.0, 0, -0.07)</li>
+		<li>(-0.19, 0, 0)</li>
+	  </headPosPerRotation>
+	  <lifeExpectancy>1.5</lifeExpectancy>
+	  <lifeStageAges>
+		<li>
+		  <def>EusocialInsectLarva</def>
+		  <minAge>0</minAge>
+		</li>
+		<li>
+		  <def>EusocialInsectJuvenile</def>
+		  <minAge>0.1</minAge>
+		</li>
+		<li>
+		  <def>AnimalAdult</def>
+		  <minAge>0.2222</minAge>
+		  <soundWounded>Pawn_Hare_Wounded</soundWounded>
+		  <soundDeath>Pawn_Hare_Death</soundDeath>
+		  <soundCall>Pawn_Hare_Call</soundCall>
+		  <soundAngry>Pawn_Hare_Angry</soundAngry>
+		</li>
+	  </lifeStageAges>
+	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+	  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+	  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	</race>
+	<tradeTags>
+		<li>AnimalCommon</li>
+		<li>AnimalFarm</li>
+		<li>BMT_PollutedAnimalCommon</li>
+		<li>BMT_PollutedAnimalInsect</li>
+	</tradeTags>
+	<comps>
+		<li Class="CompProperties_EggLayer">
+			<eggFertilizedDef>BMT_EggMegaroachFertilized</eggFertilizedDef>
+			<eggUnfertilizedDef>BMT_EggMegaroachUnfertilized</eggUnfertilizedDef>
+			<eggLayIntervalDays>3</eggLayIntervalDays>
+			<!-- <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax> -->
+			<eggCountRange>2~3</eggCountRange>
+		</li>
+		<li Class="BiomesCore.CompProperties_CustomThingEater">
+			<filthNutrition>1.12</filthNutrition>
+		</li>
+	</comps>
+	<modExtensions>
+		<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
+			<isCustomThingEater>true</isCustomThingEater>
+			<eatWhenFed>true</eatWhenFed>
+		</li>
+	</modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="EggUnfertBase">
+	<defName>BMT_EggMegaroachUnfertilized</defName>
+	<label>megaroach egg (unfert.)</label>
+	<description>An unfertilized megaroach egg. It can be eaten raw, but it's much, much better cooked.</description>
+	<graphicData>
+		<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+		<color>(167,198,153)</color>
+		<drawSize>0.7</drawSize>
+	</graphicData>
+	<statBases>
+	  <MarketValue>2.0</MarketValue>
+	</statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+	<defName>BMT_EggMegaroachFertilized</defName>
+	<label>megaroach egg (fert.)</label>
+	<description>A fertilized megaroach egg. If all goes well, it should hatch into a baby megaroach. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+		<color>(137,125,103)</color>
+		<drawSize>0.5</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>4.0</MarketValue>
+		<DeteriorationRate>0</DeteriorationRate>
+	</statBases>
+	<comps Inherit="False">
+	  <li Class="CompProperties_Hatcher">
+		<hatcherDaystoHatch>2</hatcherDaystoHatch>
+		<hatcherPawn>BMT_Megaroach</hatcherPawn>
+	  </li>
+	  <li Class="CompProperties_TemperatureRuinable">
+		<minSafeTemperature>-60</minSafeTemperature>
+		<maxSafeTemperature>80</maxSafeTemperature>
+		<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <!--================================================ -->
+
+  <PawnKindDef ParentName="HareBase">
+	<defName>BMT_Megaroach</defName>
+	<label>megaroach</label>
+	<race>BMT_Megaroach</race>
+	<wildGroupSize>10~12</wildGroupSize>
+	<lifeStages>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/Megaroach/Megaroach</texPath>
+		  <drawSize>1</drawSize>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/Megaroach/Megaroach_dessicated</texPath>
+		  <drawSize>1.0</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/Megaroach/Megaroach</texPath>
+		  <drawSize>1.25</drawSize>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/Megaroach/Megaroach_dessicated</texPath>
+		  <drawSize>1.25</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/Megaroach/Megaroach</texPath>
+		  <drawSize>1.5</drawSize>
+		  <shadowData>
+			<volume>(0.32, 0.35, 0.32)</volume>
+			<offset>(0,0,0)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/Megaroach/Megaroach_dessicated</texPath>
+		  <drawSize>1.5</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	</lifeStages>
+  </PawnKindDef>
+
+</Defs>

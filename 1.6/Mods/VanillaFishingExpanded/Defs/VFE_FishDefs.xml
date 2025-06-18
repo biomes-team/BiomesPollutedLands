@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<VCE_Fishing.FishDef>
+		<defName>BMT_Tumorfish</defName>
+		<thingDef>BMT_Tumorfish</thingDef>
+		<fishSizeCategory>Small</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowPolluted>true</allowPolluted>
+		<anyBiomeAllowed>true</anyBiomeAllowed>
+		<onlyPolluted>true</onlyPolluted>
+		<allowedBiomes/>
+		<baseFishingYield>22</baseFishingYield>
+		<!-- <modExtensions> -->
+			<!-- <li Class="BMT_PollutedFish.FishExtension"> -->
+				<!-- <isPollutedFish>true</isPollutedFish> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>BMT_Megaleech</defName>
+		<thingDef>BMT_Megaleech</thingDef>
+		<fishSizeCategory>Medium</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowPolluted>true</allowPolluted>
+		<anyBiomeAllowed>true</anyBiomeAllowed>
+		<onlyPolluted>true</onlyPolluted>
+		<allowedBiomes/>
+		<baseFishingYield>13</baseFishingYield>
+		<!-- <modExtensions> -->
+			<!-- <li Class="BMT_PollutedFish.FishExtension"> -->
+				<!-- <isPollutedFish>true</isPollutedFish> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
+	</VCE_Fishing.FishDef>
+
+	<VCE_Fishing.FishDef>
+		<defName>BMT_Gaspar</defName>
+		<thingDef>BMT_Gaspar</thingDef>
+		<fishSizeCategory>Large</fishSizeCategory>
+		<canBeFreshwater>true</canBeFreshwater>
+		<canBeSaltwater>true</canBeSaltwater>
+		<allowPolluted>true</allowPolluted>
+		<anyBiomeAllowed>true</anyBiomeAllowed>
+		<onlyPolluted>true</onlyPolluted>
+		<allowedBiomes/>
+		<baseFishingYield>5</baseFishingYield>
+		<!-- <modExtensions> -->
+			<!-- <li Class="BMT_PollutedFish.FishExtension"> -->
+				<!-- <isPollutedFish>true</isPollutedFish> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
+	</VCE_Fishing.FishDef>
+
+
+</Defs>

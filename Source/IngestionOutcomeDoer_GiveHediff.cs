@@ -21,7 +21,7 @@ namespace BMT_PollutedLands
             {
                 effect *= 1f - pawn.GetStatValue(statDef);
             }
-            AddictionUtility.ModifyChemicalEffectForToleranceAndBodySize_NewTemp(pawn, toleranceChemical, ref effect, multiplyByGeneToleranceFactors, divideByBodySize);
+            AddictionUtility.ModifyChemicalEffectForToleranceAndBodySize(pawn, toleranceChemical, ref effect, multiplyByGeneToleranceFactors, divideByBodySize);
             hediff.Severity = effect;
             pawn.health.AddHediff(hediff);
         }

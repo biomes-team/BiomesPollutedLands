@@ -21,7 +21,7 @@ namespace BMT_PollutedLands
             if (!base.CanFireNowSub(parms))
                 return false;
             Map target = (Map)parms.target;
-            return Rand.Chance(target.pollutionGrid.TotalPollutionPercent) && target.weatherManager.growthSeasonMemory.GrowthSeasonOutdoorsNow && this.TryFindRootCell(target, out IntVec3 _);
+            return Rand.Chance(target.pollutionGrid.TotalPollutionPercent) && PlantUtility.GrowthSeasonNow(target, HagBloom) && this.TryFindRootCell(target, out IntVec3 _);
         }
 
         protected override bool TryExecuteWorker(IncidentParms parms)
@@ -54,7 +54,7 @@ namespace BMT_PollutedLands
             if (!map.pollutionGrid.IsPolluted(c))
                 return false;
 
-            if (!c.Standable(map) || c.Fogged(map) || (double)map.fertilityGrid.FertilityAt(c) < (double)HagBloom.plant.fertilityMin || !c.GetRoom(map).PsychologicallyOutdoors || c.GetEdifice(map) != null || !PlantUtility.GrowthSeasonNow(c, map))
+            if (!c.Standable(map) || c.Fogged(map) || (double)map.fertilityGrid.FertilityAt(c) < (double)HagBloom.plant.fertilityMin || !c.GetRoom(map).PsychologicallyOutdoors || c.GetEdifice(map) != null || !PlantUtility.GrowthSeasonNow(map, HagBloom))
                 return false;
 
             Plant plant = c.GetPlant(map);

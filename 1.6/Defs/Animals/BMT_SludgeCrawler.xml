@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
+		<defName>BMT_SludgeCrawler</defName>
+		<label>sludgecrawler</label>
+		<description>A gigantic mutant snail with two heads. It uses its unique slime for defense, as it rapidly hardens into something akin to biological cement.</description>
+		<statBases>
+			<MoveSpeed>2.5</MoveSpeed>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<MarketValue>150</MarketValue>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+			<FilthRate>0</FilthRate>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+		</statBases>
+		<comps>
+			<li Class="BiomesCore.CompProperties_DefensiveReaction">
+				<hediffs>
+					<li>BMT_GiantSnailDefense</li>
+				</hediffs>
+				<graphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/SludgeCrawler/SludgeCrawlerShell</texPath>
+				</graphicData>
+				<duration>750</duration>
+			</li>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggSludgeCrawlerFertilized</eggFertilizedDef>
+				<eggLayIntervalDays>20</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+				<eggLayFemaleOnly>false</eggLayFemaleOnly>
+			</li>
+			<li Class="BiomesCore.CompProperties_MakeFilthTrail">
+				<filthDef>BMT_Filth_Snail_Slime</filthDef>
+			</li>
+			<li Class="CompProperties_Milkable">
+				<milkDef>BMT_CementSlime</milkDef>
+				<milkIntervalDays>3</milkIntervalDays>
+				<milkAmount>10</milkAmount>
+				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2.5</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<extraMeleeDamages>
+					<li>
+					  <def>BMT_SlimedUp</def>
+					  <amount>5</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>BMT_HermaphroditicAnimal</thinkTreeMain>
+			<hasGenders>false</hasGenders>
+			<herdAnimal>true</herdAnimal>
+			<body>BiomesCore_Snail</body>
+			<baseHungerRate>0.605</baseHungerRate>
+			<baseBodySize>2.6</baseBodySize>
+			<baseHealthScale>2</baseHealthScale>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<packAnimal>false</packAnimal>
+			<wildness>0.60</wildness>
+			<lifeExpectancy>10</lifeExpectancy>
+			<trainability>Intermediate</trainability>
+			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
+			<specificMeatDef>BMT_GastropodMeat</specificMeatDef>
+			<leatherDef>BMT_Leather_Gastropoda</leatherDef>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.15</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.5</minAge>
+					<soundWounded>Biomes_GiantSnail_Wounded</soundWounded>
+					<soundDeath>Biomes_GiantSnail_Death</soundDeath>
+					<soundCall>Biomes_GiantSnail_Call</soundCall>
+					<soundAngry>Biomes_GiantSnail_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+			<tradeTags>
+				<li>AnimalUncommon</li>
+				<li>AnimalFarm</li>
+				<li>BMT_PollutedAnimalCommon</li>
+				<li>BMT_PollutedAnimalInsect</li>
+			</tradeTags>
+		<butcherProducts>
+			<BMT_Molluskshell>45</BMT_Molluskshell>
+		</butcherProducts>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>BMT_SludgeCrawler</defName>
+		<label>sludge crawler</label>
+		<race>BMT_SludgeCrawler</race>
+		<combatPower>190</combatPower>
+		<wildGroupSize>3~4</wildGroupSize>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/SludgeCrawler/SludgeCrawler</texPath>
+					<drawSize>1.45</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/SludgeCrawler/SludgeCrawler_dessicated</texPath>
+					<drawSize>1.45</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/SludgeCrawler/SludgeCrawler</texPath>
+					<drawSize>2.1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/SludgeCrawler/SludgeCrawler_dessicated</texPath>
+					<drawSize>2.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/SludgeCrawler/SludgeCrawler</texPath>
+					<drawSize>2.85</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/SludgeCrawler/SludgeCrawler_dessicated</texPath>
+					<drawSize>2.85</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+	<HediffDef>
+		<defName>BMT_GiantSnailDefense</defName>
+		<label>retracted into shell</label>
+		<description>Retracted into shell for defense.</description>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0</postFactor>
+					</li>
+				</capMods>
+				<statFactors>
+					<IncomingDamageFactor>0.25</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggSludgeCrawlerFertilized</defName>
+		<label>sludgecrawler egg (fert.)</label>
+		<description>A fertilized sludgecrawler egg. If all goes well, it should hatch into a baby sludgecrawler. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(167,198,153)</color>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>25.0</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>10</hatcherDaystoHatch>
+				<hatcherPawn>BMT_SludgeCrawler</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

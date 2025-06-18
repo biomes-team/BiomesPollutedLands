@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- How big is it? Roughly cow sized. -->
+<!-- What does it eat? (is it a predator?) Carnivore. -->
+<!-- Where does it live? Spawns in polluted polluted swamps. -->
+<!-- Does it spawn in packs? No. -->
+<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. It should give decent leather and be fairly tough to kill overall. -->
+<!-- Its attacks should have a higher bleeding chance and higher initial stun chance. -->
+<!-- It should be amphibious with PF. -->
+
+  <ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
+	<defName>BMT_BiliousVarog</defName>
+	<label>bilious varog</label>
+	<description>Adapted to disgustingly toxic waters, this relative of the common crocodile is highly dangerous when hungry. Alongside its razor sharp teeth, its powerful jaws also contain acid glands for drooling acid onto prey.</description>
+	<statBases>
+	  <MoveSpeed>3.0</MoveSpeed>
+	  <MarketValue>100</MarketValue>
+	  <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+	  <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+	  <ComfyTemperatureMin>0</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
+	  <LeatherAmount>160</LeatherAmount>
+	  <IncomingDamageFactor>0.8</IncomingDamageFactor>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	</statBases>
+	<tools>
+	  <li>
+		<label>left claw</label>
+		<capacities>
+		  <li>Scratch</li>
+		</capacities>
+		<power>8</power>
+		<cooldownTime>2.6</cooldownTime>
+		<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+		<extraMeleeDamages>
+		  <li>
+			<def>Stun</def>
+			<amount>6</amount>
+			<chance>0.6</chance>
+		  </li>
+		</extraMeleeDamages>
+	  </li>
+	  <li>
+		<label>right claw</label>
+		<capacities>
+		  <li>Scratch</li>
+		</capacities>
+		<power>8</power>
+		<cooldownTime>2.6</cooldownTime>
+		<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+		<extraMeleeDamages>
+		  <li>
+			<def>Stun</def>
+			<amount>6</amount>
+			<chance>0.6</chance>
+		  </li>
+		</extraMeleeDamages>
+	  </li>
+	  <li>
+		<capacities>
+		  <li>Bite</li>
+		</capacities>
+		<power>10</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+		<chanceFactor>0.7</chanceFactor>
+		<extraMeleeDamages>
+		  <li>
+			<def>Stun</def>
+			<amount>8</amount>
+			<chance>0.5</chance>
+		  </li>
+		  <li>
+			<def>AcidBurn</def>
+			<amount>10</amount>
+			<chance>0.5</chance>
+		  </li>
+		</extraMeleeDamages>
+	  </li>
+	  <li>
+		<label>head</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>5</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<chanceFactor>0.2</chanceFactor>
+		<extraMeleeDamages>
+		  <li>
+			<def>Stun</def>
+			<amount>4</amount>
+			<chance>0.8</chance>
+		  </li>
+		</extraMeleeDamages>
+	  </li>
+	</tools>
+	<comps>
+	  <li Class="CompProperties_EggLayer">
+		<eggFertilizedDef>BMT_EggBiliousVarogFertilized</eggFertilizedDef>
+		<eggFertilizationCountMax>1</eggFertilizationCountMax>
+		<eggLayIntervalDays>4.861</eggLayIntervalDays>
+		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+		<eggCountRange>1~2</eggCountRange>
+	  </li>
+	  <li Class="BiomesCore.CompProperties_HungerReaction">
+		<maxFood>0.4</maxFood> <!--The food percentage where the hediff(s) become active, and the graphic changes-->
+		<hediffs>
+			<li>BMT_BiliousVarogEnraged</li>
+		</hediffs>
+		<graphicData>
+			<texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/BiliousVarogFamished</texPath>
+		</graphicData>
+	  </li>
+	</comps>
+	<race>
+	  <body>QuadrupedAnimalWithClawsTailAndJowl</body>
+	  <baseBodySize>2.4</baseBodySize>
+	  <baseHungerRate>0.235</baseHungerRate>
+	  <baseHealthScale>1.5</baseHealthScale>
+	  <foodType>CarnivoreAnimal</foodType>
+	  <predator>true</predator>
+      <maxPreyBodySize>1.2</maxPreyBodySize>
+	  <leatherDef>Leather_Lizard</leatherDef>
+	  <wildness>0.85</wildness>
+	  <trainability>Intermediate</trainability>
+	  <petness>0.02</petness>
+	  <lifeExpectancy>40</lifeExpectancy>
+	  <lifeStageAges>
+		<li>
+		  <def>AnimalBaby</def>
+		  <minAge>0</minAge>
+		</li>
+		<li>
+		  <def>AnimalJuvenile</def>
+		  <minAge>0.1</minAge>
+		</li>
+		<li>
+		  <def>AnimalAdult</def>
+		  <minAge>0.2222</minAge>
+		  <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+		  <soundDeath>Pawn_Iguana_Death</soundDeath>
+		  <soundCall>Pawn_Iguana_Call</soundCall>
+		  <soundAngry>Pawn_Iguana_Angry</soundAngry>
+		</li>
+	  </lifeStageAges>
+	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+	  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+	  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	  <headPosPerRotation>
+		<li>(-0.01, 0, 0.3)</li>
+		<li>(0.35, 0, 0.05)</li>
+		<li>(0.0, 0, -0.24)</li>
+		<li>(-0.35, 0, 0.05)</li>
+	  </headPosPerRotation>
+	</race>
+	<!-- ToDo: Change tags? -->
+	<tradeTags>
+	  <li>AnimalFighter</li>
+	  <li>AnimalUncommon</li>
+	  <li>BMT_PollutedAnimalUncommon</li>
+	  <li>BMT_PollutedAnimalFighter</li>
+	</tradeTags>
+	<modExtensions>
+		<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+			<movementDef>PF_Movement_Amphibious</movementDef>
+		</li>
+	</modExtensions>
+  </ThingDef>
+
+  <HediffDef>
+	<defName>BMT_BiliousVarogEnraged</defName>
+	<label>enraged bilious varog</label>
+	<description>This bilious varog is hungry enough to attack anyone it can reach.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<stages>
+		<li>
+			<statFactors>
+				<MeleeDamageFactor>1.3</MeleeDamageFactor>
+			</statFactors>
+		</li>
+	</stages>
+	<comps>
+		<li Class="HediffCompProperties_CauseMentalState">
+			<animalMentalState>ManhunterPermanent</animalMentalState>
+			<animalMentalStateAlias>Manhunter</animalMentalStateAlias>
+			<humanMentalState>Berserk</humanMentalState>
+			<forced>True</forced>
+		</li>
+	</comps>
+  </HediffDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+	<defName>BMT_BiliousVarog</defName>
+	<label>bilious varog</label>
+	<race>BMT_BiliousVarog</race>
+	<combatPower>80</combatPower>
+	<ecoSystemWeight>0.30</ecoSystemWeight>
+	<lifeStages>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/BiliousVarog</texPath>
+		  <drawSize>3</drawSize>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/BiliousVarog_dessicated</texPath>
+		  <drawSize>3</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/BiliousVarog</texPath>
+		  <drawSize>3.25</drawSize>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/BiliousVarog_dessicated</texPath>
+		  <drawSize>3.25</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/BiliousVarog</texPath>
+		  <drawSize>3.55</drawSize>
+		  <shadowData>
+			<volume>(0.25, 0.3, 0.25)</volume>
+			<offset>(0,0,0)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/BiliousVarog_dessicated</texPath>
+		  <drawSize>3.55</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	</lifeStages>
+  </PawnKindDef>
+
+  <ThingDef ParentName="EggFertBase">
+	<defName>BMT_EggBiliousVarogFertilized</defName>
+	<label>bilious varog egg (fert.)</label>
+	<description>A fertilized bilious varog egg. If all goes well, it should hatch into a baby mire gator. It can be eaten raw, but it's much better cooked.</description>
+	<possessionCount>1</possessionCount>
+	<graphicData>
+	  <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+	  <color>(245,245,245)</color>
+	</graphicData>
+	<statBases>
+	  <MarketValue>45.0</MarketValue>
+	</statBases>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+		<hatcherDaystoHatch>10</hatcherDaystoHatch>
+		<hatcherPawn>BMT_BiliousVarog</hatcherPawn>
+	  </li>
+	</comps>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef ParentName="BMT_MutaGenes_Base">
+	<defName>BMT_ProtectiveLeprosy</defName>
+	<label>protective leprosy</label>
+	<description>Carriers of this gene have an immune defense mechanism that sheds infected organs and body parts, preventing the disease from spreading further.</description>
+	<geneClass>BMT_PollutedLands.Gene_ProtectiveLeprosy</geneClass>
+	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_ProtectiveLeprosy</iconPath>
+	<biostatCpx>3</biostatCpx>
+	<biostatMet>3</biostatMet>
+	<painOffset>0.05</painOffset>
+	<statOffsets>
+	  <ImmunityGainSpeed>-0.10</ImmunityGainSpeed>
+	</statOffsets>
+	<customEffectDescriptions>
+	  <li>Whenever an &lt;color=#8a8ae6&gt;infection&lt;/color&gt; on a bodypart is at 80-100%, the &lt;color=#8a8ae6&gt;bodypart is destroyed&lt;/color&gt;, preventing the pawn's death via infection. It has an approximate 2 day cooldown.</li>
+	</customEffectDescriptions>
+	<modExtensions>
+		<li Class="BMT_PollutedLands.GeneExtension">
+			<!-- <hediffDef>WoundInfection</hediffDef> -->
+			<maxSeverity>0.80</maxSeverity>
+			<intervals>100000~130000</intervals>
+		</li>
+	</modExtensions>
+  </GeneDef>
+
+</Defs>

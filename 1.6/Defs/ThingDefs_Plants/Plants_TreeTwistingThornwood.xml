@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BMT_PollutedLands_TreeBase">
+	<defName>BMT_Plant_TreeTwistingThornwood</defName>
+	<label>twisting thornwood</label>
+	<description>A large species of tree found in polluted arid environments. It is one of three closely related species of plant, alongside the thornweed and thorngrass. It is believed that each were engineered to survive human-caused pollution.</description>
+	<minifiedDef IsNull="True" />
+	<statBases>
+	  <MaxHitPoints>210</MaxHitPoints>
+	  <Nutrition>2.0</Nutrition>
+	  <Mass>100</Mass>
+	</statBases>
+	<graphicData>
+	  <texPath>BMT_PollutedLands/Things/Plant/TwistingThornwood</texPath>
+	  <graphicClass>Graphic_Random</graphicClass>
+	  <shadowData>
+		<volume>(0.24, 0.3, 0.15)</volume>
+		<offset>(0,0,-0.38)</offset>
+	  </shadowData>
+	</graphicData>
+	<fillPercent>0.35</fillPercent>
+	<plant>
+	  <lifespanDaysPerGrowDays>40</lifespanDaysPerGrowDays>
+	  <pollution>PollutedOnly</pollution>
+	  <fertilityMin>0.05</fertilityMin>
+      <fertilitySensitivity>0</fertilitySensitivity>
+	  <growDays>15</growDays>
+	  <!-- <leaflessGraphicPath>Things/Plant/SaguaroCactus_Leafless</leaflessGraphicPath> -->
+	  <harvestWork>210</harvestWork>
+	  <harvestYield>25</harvestYield>
+	  <harvestedThingDef>BMT_Toxwood</harvestedThingDef>
+	  <harvestMinGrowth>0.2</harvestMinGrowth>
+	  <topWindExposure>0.08</topWindExposure>
+	  <visualSizeRange>1.3~3.0</visualSizeRange>
+	  <wildClusterRadius>-1</wildClusterRadius>
+	  <treeLoversCareIfChopped>true</treeLoversCareIfChopped>
+	</plant>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
+		<defName>BMT_Screecher</defName>
+		<label>screecher</label>
+		<description>Mutated by pollution, this corvid has gained the ability to stun its prey using its cries while it attacks. It tends to hunt in packs.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<MarketValue>455</MarketValue>
+			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<ComfyTemperatureMax>30</ComfyTemperatureMax>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+		</statBases>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<predator>true</predator>
+			<maxPreyBodySize>0.75</maxPreyBodySize>
+			<baseBodySize>1.0</baseBodySize>
+			<baseHealthScale>0.75</baseHealthScale>
+			<baseHungerRate>0.5</baseHungerRate>
+			<foodType>CarnivoreAnimal</foodType>
+			<leatherDef>Leather_Bird</leatherDef>
+			<wildness>0.75</wildness>
+			<trainability>Advanced</trainability>
+			<lifeExpectancy>20</lifeExpectancy>
+			<body>Bird</body>
+			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.25</manhunterOnDamageChance>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBabyTiny</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.12</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.2</minAge>
+					<!-- To-Do: Added sounds -->
+					<!-- <soundWounded>Pawn_Iguana_Wounded</soundWounded> -->
+					<!-- <soundDeath>Pawn_Iguana_Death</soundDeath> -->
+					<!-- <soundCall>Pawn_Iguana_Call</soundCall> -->
+					<!-- <soundAngry>Pawn_Iguana_Angry</soundAngry> -->
+				</li>
+			</lifeStageAges>
+		</race>
+		<modExtensions>
+			<li MayRequire="pathfinding.framework"  Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Flying</movementDef>
+			</li>
+			<li MayRequire="pathfinding.framework"  Class="PathfindingFramework.LocomotionMovementExtension">
+				<locomotionUrgencies>
+					<li>Jog</li>
+					<li>Sprint</li>
+				</locomotionUrgencies>
+				<moveSpeedMultiplier>4</moveSpeedMultiplier>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggScreecherFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>2</eggFertilizationCountMax>
+				<eggLayIntervalDays>9</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>5~6</eggCountRange>
+			</li>
+			<li Class="BiomesCore.CompProperties_PackHunter">
+				<joinHuntRange>24</joinHuntRange>
+				<packConfidenceBonusPerMember>0.25</packConfidenceBonusPerMember>
+			</li>
+			<li Class="BiomesCore.CompProperties_PackDefense">
+				<baseChance>0.50</baseChance>
+				<attackerMaxDistance>30</attackerMaxDistance>
+				<joinDefenseRange>20</joinDefenseRange>
+				<joinMaxPain>0.3</joinMaxPain>
+				<maxNumMeleeAttacks>3</maxNumMeleeAttacks>
+				<expiryInterval>500</expiryInterval>
+				<attackDoorIfTargetLost>true</attackDoorIfTargetLost>
+				<canBashFences>false</canBashFences>
+				<predatorConfidencePenalty>100</predatorConfidencePenalty>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>3</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
+				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>15</amount>
+						</li>
+					</extraMeleeDamages>
+			</li>
+			<li>
+				<label>beak</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>25</amount>
+						</li>
+					</extraMeleeDamages>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalFighter</li>
+			<li>BMT_PollutedAnimalUncommon</li>
+			<li>BMT_PollutedAnimalFighter</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BigBirdKindBase">
+		<defName>BMT_Screecher</defName>
+		<label>screecher</label>
+		<race>BMT_Screecher</race>
+		<combatPower>55</combatPower>
+		<ecoSystemWeight>0.5</ecoSystemWeight>
+		<wildGroupSize>4~5</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>screecher chick</label>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/Screecher/Screecher</texPath>
+					<drawSize>1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/Screecher/Screecher_dessicated</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/Screecher/Screecher</texPath>
+					<drawSize>1.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/Screecher/Screecher_dessicated</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/Screecher/Screecher</texPath>
+					<drawSize>1.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/Screecher/Screecher_dessicated</texPath>
+					<drawSize>1.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li MayRequire="pathfinding.framework"  Class="PathfindingFramework.LocomotionGraphicExtension">
+				<locomotionUrgencies>
+					<li>Jog</li>
+					<li>Sprint</li>
+				</locomotionUrgencies>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/Screecher/ScreecherFlying</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggScreecherFertilized</defName>
+		<label>screecher egg (fert.)</label>
+		<description>A fertilized screecher egg. If all goes well, it should hatch into a screecher chick. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(255,255,255)</color>
+			<drawSize>0.7</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_Screecher</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>BMT_ToxClear</defName>
+    <label>tox-clear</label>
+    <description>A tablet containing a mixture of activated carbon and purging agents, instantly removing all traces of toxins from a body upon ingestion - often violently, causing vomiting.</description>
+    <possessionCount>10</possessionCount>
+    <descriptionHyperlinks><HediffDef>BMT_ToxClearHigh</HediffDef></descriptionHyperlinks>
+    <graphicData>
+      <texPath>BMT_PollutedLands/Things/Item/ToxClear</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>18</MarketValue>
+      <Mass>0.005</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>BMT_ToxClearHigh</hediffDef>
+          <severity>1.0</severity>
+        </li>
+		<li Class="BMT_PollutedLands.IngestionOutcomeDoer_RemoveHediff">
+          <hediffDef>ToxicBuildup</hediffDef>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>PenoxycylineProduction</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <displayPriority>2100</displayPriority>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>2</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>BMT_ToxClearHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>tox cleanse</label>
+    <description>Vomiting and sickness induced by tox-clear, violently expelling toxins from the body.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.7</severityPerDay>
+      </li>
+    </comps>
+      <stages>
+		<li>
+        <vomitMtbDays>0.4</vomitMtbDays>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <offset>-0.05</offset>
+            </li>
+          </capMods>
+      </li>
+      </stages>
+  </HediffDef>
+</Defs>

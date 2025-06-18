@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+	  <mods>
+		<li>Mashed's Ashlands</li>
+	  </mods>
+		<match Class="PatchOperationSequence">
+		  <operations>
+
+			<!-- Temp forest -->
+			<li Class="PatchOperationAdd">
+			  <xpath>/Defs/BiomeDef[defName="Mashed_Ashlands_ForestAshlands"]/pollutionWildAnimals</xpath>
+			  <value>
+				<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
+				<BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_WasteHound>
+				<BMT_ToxSheep MayRequire="Ludeon.RimWorld.Biotech">0.7</BMT_ToxSheep>
+				<!-- <BMT_DoubledDeer MayRequire="Ludeon.RimWorld.Biotech">0.8</BMT_DoubledDeer> -->
+				<BMT_Glowtail MayRequire="Ludeon.RimWorld.Biotech">0.4</BMT_Glowtail>
+				<BMT_SmogMoth MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_SmogMoth>
+				<BMT_SmogMothLarvae MayRequire="Ludeon.RimWorld.Biotech">0.05</BMT_SmogMothLarvae>
+				<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_SludgeCrawler>
+				<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.08</BMT_Polluwog>
+				<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_GastroToad>
+				<BMT_TripleSnapper MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_TripleSnapper>
+				<BMT_MutagenicNorphea MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_MutagenicNorphea>
+				<BMT_Swarmcaller MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Swarmcaller>
+			  </value>
+			</li>
+			
+
+			<!-- Trop forest -->
+			<li Class="PatchOperationAdd">
+			  <xpath>/Defs/BiomeDef[defName="Mashed_Ashlands_MeadowAshlands"]/pollutionWildAnimals</xpath>
+			  <value>
+				<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
+				<!-- <BMT_VenomPede MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_VenomPede> -->
+				<BMT_ToxSheep MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_ToxSheep>
+				<BMT_Glowtail MayRequire="Ludeon.RimWorld.Biotech">0.8</BMT_Glowtail>
+				<BMT_SmogMoth MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_SmogMoth>
+				<BMT_SmogMothLarvae MayRequire="Ludeon.RimWorld.Biotech">0.05</BMT_SmogMothLarvae>
+				<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_SludgeCrawler>
+				<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.08</BMT_Polluwog>
+				<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_GastroToad>
+				<BMT_TripleSnapper MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_TripleSnapper>
+				<BMT_MutagenicNorphea MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_MutagenicNorphea>
+				<BMT_Swarmcaller MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Swarmcaller>
+			  </value>
+			</li>
+
+			<!-- Temp swamp -->
+			<li Class="PatchOperationAdd">
+			  <xpath>/Defs/BiomeDef[defName="Mashed_Ashlands_MarshAshlands"]/pollutionWildAnimals</xpath>
+			  <value>
+				<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
+				<!-- <BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound> -->
+				<BMT_Glowtail MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_Glowtail>
+				<BMT_SmogMoth MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_SmogMoth>
+				<BMT_SmogMothLarvae MayRequire="Ludeon.RimWorld.Biotech">0.05</BMT_SmogMothLarvae>
+				<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_SludgeCrawler>
+				<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.08</BMT_Polluwog>
+				<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_GastroToad>
+				<BMT_TripleSnapper MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_TripleSnapper>
+				<BMT_MutagenicNorphea MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_MutagenicNorphea>
+				<BMT_Swarmcaller MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Swarmcaller>
+			  </value>
+			</li>
+
+			<!-- Trop swamp -->
+			<li Class="PatchOperationAdd">
+			  <xpath>/Defs/BiomeDef[defName="Mashed_Ashlands_SwampAshlands"]/pollutionWildAnimals</xpath>
+			  <value>
+				<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
+				<!-- <BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound> -->
+				<BMT_Glowtail MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Glowtail>
+				<BMT_SmogMoth MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_SmogMoth>
+				<BMT_SmogMothLarvae MayRequire="Ludeon.RimWorld.Biotech">0.05</BMT_SmogMothLarvae>
+				<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_SludgeCrawler>
+				<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.08</BMT_Polluwog>
+				<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_GastroToad>
+				<BMT_TripleSnapper MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_TripleSnapper>
+				<BMT_MutagenicNorphea MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_MutagenicNorphea>
+				<BMT_Swarmcaller MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Swarmcaller>
+			  </value>
+			</li>
+
+			<!-- Desert -->
+			<li Class="PatchOperationAdd">
+			  <xpath>/Defs/BiomeDef[defName="Mashed_Ashlands_VolcanicAshlands" or defName="Mashed_Ashlands_VolcanicBadlandAshlands" or defName="Mashed_Ashlands_VolcanicSulphurPitsAshlands"]/pollutionWildAnimals</xpath>
+			  <value>
+				<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
+				<!-- <BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound> -->
+				<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.02</BMT_SludgeCrawler>
+				<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_Polluwog>
+				<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_GastroToad>
+				<BMT_MutagenicNorphea MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_MutagenicNorphea>
+				<BMT_Swarmcaller MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Swarmcaller>
+			  </value>
+			</li>
+
+			<!-- Arid -->
+			<li Class="PatchOperationAdd">
+			  <xpath>/Defs/BiomeDef[defName="Mashed_Ashlands_DustplainAshlands" or defName="Mashed_Ashlands_GrazelandAshlands" or defName="Mashed_Ashlands_Ashlands"]/pollutionWildAnimals</xpath>
+			  <value>
+				<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
+				<BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.5</BMT_WasteHound>
+				<BMT_Glowtail MayRequire="Ludeon.RimWorld.Biotech">0.2</BMT_Glowtail>
+				<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.02</BMT_SludgeCrawler>
+				<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_Polluwog>
+				<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_GastroToad>
+				<BMT_MutagenicNorphea MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_MutagenicNorphea>
+				<BMT_Swarmcaller MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Swarmcaller>
+			  </value>
+			</li>
+
+			<!-- Cold swamp -->
+			<li Class="PatchOperationAdd">
+			  <xpath>/Defs/BiomeDef[defName="Mashed_Ashlands_BlightedAshlands" or defName="Mashed_Ashlands_BlightedBogAshlands"]/pollutionWildAnimals</xpath>
+			  <value>
+				<BMT_Megaroach MayRequire="Ludeon.RimWorld.Biotech">1.1</BMT_Megaroach>
+				<!-- <BMT_WasteHound MayRequire="Ludeon.RimWorld.Biotech">0.1</BMT_WasteHound> -->
+				<BMT_SludgeCrawler MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_SludgeCrawler>
+				<BMT_Polluwog MayRequire="Ludeon.RimWorld.Biotech">0.01</BMT_Polluwog>
+				<BMT_GastroToad MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_GastroToad>
+				<BMT_BloodletterPetrel MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_BloodletterPetrel>
+				<BMT_Varmot MayRequire="Ludeon.RimWorld.Biotech">1</BMT_Varmot>
+				<BMT_FenridStoat MayRequire="Ludeon.RimWorld.Biotech">0.07</BMT_FenridStoat>
+				<BMT_MutagenicNorphea MayRequire="Ludeon.RimWorld.Biotech">0.03</BMT_MutagenicNorphea>
+				<BMT_Swarmcaller MayRequire="Ludeon.RimWorld.Biotech">0.3</BMT_Swarmcaller>
+			  </value>
+			</li>
+		  </operations>
+		</match>
+
+	</Operation>
+
+</Patch>

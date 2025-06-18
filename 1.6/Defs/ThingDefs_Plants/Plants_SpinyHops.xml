@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="PlantBase">
+    <defName>BMT_SpinyHops</defName>
+    <label>spiny hop</label>
+    <description>A flowering crop that has adapted to heavy pollution. It yields hops, an essential ingredient in beer.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>BMT_PollutedLands/Things/Plant/SpinyHops/SpinyHops</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+	  <immatureGraphicPath>BMT_PollutedLands/Things/Plant/SpinyHops/SpinyHops_Immature</immatureGraphicPath>
+      <growDays>5</growDays>
+      <dieIfLeafless>true</dieIfLeafless>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>RawHops</harvestedThingDef>
+      <drugForHarvestPurposes>True</drugForHarvestPurposes>
+      <harvestYield>8</harvestYield>
+      <sowMinSkill>3</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <topWindExposure>0.1</topWindExposure>
+      <visualSizeRange>0.3~1.05</visualSizeRange>
+      <wildOrder>2</wildOrder>
+	  <pollution>PollutedOnly</pollution>
+	  <fertilityMin>0.10</fertilityMin>
+      <fertilitySensitivity>0</fertilitySensitivity>
+    </plant>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Sheep wool - most basic -->
+  <ThingDef ParentName="WoolBase">
+	<defName>BMT_ToxWoolSheep</defName>
+	<label>tox-sheep wool</label>
+	<description>Tox-sheep's wool. It provides good insulation and protects against environmental toxins.</description>
+	<possessionCount>30</possessionCount>
+	<statBases>
+	  <StuffPower_Insulation_Cold>26</StuffPower_Insulation_Cold>
+	  <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+	  <!-- <ToxicEnvironmentResistance>1.25</ToxicEnvironmentResistance>  -->
+	</statBases>
+	<stuffProps>
+	  <color>(164,212,150)</color>
+	  <commonality>0.04</commonality>
+	  <statOffsets>
+		<BMT_Stuff_ToxicEnvironmentResistance>0.25</BMT_Stuff_ToxicEnvironmentResistance>
+	  </statOffsets>
+	</stuffProps>
+	<graphicData>
+	  <color>(164,212,150)</color>
+	</graphicData>
+	<comps>
+	  <li Class="CompProperties_GasOnDamage">
+		<type>ToxGas</type>
+		<damageFactor>6</damageFactor>
+		<useStackCountAsFactor>true</useStackCountAsFactor>
+	  </li>
+	</comps>
+  </ThingDef>
+
+  <StatDef>
+	<defName>BMT_Stuff_ToxicEnvironmentResistance</defName>
+	<label>toxic environment resistance</label>
+	<description>How well this clothing protects against environmental toxins. This protects against toxic fallout and rot stink exposure, but not against direct attacks with venom or injected poison.</description>
+	<category>Apparel</category>
+	<hideAtValue>0</hideAtValue>
+	<toStringStyle>PercentZero</toStringStyle>
+	<defaultBaseValue>0</defaultBaseValue>
+	<minValue>-1</minValue>
+	<maxValue>1</maxValue>
+	<displayPriorityInCategory>80</displayPriorityInCategory>
+  </StatDef>
+
+  <!-- <StatDef> -->
+    <!-- <defName>BMT_StuffPower_ToxicEnvironmentResistance</defName> -->
+    <!-- <label>Armor - Toxic environment resistance</label> -->
+    <!-- <labelForFullStatList>Armor - Toxic environment resistance (material factor)</labelForFullStatList> -->
+    <!-- <description>How resistant this creature is to the effects of environmental toxins. This protects against toxic fallout and rot stink exposure, but not against direct attacks with venom or injected poison.</description> -->
+    <!-- <category>StuffStatFactors</category> -->
+    <!-- <defaultBaseValue>0</defaultBaseValue> -->
+    <!-- <minValue>0</minValue> -->
+    <!-- <toStringStyle>PercentZero</toStringStyle> -->
+    <!-- <showIfUndefined>false</showIfUndefined> -->
+    <!-- <displayPriorityInCategory>4510</displayPriorityInCategory> -->
+  <!-- </StatDef> -->
+
+  <!-- <StatDef> -->
+    <!-- <defName>BMT_StuffEffectMultiplierToxicEnvironmentResistance</defName> -->
+    <!-- <label>Armor - Toxic environment resistance multiplier</label> -->
+    <!-- <category>Apparel</category> -->
+    <!-- <defaultBaseValue>0</defaultBaseValue> -->
+    <!-- <minValue>0</minValue> -->
+    <!-- <alwaysHide>true</alwaysHide> -->
+    <!-- <displayPriorityInCategory>1</displayPriorityInCategory> -->
+  <!-- </StatDef> -->
+
+  <ThingDef ParentName="ResourceVerbBase">
+	<defName>BMT_Toxwood</defName>
+    <label>tox wood</label>
+    <description>Wood from trees or other fibrous plants that live in polluted areas. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg. Due to its poor quality, anything made from it will be of lesser quality.</description>
+    <graphicData>
+      <texPath>BMT_PollutedLands/Things/Item/Toxwood</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	<comps>
+	  <li Class="CompProperties_GasOnDamage">
+		<type>ToxGas</type>
+		<damageFactor>6</damageFactor>
+		<useStackCountAsFactor>true</useStackCountAsFactor>
+	  </li>
+	</comps>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <soundInteract>Wood_Drop</soundInteract>
+    <soundDrop>Wood_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.0</MarketValue>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Mass>0.4</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>0.6</DeteriorationRate>
+      <StuffPower_Armor_Sharp>0.50</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.50</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.30</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>7</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>3</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.35</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <minRewardCount>10</minRewardCount>
+    <stuffProps>
+      <stuffAdjective>tox-wooden</stuffAdjective>
+      <categories>
+        <li>Woody</li>
+      </categories>
+      <commonality>1.00</commonality>
+      <color>(71,63,47)</color>
+      <constructEffect>ConstructWood</constructEffect>
+      <appearance>Planks</appearance>
+      <soundImpactBullet>BulletImpact_Wood</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>
+      <statFactors>
+        <MaxHitPoints>0.55</MaxHitPoints>
+        <Beauty>0.5</Beauty>
+        <Flammability>1</Flammability>
+        <WorkToMake>0.7</WorkToMake>
+        <WorkToBuild>0.7</WorkToBuild>
+        <DoorOpenSpeed>1.0</DoorOpenSpeed>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <isTechHediff>true</isTechHediff>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleeBlunt</li>
+      <li>Neolithic</li>
+    </weaponClasses>
+    <tools>
+      <li>
+        <label>log</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <allowedArchonexusCount>150</allowedArchonexusCount>
+    <modExtensions>
+      <li Class="BiomesCore.DefModExtensions.StuffQualityOffset">
+        <qualityOffset>-1</qualityOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>BMT_RegalMilk</defName>
+    <label>regal milk</label>
+    <description>Regal milk from the hideous maligoat. It is delightfully delicious when eaten raw.</description>
+    <graphicData>
+      <texPath>BMT_PollutedLands/Things/Item/RegalMilk</texPath>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+	  <drawSize>0.75</drawSize>
+    </graphicData>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>2.0</MarketValue> <!-- Gives a mood buff liike a fine meal -->
+      <Mass>0.045</Mass>
+      <MaxHitPoints>60</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <Nutrition>0.1</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.0</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <foodType>AnimalProduct, Fluid</foodType>
+	  <tasteThought>BMT_DrankRegalMilk</tasteThought>
+      <babiesCanIngest>true</babiesCanIngest>
+    </ingestible>
+    <thingCategories>
+      <li>AnimalProductRaw</li>
+    </thingCategories>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+  
+  <!-- Milk Thought -->
+  
+  <ThoughtDef>
+    <defName>BMT_DrankRegalMilk</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>drank regal milk</label>
+        <description>That milk was amazing. It was like a fine meal unto itself.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

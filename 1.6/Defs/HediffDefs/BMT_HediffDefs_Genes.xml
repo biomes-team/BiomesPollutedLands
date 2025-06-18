@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Base with all the necessary tags for gene hediffs. -->
+  <HediffDef Name="BMT_PollutionLands_Hediffs_Base" Abstract="True">
+	<label>test</label>
+	<description>Should be invisible.</description>
+	<defaultLabelColor>(255,255,255)</defaultLabelColor>
+	<hediffClass>HediffWithComps</hediffClass>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<makesAlert>false</makesAlert>
+	<keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+	<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+	<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+	<canAffectBionicOrImplant>false</canAffectBionicOrImplant>
+	<!-- Genes must be able to renew their hediffs, so this should be false. -->
+	<duplicationAllowed>false</duplicationAllowed>
+	<!-- If genes don't know how to renew hediff, then, dude, what the hell? We have all the code needed for this, see the Gene_AddOrRemoveHediff class. -->
+	<isInfection>false</isInfection>
+  </HediffDef>
+
+  <!-- ========================================= -->
+
+  <HediffDef ParentName="BMT_PollutionLands_Hediffs_Base">
+	<defName>BMT_AcidicGlands</defName>
+	<label>acidic glands</label>
+	<stages>
+	  <li>
+		<becomeVisible>false</becomeVisible>
+		<minSeverity>0.0</minSeverity>
+	  </li>
+	</stages>
+	<comps>
+	  <li Class="BMT_PollutedLands.HediffCompProperties_ReturnDamage">
+		<!-- To-Do: Add acid damage -->
+		<damageDef>BMT_ToxicHeadbutt</damageDef>
+		<damageAmount>8</damageAmount>
+	  </li>
+	  <!-- This comp is only needed for permanent hediffs. If hediff is removed from time to time, do not use this component. -->
+	  <li Class="BMT_PollutedLands.HediffCompProperties_GeneHediff"/>
+	</comps>
+  </HediffDef>
+
+  <HediffDef ParentName="BMT_PollutionLands_Hediffs_Base">
+	<defName>BMT_OverdevelopedOrgan</defName>
+	<label>absorb HP</label>
+	<description>An additional layer of fat near the organ, which can absorb some of the incoming damage.</description>
+	<stages>
+	  <li>
+		<becomeVisible>true</becomeVisible>
+		<minSeverity>0.0</minSeverity>
+	  </li>
+	</stages>
+	<comps>
+	  <li Class="BMT_PollutedLands.HediffCompProperties_OverdevelopedOrgan">
+		<hp_perDay>3</hp_perDay>
+		<hp_percent>0.5</hp_percent>
+		<absorb_percent>0.4</absorb_percent>
+		<absorb_chance>0.2</absorb_chance>
+	  </li>
+	  <li Class="BMT_PollutedLands.HediffCompProperties_GeneHediff"/>
+	</comps>
+  </HediffDef>
+
+  <HediffDef ParentName="BMT_PollutionLands_Hediffs_Base">
+	<defName>BMT_ChronicPains</defName>
+	<label>chronic pains</label>
+	<description>Genetically caused chronic pain.</description>
+	<initialSeverity>0.5</initialSeverity>
+	<minSeverity>0.0</minSeverity>
+	<maxSeverity>1.25</maxSeverity>
+	<stages>
+	  <li>
+		<label>minor</label>
+		<minSeverity>0.0</minSeverity>
+		<painOffset>0.05</painOffset>
+	  </li>
+	  <li>
+		<label>moderate</label>
+		<minSeverity>0.25</minSeverity>
+		<painOffset>0.15</painOffset>
+	  </li>
+	  <li>
+		<label>severe</label>
+		<minSeverity>0.5</minSeverity>
+		<painOffset>0.30</painOffset>
+	  </li>
+	  <li>
+		<label>major</label>
+		<minSeverity>0.75</minSeverity>
+		<painOffset>0.40</painOffset>
+	  </li>
+	  <li>
+		<label>intense</label>
+		<minSeverity>1.0</minSeverity>
+		<painOffset>0.50</painOffset>
+	  </li>
+	</stages>
+	<comps>
+	  <li Class="HediffCompProperties_Disappears">
+		<disappearsAfterTicks>12000~34000</disappearsAfterTicks>
+		<showRemainingTime>true</showRemainingTime>
+	  </li>
+	</comps>
+  </HediffDef>
+
+  <HediffDef ParentName="BMT_PollutionLands_Hediffs_Base">
+	<defName>BMT_ImpalingClaws</defName>
+	<label>impaling claws</label>
+	<description>A creepy and sharp claws growing from the back.</description>
+	<comps>
+	  <li Class="HediffCompProperties_VerbGiver">
+		<tools>
+		  <li>
+			<label>claw</label>
+			<capacities>
+			  <li>Cut</li>
+			</capacities>
+			<power>16</power>
+			<cooldownTime>1.8</cooldownTime>
+			<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+			<!-- <soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit> -->
+			<!-- <soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss> -->
+		  </li>
+		</tools>
+	  </li>
+	  <li Class="BMT_PollutedLands.HediffCompProperties_GeneHediff"/>
+	</comps>
+  </HediffDef>
+
+</Defs>

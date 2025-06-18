@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BMT_PollutedLands_TreeBase">
+	<defName>BMT_Plant_TreeScalpedCypress</defName>
+	<label>scalped cypress</label>
+	<description>A marsh tree that grows in water and mud, it can survive even water filled with the likes of heavy metals and other pollutants.</description>
+	<minifiedDef IsNull="True" />
+	<statBases>
+	  <MaxHitPoints>200</MaxHitPoints>
+	  <Nutrition>2.0</Nutrition>
+	  <Mass>100</Mass>
+	</statBases>
+	<graphicData>
+	  <texPath>BMT_PollutedLands/Things/Plant/ScalpedCypress</texPath>
+	  <graphicClass>Graphic_Random</graphicClass>
+	  <shadowData>
+		<volume>(0.24, 0.3, 0.15)</volume>
+		<offset>(0,0,-0.38)</offset>
+	  </shadowData>
+	</graphicData>
+			<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<terrainTags>
+					<li>Water</li>
+					<li>Shallow</li>
+					<li>Boggy</li>
+					<li>Marshy</li>
+					<li>Marsh</li>
+				</terrainTags>
+			</li>
+		</modExtensions>
+	<fillPercent>0.25</fillPercent>
+	<plant>
+	  <lifespanDaysPerGrowDays>40</lifespanDaysPerGrowDays>
+	  <fertilitySensitivity>0</fertilitySensitivity>
+	  <growDays>35</growDays>
+	  <leaflessGraphicPath>BMT_PollutedLands/Things/Plant/_Leafless/ScalpedCypress_Leafless</leaflessGraphicPath>
+	  <harvestWork>1700</harvestWork>
+	  <harvestYield>50</harvestYield>
+	  <harvestedThingDef>BMT_Toxwood</harvestedThingDef>
+	  <harvestMinGrowth>0.2</harvestMinGrowth>
+	  <topWindExposure>0.08</topWindExposure>
+	  <visualSizeRange>1.3~3.0</visualSizeRange>
+	  <wildClusterRadius>-1</wildClusterRadius>
+	  <treeLoversCareIfChopped>true</treeLoversCareIfChopped>
+	</plant>
+  </ThingDef>
+
+</Defs>

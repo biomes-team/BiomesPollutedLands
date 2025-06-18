@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>BMT_CementSlime</defName>
+    <label>cement slime</label>
+    <description>Globs of semi-hardened slime produced by a type of mutant snail. It can be used to build strong structures and furniture, albeit ugly ones.</description>
+		<graphicData>
+			<texPath>BMT_PollutedLands/Things/Item/CementSlime</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+    <statBases>
+        <Beauty>-0.10</Beauty>
+      <Mass>1.0</Mass>
+    </statBases>
+    <stuffProps>
+      <color>(126,126,126)</color>
+      <!-- <soundImpactStuff>BulletImpact_Ground</soundImpactStuff> Removed in 1.5? -->
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>cement slime</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>2</MaxHitPoints>
+      </statFactors>
+      <statOffsets>
+        <Beauty>-0.10</Beauty>
+      </statOffsets>
+      <commonality>0</commonality>
+    </stuffProps>
+  </ThingDef>
+</Defs>

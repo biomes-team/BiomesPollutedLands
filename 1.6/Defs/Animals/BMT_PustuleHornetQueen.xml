@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- How big is it? About rabbit sized. -->
+<!-- What does it eat? (is it a predator?) Omnivore, eats literally anything they can, even filth. If possible filth should come last though in their food priority.  -->
+<!-- Where does it live? Spawns in all polluted biomes. -->
+<!-- Does it spawn in packs? Yes, in fairly large groups. -->
+<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. They should be decent for ranching, giving a fair amount of meat per slaughter and able to breed quite fast. Their eggs should be able to survive in pretty much any temp range. -->
+
+  <ThingDef ParentName="BMT_PollutedLands_BaseInsect">
+	<defName>BMT_PustuleHornetQueen</defName>
+	<!-- too long. out of name field -->
+	<!-- <label>pustule hornet queen</label> -->
+	<label>pustule queen</label>
+	<description>Unlike most other insect queens, this matriarch is very dangerous. She is nearly as fast as her spawn and packs a greater punch with her stings. Her stings inject a more potent version her species' neurotoxin, allowing for her swarm to quickly overpower anything living in their way.</description>
+	<uiIconScale>1.5</uiIconScale>
+	<statBases>
+	  <MoveSpeed>3.0</MoveSpeed>
+	  <MarketValue>150</MarketValue>
+	  <ComfyTemperatureMin>-60</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>70</ComfyTemperatureMax>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	</statBases>
+	<tools>
+	  <li>
+		<capacities>
+		  <li>Bite</li>
+		</capacities>
+		<power>4.4</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+	  </li>
+	  <li>
+		<label>head</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>3.5</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<chanceFactor>0.2</chanceFactor>
+	  </li>
+	  		<li>
+				<label>stinger</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>BMT_StingerGroup</linkedBodyPartsGroup>
+				<extraMeleeDamages>
+					<li>
+						<def>BMT_Neurotoxin</def>
+						<amount>15</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+	</tools>
+	<race>
+	  <hasGenders>false</hasGenders>
+	  <deathAction>
+        <workerClass>DeathActionWorker_ToxCloud</workerClass>
+      </deathAction>
+	  <body>BMT_BeetleLikeWithStinger</body>
+	  <baseBodySize>1</baseBodySize>
+	  <baseHungerRate>0.115</baseHungerRate>
+	  <baseHealthScale>0.8</baseHealthScale>
+	  <predator>true</predator>
+	  <maxPreyBodySize>2.0</maxPreyBodySize>
+	  <useMeatFrom>Megaspider</useMeatFrom>
+	  <foodType>CarnivoreAnimal</foodType>
+	  <leatherDef>BMT_FragileChitin</leatherDef>
+	  <wildness>1</wildness>
+	  <trainability>None</trainability>
+	  <!-- <mateMtbHours>8</mateMtbHours> -->
+	  <!-- <gestationPeriodDays>5.661</gestationPeriodDays> -->
+	  <soundEating>Rodent_Eat</soundEating>
+	  <litterSizeCurve>
+		<points>
+		  <li>(1.0, 0)</li>
+		  <li>(1.5, 1)</li>
+		  <li>(2.0, 1)</li>
+		  <li>(2.5, 0)</li>
+		</points>
+	  </litterSizeCurve>
+	  <headPosPerRotation>
+		<li>(0.0, 0, 0.07)</li>
+		<li>(0.19, 0, 0)</li>
+		<li>(0.0, 0, -0.07)</li>
+		<li>(-0.19, 0, 0)</li>
+	  </headPosPerRotation>
+	  <lifeExpectancy>4</lifeExpectancy>
+	  <lifeStageAges>
+		<li>
+		  <def>AnimalBaby</def>
+		  <minAge>0</minAge>
+		</li>
+		<li>
+		  <def>AnimalJuvenile</def>
+		  <minAge>0.1</minAge>
+		</li>
+		<li>
+		  <def>AnimalAdult</def>
+		  <minAge>0.2222</minAge>
+			<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+			<soundDeath>Pawn_Megascarab_Death</soundDeath>
+			<soundCall>Pawn_Megascarab_Call</soundCall>
+			<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+		</li>
+	  </lifeStageAges>
+	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+	  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+	  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	</race>
+	<comps>
+		<li Class="BiomesCore.CompProperties_PermanentManhunter"/>
+	  <li Class="CompProperties_GasOnDamage">
+        <type>ToxGas</type>
+        <damageFactor>6</damageFactor>
+        <useStackCountAsFactor>true</useStackCountAsFactor>
+      </li>
+	  <li Class="BiomesCore.ThingComponents.CompProperties_CompAnimalsAroundThing">
+					<!-- Pawn to spawn. -->
+		<pawnDef>BMT_PustuleHornetSpawned</pawnDef> 
+					<!--
+					When this thing spawns, it will automatically spawn 1 pawn.
+					Then it will periodically spawn more until reaching 4.
+					-->
+		<pawnCount>0~4</pawnCount>
+					<!-- Will try to spawn another pawn after this time interval. --> 
+		<pawnSpawnIntervalDays>0.00005~0.00007</pawnSpawnIntervalDays>
+					<!-- Sound to play when a new pawn is created. -->
+		<spawnSound>Hive_Spawn</spawnSound>
+	  </li>
+	</comps>
+	<!-- <tradeTags> -->
+	  <!-- <li>AnimalUncommon</li> -->
+	  <!-- <li>AnimalFighter</li> -->
+	  <!-- <li>BMT_PollutedAnimalUncommon</li> -->
+	  <!-- <li>BMT_PollutedAnimalFighter</li> -->
+	<!-- </tradeTags> -->
+		<modExtensions>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Flying</movementDef>
+			</li>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.LocomotionMovementExtension">
+				<locomotionUrgencies>
+					<li>Jog</li>
+					<li>Sprint</li>
+				</locomotionUrgencies>
+				<moveSpeedMultiplier>1.5</moveSpeedMultiplier>
+			</li>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
+  </ThingDef>
+  
+ 
+
+  <!--================================================ -->
+
+  <PawnKindDef ParentName="AnimalKindBase">
+	<defName>BMT_PustuleHornetQueen</defName>
+	<!-- too long. out of name field -->
+	<!-- <label>pustule hornet queen</label> -->
+	<label>pustule queen</label>
+	<race>BMT_PustuleHornetQueen</race>
+	<combatPower>150</combatPower>
+    <defaultFactionType>BMT_PustuleHornets</defaultFactionType>
+	<lifeStages>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/PustuleHornetQueen/PustuleHornetQueen</texPath>
+		  <drawSize>1.75</drawSize>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/PustuleHornetQueen/Dessicated_PustuleHornetQueen</texPath>
+		  <drawSize>1.75</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/PustuleHornetQueen/PustuleHornetQueen</texPath>
+		  <drawSize>2</drawSize>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/PustuleHornetQueen/Dessicated_PustuleHornetQueen</texPath>
+		  <drawSize>2</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/PustuleHornetQueen/PustuleHornetQueen</texPath>
+		  <drawSize>2.5</drawSize>
+		  <shadowData>
+			<volume>(0.32, 0.35, 0.32)</volume>
+			<offset>(0,0,0)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/PustuleHornetQueen/Dessicated_PustuleHornetQueen</texPath>
+		  <drawSize>2.5</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	</lifeStages>
+  </PawnKindDef>
+  
+
+	
+  <!--================================================ -->
+  
+    <ThingDef ParentName="BMT_PollutedLands_BaseInsect">
+	<defName>BMT_ColonyPustuleHornetQueen</defName>
+	<!-- too long. out of name field -->
+	<!-- <label>pustule hornet queen</label> -->
+	<label>pustule queen</label>
+	<description>Unlike most other insect queens, this matriarch is very dangerous. She is nearly as fast as her spawn and packs a greater punch with her stings. Her stings inject a more potent version her species' neurotoxin, allowing for her swarm to quickly overpower anything living in their way.</description>
+	<uiIconScale>1.5</uiIconScale>
+	<statBases>
+	  <MoveSpeed>3.0</MoveSpeed>
+	  <MarketValue>150</MarketValue>
+	  <ComfyTemperatureMin>-60</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>70</ComfyTemperatureMax>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	</statBases>
+	<tools>
+	  <li>
+		<capacities>
+		  <li>Bite</li>
+		</capacities>
+		<power>4.4</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+	  </li>
+	  <li>
+		<label>head</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>3.5</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<chanceFactor>0.2</chanceFactor>
+	  </li>
+	  		<li>
+				<label>stinger</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>BMT_StingerGroup</linkedBodyPartsGroup>
+				<extraMeleeDamages>
+					<li>
+						<def>BMT_Neurotoxin</def>
+						<amount>15</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+	</tools>
+	<race>
+	  <hasGenders>false</hasGenders>
+	  <deathAction>
+        <workerClass>DeathActionWorker_ToxCloud</workerClass>
+      </deathAction>
+	  <body>BMT_BeetleLikeWithStinger</body>
+	  <baseBodySize>1</baseBodySize>
+	  <baseHungerRate>0.115</baseHungerRate>
+	  <baseHealthScale>0.8</baseHealthScale>
+	  <predator>true</predator>
+	  <maxPreyBodySize>2.0</maxPreyBodySize>
+	  <useMeatFrom>Megaspider</useMeatFrom>
+	  <foodType>CarnivoreAnimal</foodType>
+	  <leatherDef>BMT_FragileChitin</leatherDef>
+	  <wildness>0.10</wildness>
+	  <trainability>None</trainability>
+	  <!-- <mateMtbHours>8</mateMtbHours> -->
+	  <!-- <gestationPeriodDays>5.661</gestationPeriodDays> -->
+	  <soundEating>Rodent_Eat</soundEating>
+	  <litterSizeCurve>
+		<points>
+		  <li>(1.0, 0)</li>
+		  <li>(1.5, 1)</li>
+		  <li>(2.0, 1)</li>
+		  <li>(2.5, 0)</li>
+		</points>
+	  </litterSizeCurve>
+	  <headPosPerRotation>
+		<li>(0.0, 0, 0.07)</li>
+		<li>(0.19, 0, 0)</li>
+		<li>(0.0, 0, -0.07)</li>
+		<li>(-0.19, 0, 0)</li>
+	  </headPosPerRotation>
+	  <lifeExpectancy>4</lifeExpectancy>
+	  <lifeStageAges>
+		<li>
+		  <def>AnimalBaby</def>
+		  <minAge>0</minAge>
+		</li>
+		<li>
+		  <def>AnimalJuvenile</def>
+		  <minAge>0.1</minAge>
+		</li>
+		<li>
+		  <def>AnimalAdult</def>
+		  <minAge>0.2222</minAge>
+			<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+			<soundDeath>Pawn_Megascarab_Death</soundDeath>
+			<soundCall>Pawn_Megascarab_Call</soundCall>
+			<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+		</li>
+	  </lifeStageAges>
+	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+	  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+	  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	</race>
+	<comps>
+	  <li Class="CompProperties_GasOnDamage">
+        <type>ToxGas</type>
+        <damageFactor>6</damageFactor>
+        <useStackCountAsFactor>true</useStackCountAsFactor>
+      </li>
+	  <li Class="BiomesCore.ThingComponents.CompProperties_CompAnimalsAroundThing">
+					<!-- Pawn to spawn. -->
+		<pawnDef>BMT_ColonyPustuleHornet</pawnDef> 
+					<!--
+					When this thing spawns, it will automatically spawn 1 pawn.
+					Then it will periodically spawn more until reaching 4.
+					-->
+		<pawnCount>0~4</pawnCount>
+					<!-- Will try to spawn another pawn after this time interval. --> 
+		<pawnSpawnIntervalDays>0.5~1.0</pawnSpawnIntervalDays>
+					<!-- Sound to play when a new pawn is created. -->
+		<spawnSound>Hive_Spawn</spawnSound>
+	  </li>
+	</comps>
+	<!-- <tradeTags> -->
+	  <!-- <li>BMT_PollutedAnimalUncommon</li> -->
+	  <!-- <li>BMT_PollutedAnimalFighter</li> -->
+	<!-- </tradeTags> -->
+		<modExtensions>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Flying</movementDef>
+			</li>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.LocomotionMovementExtension">
+				<locomotionUrgencies>
+					<li>Jog</li>
+					<li>Sprint</li>
+				</locomotionUrgencies>
+				<moveSpeedMultiplier>1.5</moveSpeedMultiplier>
+			</li>
+			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
+		</modExtensions>
+  </ThingDef>
+  
+ 
+
+  <!--================================================ -->
+
+  <PawnKindDef ParentName="AnimalKindBase">
+	<defName>BMT_ColonyPustuleHornetQueen</defName>
+	<!-- too long. out of name field -->
+	<!-- <label>domesticated pustule hornet queen</label> -->
+	<label>pustule queen</label>
+	<race>BMT_ColonyPustuleHornetQueen</race>
+	<combatPower>100</combatPower>
+	<lifeStages>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/PustuleHornetQueen/PustuleHornetQueen</texPath>
+		  <drawSize>1.5</drawSize>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/PustuleHornetQueen/Dessicated_PustuleHornetQueen</texPath>
+		  <drawSize>1.5</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/PustuleHornetQueen/PustuleHornetQueen</texPath>
+		  <drawSize>1.75</drawSize>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/PustuleHornetQueen/Dessicated_PustuleHornetQueen</texPath>
+		  <drawSize>1.75</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/PustuleHornetQueen/PustuleHornetQueen</texPath>
+		  <drawSize>2.25</drawSize>
+		  <shadowData>
+			<volume>(0.32, 0.35, 0.32)</volume>
+			<offset>(0,0,0)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/PustuleHornetQueen/Dessicated_PustuleHornetQueen</texPath>
+		  <drawSize>2.25</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	</lifeStages>
+  </PawnKindDef>
+  
+      <!-- Colony-Tamed Egg -->
+	
+  	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggPustuleHornetQueenFertilized</defName>
+		<label>pustule hornet queen egg (fert.)</label>
+		<description>A fertilized pustule hornet queen egg. If all goes well, it should hatch into a young queen loyal to the humans who hatched her. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_PollutedLands/Things/Item/Eggs/HornetQueenEgg</texPath>
+			<color>(140,159,105)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>10</hatcherDaystoHatch>
+				<hatcherPawn>BMT_ColonyPustuleHornetQueen</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

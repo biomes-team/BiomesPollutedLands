@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
+	<defName>BMT_TripleSnapper</defName>
+	<label>triple snapper</label>
+	<description>With three heads comes the ability to attack fast and see in almost every direction. The triple snapper is an apex predator of polluted waters. It cannot, however, move very fast on land.</description>
+	<statBases>
+	  <MoveSpeed>1.0</MoveSpeed>
+	  <MarketValue>500</MarketValue>
+	  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+	  <ComfyTemperatureMin>0</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>50</ComfyTemperatureMax>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	</statBases>
+	<tools>
+	  <li>
+		<capacities>
+		  <li>Bite</li>
+		</capacities>
+		<power>15</power>
+		<cooldownTime>0.9</cooldownTime>
+		<linkedBodyPartsGroup>TurtleBeakAttackTool</linkedBodyPartsGroup>
+		<chanceFactor>0.9</chanceFactor>
+		<extraMeleeDamages>
+		  <li>
+			<def>Stun</def>
+			<amount>14</amount>
+			<chance>0.5</chance>
+		  </li>
+		</extraMeleeDamages>
+	  </li>
+	  <li>
+		<label>head</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>5</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<chanceFactor>0.2</chanceFactor>
+		<extraMeleeDamages>
+		  <li>
+			<def>Stun</def>
+			<amount>4</amount>
+			<chance>0.8</chance>
+		  </li>
+		</extraMeleeDamages>
+	  </li>
+	</tools>
+	<comps>
+	  <li Class="CompProperties_EggLayer">
+		<eggFertilizedDef>BMT_EggTripleSnapperFertilized</eggFertilizedDef>
+		<eggFertilizationCountMax>1</eggFertilizationCountMax>
+		<eggLayIntervalDays>10</eggLayIntervalDays>
+		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+		<eggCountRange>1~2</eggCountRange>
+	  </li>
+	</comps>
+	<race>
+	  <body>BMT_TurtleThreeHead</body>
+	  <baseBodySize>1.4</baseBodySize>
+	  <baseHungerRate>0.25</baseHungerRate>
+      <baseHealthScale>1.4</baseHealthScale>
+	  <foodType>CarnivoreAnimal</foodType>
+	  <predator>true</predator>
+	  <leatherDef>Leather_Lizard</leatherDef>
+	  <wildness>0.75</wildness>
+	  <trainability>Intermediate</trainability>
+	  <petness>0.02</petness>
+	  <manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
+	  <manhunterOnDamageChance>0.40</manhunterOnDamageChance>
+	  <lifeExpectancy>180</lifeExpectancy>
+	  <lifeStageAges>
+		<li>
+		  <def>AnimalBaby</def>
+		  <minAge>0</minAge>
+		</li>
+		<li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.15</minAge>
+        </li>
+		<li>
+          <def>AnimalAdult</def>
+          <minAge>0.2222</minAge>
+          <soundWounded>Pawn_Tortoise_Wounded</soundWounded>
+          <soundDeath>Pawn_Tortoise_Death</soundDeath>
+          <soundCall>Pawn_Tortoise_Call</soundCall>
+          <soundAngry>Pawn_Tortoise_Angry</soundAngry>
+        </li>
+	  </lifeStageAges>
+	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+	  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+	  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	  <soundEating>Reptile_Eat</soundEating>
+	  <headPosPerRotation>
+        <li>(0.0, 0, 0.11)</li>
+        <li>(0.25, 0, 0.02)</li>
+        <li>(0.01, 0, -0.02)</li>
+        <li>(-0.52, 0, 0.02)</li>
+      </headPosPerRotation>
+	</race>
+	<!-- ToDo: Change tags? -->
+	<tradeTags>
+	  <li>AnimalUncommon</li>
+	  <li>AnimalFighter</li>
+	  <li>BMT_PollutedAnimalUncommon</li>
+	</tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+	<defName>BMT_TripleSnapper</defName>
+	<label>triple snapper</label>
+	<race>BMT_TripleSnapper</race>
+	<combatPower>80</combatPower>
+	<ecoSystemWeight>0.30</ecoSystemWeight>
+	<!-- ToDo: Change textures -->
+	<lifeStages>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/TripleSnapper/TripleSnapper</texPath>
+		  <drawSize>2.75</drawSize>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/TripleSnapper/TripleSnapper_Dessicated</texPath>
+		  <drawSize>2.75</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/TripleSnapper/TripleSnapper</texPath>
+		  <drawSize>3.25</drawSize>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/TripleSnapper/TripleSnapper_Dessicated</texPath>
+		  <drawSize>3.25</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/TripleSnapper/TripleSnapper</texPath>
+		  <drawSize>3.5</drawSize>
+		  <shadowData>
+			<volume>(0.25, 0.3, 0.25)</volume>
+			<offset>(0,0,0)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/TripleSnapper/TripleSnapper_Dessicated</texPath>
+		  <drawSize>3.5</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	</lifeStages>
+		<modExtensions>
+		<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+			<movementDef>PF_Movement_Amphibious</movementDef>
+		</li>
+				<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/TripleSnapper/TripleSnapper_submerged</texPath>
+				</bodyGraphicData>
+				</li>
+	</modExtensions>
+  </PawnKindDef>
+
+  <ThingDef ParentName="EggFertBase">
+	<defName>BMT_EggTripleSnapperFertilized</defName>
+	<label>triple snapper egg (fert.)</label>
+	<description>A fertilized triple snapper egg. If all goes well, it should hatch into a baby triple snapper. It can be eaten raw, but it's much better cooked.</description>
+	<possessionCount>1</possessionCount>
+	<graphicData>
+	  <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+	  <color>(245,245,245)</color>
+	</graphicData>
+	<statBases>
+	  <MarketValue>45.0</MarketValue>
+	</statBases>
+	<comps>
+	  <li Class="CompProperties_Hatcher">
+		<hatcherDaystoHatch>4.7</hatcherDaystoHatch>
+		<hatcherPawn>BMT_TripleSnapper</hatcherPawn>
+	  </li>
+	</comps>
+  </ThingDef>
+
+</Defs>

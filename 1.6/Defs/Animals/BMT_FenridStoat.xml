@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThinkTreeDef>
+		<defName>BMT_FenridStoatDigUpVarmot</defName>
+		<insertTag>Animal_PreWander</insertTag> <!--If it's idle, it'll try to dig something up-->
+    <insertPriority>100</insertPriority>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="BiomesCore.JobGiver_DigUpCorpse">
+          <!--This giver will create a corpse when the job is done. It picks a random animal from corpseKinds to dig up and kill-->
+          <onlyNaturalTerrain>True</onlyNaturalTerrain> <!--Set to false if you want to be able to dig up from any terrain which passes the fertility check-->
+          <hashInterval>120</hashInterval> <!--This adds a bit of randomness so the animal won't constantly run around creating corpses. Making it too low can result in too many jobs being created at once-->
+          <minFertility>0.7</minFertility> <!--Stops the pawn from digging something up in a stone/sandy terrain, along with any other terrains that the target animal would be unlikely to live in-->
+          <diggerKinds>
+            <li>BMT_FenridStoat</li><!--List the PawnKindDefs that can dig up a corpse-->
+          </diggerKinds>
+					<corpseKinds> <!--Will pick a random PawnKindDef from this list-->
+						<li>BMT_Varmot</li> 
+					</corpseKinds>
+          <jobDef>BMT_DigUpCorpse</jobDef>
+          <!--JobDef to assign. The job receives a pawn kind def and duration, and should probably use the related driver class. Report string is flexible-->
+          <jobTicks>60000</jobTicks> <!--Time it takes. Ideally not a multiple of the interval to avoid repeatedly digging up corpses-->
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+
+  <JobDef>
+    <defName>BMT_DigUpCorpse</defName>
+    <driverClass>BiomesCore.JobDriver_DigUpCorpse</driverClass>
+    <reportString>digging up a {0}.</reportString> <!--{0} represents the label of TargetA (corpse)-->
+  </JobDef>
+
+  <ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
+    <defName>BMT_FenridStoat</defName>
+    <label>fenrid stoat</label>
+    <description>A large species of mustelid that can survive both toxic habitats as well as fights with most other native predators. Its preferred prey is varmots and they are often tamed for the express purpose of keeping varmots out of farms and granaries. It is known for digging up previously buried varmot corpses, much to the surprise of new tamers.</description>
+    <statBases>
+      <MoveSpeed>5.0</MoveSpeed>
+      <MarketValue>450</MarketValue>
+      <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+      <FilthRate>2</FilthRate>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+    </statBases>
+    <race>
+      <animalType>Canine</animalType>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <predator>true</predator>
+      <petness>0.5</petness>
+      <baseBodySize>1.4</baseBodySize>
+      <baseHungerRate>0.25</baseHungerRate>
+      <baseHealthScale>1.4</baseHealthScale>
+      <maxPreyBodySize>2.3</maxPreyBodySize>
+      <foodType>CarnivoreAnimalStrict</foodType>
+      <leatherDef>Leather_Heavy</leatherDef>
+      <gestationPeriodDays>10</gestationPeriodDays>
+      <nameOnTameChance>1</nameOnTameChance>
+      <trainability>Advanced</trainability>
+      <wildness>0.60</wildness>
+      <manhunterOnTameFailChance>0.40</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(2, 1.7)</li>
+          <li>(2.5, 0.7)</li>
+          <li>(3, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>6</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.2</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.5</minAge>
+          <soundWounded>Pawn_Warg_Wounded</soundWounded>
+          <soundDeath>Pawn_Warg_Death</soundDeath>
+          <soundCall>Pawn_Warg_Call</soundCall>
+          <soundAngry>Pawn_Warg_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <soundEating>PredatorLarge_Eat</soundEating>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.2)</li>
+        <li>(0.3, 0, 0.03)</li>
+        <li>(0.0, 0, -0.16)</li>
+        <li>(-0.3, 0, 0.03)</li>
+      </headPosPerRotation>
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <labelNoLocation>claw</labelNoLocation>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right claw</label>
+        <labelNoLocation>claw</labelNoLocation>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>razorfangs</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.9</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="BiomesCore.DefModExtensions.PreferenceHunterModExtension">
+        <huntingPrefs>
+          <li>BMT_Varmot</li>
+        </huntingPrefs>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>BMT_FenridStoat</defName>
+    <label>fenrid stoat</label>
+    <race>BMT_FenridStoat</race>
+    <combatPower>160</combatPower>
+    <ecoSystemWeight>0.5</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <label>stoat puppy</label>
+        <labelPlural>stoat puppies</labelPlural>
+        <bodyGraphicData>
+          <texPath>BMT_PollutedLands/Things/Animal/FenridStoat/FenridStoat</texPath>
+          <drawSize>1.05</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BMT_PollutedLands/Things/Animal/FenridStoat/FenridStoat_dessicated</texPath>
+          <drawSize>1.05</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>BMT_PollutedLands/Things/Animal/FenridStoat/FenridStoat</texPath>
+          <drawSize>1.7</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+           <texPath>BMT_PollutedLands/Things/Animal/FenridStoat/FenridStoat_dessicated</texPath>
+          <drawSize>1.7</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>BMT_PollutedLands/Things/Animal/FenridStoat/FenridStoat</texPath>
+          <drawSize>2.15</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BMT_PollutedLands/Things/Animal/FenridStoat/FenridStoat_dessicated</texPath>
+          <drawSize>2.15</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

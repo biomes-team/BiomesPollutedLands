@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <HediffDef ParentName="InfectionBase">
+    <defName>BMT_MegaphoridParasiticLarvae</defName>
+    <label>megaphorid infestation</label>
+    <labelNoun>an infestation of megaphorid larvae</labelNoun>
+    <description>An infection of parasitic larvae from the megaphorid. Without treatment, the larvae will grow over time, slowly devouring the infected, causing worsening symptoms and eventually killing the patient.
+\nA skilled doctor can excise the larvae. An unskilled doctor may be able to simply amputate the body part which contains the growing larvae. Unless it's the head or torso, in which case, good luck.
+\nOn exceptionally rare occasion, the body's immune system will manage to fight off the larvae by itself.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <initialSeverity>0.01</initialSeverity>
+    <chanceToCauseNoPain>0.3</chanceToCauseNoPain>
+    <tendable>true</tendable>
+    <removeOnQuestLodgers>true</removeOnQuestLodgers>
+	<lethalSeverity>1</lethalSeverity>
+    <stages>
+      <li>
+        <label>minor</label>
+        <partEfficiencyOffset>-0.1</partEfficiencyOffset>
+        <painOffset>0.1</painOffset>
+		<capMods>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.1</offset>
+          </li>
+		  <li>
+            <capacity>Moving</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.15</minSeverity>
+        <label>minor</label>
+        <partEfficiencyOffset>-0.25</partEfficiencyOffset>
+        <painOffset>0.2</painOffset>
+		<capMods>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.9</setMax>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.2</offset>
+          </li>
+		  <li>
+            <capacity>Moving</capacity>
+            <offset>-0.10</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.4</minSeverity>
+        <label>major</label>
+        <partEfficiencyOffset>-0.5</partEfficiencyOffset>
+        <painOffset>0.35</painOffset>
+		<capMods>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.8</setMax>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.2</offset>
+          </li>
+		  <li>
+            <capacity>Moving</capacity>
+            <offset>-0.10</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.6</minSeverity>
+        <label>major</label>
+        <partEfficiencyOffset>-0.8</partEfficiencyOffset>
+        <painOffset>0.5</painOffset>
+		<capMods>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.4</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.7</setMax>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.4</offset>
+          </li>
+		  <li>
+            <capacity>Moving</capacity>
+            <offset>-0.30</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.8</minSeverity>
+        <label>extreme</label>
+        <partEfficiencyOffset>-0.9</partEfficiencyOffset>
+        <painOffset>0.6</painOffset>
+		<capMods>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.6</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.6</setMax>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.6</offset>
+          </li>
+		  <li>
+            <capacity>Moving</capacity>
+            <offset>-0.50</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.90</minSeverity>
+        <lifeThreatening>true</lifeThreatening>
+        <vomitMtbDays>0.75</vomitMtbDays>
+        <label>extreme</label>
+        <partEfficiencyOffset>-1.0</partEfficiencyOffset>
+        <painOffset>0.8</painOffset>
+        <destroyPart>true</destroyPart>
+		<capMods>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.75</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.5</setMax>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.8</offset>
+          </li>
+		  <li>
+            <capacity>Moving</capacity>
+            <offset>-0.70</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <baseTendDurationHours>96</baseTendDurationHours>
+        <severityPerDayTended>-0.0027</severityPerDayTended>
+      </li>
+      <li Class="HediffCompProperties_GrowthMode">
+        <severityPerDayGrowing>0.1</severityPerDayGrowing>
+        <severityPerDayRemission>-0.002</severityPerDayRemission>
+        <severityPerDayGrowingRandomFactor>0.45~1.65</severityPerDayGrowingRandomFactor>
+        <severityPerDayRemissionRandomFactor>0.5~1.0</severityPerDayRemissionRandomFactor>
+      </li>
+	   <li Class="BiomesCore.HediffCompProperties_CorpseSpawner">
+        <pawn>BMT_MegaphoridLarva</pawn> <!-- must be set to a pawnkinddef -->
+		<pawnCountRange>10~12</pawnCountRange> <!-- default 1 -->
+		<bloodCountRange>16~30</bloodCountRange> <!-- default 3~6 -->
+		<bloodRadius>2</bloodRadius> <!-- default 2 -->
+		<forceParentFaction>false</forceParentFaction> <!-- default false -->
+		<bloodDef>Filth_Blood</bloodDef> <!-- default Filth_Blood -->
+      </li>
+    </comps>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>BMT_ExciseLarvae</defName>
+    <label>excise megaphorid larvae</label>
+    <description>Excise parasitic larvae that are eating the infected alive.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Excising larvae.</jobString>
+    <workAmount>5000</workAmount>
+    <removesHediff>BMT_MegaphoridParasiticLarvae</removesHediff>
+    <successfullyRemovedHediffMessage>{0} has successfully excised {1}'s parasitic infection.</successfullyRemovedHediffMessage>
+    <deathOnFailedSurgeryChance>0.25</deathOnFailedSurgeryChance>
+    <targetsBodyPart>false</targetsBodyPart>
+    <recipeUsers>
+      <li>Human</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Medicine>12</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+  </RecipeDef>
+  <!-- Thought Def -->
+  
+   <ThoughtDef>
+    <defName>BMT_PhoridInfection</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>BMT_MegaphoridParasiticLarvae</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+	<nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>megaphorid parasitic infection</label>
+        <description>I can feel them wriggling under my skin, eating me alive. It's driving me mad!</description>
+        <baseMoodEffect>-30</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

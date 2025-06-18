@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- How big is it? About rabbit sized. -->
+<!-- What does it eat? (is it a predator?) Omnivore, eats literally anything they can, even filth. If possible filth should come last though in their food priority.  -->
+<!-- Where does it live? Spawns in all polluted biomes. -->
+<!-- Does it spawn in packs? Yes, in fairly large groups. -->
+<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. They should be decent for ranching, giving a fair amount of meat per slaughter and able to breed quite fast. Their eggs should be able to survive in pretty much any temp range. -->
+
+  <ThingDef ParentName="BMT_PollutedLands_BaseInsect">
+	<defName>BMT_Megakrill</defName>
+	<label>megakrill</label>
+	<description>While much larger than traditional krill, the megakrill is nearly as harmless. It eats algae and the like from polluted ponds and rivers. Some colonies keep swarms of them in ponds as emergency food.</description>
+	<uiIconScale>1.5</uiIconScale>
+	<statBases>
+	  <MoveSpeed>5.0</MoveSpeed>
+	  <MarketValue>50</MarketValue>
+	  <ComfyTemperatureMin>-60</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>40</ComfyTemperatureMax>
+	  <FilthRate>0</FilthRate>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	</statBases>
+	<tools>
+	  <li>
+		<capacities>
+		  <li>Bite</li>
+		</capacities>
+		<power>1</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+	  </li>
+	  <li>
+		<label>head</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>1</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		<chanceFactor>0.2</chanceFactor>
+	  </li>
+	</tools>
+	<race>
+	  <body>BeetleLikeWithClaw</body>
+	  <baseBodySize>0.2</baseBodySize>
+	  <baseHungerRate>0.55</baseHungerRate>
+	  <baseHealthScale>0.4</baseHealthScale>
+	  <useMeatFrom>Megaspider</useMeatFrom>
+	  <foodType>VegetarianRoughAnimal</foodType>
+	  <leatherDef>BMT_FragileChitin</leatherDef>
+	  <wildness>0.75</wildness>
+	  <trainability>None</trainability>
+	  <!-- <mateMtbHours>8</mateMtbHours> -->
+	  <!-- <gestationPeriodDays>5.661</gestationPeriodDays> -->
+	  <soundEating>Rodent_Eat</soundEating>
+	  <manhunterOnDamageChance>0.0</manhunterOnDamageChance>
+	  <manhunterOnTameFailChance>0.0</manhunterOnTameFailChance>
+	  <herdAnimal>true</herdAnimal>
+	  <headPosPerRotation>
+		<li>(0.0, 0, 0.07)</li>
+		<li>(0.19, 0, 0)</li>
+		<li>(0.0, 0, -0.07)</li>
+		<li>(-0.19, 0, 0)</li>
+	  </headPosPerRotation>
+	  <lifeExpectancy>1</lifeExpectancy>
+	  <lifeStageAges>
+		<li>
+		  <def>AnimalBaby</def>
+		  <minAge>0</minAge>
+		</li>
+		<li>
+		  <def>AnimalJuvenile</def>
+		  <minAge>0.1</minAge>
+		</li>
+		<li>
+		  <def>AnimalAdult</def>
+		  <minAge>0.2222</minAge>
+		  <soundWounded>Pawn_Hare_Wounded</soundWounded>
+		  <soundDeath>Pawn_Hare_Death</soundDeath>
+		  <soundCall>Pawn_Hare_Call</soundCall>
+		  <soundAngry>Pawn_Hare_Angry</soundAngry>
+		</li>
+	  </lifeStageAges>
+	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+	  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+	  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	</race>
+		<modExtensions>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Aquatic</movementDef>
+			</li>
+		</modExtensions>	
+	<tradeTags>
+		<li>AnimalCommon</li>
+		<li>AnimalFarm</li>
+		<li>BMT_PollutedAnimalCommon</li>
+		<li>BMT_PollutedAnimalInsect</li>
+	</tradeTags>
+	<comps>
+		<li Class="CompProperties_EggLayer">
+			<eggFertilizedDef>BMT_EggMegakrillFertilized</eggFertilizedDef>
+			<eggLayIntervalDays>5</eggLayIntervalDays>
+			<!-- <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax> -->
+			<eggCountRange>2~3</eggCountRange>
+		</li>
+	</comps>
+  </ThingDef>
+ 
+
+  <ThingDef ParentName="EggFertBase">
+	<defName>BMT_EggMegakrillFertilized</defName>
+	<label>megakrill egg (fert.)</label>
+	<description>A fertilized megakrill egg. If all goes well, it should hatch into a baby megakrill. It can be eaten raw, but it's much better cooked. This egg needs to be kept in water to survive.</description>
+	<graphicData>
+		<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+		<color>(167,198,153)</color>
+		<drawSize>0.7</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>3.0</MarketValue>
+		<DeteriorationRate>0</DeteriorationRate>
+	</statBases>
+	<comps Inherit="False">
+	  <li Class="CompProperties_Hatcher">
+		<hatcherDaystoHatch>2</hatcherDaystoHatch>
+		<hatcherPawn>BMT_Megakrill</hatcherPawn>
+	  </li>
+		 <li Class="BiomesCore.ThingComponents.CompProperties_RuinedWithoutWater">
+			<minSafeTemperature>-50</minSafeTemperature>
+			<maxSafeTemperature>40</maxSafeTemperature>
+			<progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
+		  </li> 
+	</comps>
+  </ThingDef>
+
+  <!--================================================ -->
+
+  <PawnKindDef ParentName="AnimalKindBase">
+	<defName>BMT_Megakrill</defName>
+	<label>megakrill</label>
+	<race>BMT_Megakrill</race>
+	<combatPower>20</combatPower>
+	<ecoSystemWeight>1.0</ecoSystemWeight>
+	<wildGroupSize>7~8</wildGroupSize>
+	<lifeStages>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill</texPath>
+		  <drawSize>1</drawSize>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill_Dessicated</texPath>
+		  <drawSize>1.0</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill</texPath>
+		  <drawSize>1.25</drawSize>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill_Dessicated</texPath>
+		  <drawSize>1.25</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill</texPath>
+		  <drawSize>1.5</drawSize>
+		  <shadowData>
+			<volume>(0.32, 0.35, 0.32)</volume>
+			<offset>(0,0,0)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill_Dessicated</texPath>
+		  <drawSize>1.5</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	</lifeStages>
+		<modExtensions>
+			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
+				<terrainTags>
+					<li>PF_TerrainTag_WaterShallow</li>
+					<li>PF_TerrainTag_WaterChest</li>
+					<li>PF_TerrainTag_WaterDeep</li>
+				</terrainTags>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill_Submerged</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
+  </PawnKindDef>
+
+</Defs>

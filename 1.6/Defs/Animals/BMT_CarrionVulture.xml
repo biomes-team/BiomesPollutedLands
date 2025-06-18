@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
+		<defName>BMT_CarrionVulture</defName>
+		<label>carrion vulture</label>
+		<description>An eater of dead flesh, this bird will flock en masse to rotting corpses before bothering to hunt live prey.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<MarketValue>95</MarketValue>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMax>70</ComfyTemperatureMax>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+		</statBases>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<predator>true</predator>
+			<maxPreyBodySize>0.20</maxPreyBodySize>
+			<baseBodySize>0.32</baseBodySize>
+			<baseHealthScale>0.5</baseHealthScale>
+			<baseHungerRate>0.5</baseHungerRate>
+			<foodType>CarnivoreAnimal</foodType>
+			<leatherDef>Leather_Bird</leatherDef>
+			<wildness>0.75</wildness>
+			<trainability>Intermediate</trainability>
+			<lifeExpectancy>10</lifeExpectancy>
+			<body>Bird</body>
+			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBabyTiny</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.12</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.2</minAge>
+					<!-- To-Do: Added sounds -->
+					<!-- <soundWounded>Pawn_Iguana_Wounded</soundWounded> -->
+					<!-- <soundDeath>Pawn_Iguana_Death</soundDeath> -->
+					<!-- <soundCall>Pawn_Iguana_Call</soundCall> -->
+					<!-- <soundAngry>Pawn_Iguana_Angry</soundAngry> -->
+				</li>
+			</lifeStageAges>
+		</race>
+		<modExtensions>
+			<li MayRequire="pathfinding.framework"  Class="PathfindingFramework.MovementExtension">
+				<movementDef>PF_Movement_Flying</movementDef>
+			</li>
+			<li MayRequire="pathfinding.framework"  Class="PathfindingFramework.LocomotionMovementExtension">
+				<locomotionUrgencies>
+					<li>Jog</li>
+					<li>Sprint</li>
+				</locomotionUrgencies>
+				<moveSpeedMultiplier>4</moveSpeedMultiplier>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggCarrionVultureFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>2</eggFertilizationCountMax>
+				<eggLayIntervalDays>9</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>5~6</eggCountRange>
+			</li>
+			<li Class="BiomesCore.CompProperties_PackHunter">
+				<joinHuntRange>24</joinHuntRange>
+				<packConfidenceBonusPerMember>0.25</packConfidenceBonusPerMember>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>3</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
+				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>beak</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>BMT_PollutedAnimalUncommon</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BigBirdKindBase">
+		<defName>BMT_CarrionVulture</defName>
+		<label>carrion vulture</label>
+		<race>BMT_CarrionVulture</race>
+		<combatPower>50</combatPower>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<wildGroupSize>3~5</wildGroupSize>
+		<lifeStages>
+			<li>
+				<label>carrion vulture chick</label>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/CarrionVulture/CarrionVulture</texPath>
+					<drawSize>0.75</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/CarrionVulture/CarrionVulture_dessicated</texPath>
+					<drawSize>0.75</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/CarrionVulture/CarrionVulture</texPath>
+					<drawSize>1.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/CarrionVulture/CarrionVulture_dessicated</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/CarrionVulture/CarrionVulture</texPath>
+					<drawSize>1.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/CarrionVulture/CarrionVulture_dessicated</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li MayRequire="pathfinding.framework"  Class="PathfindingFramework.LocomotionGraphicExtension">
+				<locomotionUrgencies>
+					<li>Jog</li>
+					<li>Sprint</li>
+				</locomotionUrgencies>
+				<bodyGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/CarrionVulture/CarrionVultureFlying</texPath>
+				</bodyGraphicData>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggCarrionVultureFertilized</defName>
+		<label>carrion vulture egg (fert.)</label>
+		<description>A fertilized carrion vulture egg. If all goes well, it should hatch into a baby carrion vulture. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(255,255,255)</color>
+			<drawSize>0.7</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_CarrionVulture</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

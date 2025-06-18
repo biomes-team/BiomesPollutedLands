@@ -12,7 +12,7 @@ public class Hediff_ToxinDependence : HediffWithComps
         {
             if (this.pawn.Dead) return null;
             return this.pawn.needs.AllNeeds
-                .Where(n => n.def == this.def.causesNeed)
+                .Where(n => n.def == this.def.chemicalNeed)
                 .Cast<Need_ToxinDependence>()
                 .FirstOrDefault();
         }

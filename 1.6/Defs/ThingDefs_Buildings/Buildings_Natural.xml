@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>BMT_PustuleHornetHive</defName>
+		<label>pustule hornet hive</label>
+		<description>A hive of giant mutated insects that has been built into an ancient ruined mech. When destroyed the queen will emerge alongside her swarm.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>BMT_PollutedLands/Things/Building/WasteHive/WasteHive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>4,4</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<fillPercent>0.75</fillPercent>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0.25</Flammability>
+		</statBases>
+			<building>
+			<claimable>false</claimable>
+			<deconstructible>false</deconstructible>
+		</building>
+		<receivesSignals>true</receivesSignals>
+		<blockWind>true</blockWind>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_CanBeDormant">
+				<startsDormant>false</startsDormant>
+				<canWakeUpFogged>false</canWakeUpFogged>
+			</li>
+			<li Class="CompProperties_WakeUpDormant"/>
+			<!-- <li Class="BiomesCore.CompProperties_CantSpawnOnTempMap"/> -->
+			<li Class="CompProperties_SelfhealHitpoints">
+				<ticksPerHeal>6000</ticksPerHeal>
+			</li>
+		<li Class="BiomesCore.CompProperties_HiveSpawner">
+			<spawnablePawnKinds>
+				<!-- Any number of PawnKindDefs. A random one is selected upon spawn. -->
+				<li>BMT_PustuleHornet</li>
+			</spawnablePawnKinds>
+			<pawnKindSpawnAfterKill>BMT_PustuleHornetQueen</pawnKindSpawnAfterKill>
+			<spawnSound>Hive_Spawn</spawnSound>
+			<!-- If greater than 0, then when the hive first spawns, the hive will immediately spawn the specified number of insects. -->
+			<initialPawnCount>2~3</initialPawnCount>
+			<!-- Limit for all insects on the map, for all hives. -->
+			<maxPawnCount>5</maxPawnCount>
+			<pawnSpawnIntervalDays>2~3</pawnSpawnIntervalDays>
+			<defendRadius>5</defendRadius>
+			<!-- The faction to which the insect will belong. The faction is mandatory, since without it the AI most likely will not work. -->
+			<faction>BMT_PustuleHornets</faction>
+			<!-- In theory, a custom faction is not needed. And the hive can easily work with the vanilla faction. -->
+		</li>
+		</comps>
+	<killedLeavings>
+      <ChunkSlagSteel>4</ChunkSlagSteel>
+      <Steel>60</Steel>
+	  <BMT_EggPustuleHornetQueenFertilized>1</BMT_EggPustuleHornetQueenFertilized>
+    </killedLeavings>
+	<passability>PassThroughOnly</passability>
+	<size>(2,2)</size>
+	</ThingDef>
+
+</Defs>

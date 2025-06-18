@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- How big is it? Vanilla sheep sized. -->
+<!-- What does it eat? (is it a predator?) Herbivore. -->
+<!-- Where does it live? Rarely spawns in polluted vanilla forested biomes that are NOT swamps. -->
+<!-- Does it spawn in packs? Yes, in groups up to 5 or 6. -->
+<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. Shearable for a wool that provides good toxic protection, roughly 25% per piece, so a pawn with pants, shirt, hat, and jacket or something will be fully protected. The wool however releases tox gas and pollution if burned. -->
+
+  <ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
+	<defName>BMT_ToxSheep</defName>
+	<label>tox-wool sheep</label>
+	<description>Most sheep produce wool, but only this breed produces wool that absorbs toxins, allowing unmodified humans to survive for longer in polluted lands were they to wear clothes made from it.</description>
+	<statBases>
+	  <MoveSpeed>5.1</MoveSpeed>
+	  <MarketValue>350</MarketValue>
+	  <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>45</ComfyTemperatureMax>
+	  <FilthRate>10</FilthRate>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	</statBases>
+	<uiIconScale>1.3</uiIconScale>
+	<comps>
+	  <li Class="CompProperties_Shearable">
+		<woolDef>BMT_ToxWoolSheep</woolDef>
+		<shearIntervalDays>9</shearIntervalDays>
+		<woolAmount>33</woolAmount>
+	  </li>
+	</comps>
+	<race>
+	  <herdAnimal>true</herdAnimal>
+	  <body>QuadrupedAnimalWithHooves</body>
+	  <baseBodySize>0.75</baseBodySize>
+	  <baseHealthScale>0.5</baseHealthScale>
+	  <baseHungerRate>0.125</baseHungerRate>
+	  <foodType>VegetarianRoughAnimal</foodType>
+	  <leatherDef>Leather_Plain</leatherDef>
+	  <useMeatFrom>Sheep</useMeatFrom>
+	  <gestationPeriodDays>5.661</gestationPeriodDays>
+	  <litterSizeCurve>
+		<points>
+		  <li>(0.5, 0)</li>
+		  <li>(1, 1)</li>
+		  <li>(1.7, 1)</li>
+		  <li>(2.0, 0)</li>
+		</points>
+	  </litterSizeCurve>
+	  <wildness>0.2</wildness>
+	  <roamMtbDays>5</roamMtbDays>
+	  <trainability>None</trainability>
+	  <lifeExpectancy>12</lifeExpectancy>
+	  <lifeStageAges>
+		<li>
+		  <def>AnimalBaby</def>
+		  <minAge>0</minAge>
+		</li>
+		<li>
+		  <def>AnimalJuvenile</def>
+		  <minAge>0.25</minAge>
+		</li>
+		<li>
+		  <def>AnimalAdult</def>
+		  <minAge>0.3333</minAge>
+		  <soundWounded>Pawn_Sheep_Wounded</soundWounded>
+		  <soundDeath>Pawn_Sheep_Death</soundDeath>
+		  <soundCall>Pawn_Sheep_Call</soundCall>
+		  <soundAngry>Pawn_Sheep_Angry</soundAngry>
+		</li>
+	  </lifeStageAges>
+	  <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+	  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+	  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+	  <headPosPerRotation>
+		<li>(0.0, 0, 0.18)</li>
+		<li>(0.27, 0, 0.11)</li>
+		<li>(0.0, 0, 0.05)</li>
+		<li>(-0.27, 0, 0.11)</li>
+	  </headPosPerRotation>
+	</race>
+	<!-- ToDo: Change tags? -->
+	<tradeTags>
+	  <li>AnimalCommon</li>
+	  <li>AnimalFarm</li>
+	  <li>BMT_PollutedCommon</li>
+	  <li>BMT_PollutedAnimalFarm</li>
+	  <!-- <li>BMT_PollutedLands_AllAnimals</li> -->
+	</tradeTags>
+	<tools>
+	  <li>
+		<label>head</label>
+		<capacities>
+		  <li>Blunt</li>
+		</capacities>
+		<power>12</power>
+		<cooldownTime>2.8</cooldownTime>
+		<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+		<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+	  </li>
+	  <li>
+		<label>left hoof</label>
+		<capacities>
+		  <li>Blunt</li>
+		  <li>Poke</li>
+		</capacities>
+		<power>5</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+	  </li>
+	  <li>
+		<label>right hoof</label>
+		<capacities>
+		  <li>Blunt</li>
+		  <li>Poke</li>
+		</capacities>
+		<power>5</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+	  </li>
+	  <li>
+		<capacities>
+		  <li>Bite</li>
+		</capacities>
+		<power>12</power>
+		<cooldownTime>2</cooldownTime>
+		<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+		<chanceFactor>0.7</chanceFactor>
+	  </li>
+	</tools>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+	<defName>BMT_ToxSheep</defName>
+	<label>tox-wool sheep</label>
+	<labelPlural>tox sheeps</labelPlural>
+	<labelMale>tox ram</labelMale>
+	<labelFemale>tox ewe</labelFemale>
+	<race>BMT_ToxSheep</race>
+	<combatPower>55</combatPower>
+	<ecoSystemWeight>0.5</ecoSystemWeight>
+	<wildGroupSize>5~6</wildGroupSize>
+	<!-- ToDo: Change textures -->
+	<lifeStages>
+	  <li>
+		<label>tox lamb</label>
+		<labelPlural>tox lambs</labelPlural>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/ToxwoolSheep/ToxwoolSheepFemale</texPath>
+		  <drawSize>0.6</drawSize>
+		  <shadowData>
+			<volume>(0.4, 0.3, 0.3)</volume>
+			<offset>(0,0,-0.2)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/ToxwoolSheep/ToxwoolSheepFemale_dessicated</texPath>
+		  <drawSize>0.6</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/ToxwoolSheep/ToxwoolSheepMale</texPath>
+		  <drawSize>1.30</drawSize>
+		  <shadowData>
+			<volume>(0.6, 0.45, 0.45)</volume>
+			<offset>(0,0,-0.25)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/ToxwoolSheep/ToxwoolSheepFemale</texPath>
+		  <drawSize>1.30</drawSize>
+		  <shadowData>
+			<volume>(0.6, 0.45, 0.45)</volume>
+			<offset>(0,0,-0.25)</offset>
+		  </shadowData>
+		</femaleGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/ToxwoolSheep/ToxwoolSheepMale_dessicated</texPath>
+		  <drawSize>1.30</drawSize>
+		</dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/ToxwoolSheep/ToxwoolSheepFemale_dessicated</texPath>
+		  <drawSize>1.30</drawSize>
+		</femaleDessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/ToxwoolSheep/ToxwoolSheepMale</texPath>
+		  <drawSize>1.75</drawSize>
+		  <shadowData>
+			<volume>(0.6, 0.45, 0.45)</volume>
+			<offset>(0,0,-0.25)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<femaleGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/ToxwoolSheep/ToxwoolSheepFemale</texPath>
+		  <drawSize>1.70</drawSize>
+		  <shadowData>
+			<volume>(0.6, 0.45, 0.45)</volume>
+			<offset>(0,0,-0.25)</offset>
+		  </shadowData>
+		</femaleGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/ToxwoolSheep/ToxwoolSheepMale_dessicated</texPath>
+		  <drawSize>1.75</drawSize>
+		</dessicatedBodyGraphicData>
+		<femaleDessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/ToxwoolSheep/ToxwoolSheepFemale_dessicated</texPath>
+		  <drawSize>1.70</drawSize>
+		</femaleDessicatedBodyGraphicData>
+	  </li>
+	</lifeStages>
+  </PawnKindDef>
+
+</Defs>

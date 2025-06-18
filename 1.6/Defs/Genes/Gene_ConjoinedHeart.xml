@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef ParentName="BMT_MutaGenes_Base">
+	<defName>BMT_ConjoinedHeart</defName>
+	<label>conjoined heart</label>
+	<description>Carriers of this gene have a growth on the heart that rapidly replenishes blood when bleeding out. It does however have a chance to cause a heart attack due to the cardiovascular stress.</description>
+	<geneClass>BMT_PollutedLands.Gene_ConjoinedHeart</geneClass>
+	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_ConjoinedHearts</iconPath>
+	<customEffectDescriptions>
+	  <li>When a pawn is &lt;color=#8a8ae6&gt;close to bleeding out,&lt;/color&gt; it instead has its blood loss reset.When this happens, there is a 21% chance of also causing a &lt;color=#8a8ae6&gt;heart attack&lt;/color&gt;. This has around a 1 day cooldown.</li>
+	</customEffectDescriptions>
+	<biostatCpx>3</biostatCpx>
+	<biostatMet>1</biostatMet>
+	<!-- <statFactors> -->
+	  <!-- <ImmunityGainSpeed>0.9</ImmunityGainSpeed> -->
+	<!-- </statFactors> -->
+	<statOffsets>
+	  <ImmunityGainSpeed>-0.1</ImmunityGainSpeed>
+	</statOffsets>
+	<symbolPack>
+	  <prefixSymbols>
+		<li><symbol>conjoined</symbol></li>
+		<li><symbol>heart</symbol></li>
+		<li><symbol>mutant</symbol></li>
+	  </prefixSymbols>
+	</symbolPack>
+	<modExtensions>
+		<li Class="BMT_PollutedLands.GeneExtension">
+			<hediffDef>HeartAttack</hediffDef>
+			<chance>0.21</chance>
+			<maxSeverity>0.72</maxSeverity>
+		</li>
+	</modExtensions>
+  </GeneDef>
+
+</Defs>

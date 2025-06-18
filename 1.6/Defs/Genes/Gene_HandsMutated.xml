@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef ParentName="BMT_MutaGenes_Base">
+	<defName>BMT_HandsMutated</defName>
+	<label>mutated hands</label>
+	<description>Carriers of this gene have one or two extra fingers on their hands, allowing for extra manipulation.</description>
+	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_HandsMutated</iconPath>
+	<iconColor>(0.75, 0.75, 0.75)</iconColor>
+	<capMods>
+	  <li>
+		<capacity>Manipulation</capacity>
+		<offset>0.15</offset>
+	  </li>
+	</capMods>
+	<statOffsets>
+	  <ImmunityGainSpeed>-0.05</ImmunityGainSpeed>
+	  <PawnBeauty>-1</PawnBeauty>
+	</statOffsets>
+	<exclusionTags>
+	  <li>Hands</li>
+	</exclusionTags>
+  </GeneDef>
+
+</Defs>

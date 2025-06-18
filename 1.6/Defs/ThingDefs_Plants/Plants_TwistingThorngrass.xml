@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BMT_PollutedLands_PlantBase">
+	<defName>BMT_Plant_TwistingThorngrass</defName>
+	<label>twisting thorngrass</label>
+	<description>Similar to grass yet covered in small thorn-like structures. It is related in part to two similar arid plants.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Flammability>1.3</Flammability>
+      <Nutrition>0.50</Nutrition>
+    </statBases>
+	<graphicData>
+	  <texPath>BMT_PollutedLands/Things/Plant/TwistingThorngrass</texPath>
+	  <graphicClass>Graphic_Random</graphicClass>
+	  <drawSize>1.15</drawSize>
+    </graphicData>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <selectable>false</selectable>
+    <plant>
+      <growDays>2.5</growDays>
+      <harvestWork>40</harvestWork>
+      <maxMeshCount>4</maxMeshCount>
+      <visualSizeRange>0.4~0.6</visualSizeRange>
+      <topWindExposure>0.4</topWindExposure>
+      <wildOrder>1</wildOrder>
+	  <pollution>PollutedOnly</pollution>
+	  <fertilityMin>0.10</fertilityMin>
+      <fertilitySensitivity>0</fertilitySensitivity>
+    </plant>
+	</ThingDef>
+
+</Defs>

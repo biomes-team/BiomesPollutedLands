@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs[li="RawBerries"]</xpath>
+	  <success>Always</success>
+	  <value>
+		  <li>BMT_CryingWolfBerries</li>
+		  <li>BMT_ClawhandCitron</li>
+	  </value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs[li="RawBerries"]</xpath>
+	  <success>Always</success>
+	  <value>
+		  <li>BMT_CryingWolfBerries</li>
+		  <li>BMT_ClawhandCitron</li>
+	  </value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/RecipeDef/defaultIngredientFilter/thingDefs[li="RawBerries"]</xpath>
+	  <success>Always</success>
+	  <value>
+		  <li>BMT_CryingWolfBerries</li>
+		  <li>BMT_ClawhandCitron</li>
+	  </value>
+	</Operation>
+
+</Patch>

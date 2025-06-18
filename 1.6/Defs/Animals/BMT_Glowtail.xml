@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- How big is it? About cat sized. -->
+<!-- What does it eat? (is it a predator?) Carnivore but should mostly eat from terrain. Text should be something like "Luring in bugs" -->
+<!-- Where does it live? Spawns in polluted warmer vanilla biomes. -->
+<!-- Does it spawn in packs? No. -->
+<!-- Other info good pets? shearable? do you want it to have a specific type of leather? etc. It should be a really good pet for nuzzling. -->
+
+<!-- If possible, it should produce one tile of light whenever it's eating, but ONLY when it's eating. -->
+
+  <ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
+	<defName>BMT_Glowtail</defName>
+	<label>glowtail</label>
+	<description>A small lizard adapted to toxic environments, it uses its glowing tail tip to lure in flying insects to eat. It's considered rather cute by denizens of polluted lands and is often kept as both pet and pest control, much like a cat.</description>
+	<statBases>
+	  <MoveSpeed>4</MoveSpeed>
+	  <MarketValue>100</MarketValue>
+	  <ComfyTemperatureMin>0</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
+	  <FilthRate>0</FilthRate>
+	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	</statBases>
+	<race>
+	  <body>QuadrupedAnimalWithClawsTailAndJowl</body>
+	  <predator>false</predator>
+	  <baseBodySize>0.32</baseBodySize>
+	  <maxPreyBodySize>0.25</maxPreyBodySize>
+	  <baseHungerRate>0.15</baseHungerRate>
+	  <baseHealthScale>0.42</baseHealthScale>
+	  <foodType>CarnivoreAnimal</foodType>
+	  <leatherDef>Leather_Lizard</leatherDef>
+	  <wildness>0.6</wildness>
+	  <petness>0.75</petness>
+	  <trainability>None</trainability>
+	  <nuzzleMtbHours>12</nuzzleMtbHours>
+	  <nameOnTameChance>1</nameOnTameChance>
+	  <lifeExpectancy>15</lifeExpectancy>
+	  <lifeStageAges>
+		<li>
+		  <def>AnimalBaby</def>
+		  <minAge>0</minAge>
+		</li>
+		<li>
+		  <def>AnimalJuvenile</def>
+		  <minAge>0.15</minAge>
+		</li>
+		<li>
+		  <def>AnimalAdult</def>
+		  <minAge>0.4</minAge>
+          <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+          <soundDeath>Pawn_Iguana_Death</soundDeath>
+          <soundCall>Pawn_Iguana_Call</soundCall>
+          <soundAngry>Pawn_Iguana_Angry</soundAngry>
+		</li>
+	  </lifeStageAges>
+	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+	  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+	  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	  <headPosPerRotation>
+		<li>(0.02, 0, 0.23)</li>
+		<li>(0.35, 0, 0.05)</li>
+		<li>(0.0, 0, -0.185)</li>
+		<li>(-0.35, 0, 0.05)</li>
+	  </headPosPerRotation>
+	</race>
+	<!-- ToDo: Change tags? -->
+	<tradeTags>
+	  <li>AnimalCommon</li>
+	  <li>AnimalPet</li>
+	  <li>BMT_PollutedAnimalCommon</li>
+	  <li>BMT_PollutedAnimalPet</li>
+	</tradeTags>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>3</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+	<comps>
+		<li Class="CompProperties_Glower">
+			<glowRadius>1</glowRadius>
+			<compClass>BiomesCore.CompDefaultOffGlower</compClass>
+		</li>
+		<li Class="BiomesCore.CompProperties_BottomFeeder">
+			<feedingTerrainTag>Soil</feedingTerrainTag>
+			<consumingFoodReportString>Luring in bugs.</consumingFoodReportString>
+			<effecterDef>Interceptor_BlockedProjectile</effecterDef>
+			<shouldGlow>true</shouldGlow>
+		</li>
+		<li Class="CompProperties_EggLayer">
+			<eggFertilizedDef>BMT_EggGlowtailFertilized</eggFertilizedDef>
+			<eggFertilizationCountMax>1</eggFertilizationCountMax>
+			<eggLayIntervalDays>5.661</eggLayIntervalDays>
+			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+			<eggCountRange>1~2</eggCountRange>
+		</li>
+	</comps>
+	<modExtensions>
+		<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
+			<isBottomFeeder>true</isBottomFeeder>
+		</li>
+	</modExtensions>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+	<defName>BMT_Glowtail</defName>
+	<label>glowtail</label>
+	<race>BMT_Glowtail</race>
+	<combatPower>35</combatPower>
+	<ecoSystemWeight>0.3</ecoSystemWeight>
+	<!-- ToDo: Change textures -->
+	<lifeStages>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/Glowtail/GlowtailBaby</texPath>
+		  <drawSize>0.6</drawSize>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/Glowtail/Dessicated_GlowtailBaby</texPath>
+		  <drawSize>0.6</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/Glowtail/GlowtailBaby</texPath>
+		  <drawSize>0.8</drawSize>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/Glowtail/Dessicated_GlowtailBaby</texPath>
+		  <drawSize>0.8</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	  <li>
+		<bodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/Glowtail/Glowtail</texPath>
+		  <drawSize>1.0</drawSize>
+		  <shadowData>
+			<volume>(0.25, 0.3, 0.25)</volume>
+			<offset>(0,0,-0.15)</offset>
+		  </shadowData>
+		</bodyGraphicData>
+		<dessicatedBodyGraphicData>
+		  <texPath>BMT_PollutedLands/Things/Animal/Glowtail/Dessicated_Glowtail</texPath>
+		  <drawSize>1.0</drawSize>
+		</dessicatedBodyGraphicData>
+	  </li>
+	</lifeStages>
+  </PawnKindDef>
+  
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggGlowtailFertilized</defName>
+		<label>glowtail egg (fert.)</label>
+		<description>A fertilized glowtail egg. If all goes well, it should hatch into a baby glowtail. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(230,212,193)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>6</hatcherDaystoHatch>
+				<hatcherPawn>BMT_Glowtail</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

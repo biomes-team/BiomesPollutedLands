@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>/Defs/ThoughtDef[defName="AteCorpse"]/nullifyingGenes</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+			  <xpath>/Defs/ThoughtDef[defName="AteCorpse"]</xpath>
+			  <success>Always</success>
+			  <value>
+				<nullifyingGenes/>
+			  </value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/ThoughtDef[defName="AteCorpse"]/nullifyingGenes</xpath>
+	  <value>
+		  <li>BMT_CarrionMetabolism</li>
+	  </value>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>/Defs/ThoughtDef[defName="AteRottenFood"]/nullifyingGenes</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+			  <xpath>/Defs/ThoughtDef[defName="AteRottenFood"]</xpath>
+			  <success>Always</success>
+			  <value>
+				<nullifyingGenes/>
+			  </value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/ThoughtDef[defName="AteRottenFood"]/nullifyingGenes</xpath>
+	  <value>
+		  <li>BMT_CarrionMetabolism</li>
+	  </value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/HediffDef[defName="PregnantHuman"]/comps</xpath>
+	  <order>Prepend</order>
+	  <value>
+		<li Class="BMT_PollutedLands.HediffCompProperties_MutagenicFertility">
+		  <anyGeneDefs>
+			<li>BMT_MutagenicFertility</li>
+		  </anyGeneDefs>
+		</li>
+	  </value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/RitualOutcomeEffectDef[defName="ChildBirth"]/comps</xpath>
+	  <value>
+		<li Class="BMT_PollutedLands.RitualOutcomeComp_PawnGenes">
+		  <label>{PAWN_labelShort}'s mutagenes</label>
+		  <labelAbstract>mother's mutagenes</labelAbstract>
+		  <roleId>mother</roleId>
+		  <!-- <quality>-0.1</quality> -->
+		  <!-- <anyGeneDefs> -->
+			<!-- <li>BMT_MutagenicFertility</li> -->
+		  <!-- </anyGeneDefs> -->
+		</li>
+	  </value>
+	</Operation>
+
+</Patch>

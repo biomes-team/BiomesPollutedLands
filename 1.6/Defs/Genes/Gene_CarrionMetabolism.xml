@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef ParentName="BMT_MutaGenes_Base">
+	<defName>BMT_CarrionMetabolism</defName>
+	<label>carrion metabolism</label>
+	<description>Carriers of this gene have a special organ that allows them to obtain nutrients from rotten corpses.</description>
+	<geneClass>BMT_PollutedLands.Gene_CarrionMetabolism</geneClass>
+	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_CarrionMetabolism</iconPath>
+	<descriptionHyperlinks>
+	  <AbilityDef>BMT_CarrionMetabolism</AbilityDef>
+	</descriptionHyperlinks>
+	<biostatCpx>5</biostatCpx>
+	<biostatMet>1</biostatMet>
+	<statOffsets>
+	  <ImmunityGainSpeed>-0.05</ImmunityGainSpeed>
+	</statOffsets>
+	<!-- NutritionLossFromFood x75% -->
+	<resourceLossPerDay>0.75</resourceLossPerDay>
+	<customEffectDescriptions>
+	  <li>Receive &lt;color=#8a8ae6&gt;more nutrition&lt;/color&gt; from &lt;color=#8a8ae6&gt;corpses&lt;/color&gt;, at the cost of receiving &lt;color=#8a8ae6&gt;-25% nutrition&lt;/color&gt; from &lt;color=#8a8ae6&gt;food&lt;/color&gt;.</li>
+	  <li>&lt;color=#ff8585&gt;If hungry, the pawn may automatically try to eat a random corpse.&lt;/color&gt;</li>
+	</customEffectDescriptions>
+	<abilities>
+	  <li>BMT_CarrionMetabolism</li>
+	</abilities>
+	<exclusionTags>
+	  <li>BMT_CorpseEaterGenes</li>
+	</exclusionTags>
+  </GeneDef>
+
+  <!-- Abilities -->
+
+  <!-- AutoCastJob -->
+  <JobDef>
+	<defName>BMT_CastAbilityMeleeWithReservation</defName>
+	<driverClass>BMT_PollutedLands.JobDriver_CastAbilityMeleeWithReservation</driverClass>
+	<casualInterruptible>false</casualInterruptible>
+	<collideWithPawns>false</collideWithPawns>
+	<neverShowWeapon>true</neverShowWeapon>
+	<suspendable>true</suspendable>
+  </JobDef>
+
+  <AbilityDef ParentName="AbilityTouchBase">
+	<defName>BMT_CarrionMetabolism</defName>
+	<label>carrion</label>
+	<description>Can eat rotting corpses to satisfy hunger.</description>
+	<iconPath>BMT_PollutedLands/UI/Icons/Genes/Gene_CarrionMetabolism</iconPath>
+	<displayOrder>100</displayOrder>
+	<warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+	<warmupStartSound>Bloodfeed_Cast</warmupStartSound>
+	<hostile>false</hostile>
+	<jobDef>BMT_CastAbilityMeleeWithReservation</jobDef>
+	<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	<verbProperties>
+	  <verbClass>Verb_CastAbilityTouch</verbClass>
+	  <drawAimPie>false</drawAimPie>
+	  <range>-1</range>
+	  <warmupTime>2</warmupTime>
+	  <targetParams>
+		<canTargetSelf>false</canTargetSelf>
+		<canTargetBuildings>false</canTargetBuildings>
+		<canTargetMechs>false</canTargetMechs>
+		<canTargetBloodfeeders>true</canTargetBloodfeeders>
+		<canTargetCorpses>true</canTargetCorpses>
+		<onlyTargetCorpses>true</onlyTargetCorpses>
+	  </targetParams>
+	</verbProperties>
+	<comps>
+	  <li Class="BMT_PollutedLands.CompProperties_AbilityHideIfPawnMultiSelected"/>
+	  <li Class="BMT_PollutedLands.CompProperties_AbilityCorpseEater">
+		<acceptableRotStages>
+		  <li>Fresh</li>
+		  <li>Rotting</li>
+		  <!-- <li>Dessicated</li> -->
+		</acceptableRotStages>
+	  </li>
+	  <li Class="CompProperties_AbilityFleckOnTarget">
+		<fleckDef>BloodSplash</fleckDef>
+	  </li>
+	  <li Class="CompProperties_AbilityRequiresCapacity">
+		<capacity>Eating</capacity>
+	  </li>
+	</comps>
+  </AbilityDef>
+
+</Defs>

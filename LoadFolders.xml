@@ -5,4 +5,9 @@
 		<li>\</li>
 		<li IfModActive="vanillaexpanded.vcef">1.5/Mods/VanillaFishingExpanded</li>
 	</v1.5>
+	<v1.6>
+		<li>1.6</li>
+		<li>\</li>
+		<li IfModActive="vanillaexpanded.vcef">1.6/Mods/VanillaFishingExpanded</li>
+	</v1.6>
 </loadFolders>
