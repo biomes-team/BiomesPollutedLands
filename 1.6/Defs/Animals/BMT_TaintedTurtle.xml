@@ -13,6 +13,7 @@
 	  <ComfyTemperatureMin>0</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>50</ComfyTemperatureMax>
 	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	  <Wildness>0.75</Wildness>
 	</statBases>
 	<race>
       <body>TurtleLike</body>

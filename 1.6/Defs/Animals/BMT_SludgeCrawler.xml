@@ -14,6 +14,7 @@
 			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
 			<FilthRate>0</FilthRate>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+			<Wildness>0.6</Wildness>
 		</statBases>
 		<comps>
 			<li Class="BiomesCore.CompProperties_DefensiveReaction">
@@ -70,7 +71,6 @@
 			<baseHealthScale>2</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<packAnimal>false</packAnimal>
-			<wildness>0.60</wildness>
 			<lifeExpectancy>10</lifeExpectancy>
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>

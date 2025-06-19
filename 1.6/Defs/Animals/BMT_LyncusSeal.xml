@@ -18,6 +18,7 @@
 			<ComfyTemperatureMax>40</ComfyTemperatureMax>
 			<FilthRate>20</FilthRate>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -68,7 +69,6 @@
 			<leatherDef>BiomesIslands_Leather_Pinnipedskin</leatherDef>
 			<gestationPeriodDays>13</gestationPeriodDays>
 			<trainability>Advanced</trainability>
-			<wildness>0.75</wildness>
 			<!-- <manhunterOnDamageChance>0</manhunterOnDamageChance> -->
 			<!-- <manhunterOnTameFailChance>0</manhunterOnTameFailChance> -->
 			<litterSizeCurve>

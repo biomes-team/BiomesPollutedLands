@@ -11,6 +11,7 @@
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<race>
 			<herdAnimal>true</herdAnimal>
@@ -21,7 +22,6 @@
 			<baseHungerRate>0.5</baseHungerRate>
 			<foodType>CarnivoreAnimal</foodType>
 			<leatherDef>Leather_Bird</leatherDef>
-			<wildness>0.75</wildness>
 			<trainability>Intermediate</trainability>
 			<lifeExpectancy>30</lifeExpectancy>
 			<body>Bird</body>
@@ -199,4 +199,18 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	  <ThingDef ParentName="EggUnfertBase">
+	<defName>BMT_EggBloodletterPetrelUnfertilized</defName>
+	<label>bloodletter petrel egg (unfert.)</label>
+	<description>An unfertilized bloodletter petrel egg. It can be eaten raw, but it's much, much better cooked.</description>
+	<graphicData>
+		<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(245,245,245)</color>
+			<drawSize>0.7</drawSize>
+	</graphicData>
+	<statBases>
+	  <MarketValue>3.0</MarketValue>
+	</statBases>
+  </ThingDef>
 </Defs>

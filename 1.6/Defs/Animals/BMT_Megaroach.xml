@@ -19,6 +19,7 @@
 	  <ComfyTemperatureMax>70</ComfyTemperatureMax>
 	  <FilthRate>0</FilthRate>
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	  <Wildness>0.75</Wildness>
 	</statBases>
 	<tools>
 	  <li>
@@ -49,7 +50,6 @@
 	  <useMeatFrom>Megaspider</useMeatFrom>
 	  <foodType>OmnivoreAnimal</foodType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
-	  <wildness>0.75</wildness>
 	  <trainability>None</trainability>
 	  <petness>0.08</petness>
 	  <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>

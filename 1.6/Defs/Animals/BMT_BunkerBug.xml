@@ -16,6 +16,7 @@
 			<FilthRate>16</FilthRate>
 			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
 		    <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+			<Wildness>0.985</Wildness>
 		</statBases>
 		<race>
 			<body>BeetleLikeWithClaw</body>
@@ -29,7 +30,6 @@
 			<leatherDef>BMT_RoyalChitin</leatherDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<trainability>Intermediate</trainability>
-			<wildness>0.985</wildness>
 			<lifeExpectancy>200</lifeExpectancy>
 			<packAnimal>false</packAnimal>
 			<manhunterOnDamageChance>0.9</manhunterOnDamageChance>

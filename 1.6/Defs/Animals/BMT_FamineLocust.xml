@@ -19,6 +19,7 @@
 	  <ComfyTemperatureMax>70</ComfyTemperatureMax>
 	  <FilthRate>5</FilthRate>
 	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	  <Wildness>0.75</Wildness>
 	</statBases>
 	<tools>
 	  <li>
@@ -48,7 +49,6 @@
 	  <baseHealthScale>0.4</baseHealthScale>
 	  <foodType>OmnivoreRoughAnimal</foodType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
-	  <wildness>0.75</wildness>
 	  <useMeatFrom>Megaspider</useMeatFrom>
 	  <trainability>None</trainability>
 	  <!-- <mateMtbHours>8</mateMtbHours> -->
@@ -128,6 +128,19 @@
 	</comps>
   </ThingDef>
 
+  <ThingDef ParentName="EggUnfertBase">
+	<defName>BMT_EggFamineLocustUnfertilized</defName>
+	<label>famine locust egg (unfert.)</label>
+	<description>An unfertilized famine locust egg. It can be eaten raw, but it's much, much better cooked.</description>
+	<graphicData>
+		<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+		<color>(157,188,143)</color>
+		<drawSize>0.7</drawSize>
+	</graphicData>
+	<statBases>
+	  <MarketValue>2.0</MarketValue>
+	</statBases>
+  </ThingDef>
   <!--================================================ -->
 
   <PawnKindDef ParentName="AnimalKindBase">

@@ -11,6 +11,7 @@
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+			<Wildness>0.5</Wildness>
 		</statBases>
 		<race>
 			<body>BeetleLike</body>
@@ -23,7 +24,6 @@
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<leatherDef>BMT_FragileChitin</leatherDef>
-			<wildness>0.50</wildness>
 			<trainability>None</trainability>
 			<lifeExpectancy>3</lifeExpectancy>
 			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
@@ -118,6 +118,20 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
+	<ThingDef ParentName="EggUnfertBase">
+	<defName>BMT_EggNorpheaUnfertilized</defName>
+	<label>norphea egg (unfert.)</label>
+	<description>An unfertilized norphea egg. It can be eaten raw, but it's much, much better cooked.</description>
+	<graphicData>
+		<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+		<color>(157,188,143)</color>
+		<drawSize>0.7</drawSize>
+	</graphicData>
+	<statBases>
+	  <MarketValue>2.0</MarketValue>
+	</statBases>
+  </ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>BMT_MutagenicNorphea</defName>

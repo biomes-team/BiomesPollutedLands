@@ -11,6 +11,7 @@
 			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
 			<ComfyTemperatureMax>30</ComfyTemperatureMax>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<race>
 			<herdAnimal>true</herdAnimal>
@@ -21,7 +22,6 @@
 			<baseHungerRate>0.5</baseHungerRate>
 			<foodType>CarnivoreAnimal</foodType>
 			<leatherDef>Leather_Bird</leatherDef>
-			<wildness>0.75</wildness>
 			<trainability>Advanced</trainability>
 			<lifeExpectancy>20</lifeExpectancy>
 			<body>Bird</body>

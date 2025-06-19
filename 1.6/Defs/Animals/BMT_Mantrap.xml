@@ -14,6 +14,7 @@
 			<MeatAmount>0</MeatAmount>
 			<FilthRate>0</FilthRate>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+			<Wildness>0.99</Wildness>
 		</statBases>
 		<race>
 			<body>BMT_MantisLike</body>
@@ -25,7 +26,6 @@
 			<foodType>CarnivoreAnimal</foodType>
 			<predator>true</predator>
 			<maxPreyBodySize>1</maxPreyBodySize>
-			<wildness>0.99</wildness>
 			<lifeExpectancy>7</lifeExpectancy>
 			<manhunterOnTameFailChance>0.0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>

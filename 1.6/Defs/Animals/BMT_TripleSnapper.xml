@@ -13,6 +13,7 @@
 	  <ComfyTemperatureMin>0</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>50</ComfyTemperatureMax>
 	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	  <Wildness>0.75</Wildness>
 	</statBases>
 	<tools>
 	  <li>
@@ -67,7 +68,6 @@
 	  <foodType>CarnivoreAnimal</foodType>
 	  <predator>true</predator>
 	  <leatherDef>Leather_Lizard</leatherDef>
-	  <wildness>0.75</wildness>
 	  <trainability>Intermediate</trainability>
 	  <petness>0.02</petness>
 	  <manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
@@ -190,4 +190,16 @@
 	</comps>
   </ThingDef>
 
+  <ThingDef ParentName="EggUnfertBase">
+	<defName>BMT_EggTripleSnapperUnfertilized</defName>
+	<label>triple snapper egg (unfert.)</label>
+	<description>An unfertilized triple snapper egg. It can be eaten raw, but it's much, much better cooked.</description>
+	<graphicData>
+	  <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+	  <color>(235,235,235)</color>
+	</graphicData>
+	<statBases>
+	  <MarketValue>2.0</MarketValue>
+	</statBases>
+  </ThingDef>
 </Defs>

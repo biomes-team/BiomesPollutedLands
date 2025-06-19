@@ -11,6 +11,7 @@
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>2</FilthRate>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+			<Wildness>0.9</Wildness>
 		</statBases>
 		<race>
 			<herdAnimal>true</herdAnimal>
@@ -21,7 +22,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>BMT_Leather_Amphibian</leatherDef>
 			<useMeatFrom>BMT_Maxolotl</useMeatFrom>
-			<wildness>0.9</wildness>
 			<trainability>None</trainability>
 			<mateMtbHours>8</mateMtbHours>
 			<lifeExpectancy>0.1</lifeExpectancy>
@@ -166,6 +166,7 @@
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>2</FilthRate>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<tools>
 			<li>
@@ -257,7 +258,6 @@
 			<foodType>CarnivoreAnimal</foodType>
 			<leatherDef>BMT_Leather_Amphibian</leatherDef>
 			<useMeatFrom>BMT_Maxolotl</useMeatFrom>
-			<wildness>0.75</wildness>
 			<trainability>Intermediate</trainability>
 			<mateMtbHours>8</mateMtbHours>
 			<lifeExpectancy>10</lifeExpectancy>
@@ -348,7 +348,7 @@
 	<ThingDef ParentName="EggFertBase">
 		<defName>BMT_EggGastroToadFertilized</defName>
 		<label>gastro toad egg (fert.)</label>
-		<description>A fertilized gastro toad egg. If all goes well, it should hatch into a gastro toad. It can be eaten raw, but it's much better cooked. This egg needs to be kept in water to survive.</description>
+		<description>A fertilized gastro toad egg. If all goes well, it should hatch into a polluwog. It can be eaten raw, but it's much better cooked. This egg needs to be kept in water to survive.</description>
 		<graphicData>
 			<texPath>BMT_PollutedLands/Things/Item/Eggs/GastroToadEggs</texPath>
 			<drawSize>0.75</drawSize>
@@ -370,4 +370,16 @@
 		</comps>
 	</ThingDef>
 
+  <ThingDef ParentName="EggUnfertBase">
+	<defName>BMT_EggGastrotoadUnfertilized</defName>
+	<label>gastro toad egg (unfert.)</label>
+	<description>An unfertilized gastrotoad egg. It can be eaten raw, but it's much, much better cooked.</description>
+	<graphicData>
+			<texPath>BMT_PollutedLands/Things/Item/Eggs/GastroToadEggs</texPath>
+			<drawSize>0.75</drawSize>
+	</graphicData>
+	<statBases>
+	  <MarketValue>2.0</MarketValue>
+	</statBases>
+  </ThingDef>
 </Defs>

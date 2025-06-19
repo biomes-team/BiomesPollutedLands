@@ -17,6 +17,7 @@
       <MarketValue>220</MarketValue>
       <FilthRate>8</FilthRate>
 	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	  <Wildness>0.75</Wildness>
     </statBases>
     <uiIconScale>1.2</uiIconScale>
     <comps>
@@ -34,7 +35,6 @@
       <baseHungerRate>0.225</baseHungerRate>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Light</leatherDef>
-      <wildness>0.75</wildness>
       <roamMtbDays>8</roamMtbDays>
       <trainability>None</trainability>
       <gestationPeriodDays>5.61</gestationPeriodDays>

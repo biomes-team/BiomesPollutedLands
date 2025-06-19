@@ -12,6 +12,7 @@
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<FilthRate>0</FilthRate>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+			<Wildness>0.75</Wildness>
 		</statBases>
 		<race>
 			<leatherDef>BMT_Fishskin</leatherDef>
@@ -21,7 +22,6 @@
 			<foodType>CarnivoreAnimal</foodType>
 			<predator>true</predator>
 			<maxPreyBodySize>0.32</maxPreyBodySize>
-			<wildness>0.75</wildness>
 			<trainability>None</trainability>
 			<lifeExpectancy>70</lifeExpectancy>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
@@ -195,7 +195,7 @@
 			<drawSize>1.2</drawSize>
 		</graphicData>
 		<statBases>
-			<MarketValue>50</MarketValue>
+			<MarketValue>5.0</MarketValue>
 			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<comps>
@@ -210,4 +210,17 @@
 		  </li> 
 		</comps>
 	</ThingDef>
+	
+	<ThingDef ParentName="EggUnfertBase">
+	<defName>BMT_EggMucklurkerCatfishUnfertilized</defName>
+	<label>mucklurker catfish egg (unfert.)</label>
+	<description>An unfertilized mucklurker catfish egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(127,137,98)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+	<statBases>
+	  <MarketValue>2.0</MarketValue>
+	</statBases>
+  </ThingDef>
 </Defs>

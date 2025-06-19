@@ -18,6 +18,7 @@
 	  <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>70</ComfyTemperatureMax>
 	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	  <Wildness>1</Wildness>
 	</statBases>
 	<tools>
 	  <li>
@@ -49,7 +50,6 @@
 	  <fleshType>Insectoid</fleshType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
 	  <useMeatFrom>Megaspider</useMeatFrom>
-	  <wildness>1</wildness>
 	  <trainability>None</trainability>
 	  <petness>0.08</petness>
 	  <soundEating>Rodent_Eat</soundEating>

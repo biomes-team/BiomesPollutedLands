@@ -19,6 +19,7 @@
 	  <ComfyTemperatureMax>40</ComfyTemperatureMax>
 	  <FilthRate>0</FilthRate>
 	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	  <Wildness>0.75</Wildness>
 	</statBases>
 	<tools>
 	  <li>
@@ -49,7 +50,6 @@
 	  <useMeatFrom>Megaspider</useMeatFrom>
 	  <foodType>VegetarianRoughAnimal</foodType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
-	  <wildness>0.75</wildness>
 	  <trainability>None</trainability>
 	  <!-- <mateMtbHours>8</mateMtbHours> -->
 	  <!-- <gestationPeriodDays>5.661</gestationPeriodDays> -->
@@ -132,6 +132,20 @@
 			<progressPerDegreePerTick>0.00001</progressPerDegreePerTick>
 		  </li> 
 	</comps>
+  </ThingDef>
+  
+    <ThingDef ParentName="EggUnfertBase">
+	<defName>BMT_EggMegakrillUnfertilized</defName>
+	<label>megakrill egg (unfert.)</label>
+	<description>An unfertilized megaroach egg. It can be eaten raw, but it's much, much better cooked.</description>
+	<graphicData>
+		<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+		<color>(157,188,143)</color>
+		<drawSize>0.7</drawSize>
+	</graphicData>
+	<statBases>
+	  <MarketValue>2.0</MarketValue>
+	</statBases>
   </ThingDef>
 
   <!--================================================ -->

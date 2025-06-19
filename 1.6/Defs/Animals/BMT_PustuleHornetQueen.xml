@@ -20,6 +20,7 @@
 	  <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>70</ComfyTemperatureMax>
 	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	  <Wildness>1</Wildness>
 	</statBases>
 	<tools>
 	  <li>
@@ -71,7 +72,6 @@
 	  <useMeatFrom>Megaspider</useMeatFrom>
 	  <foodType>CarnivoreAnimal</foodType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
-	  <wildness>1</wildness>
 	  <trainability>None</trainability>
 	  <!-- <mateMtbHours>8</mateMtbHours> -->
 	  <!-- <gestationPeriodDays>5.661</gestationPeriodDays> -->
@@ -222,6 +222,7 @@
 	  <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>70</ComfyTemperatureMax>
 	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	  <Wildness>0.1</Wildness>
 	</statBases>
 	<tools>
 	  <li>
@@ -273,7 +274,6 @@
 	  <useMeatFrom>Megaspider</useMeatFrom>
 	  <foodType>CarnivoreAnimal</foodType>
 	  <leatherDef>BMT_FragileChitin</leatherDef>
-	  <wildness>0.10</wildness>
 	  <trainability>None</trainability>
 	  <!-- <mateMtbHours>8</mateMtbHours> -->
 	  <!-- <gestationPeriodDays>5.661</gestationPeriodDays> -->
