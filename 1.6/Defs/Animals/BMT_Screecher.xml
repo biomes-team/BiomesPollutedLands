@@ -11,6 +11,8 @@
 			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
 			<ComfyTemperatureMax>30</ComfyTemperatureMax>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+			<MaxFlightTime>35</MaxFlightTime>
+			<FlightCooldown>10</FlightCooldown>
 			<Wildness>0.75</Wildness>
 		</statBases>
 		<race>
@@ -47,21 +49,10 @@
 				</li>
 			</lifeStageAges>
 		</race>
-		<modExtensions>
-			<li MayRequire="pathfinding.framework"  Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Flying</movementDef>
-			</li>
-			<li MayRequire="pathfinding.framework"  Class="PathfindingFramework.LocomotionMovementExtension">
-				<locomotionUrgencies>
-					<li>Jog</li>
-					<li>Sprint</li>
-				</locomotionUrgencies>
-				<moveSpeedMultiplier>4</moveSpeedMultiplier>
-			</li>
-		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggScreecherFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggScreecherUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>2</eggFertilizationCountMax>
 				<eggLayIntervalDays>9</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -142,6 +133,12 @@
 		<combatPower>55</combatPower>
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<wildGroupSize>4~5</wildGroupSize>
+			<flyingAnimationFramePathPrefix>BMT_PollutedLands/Things/Animal/Screecher/Screecher_Flying_</flyingAnimationFramePathPrefix>
+			<flyingAnimationFrameCount>1</flyingAnimationFrameCount>
+			<flyingAnimationTicksPerFrame>2</flyingAnimationTicksPerFrame>
+			<flyingAnimationDrawSize>1.2</flyingAnimationDrawSize>
+			<flyingAnimationDrawSizeIsMultiplier>false</flyingAnimationDrawSizeIsMultiplier>
+			<flyingAnimationInheritColors>false</flyingAnimationInheritColors>
 		<lifeStages>
 			<li>
 				<label>screecher chick</label>
@@ -175,17 +172,6 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-		<modExtensions>
-			<li MayRequire="pathfinding.framework"  Class="PathfindingFramework.LocomotionGraphicExtension">
-				<locomotionUrgencies>
-					<li>Jog</li>
-					<li>Sprint</li>
-				</locomotionUrgencies>
-				<bodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/Screecher/ScreecherFlying</texPath>
-				</bodyGraphicData>
-			</li>
-		</modExtensions>
 	</PawnKindDef>
 
 	<ThingDef ParentName="EggFertBase">
@@ -197,7 +183,7 @@
 			<drawSize>0.7</drawSize>
 		</graphicData>
 		<statBases>
-			<MarketValue>7.0</MarketValue>
+			<MarketValue>25.0</MarketValue>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
@@ -205,5 +191,17 @@
 				<hatcherPawn>BMT_Screecher</hatcherPawn>
 			</li>
 		</comps>
+	</ThingDef>
+		<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggScreecherUnfertilized</defName>
+		<label>screecher egg (unfert.)</label>
+		<description>An unfertilized screecher egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(255,255,255)</color>
+			<drawSize>0.7</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>12</MarketValue>
+		</statBases>
 	</ThingDef>
 </Defs>

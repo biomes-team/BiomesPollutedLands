@@ -64,6 +64,8 @@
 		<li>(-0.19, 0, 0)</li>
 	  </headPosPerRotation>
 	  <lifeExpectancy>1</lifeExpectancy>
+	  <waterSeeker>true</waterSeeker>
+	  <waterCellCost>1</waterCellCost>
 	  <lifeStageAges>
 		<li>
 		  <def>AnimalBaby</def>
@@ -85,12 +87,7 @@
 	  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 	  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 	  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-	</race>
-		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Aquatic</movementDef>
-			</li>
-		</modExtensions>	
+	</race>	
 	<tradeTags>
 		<li>AnimalCommon</li>
 		<li>AnimalFarm</li>
@@ -100,6 +97,7 @@
 	<comps>
 		<li Class="CompProperties_EggLayer">
 			<eggFertilizedDef>BMT_EggMegakrillFertilized</eggFertilizedDef>
+			<eggUnfertilizedDef>BMT_EggMegakrillUnfertilized</eggUnfertilizedDef>
 			<eggLayIntervalDays>5</eggLayIntervalDays>
 			<!-- <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax> -->
 			<eggCountRange>2~3</eggCountRange>
@@ -163,6 +161,11 @@
 		  <texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill</texPath>
 		  <drawSize>1</drawSize>
 		</bodyGraphicData>
+		<swimmingGraphicData>
+			<texPath>BMT_PollutedLands/Things/Animal/Megakrill/Swimming_Megakrill</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>1</drawSize>
+		</swimmingGraphicData>
 		<dessicatedBodyGraphicData>
 		  <texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill_Dessicated</texPath>
 		  <drawSize>1.0</drawSize>
@@ -173,6 +176,11 @@
 		  <texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill</texPath>
 		  <drawSize>1.25</drawSize>
 		</bodyGraphicData>
+		<swimmingGraphicData>
+			<texPath>BMT_PollutedLands/Things/Animal/Megakrill/Swimming_Megakrill</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>1.25</drawSize>
+		</swimmingGraphicData>
 		<dessicatedBodyGraphicData>
 		  <texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill_Dessicated</texPath>
 		  <drawSize>1.25</drawSize>
@@ -187,24 +195,17 @@
 			<offset>(0,0,0)</offset>
 		  </shadowData>
 		</bodyGraphicData>
+		<swimmingGraphicData>
+			<texPath>BMT_PollutedLands/Things/Animal/Megakrill/Swimming_Megakrill</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>1.5</drawSize>
+		</swimmingGraphicData>
 		<dessicatedBodyGraphicData>
 		  <texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill_Dessicated</texPath>
 		  <drawSize>1.5</drawSize>
 		</dessicatedBodyGraphicData>
 	  </li>
 	</lifeStages>
-		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<bodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/Megakrill/Megakrill_Submerged</texPath>
-				</bodyGraphicData>
-			</li>
-		</modExtensions>
   </PawnKindDef>
 
 </Defs>

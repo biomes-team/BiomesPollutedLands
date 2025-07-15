@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_MutatingTumorfishSpawn</defName>
 		<label>mutating tumorfish spawn</label>
-		<description>The first stage of the tumorfish life cycle. It is still fully aquatic and quite weak.</description>
+		<description>The first stage of the tumorfish life cycle. It is still almost fully aquatic and quite weak.</description>
 		<statBases>
 			<MoveSpeed>3.5</MoveSpeed>
 			<MarketValue>100</MarketValue>
@@ -29,6 +29,8 @@
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<waterSeeker>true</waterSeeker>
+			<waterCellCost>1</waterCellCost>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBabyTiny</def>
@@ -47,12 +49,7 @@
 					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
-		</race>
-		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Aquatic</movementDef>
-			</li>
-		</modExtensions>	
+		</race>	
 		<!--uiIconScale>1.5</uiIconScale-->
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
@@ -105,6 +102,11 @@
 					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Stage1</texPath>
 					<drawSize>0.5</drawSize>
 				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/Swimming_MutatingTumorfish_Stage1</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.5</drawSize>
+				</swimmingGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Dessicated_Stage1</texPath>
 					<drawSize>0.5</drawSize>
@@ -115,6 +117,11 @@
 					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Stage1</texPath>
 					<drawSize>0.70</drawSize>
 				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/Swimming_MutatingTumorfish_Stage1</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.70</drawSize>
+				</swimmingGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Dessicated_Stage1</texPath>
 					<drawSize>0.70</drawSize>
@@ -125,30 +132,23 @@
 					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Stage1</texPath>
 					<drawSize>1</drawSize>
 				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/Swimming_MutatingTumorfish_Stage1</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1</drawSize>
+				</swimmingGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Dessicated_Stage1</texPath>
 					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<bodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Stage1_Submerged</texPath>
-				</bodyGraphicData>
-			</li>
-		</modExtensions>
 	</PawnKindDef>
 	<!-- Pupa -->
 	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_MutatingTumorfishFry</defName>
 		<label>mutating tumorfish fry</label>
-		<description>The second life stage of the tumorfish. It is now bigger and omnivorous, strong enough to hunt when necessary.</description>
+		<description>The second life stage of the tumorfish. It is now bigger and omnivorous, strong enough to hunt when necessary. It has limited movement outside the water.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
@@ -172,6 +172,8 @@
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<waterSeeker>true</waterSeeker>
+			<waterCellCost>1</waterCellCost>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBabyTiny</def>
@@ -191,11 +193,6 @@
 				</li>
 			</lifeStageAges>
 		</race>
-		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Aquatic</movementDef>
-			</li>
-		</modExtensions>	
 		<comps>
 			<li Class="BiomesCore.CompProperties_EvolveAtFixedAge">
 				<ageInDays>18</ageInDays>
@@ -247,6 +244,11 @@
 					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Stage2</texPath>
 					<drawSize>0.8</drawSize>
 				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/Swimming_MutatingTumorfish_Stage2</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.8</drawSize>
+				</swimmingGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Dessicated_Stage2</texPath>
 					<drawSize>0.8</drawSize>
@@ -257,6 +259,11 @@
 					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Stage2</texPath>
 					<drawSize>1</drawSize>
 				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/Swimming_MutatingTumorfish_Stage2</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1</drawSize>
+				</swimmingGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Dessicated_Stage2</texPath>
 					<drawSize>1</drawSize>
@@ -267,24 +274,17 @@
 					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Stage2</texPath>
 					<drawSize>1.6</drawSize>
 				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/Swimming_MutatingTumorfish_Stage2</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.6</drawSize>
+				</swimmingGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Dessicated_Stage2</texPath>
 					<drawSize>1.6</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<bodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Stage2_Submerged</texPath>
-				</bodyGraphicData>
-			</li>
-		</modExtensions>
 	</PawnKindDef>
 	<!-- Adult -->
 		<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
@@ -314,6 +314,8 @@
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<waterSeeker>true</waterSeeker>
+			<waterCellCost>1</waterCellCost>
 			<lifeStageAges>
 				<li>
 					<def>AnimalAdult</def>
@@ -331,7 +333,8 @@
 		</race>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggMutatingTumorfish</eggFertilizedDef>
+				<eggFertilizedDef>BMT_EggMutatingTumorfishFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggMutatingTumorfishUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>15</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -371,11 +374,6 @@
 			<li>AnimalUncommon</li>
 			<li>BMT_PollutedAnimalUncommon</li>
 		</tradeTags>
-		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Amphibious</movementDef>
-			</li>
-		</modExtensions>
 	</ThingDef>
 	
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -391,6 +389,11 @@
 					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Stage3</texPath>
 					<drawSize>0.8</drawSize>
 				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/Swimming_MutatingTumorfish_Stage3</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.8</drawSize>
+				</swimmingGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Dessicated_Stage3</texPath>
 					<drawSize>0.8</drawSize>
@@ -401,6 +404,11 @@
 					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Stage3</texPath>
 					<drawSize>1</drawSize>
 				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/Swimming_MutatingTumorfish_Stage3</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1</drawSize>
+				</swimmingGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Dessicated_Stage3</texPath>
 					<drawSize>1</drawSize>
@@ -411,29 +419,23 @@
 					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Stage3</texPath>
 					<drawSize>1.6</drawSize>
 				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/Swimming_MutatingTumorfish_Stage3</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.6</drawSize>
+				</swimmingGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Dessicated_Stage3</texPath>
 					<drawSize>1.6</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<bodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/MutatingTumorfish/MutatingTumorfish_Stage3_Submerged</texPath>
-				</bodyGraphicData>
-			</li>
-		</modExtensions>
+
 	</PawnKindDef>
 	<!-- Egg -->
 	
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggMutatingTumorfish</defName>
+		<defName>BMT_EggMutatingTumorfishFertilized</defName>
 		<label>mutating tumorfish egg (fert.)</label>
 		<description>A fertilized tumorfish egg. If all goes well, it should hatch into a baby tumorfish. It can be eaten raw, but it's much better cooked. This egg needs to be kept in water to survive.</description>
 		<graphicData>
@@ -456,5 +458,16 @@
 			</li> 
 		</comps>
 	</ThingDef>
-
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggMutatingTumorfishUnfertilized</defName>
+		<label>mutating tumorfish egg (unfert.)</label>
+		<description>An unfertilized mutating tumorfish egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(96,70,70)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>25</MarketValue>
+		</statBases>
+	</ThingDef>
 </Defs>

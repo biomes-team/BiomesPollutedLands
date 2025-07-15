@@ -15,7 +15,7 @@
 	  <graphicClass>Graphic_Random</graphicClass>
 	  <drawSize>1.15</drawSize>
     </graphicData>
-    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
     <selectable>false</selectable>
     <plant>
       <growDays>2.5</growDays>

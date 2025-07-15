@@ -81,6 +81,8 @@
 				</points>
 			</litterSizeCurve>
 			<lifeExpectancy>35</lifeExpectancy>
+		    <waterSeeker>true</waterSeeker>
+			<waterCellCost>1</waterCellCost>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -114,9 +116,6 @@
 			<li Class="BiomesCore.DefModExtensions.CompetitionHunterModExtension">
 				<maleEnabled>true</maleEnabled>
 			</li>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Amphibious</movementDef>
-			</li>
 		</modExtensions>
 	</ThingDef>
 
@@ -132,6 +131,11 @@
 					<texPath>BMT_PollutedLands/Things/Animal/LyncusSeal/LyncusSeal</texPath>
 					<drawSize>1.6</drawSize>
 				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/LyncusSeal/Swimming_LyncusSeal</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.6</drawSize>
+				</swimmingGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/LyncusSeal/LyncusSeal_dessicated</texPath>
 					<drawSize>1.6</drawSize>
@@ -146,6 +150,11 @@
 						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/LyncusSeal/Swimming_LyncusSeal</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2.6</drawSize>
+				</swimmingGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/LyncusSeal/LyncusSeal_dessicated</texPath>
 					<drawSize>2.6</drawSize>
@@ -160,6 +169,11 @@
 						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/LyncusSeal/Swimming_LyncusSeal</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3.6</drawSize>
+				</swimmingGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/LyncusSeal/LyncusSeal_dessicated</texPath>
 					<drawSize>3.6</drawSize>

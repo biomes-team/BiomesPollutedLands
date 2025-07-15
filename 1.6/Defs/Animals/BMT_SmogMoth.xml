@@ -225,6 +225,8 @@
 			<ComfyTemperatureMax>57</ComfyTemperatureMax>
 			<FilthRate>2</FilthRate>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+			<MaxFlightTime>25</MaxFlightTime>
+			<FlightCooldown>10</FlightCooldown>
 			<Wildness>0.75</Wildness>
 		</statBases>
 		<race>
@@ -264,12 +266,11 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_SmogMothEggFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_SmogMothEggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>20</eggFertilizationCountMax>
 				<eggLayIntervalDays>10</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>5~10</eggCountRange>
-			</li>
-			<li Class="AnimalBehaviours.CompProperties_Floating" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
 			</li>
 			<li Class="BiomesCore.CompProperties_LurePrey">
 				<preyApproachTimeout>5000</preyApproachTimeout>
@@ -312,9 +313,6 @@
 			</tradeTags>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Flying</movementDef>
-			</li>
 		</modExtensions>
 	</ThingDef>
 
@@ -324,6 +322,12 @@
 		<race>BMT_SmogMoth</race>
 		<combatPower>75</combatPower>
 		<wildGroupSize>1</wildGroupSize>
+			<flyingAnimationFramePathPrefix>BMT_PollutedLands/Things/Animal/SmogMoth/SmogMoth_Flying_</flyingAnimationFramePathPrefix>
+			<flyingAnimationFrameCount>1</flyingAnimationFrameCount>
+			<flyingAnimationTicksPerFrame>2</flyingAnimationTicksPerFrame>
+			<flyingAnimationDrawSize>1</flyingAnimationDrawSize>
+			<flyingAnimationDrawSizeIsMultiplier>false</flyingAnimationDrawSizeIsMultiplier>
+			<flyingAnimationInheritColors>false</flyingAnimationInheritColors>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -357,5 +361,17 @@
 			</li>
 		</comps>
 	</ThingDef>
-
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_SmogMothEggUnfertilized</defName>
+		<label>smog moth egg (unfert.)</label>
+		<description>An unfertilized smog moth egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+		<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(225,239,152)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+		</statBases>
+	</ThingDef>
 </Defs>

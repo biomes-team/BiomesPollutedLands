@@ -14,6 +14,8 @@
 			<FilthRate>3</FilthRate>
 			<CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
 		    <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+			<MaxFlightTime>10</MaxFlightTime>
+			<FlightCooldown>20</FlightCooldown>
 			<Wildness>0.6</Wildness>
 		</statBases>
 		<race>
@@ -54,21 +56,10 @@
 				</li>
 			</lifeStageAges>
 		</race>
-		<modExtensions>
-			<li MayRequire="pathfinding.framework"  Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Flying</movementDef>
-			</li>
-			<li MayRequire="pathfinding.framework"  Class="PathfindingFramework.LocomotionMovementExtension">
-				<locomotionUrgencies>
-					<li>Jog</li>
-					<li>Sprint</li>
-				</locomotionUrgencies>
-				<moveSpeedMultiplier>2</moveSpeedMultiplier>
-			</li>
-		</modExtensions>
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggSacapillarFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggSacapillarUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>2</eggFertilizationCountMax>
 				<eggLayIntervalDays>9</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -115,6 +106,12 @@
 		<ecoSystemWeight>0.5</ecoSystemWeight>
 		<wildGroupSize>1~3</wildGroupSize>
 		<canArriveManhunter>true</canArriveManhunter>
+			<flyingAnimationFramePathPrefix>BMT_PollutedLands/Things/Animal/SacaPillar/SacaPillar_Flying_</flyingAnimationFramePathPrefix>
+			<flyingAnimationFrameCount>1</flyingAnimationFrameCount>
+			<flyingAnimationTicksPerFrame>2</flyingAnimationTicksPerFrame>
+			<flyingAnimationDrawSize>1</flyingAnimationDrawSize>
+			<flyingAnimationDrawSizeIsMultiplier>false</flyingAnimationDrawSizeIsMultiplier>
+			<flyingAnimationInheritColors>false</flyingAnimationInheritColors>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -169,5 +166,17 @@
 			</li>
 		</comps>
 	</ThingDef>
-
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggSacapillarUnfertilized</defName>
+		<label>sacapillar egg (unfert.)</label>
+		<description>An unfertilized sacapillar egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(170,85,54)</color>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>12</MarketValue>
+		</statBases>
+	</ThingDef>
 </Defs>

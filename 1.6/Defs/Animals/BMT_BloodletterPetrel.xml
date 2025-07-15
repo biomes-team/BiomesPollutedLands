@@ -11,6 +11,8 @@
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+			<MaxFlightTime>25</MaxFlightTime>
+			<FlightCooldown>10</FlightCooldown>
 			<Wildness>0.75</Wildness>
 		</statBases>
 		<race>
@@ -47,16 +49,6 @@
 			</lifeStageAges>
 		</race>
 		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Flying</movementDef>
-			</li>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.LocomotionMovementExtension">
-				<locomotionUrgencies>
-					<li>Jog</li>
-					<li>Sprint</li>
-				</locomotionUrgencies>
-				<moveSpeedMultiplier>4</moveSpeedMultiplier>
-			</li>
 			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
 				<isBloodDrinkingAnimal>true</isBloodDrinkingAnimal>
 			</li>
@@ -64,6 +56,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggBloodletterPetrelFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggBloodletterPetrelUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>2</eggFertilizationCountMax>
 				<eggLayIntervalDays>9</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -135,9 +128,15 @@
 		<combatPower>45</combatPower>
 		<ecoSystemWeight>0.3</ecoSystemWeight>
 		<wildGroupSize>2~3</wildGroupSize>
+			<flyingAnimationFramePathPrefix>BMT_PollutedLands/Things/Animal/BloodletterPetrel/BloodletterPetrel_Flying_</flyingAnimationFramePathPrefix>
+			<flyingAnimationFrameCount>1</flyingAnimationFrameCount>
+			<flyingAnimationTicksPerFrame>2</flyingAnimationTicksPerFrame>
+			<flyingAnimationDrawSize>1.2</flyingAnimationDrawSize>
+			<flyingAnimationDrawSizeIsMultiplier>false</flyingAnimationDrawSizeIsMultiplier>
+			<flyingAnimationInheritColors>false</flyingAnimationInheritColors>
 		<lifeStages>
 			<li>
-				<label>carrion vulture chick</label>
+				<label>bloodletter petrel chick</label>
 				<bodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/BloodletterPetrel/BloodletterPetrel</texPath>
 					<drawSize>0.75</drawSize>
@@ -168,17 +167,7 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.LocomotionGraphicExtension">
-				<locomotionUrgencies>
-					<li>Jog</li>
-					<li>Sprint</li>
-				</locomotionUrgencies>
-				<bodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/BloodletterPetrel/BloodletterPetrelFlying</texPath>
-				</bodyGraphicData>
-			</li>
-		</modExtensions>
+
 	</PawnKindDef>
 
 	<ThingDef ParentName="EggFertBase">

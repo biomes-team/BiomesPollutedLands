@@ -124,6 +124,7 @@
 		</li>
 		<li Class="CompProperties_EggLayer">
 			<eggFertilizedDef>BMT_EggGlowtailFertilized</eggFertilizedDef>
+			<eggUnfertilizedDef>BMT_EggGlowtailUnfertilized</eggUnfertilizedDef>
 			<eggFertilizationCountMax>1</eggFertilizationCountMax>
 			<eggLayIntervalDays>5.661</eggLayIntervalDays>
 			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>

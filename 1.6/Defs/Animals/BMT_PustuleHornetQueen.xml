@@ -12,7 +12,7 @@
 	<!-- too long. out of name field -->
 	<!-- <label>pustule hornet queen</label> -->
 	<label>pustule queen</label>
-	<description>Unlike most other insect queens, this matriarch is very dangerous. She is nearly as fast as her spawn and packs a greater punch with her stings. Her stings inject a more potent version her species' neurotoxin, allowing for her swarm to quickly overpower anything living in their way.</description>
+	<description>Unlike most other insect queens, this matriarch is very dangerous. She is nearly as fast as her spawn and packs a greater punch with her stings. Her stings inject a more potent version her species' neurotoxin, allowing for her swarm to quickly overpower anything living in their way. The sheer bulk of her body prevents especially long active flights, forcing her to slow her movement for longer periods than drones.</description>
 	<uiIconScale>1.5</uiIconScale>
 	<statBases>
 	  <MoveSpeed>3.0</MoveSpeed>
@@ -20,6 +20,8 @@
 	  <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>70</ComfyTemperatureMax>
 	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	  <MaxFlightTime>100</MaxFlightTime>
+	  <FlightCooldown>50</FlightCooldown>
 	  <Wildness>1</Wildness>
 	</statBases>
 	<tools>
@@ -141,16 +143,6 @@
 	  <!-- <li>BMT_PollutedAnimalFighter</li> -->
 	<!-- </tradeTags> -->
 		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Flying</movementDef>
-			</li>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.LocomotionMovementExtension">
-				<locomotionUrgencies>
-					<li>Jog</li>
-					<li>Sprint</li>
-				</locomotionUrgencies>
-				<moveSpeedMultiplier>1.5</moveSpeedMultiplier>
-			</li>
 			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
 		</modExtensions>
   </ThingDef>
@@ -167,6 +159,12 @@
 	<race>BMT_PustuleHornetQueen</race>
 	<combatPower>150</combatPower>
     <defaultFactionType>BMT_PustuleHornets</defaultFactionType>
+			<flyingAnimationFramePathPrefix>BMT_PollutedLands/Things/Animal/PustuleHornetQueen/PustuleHornetQueen_Flying_</flyingAnimationFramePathPrefix>
+			<flyingAnimationFrameCount>1</flyingAnimationFrameCount>
+			<flyingAnimationTicksPerFrame>2</flyingAnimationTicksPerFrame>
+			<flyingAnimationDrawSize>1.2</flyingAnimationDrawSize>
+			<flyingAnimationDrawSizeIsMultiplier>false</flyingAnimationDrawSizeIsMultiplier>
+			<flyingAnimationInheritColors>false</flyingAnimationInheritColors>
 	<lifeStages>
 	  <li>
 		<bodyGraphicData>
@@ -222,6 +220,8 @@
 	  <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>70</ComfyTemperatureMax>
 	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	  <MaxFlightTime>100</MaxFlightTime>
+	  <FlightCooldown>50</FlightCooldown>
 	  <Wildness>0.1</Wildness>
 	</statBases>
 	<tools>
@@ -340,16 +340,6 @@
 	  <!-- <li>BMT_PollutedAnimalFighter</li> -->
 	<!-- </tradeTags> -->
 		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Flying</movementDef>
-			</li>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.LocomotionMovementExtension">
-				<locomotionUrgencies>
-					<li>Jog</li>
-					<li>Sprint</li>
-				</locomotionUrgencies>
-				<moveSpeedMultiplier>1.5</moveSpeedMultiplier>
-			</li>
 			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
 		</modExtensions>
   </ThingDef>
@@ -365,6 +355,12 @@
 	<label>pustule queen</label>
 	<race>BMT_ColonyPustuleHornetQueen</race>
 	<combatPower>100</combatPower>
+			<flyingAnimationFramePathPrefix>BMT_PollutedLands/Things/Animal/PustuleHornetQueen/PustuleHornetQueen_Flying_</flyingAnimationFramePathPrefix>
+			<flyingAnimationFrameCount>1</flyingAnimationFrameCount>
+			<flyingAnimationTicksPerFrame>2</flyingAnimationTicksPerFrame>
+			<flyingAnimationDrawSize>1.2</flyingAnimationDrawSize>
+			<flyingAnimationDrawSizeIsMultiplier>false</flyingAnimationDrawSizeIsMultiplier>
+			<flyingAnimationInheritColors>false</flyingAnimationInheritColors>
 	<lifeStages>
 	  <li>
 		<bodyGraphicData>

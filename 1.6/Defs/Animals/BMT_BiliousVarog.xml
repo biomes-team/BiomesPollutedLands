@@ -101,6 +101,7 @@
 	<comps>
 	  <li Class="CompProperties_EggLayer">
 		<eggFertilizedDef>BMT_EggBiliousVarogFertilized</eggFertilizedDef>
+		<eggUnfertilizedDef>BMT_EggBiliousVarogUnfertilized</eggUnfertilizedDef>
 		<eggFertilizationCountMax>1</eggFertilizationCountMax>
 		<eggLayIntervalDays>4.861</eggLayIntervalDays>
 		<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -128,6 +129,8 @@
 	  <trainability>Intermediate</trainability>
 	  <petness>0.02</petness>
 	  <lifeExpectancy>40</lifeExpectancy>
+	  <waterSeeker>true</waterSeeker>
+      <waterCellCost>1</waterCellCost>
 	  <lifeStageAges>
 		<li>
 		  <def>AnimalBaby</def>
@@ -163,11 +166,6 @@
 	  <li>BMT_PollutedAnimalUncommon</li>
 	  <li>BMT_PollutedAnimalFighter</li>
 	</tradeTags>
-	<modExtensions>
-		<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-			<movementDef>PF_Movement_Amphibious</movementDef>
-		</li>
-	</modExtensions>
   </ThingDef>
 
   <HediffDef>
@@ -204,6 +202,11 @@
 		  <texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/BiliousVarog</texPath>
 		  <drawSize>3</drawSize>
 		</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/Swimming_BiliousVarog</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2.4</drawSize>
+				</swimmingGraphicData>
 		<dessicatedBodyGraphicData>
 		  <texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/BiliousVarog_dessicated</texPath>
 		  <drawSize>3</drawSize>
@@ -214,6 +217,11 @@
 		  <texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/BiliousVarog</texPath>
 		  <drawSize>3.25</drawSize>
 		</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/Swimming_BiliousVarog</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3.25</drawSize>
+				</swimmingGraphicData>
 		<dessicatedBodyGraphicData>
 		  <texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/BiliousVarog_dessicated</texPath>
 		  <drawSize>3.25</drawSize>
@@ -228,6 +236,11 @@
 			<offset>(0,0,0)</offset>
 		  </shadowData>
 		</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/Swimming_BiliousVarog</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3.55</drawSize>
+				</swimmingGraphicData>
 		<dessicatedBodyGraphicData>
 		  <texPath>BMT_PollutedLands/Things/Animal/BiliousVarog/BiliousVarog_dessicated</texPath>
 		  <drawSize>3.55</drawSize>

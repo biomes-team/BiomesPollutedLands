@@ -28,6 +28,7 @@
 			</li>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggSludgeCrawlerFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggSludgeCrawlerUnfertilized</eggUnfertilizedDef>
 				<eggLayIntervalDays>20</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>
@@ -191,5 +192,17 @@
 			</li>
 		</comps>
 	</ThingDef>
-
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggSludgeCrawlerUnfertilized</defName>
+		<label>sludgecrawler egg (unfert.)</label>
+		<description>An unfertilized sludgecrawler egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>BMT_Core/Things/Item/Eggs/OvoidBugEggs</texPath>
+			<color>(167,198,153)</color>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>12</MarketValue>
+		</statBases>
+	</ThingDef>
 </Defs>

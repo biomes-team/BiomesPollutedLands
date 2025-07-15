@@ -20,6 +20,8 @@
 	  <MeatAmount>5</MeatAmount>
 	  <LeatherAmount>5</LeatherAmount>
 	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	  <MaxFlightTime>30</MaxFlightTime>
+	  <FlightCooldown>10</FlightCooldown>
 	  <Wildness>0.3</Wildness>
 	</statBases>
 	<tools>
@@ -133,16 +135,6 @@
 	  <!-- <li>BMT_PollutedAnimalFighter</li> -->
 	<!-- </tradeTags> -->
 		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Flying</movementDef>
-			</li>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.LocomotionMovementExtension">
-				<locomotionUrgencies>
-					<li>Jog</li>
-					<li>Sprint</li>
-				</locomotionUrgencies>
-				<moveSpeedMultiplier>2</moveSpeedMultiplier>
-			</li>
 			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
 		</modExtensions>
   </ThingDef>
@@ -157,6 +149,12 @@
 	<race>BMT_PustuleHornet</race>
 	<combatPower>75</combatPower>
 	<defaultFactionType>BMT_PustuleHornets</defaultFactionType>
+			<flyingAnimationFramePathPrefix>BMT_PollutedLands/Things/Animal/PustuleHornet/PustuleHornet_Flying_</flyingAnimationFramePathPrefix>
+			<flyingAnimationFrameCount>1</flyingAnimationFrameCount>
+			<flyingAnimationTicksPerFrame>2</flyingAnimationTicksPerFrame>
+			<flyingAnimationDrawSize>1.2</flyingAnimationDrawSize>
+			<flyingAnimationDrawSizeIsMultiplier>false</flyingAnimationDrawSizeIsMultiplier>
+			<flyingAnimationInheritColors>false</flyingAnimationInheritColors>
 	<lifeStages>
 	  <li>
 		<bodyGraphicData>
@@ -208,6 +206,8 @@
 	  <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>70</ComfyTemperatureMax>
 	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	  <MaxFlightTime>30</MaxFlightTime>
+	  <FlightCooldown>10</FlightCooldown>
 	  <Wildness>0.3</Wildness>
 	</statBases>
 	<tools>
@@ -320,16 +320,6 @@
 	  <!-- <li>BMT_PollutedAnimalFighter</li> -->
 	<!-- </tradeTags> -->
 		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Flying</movementDef>
-			</li>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.LocomotionMovementExtension">
-				<locomotionUrgencies>
-					<li>Jog</li>
-					<li>Sprint</li>
-				</locomotionUrgencies>
-				<moveSpeedMultiplier>2</moveSpeedMultiplier>
-			</li>
 			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
 		</modExtensions>
   </ThingDef>
@@ -344,6 +334,12 @@
 	<race>BMT_PustuleHornetSpawned</race>
 	<combatPower>75</combatPower>
 	<defaultFactionType>BMT_PustuleHornets</defaultFactionType>
+			<flyingAnimationFramePathPrefix>BMT_PollutedLands/Things/Animal/PustuleHornet/PustuleHornet_Flying_</flyingAnimationFramePathPrefix>
+			<flyingAnimationFrameCount>1</flyingAnimationFrameCount>
+			<flyingAnimationTicksPerFrame>2</flyingAnimationTicksPerFrame>
+			<flyingAnimationDrawSize>1.2</flyingAnimationDrawSize>
+			<flyingAnimationDrawSizeIsMultiplier>false</flyingAnimationDrawSizeIsMultiplier>
+			<flyingAnimationInheritColors>false</flyingAnimationInheritColors>
 	<lifeStages>
 	  <li>
 		<bodyGraphicData>
@@ -397,6 +393,8 @@
 	  <ComfyTemperatureMin>-60</ComfyTemperatureMin>
 	  <ComfyTemperatureMax>70</ComfyTemperatureMax>
 	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1.0</ToxicEnvironmentResistance>
+	  <MaxFlightTime>30</MaxFlightTime>
+	  <FlightCooldown>10</FlightCooldown>
 	  <Wildness>0.3</Wildness>
 	</statBases>
 	<tools>
@@ -511,16 +509,6 @@
 	  <!-- <li>BMT_PollutedAnimalFighter</li> -->
 	<!-- </tradeTags> -->
 		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Flying</movementDef>
-			</li>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.LocomotionMovementExtension">
-				<locomotionUrgencies>
-					<li>Jog</li>
-					<li>Sprint</li>
-				</locomotionUrgencies>
-				<moveSpeedMultiplier>2</moveSpeedMultiplier>
-			</li>
 			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl" />
 		</modExtensions>
   </ThingDef>
@@ -537,6 +525,12 @@
 	<race>BMT_ColonyPustuleHornet</race>
 	<combatPower>75</combatPower>
 	<wildGroupSize>1~2</wildGroupSize>
+			<flyingAnimationFramePathPrefix>BMT_PollutedLands/Things/Animal/PustuleHornet/PustuleHornet_Flying_</flyingAnimationFramePathPrefix>
+			<flyingAnimationFrameCount>1</flyingAnimationFrameCount>
+			<flyingAnimationTicksPerFrame>2</flyingAnimationTicksPerFrame>
+			<flyingAnimationDrawSize>1.2</flyingAnimationDrawSize>
+			<flyingAnimationDrawSizeIsMultiplier>false</flyingAnimationDrawSizeIsMultiplier>
+			<flyingAnimationInheritColors>false</flyingAnimationInheritColors>
 	<lifeStages>
 	  <li>
 		<bodyGraphicData>

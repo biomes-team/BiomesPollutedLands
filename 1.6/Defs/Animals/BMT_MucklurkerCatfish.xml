@@ -31,6 +31,8 @@
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		    <waterSeeker>true</waterSeeker>
+			<waterCellCost>1</waterCellCost>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBabyTiny</def>
@@ -54,11 +56,6 @@
 			<li>AnimalUncommon</li>
 			<li>BMT_PollutedUncommon</li>
 		</tradeTags>
-		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Aquatic</movementDef>
-			</li>
-		</modExtensions>	
 	<comps>
 			<li Class="BiomesCore.CompProperties_LurePrey">
 				<preyApproachTimeout>5000</preyApproachTimeout>
@@ -90,7 +87,8 @@
         </timeDamageCurve>
 		</li>
 			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>BMT_EggMucklurkerCatfish</eggFertilizedDef>
+				<eggFertilizedDef>BMT_EggMucklurkerCatfishFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggMucklurkerCatfishUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>15</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -146,6 +144,11 @@
 					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish</texPath>
 					<drawSize>0.75</drawSize>
 				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/Swimming_MucklurkerCatfish</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.75</drawSize>
+				</swimmingGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish_dessicated</texPath>
 					<drawSize>0.75</drawSize>
@@ -156,6 +159,11 @@
 					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish</texPath>
 					<drawSize>1.0</drawSize>
 				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/Swimming_MucklurkerCatfish</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.0</drawSize>
+				</swimmingGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish_dessicated</texPath>
 					<drawSize>1.0</drawSize>
@@ -166,28 +174,21 @@
 					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish</texPath>
 					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/Swimming_MucklurkerCatfish</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.5</drawSize>
+				</swimmingGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish_dessicated</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<bodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/MucklurkerCatfish/MucklurkerCatfish_Submerged</texPath>
-				</bodyGraphicData>
-			</li>
-		</modExtensions>
 	</PawnKindDef>
 
 	<ThingDef ParentName="EggFertBase">
-		<defName>BMT_EggMucklurkerCatfish</defName>
+		<defName>BMT_EggMucklurkerCatfishFertilized</defName>
 		<label>mucklurker catfish egg (fert.)</label>
 		<description>A fertilized mucklurker catfish egg. If all goes well, it should hatch into a baby catfish. It can be eaten raw, but it's much better cooked. This egg needs to be kept in water to survive.</description>
 		<graphicData>

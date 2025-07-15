@@ -16,7 +16,7 @@
       <texPath>BMT_PollutedLands/Things/Plant/PaganThorns</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
-    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
     <ingestible />
     <plant>
       <pollution>PollutedOnly</pollution>

@@ -22,9 +22,10 @@
       <baseHealthScale>0.6</baseHealthScale>
       <foodType>OmnivoreRoughAnimal</foodType>
       <leatherDef>Leather_Lizard</leatherDef>
-      <wildness>0.75</wildness>
 	  <trainability>Intermediate</trainability>
       <lifeExpectancy>150</lifeExpectancy>
+      <waterSeeker>true</waterSeeker>
+      <waterCellCost>1</waterCellCost>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>
@@ -62,11 +63,6 @@
 	  <li>BMT_PollutedAnimalCommon</li>
 	  <li>BMT_PollutedAnimalPet</li>
 	</tradeTags>
-		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Amphibious</movementDef>
-			</li>
-		</modExtensions>
     <tools>
       <li>
         <label>beak</label>
@@ -92,6 +88,7 @@
 	<comps>
 		<li Class="CompProperties_EggLayer">
 			<eggFertilizedDef>BMT_EggTaintedTurtleFertilized</eggFertilizedDef>
+			<eggUnfertilizedDef>BMT_EggTaintedTurtleUnfertilized</eggUnfertilizedDef>
 			<eggFertilizationCountMax>1</eggFertilizationCountMax>
 			<eggLayIntervalDays>6.66</eggLayIntervalDays>
 			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -120,6 +117,11 @@
 		  <texPath>BMT_PollutedLands/Things/Animal/TaintedTurtle/TaintedTurtle</texPath>
 		  <drawSize>0.6</drawSize>
 		</bodyGraphicData>
+		<swimmingGraphicData>
+			<texPath>BMT_PollutedLands/Things/Animal/TaintedTurtle/Swimming_TaintedTurtle</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>0.6</drawSize>
+		</swimmingGraphicData>
 		<dessicatedBodyGraphicData>
 		  <texPath>BMT_PollutedLands/Things/Animal/TaintedTurtle/Dessicated_TaintedTurtle</texPath>
 		  <drawSize>0.6</drawSize>
@@ -130,6 +132,11 @@
 		  <texPath>BMT_PollutedLands/Things/Animal/TaintedTurtle/TaintedTurtle</texPath>
 		  <drawSize>0.8</drawSize>
 		</bodyGraphicData>
+		<swimmingGraphicData>
+			<texPath>BMT_PollutedLands/Things/Animal/TaintedTurtle/Swimming_TaintedTurtle</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>0.8</drawSize>
+		</swimmingGraphicData>
 		<dessicatedBodyGraphicData>
 		  <texPath>BMT_PollutedLands/Things/Animal/TaintedTurtle/Dessicated_TaintedTurtle</texPath>
 		  <drawSize>0.8</drawSize>
@@ -144,6 +151,11 @@
 			<offset>(0,0,-0.15)</offset>
 		  </shadowData>
 		</bodyGraphicData>
+		<swimmingGraphicData>
+			<texPath>BMT_PollutedLands/Things/Animal/TaintedTurtle/Swimming_TaintedTurtle</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>1.0</drawSize>
+		</swimmingGraphicData>
 		<dessicatedBodyGraphicData>
 		  <texPath>BMT_PollutedLands/Things/Animal/TaintedTurtle/Dessicated_TaintedTurtle</texPath>
 		  <drawSize>1.0</drawSize>
@@ -170,5 +182,18 @@
 				<hatcherPawn>BMT_TaintedTurtle</hatcherPawn>
 			</li>
 		</comps>
+	</ThingDef>
+		<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggTaintedTurtleUnfertilized</defName>
+		<label>tainted turtle egg (unfert.)</label>
+		<description>An unfertilized tainted turtle egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(230,212,193)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>25</MarketValue>
+		</statBases>
 	</ThingDef>
 </Defs>

@@ -25,6 +25,8 @@
 			<trainability>None</trainability>
 			<mateMtbHours>8</mateMtbHours>
 			<lifeExpectancy>0.1</lifeExpectancy>
+	        <waterSeeker>true</waterSeeker>
+			<waterCellCost>1</waterCellCost>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBabyTiny</def>
@@ -95,21 +97,8 @@
 			</li>
 		</tools>
 		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Aquatic</movementDef>
-			</li>
 			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
 				<isBottomFeeder>true</isBottomFeeder>
-			</li>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.TerrainTagGraphicExtension">
-				<terrainTags>
-					<li>PF_TerrainTag_WaterShallow</li>
-					<li>PF_TerrainTag_WaterChest</li>
-					<li>PF_TerrainTag_WaterDeep</li>
-				</terrainTags>
-				<bodyGraphicData>
-					<texPath>BMT_PollutedLands/Things/Animal/GastroToad/Polluwog_submerged</texPath>
-				</bodyGraphicData>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -127,6 +116,11 @@
 					<texPath>BMT_PollutedLands/Things/Animal/GastroToad/Polluwog</texPath>
 					<drawSize>0.45</drawSize>
 				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/GastroToad/Swimming_Polluwog</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.45</drawSize>
+				</swimmingGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/GastroToad/Dessicated_Polluwog_east</texPath>
 					<drawSize>0.45</drawSize>
@@ -137,6 +131,11 @@
 					<texPath>BMT_PollutedLands/Things/Animal/GastroToad/Polluwog</texPath>
 					<drawSize>0.75</drawSize>
 				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/GastroToad/Swimming_Polluwog</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.75</drawSize>
+				</swimmingGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/GastroToad/Dessicated_Polluwog_east</texPath>
 					<drawSize>0.75</drawSize>
@@ -147,6 +146,11 @@
 					<texPath>BMT_PollutedLands/Things/Animal/GastroToad/Polluwog</texPath>
 					<drawSize>1</drawSize>
 				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/GastroToad/Swimming_Polluwog</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1</drawSize>
+				</swimmingGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/GastroToad/Dessicated_Polluwog_east</texPath>
 					<drawSize>1</drawSize>
@@ -239,6 +243,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggGastroToadFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggGastroToadUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>6</eggFertilizationCountMax>
 				<eggLayIntervalDays>5</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -261,6 +266,8 @@
 			<trainability>Intermediate</trainability>
 			<mateMtbHours>8</mateMtbHours>
 			<lifeExpectancy>10</lifeExpectancy>
+		    <waterSeeker>true</waterSeeker>
+			<waterCellCost>1</waterCellCost>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBabyTiny</def>
@@ -291,9 +298,6 @@
 			<li>BMT_PollutedAnimalCommon</li>
 		</tradeTags>
 		<modExtensions>
-			<li MayRequire="pathfinding.framework" Class="PathfindingFramework.MovementExtension">
-				<movementDef>PF_Movement_Amphibious</movementDef>
-			</li>
 			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
 				<isBottomFeeder>true</isBottomFeeder>
 			</li>
@@ -313,6 +317,11 @@
 					<texPath>BMT_PollutedLands/Things/Animal/GastroToad/GastroToad</texPath>
 					<drawSize>0.45</drawSize>
 				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/GastroToad/Swimming_GastroToad</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.45</drawSize>
+				</swimmingGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/GastroToad/Dessicated_GastroToad</texPath>
 					<drawSize>0.45</drawSize>
@@ -324,6 +333,11 @@
 					<texPath>BMT_PollutedLands/Things/Animal/GastroToad/GastroToad</texPath>
 					<drawSize>0.75</drawSize>
 				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/GastroToad/Swimming_GastroToad</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.75</drawSize>
+				</swimmingGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/GastroToad/Dessicated_GastroToad</texPath>
 					<drawSize>0.75</drawSize>
@@ -338,6 +352,11 @@
 						<offset>(0,0,-0.05)</offset>
 					</shadowData>
 				</bodyGraphicData>
+				<swimmingGraphicData>
+					<texPath>BMT_PollutedLands/Things/Animal/GastroToad/Swimming_GastroToad</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>0.87</drawSize>
+				</swimmingGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>BMT_PollutedLands/Things/Animal/GastroToad/Dessicated_GastroToad</texPath>
 					<drawSize>0.87</drawSize>
@@ -371,15 +390,15 @@
 	</ThingDef>
 
   <ThingDef ParentName="EggUnfertBase">
-	<defName>BMT_EggGastrotoadUnfertilized</defName>
+	<defName>BMT_EggGastroToadUnfertilized</defName>
 	<label>gastro toad egg (unfert.)</label>
-	<description>An unfertilized gastrotoad egg. It can be eaten raw, but it's much, much better cooked.</description>
+	<description>An unfertilized gastro toad egg. It can be eaten raw, but it's much, much better cooked.</description>
 	<graphicData>
 			<texPath>BMT_PollutedLands/Things/Item/Eggs/GastroToadEggs</texPath>
 			<drawSize>0.75</drawSize>
 	</graphicData>
 	<statBases>
-	  <MarketValue>2.0</MarketValue>
+	  <MarketValue>25.0</MarketValue>
 	</statBases>
   </ThingDef>
 </Defs>

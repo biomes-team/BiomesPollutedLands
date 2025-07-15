@@ -76,6 +76,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggNorpheaFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggNorpheaUnfertilized</eggUnfertilizedDef>
 				<eggLayIntervalDays>7</eggLayIntervalDays>
 				<!-- <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax> -->
 				<eggCountRange>2~5</eggCountRange>
