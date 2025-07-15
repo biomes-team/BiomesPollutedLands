@@ -17,7 +17,7 @@
         <label>toxin dependence</label>
         <description>TBD</description>
         <hediffClass>BMT_PollutedLands.Hediff_ToxinDependence</hediffClass>
-        <causesNeed>ToxinDependence</causesNeed>
+        <chemicalNeed>ToxinDependence</chemicalNeed>
         <everCurableByItem>false</everCurableByItem>
         <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
         <initialSeverity>0.5</initialSeverity>
