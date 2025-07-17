@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Odyssey</li>
+		</mods>
+		<nomatch Class="PatchOperationFindMod">
+			<mods>
+				<li>Vanilla Fishing Expanded</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+
+					<li Class="PatchOperationAdd">
+					  <xpath>/Defs</xpath> 
+					  <value>
+
+						<VCE_Fishing.FishDef>
+							<defName>BMT_Tumorfish</defName>
+							<thingDef>BMT_Tumorfish</thingDef>
+							<fishSizeCategory>Small</fishSizeCategory>
+							<canBeFreshwater>true</canBeFreshwater>
+							<canBeSaltwater>true</canBeSaltwater>
+							<allowPolluted>true</allowPolluted>
+							<anyBiomeAllowed>true</anyBiomeAllowed>
+							<onlyPolluted>true</onlyPolluted>
+							<allowedBiomes/>
+							<baseFishingYield>22</baseFishingYield>
+							<!-- <modExtensions> -->
+								<!-- <li Class="BMT_PollutedFish.FishExtension"> -->
+									<!-- <isPollutedFish>true</isPollutedFish> -->
+								<!-- </li> -->
+							<!-- </modExtensions> -->
+						</VCE_Fishing.FishDef>
+
+						<VCE_Fishing.FishDef>
+							<defName>BMT_Megaleech</defName>
+							<thingDef>BMT_Megaleech</thingDef>
+							<fishSizeCategory>Medium</fishSizeCategory>
+							<canBeFreshwater>true</canBeFreshwater>
+							<canBeSaltwater>true</canBeSaltwater>
+							<allowPolluted>true</allowPolluted>
+							<anyBiomeAllowed>true</anyBiomeAllowed>
+							<onlyPolluted>true</onlyPolluted>
+							<allowedBiomes/>
+							<baseFishingYield>13</baseFishingYield>
+							<!-- <modExtensions> -->
+								<!-- <li Class="BMT_PollutedFish.FishExtension"> -->
+									<!-- <isPollutedFish>true</isPollutedFish> -->
+								<!-- </li> -->
+							<!-- </modExtensions> -->
+						</VCE_Fishing.FishDef>
+
+						<VCE_Fishing.FishDef>
+							<defName>BMT_Gaspar</defName>
+							<thingDef>BMT_Gaspar</thingDef>
+							<fishSizeCategory>Large</fishSizeCategory>
+							<canBeFreshwater>true</canBeFreshwater>
+							<canBeSaltwater>true</canBeSaltwater>
+							<allowPolluted>true</allowPolluted>
+							<anyBiomeAllowed>true</anyBiomeAllowed>
+							<onlyPolluted>true</onlyPolluted>
+							<allowedBiomes/>
+							<baseFishingYield>5</baseFishingYield>
+							<!-- <modExtensions> -->
+								<!-- <li Class="BMT_PollutedFish.FishExtension"> -->
+									<!-- <isPollutedFish>true</isPollutedFish> -->
+								<!-- </li> -->
+							<!-- </modExtensions> -->
+						</VCE_Fishing.FishDef>
+
+						<!--=====================================================================-->
+						<!--=============================== Fish ================================-->
+						<!--=====================================================================-->
+
+						<ThingDef ParentName="VCEF_RawFishBase">
+							<defName>BMT_Tumorfish</defName>
+							<label>tumorfish</label>
+							<description>Despite their bodies being lumpy and gross-looking, they are fairly nutritious.</description>
+							<graphicData>
+								<texPath>BMT_PollutedLands/Things/Item/Fishes/Tumorfish</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<statBases>
+								<Mass>0.01</Mass>
+								<Nutrition>0.01</Nutrition>
+								<MarketValue>0.22</MarketValue>
+							</statBases>
+							<ingestible>
+								<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+							</ingestible>
+							<uiIconForStackCount>1</uiIconForStackCount>
+						</ThingDef>
+
+						<!-- ================================================ -->
+
+						<ThingDef ParentName="VCEF_RawFishBase">
+							<defName>BMT_Megaleech</defName>
+							<label>megaleech</label>
+							<description>Thankfully these leeches are not currently filled with blood, but they are filled with nutrients.</description>
+							<graphicData>
+								<texPath>BMT_PollutedLands/Things/Item/Fishes/Megaleech</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<statBases>
+								<Mass>0.10</Mass>
+								<Nutrition>0.1</Nutrition>
+								<MarketValue>2.25</MarketValue>
+							</statBases>
+							<ingestible>
+								<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+							</ingestible>
+							<uiIconForStackCount>1</uiIconForStackCount>
+						</ThingDef>
+
+						<!-- ================================================ -->
+
+						<ThingDef ParentName="VCEF_RawFishBase">
+							<defName>BMT_Gaspar</defName>
+							<label>gaspar</label>
+							<description>With a body covered in toxic pustules, it has to be cooked properly to prevent food poisoning.</description>
+							<graphicData>
+								<texPath>BMT_PollutedLands/Things/Item/Fishes/Gaspar</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<statBases>
+								<Mass>0.25</Mass>
+								<Nutrition>0.25</Nutrition>
+								<MarketValue>5.5</MarketValue>
+							</statBases>
+							<ingestible>
+								<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+							</ingestible>
+							<uiIconForStackCount>1</uiIconForStackCount>
+						</ThingDef>
+
+					  </value>
+					</li>
+
+				</operations>
+			</match>
+		</nomatch>
+	</Operation>
+
+</Patch>
