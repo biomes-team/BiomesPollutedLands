@@ -125,7 +125,7 @@
 		<drawData>
 			<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
 			<dataNorth>
-			  <offset>(-0.14, 0.4, 0.07)</offset>
+			  <offset>(-0.14, 0.1, 0.07)</offset>
 			  <rotationOffset>-80</rotationOffset>
 			</dataNorth>
 			<dataSouth>
@@ -135,7 +135,7 @@
 			<dataWest>
 			  <offset>(0.15, 0.4, 0.15)</offset>
 			  <rotationOffset>60</rotationOffset>
-			  <flip>true</flip>
+			  <!-- <flip>true</flip> -->
 			</dataWest>
 		</drawData>
 	  </li>
@@ -163,18 +163,19 @@
 		<drawData>
 			<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
 			<dataNorth>
-			  <offset>(0.14, 0.4, 0.07)</offset>
-			  <rotationOffset>80</rotationOffset>
+			  <offset>(0.14, 0.1, 0.07)</offset>
+			  <rotationOffset>-80</rotationOffset>
 			  <flip>true</flip>
 			</dataNorth>
 			<dataSouth>
 			  <offset>(-0.25, -0.4, 0.07)</offset>
-			  <rotationOffset>-50</rotationOffset>
+			  <rotationOffset>50</rotationOffset>
 			  <flip>true</flip>
 			</dataSouth>
 			<dataEast>
 			  <offset>(-0.15, 0.4, 0.15)</offset>
 			  <rotationOffset>-60</rotationOffset>
+			  <!-- <flip>true</flip> -->
 			</dataEast>
 		</drawData>
 	  </li>
