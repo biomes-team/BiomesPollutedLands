@@ -36,4 +36,39 @@
     </plant>
   </ThingDef>
 
+
+	<ThingDef ParentName="BMT_PollutedLands_PlantBase">
+    <defName>BMT_Plant_PaganThornsPotted</defName>
+    <label>pagan thorns</label>
+    <description>Pagan thorns are a thistle-like flowering plant. They are one of the few natural beauties in toxic areas.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>3</Beauty>
+      <BeautyOutdoors>3</BeautyOutdoors>
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+	<altitudeLayer>Building</altitudeLayer>
+    <graphicData>
+      <texPath>BMT_PollutedLands/Things/Plant/PaganThorns</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+    <ingestible />
+    <plant>
+      <pollution>PollutedOnly</pollution>
+	  <fertilityMin>0.10</fertilityMin>
+      <fertilitySensitivity>0</fertilitySensitivity>
+      <growDays>2.5</growDays>
+      <sowTags>
+        <li>Decorative</li>
+      </sowTags>
+      <maxMeshCount>4</maxMeshCount>
+      <visualSizeRange>0.3~0.4</visualSizeRange>
+      <topWindExposure>0.3</topWindExposure>
+      <wildClusterRadius>4</wildClusterRadius>
+      <wildClusterWeight>8</wildClusterWeight>
+      <wildOrder>1</wildOrder>
+      <purpose>Beauty</purpose>
+    </plant>
+  </ThingDef>
 </Defs>
