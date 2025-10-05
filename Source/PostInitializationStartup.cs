@@ -14,15 +14,15 @@ namespace BMT_PollutedLands
 		public static EffecterDef BMT_BloodVomitEffect;
 	}
 
-	[StaticConstructorOnStartup]
-	public static class PL_PostInitialization
-	{
+	//[StaticConstructorOnStartup]
+	//public static class PL_PostInitialization
+	//{
 
-		static PL_PostInitialization()
-		{
-			HarmonyPatches.HarmonyUtility.PostInitialPatches();
-		}
+	//	static PL_PostInitialization()
+	//	{
+	//		HarmonyPatches.HarmonyUtility.PostInitialPatches();
+	//	}
 
-	}
+	//}
 
 }

@@ -31,7 +31,8 @@ namespace BMT_PollutedLands
 		public BMT_PollutedLands(ModContentPack content) : base(content)
 		{
 			settings = GetSettings<BMT_PollutedLandsSettings>();
-		}
+            HarmonyPatches.HarmonyUtility.PostInitialPatches();
+        }
 
 		public override void DoSettingsWindowContents(Rect inRect)
 		{
