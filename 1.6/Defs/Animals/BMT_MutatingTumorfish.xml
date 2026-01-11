@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_MutatingTumorfishSpawn</defName>
 		<label>mutating tumorfish spawn</label>
-		<description>The first stage of the tumorfish life cycle. It is still almost fully aquatic and quite weak.</description>
+		<description>The first stage of the tumorfish life cycle. It is quite weak.</description>
 		<statBases>
 			<MoveSpeed>3.5</MoveSpeed>
 			<MarketValue>100</MarketValue>
@@ -22,6 +22,8 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<trainability>None</trainability>
 			<lifeExpectancy>0.25</lifeExpectancy>
+			<waterSeeker>true</waterSeeker>
+			<waterCellCost>1</waterCellCost>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.30</manhunterOnDamageChance>
 			<specificMeatDef>BMT_FishMeatCore</specificMeatDef>
@@ -29,8 +31,6 @@
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-			<waterSeeker>true</waterSeeker>
-			<waterCellCost>1</waterCellCost>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBabyTiny</def>
@@ -148,7 +148,7 @@
 	<ThingDef ParentName="BMT_PollutedLands_AnimalThingBase">
 		<defName>BMT_MutatingTumorfishFry</defName>
 		<label>mutating tumorfish fry</label>
-		<description>The second life stage of the tumorfish. It is now bigger and omnivorous, strong enough to hunt when necessary. It has limited movement outside the water.</description>
+		<description>The second life stage of the tumorfish. It is now bigger and omnivorous, strong enough to hunt when necessary.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>

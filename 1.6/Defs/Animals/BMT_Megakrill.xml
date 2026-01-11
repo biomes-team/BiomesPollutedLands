@@ -11,6 +11,9 @@
 	<defName>BMT_Megakrill</defName>
 	<label>megakrill</label>
 	<description>While much larger than traditional krill, the megakrill is nearly as harmless. It eats algae and the like from polluted ponds and rivers. Some colonies keep swarms of them in ponds as emergency food.</description>
+	<modExtensions>
+      <li Class="WaterWalker.WaterWalkerExtension"/>
+    </modExtensions>
 	<uiIconScale>1.5</uiIconScale>
 	<statBases>
 	  <MoveSpeed>5.0</MoveSpeed>

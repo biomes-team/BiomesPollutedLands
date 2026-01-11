@@ -100,6 +100,7 @@
 			<li Class="BiomesCore.DefModExtensions.Biomes_AnimalControl">
 				<isBottomFeeder>true</isBottomFeeder>
 			</li>
+			<li Class="WaterWalker.WaterWalkerExtension"/>
 		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">

@@ -52,6 +52,9 @@
 				</li>
 			</lifeStageAges>
 		</race>
+	<modExtensions>
+      <li Class="WaterWalker.WaterWalkerExtension"/>
+    </modExtensions>
 		<tradeTags>
 			<li>AnimalUncommon</li>
 			<li>BMT_PollutedUncommon</li>
