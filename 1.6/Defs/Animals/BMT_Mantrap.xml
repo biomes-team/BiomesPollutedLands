@@ -25,6 +25,7 @@
 			<baseHungerRate>0.05</baseHungerRate>
 			<foodType>CarnivoreAnimal</foodType>
 			<predator>true</predator>
+			<hasGenders>false</hasGenders>
 			<maxPreyBodySize>1</maxPreyBodySize>
 			<lifeExpectancy>7</lifeExpectancy>
 			<manhunterOnTameFailChance>0.0</manhunterOnTameFailChance>
