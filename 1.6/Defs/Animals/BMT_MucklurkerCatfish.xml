@@ -53,7 +53,7 @@
 			</lifeStageAges>
 		</race>
 	<modExtensions>
-      <li Class="WaterWalker.WaterWalkerExtension"/>
+		<li Class="BiomesCore.WaterWalkerExtension"/>
     </modExtensions>
 		<tradeTags>
 			<li>AnimalUncommon</li>
