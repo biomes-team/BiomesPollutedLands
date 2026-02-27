@@ -7,7 +7,7 @@
 	<displayPriorityInXenotype>510.8853270623</displayPriorityInXenotype>
   </GeneCategoryDef>
 
-  <GeneDef Name="BMT_MutaGenes_Base" Abstract="True">
+  <BiomesCore.Defs.BMT_GeneDef Name="BMT_MutaGenes_Base" Abstract="True">
 	<description>Carriers of this gene have...</description>
 	<displayCategory>BMT_MutaGenes</displayCategory>
 	<selectionWeight>0.00025</selectionWeight>
@@ -17,6 +17,7 @@
 	<randomChosen>false</randomChosen>
 	<biostatCpx>3</biostatCpx>
 	<biostatMet>1</biostatMet>
-  </GeneDef>
+	<backgroundPath>BMT_PollutedLands/UI/Icons/Genes/MutageneBackground</backgroundPath>
+  </BiomesCore.Defs.BMT_GeneDef>
 
 </Defs>

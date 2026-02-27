@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <GeneDef MayRequire="ludeon.rimworld.royalty" ParentName="BMT_MutaGenes_Base">
+  <BiomesCore.Defs.BMT_GeneDef MayRequire="ludeon.rimworld.royalty" ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_PsychicCortex</defName>
 	<label>psychic cortex</label>
 	<description>Carriers of this gene have enhanced psychic abilities and can create an immobile skipshield that lasts roughly a day.</description>
@@ -20,7 +20,7 @@
 	  <PsychicSensitivity>0.5</PsychicSensitivity>
 	  <StudyEfficiency MayRequire="ludeon.rimworld.anomaly">0.5</StudyEfficiency>
 	</statOffsets>
-  </GeneDef>
+  </BiomesCore.Defs.BMT_GeneDef>
 
   <AbilityDef MayRequire="ludeon.rimworld.royalty">
 	<defName>BMT_PsychicCortex</defName>

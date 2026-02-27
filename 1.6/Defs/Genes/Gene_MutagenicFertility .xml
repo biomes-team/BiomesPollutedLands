@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <GeneDef ParentName="BMT_MutaGenes_Base">
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_MutagenicFertility</defName>
 	<label>mutagenic fertility</label>
 	<description>Carriers of this gene have progressive mutations that may appear in their offspring.</description>
@@ -21,6 +21,6 @@
 			<birthQualityOffset>-0.1</birthQualityOffset>
 		</li>
 	</modExtensions>
-  </GeneDef>
+  </BiomesCore.Defs.BMT_GeneDef>
 
 </Defs>

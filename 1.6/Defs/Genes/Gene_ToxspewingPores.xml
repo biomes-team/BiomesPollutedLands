@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <GeneDef ParentName="BMT_MutaGenes_Base">
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_ToxspewingPores</defName>
 	<label>toxspewing pores</label>
 	<description>Carriers of this gene have pores that occasionally release toxic gas.</description>
@@ -21,6 +21,6 @@
 			<intervals>1111~44444</intervals>
 		</li>
 	</modExtensions>
-  </GeneDef>
+  </BiomesCore.Defs.BMT_GeneDef>
 
 </Defs>

@@ -2,7 +2,7 @@
 <Defs>
 
   <!-- Dummy -->
-  <GeneDef ParentName="BMT_MutaGenes_Base">
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_AcidicGlands</defName>
 	<label>acidic glands</label>
 	<description>Carriers of this gene have acid glands covering most of their body that expel acid onto anything attacking them in melee.</description>
@@ -21,6 +21,6 @@
 			<hediffDef>BMT_AcidicGlands</hediffDef>
 		</li>
 	</modExtensions>
-  </GeneDef>
+  </BiomesCore.Defs.BMT_GeneDef>
 
 </Defs>

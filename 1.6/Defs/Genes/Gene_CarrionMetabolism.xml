@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <GeneDef ParentName="BMT_MutaGenes_Base">
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_CarrionMetabolism</defName>
 	<label>carrion metabolism</label>
 	<description>Carriers of this gene have a special organ that allows them to obtain nutrients from rotten corpses.</description>
@@ -27,7 +27,7 @@
 	<exclusionTags>
 	  <li>BMT_CorpseEaterGenes</li>
 	</exclusionTags>
-  </GeneDef>
+  </BiomesCore.Defs.BMT_GeneDef>
 
   <!-- Abilities -->
 

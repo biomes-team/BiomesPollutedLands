@@ -2,7 +2,7 @@
 <Defs>
 
   <!-- Need a body and flies -->
-  <!-- <GeneDef ParentName="BMT_MutaGenes_Base"> -->
+  <!-- <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MutaGenes_Base"> -->
 	<!-- <defName>BMT_PestilentSymbiosis</defName> -->
 	<!-- <label>pestilent symbiosis</label> -->
 	<!-- <description>Dummy gene. Background and icon test.</description> -->
@@ -35,7 +35,7 @@
 		<!-- <parentTagDef>Body</parentTagDef> -->
 	  <!-- </li> -->
 	<!-- </renderNodeProperties> -->
-  <!-- </GeneDef> -->
+  <!-- </BiomesCore.Defs.BMT_GeneDef> -->
 
   <!-- <AbilityDef MayRequire="ludeon.rimworld.royalty"> -->
 	<!-- <defName>BMT_PestilentSymbiosis</defName> -->

@@ -27,11 +27,12 @@ namespace BMT_PollutedLands
 				var harmony = new Harmony("biomesteam.biomespollutedlands");
 				// Background can be disabled
 				// This is necessary in case there are conflicts with other mods
-				if (!BMT_PollutedLands.settings.disableUniqueGeneInterface)
-				{
-					harmony.Patch(AccessTools.Method(typeof(GeneUIUtility), "DrawGene"), prefix: new HarmonyMethod(typeof(HarmonyUtility).GetMethod("PL_DrawGene")));
-					harmony.Patch(AccessTools.Method(typeof(GeneUIUtility), "DrawGeneDef"), prefix: new HarmonyMethod(typeof(HarmonyUtility).GetMethod("PL_DrawGeneDef")));
-				}
+				// Moved to Core
+				//if (!BMT_PollutedLands.settings.disableUniqueGeneInterface)
+				//{
+				//	harmony.Patch(AccessTools.Method(typeof(GeneUIUtility), "DrawGene"), prefix: new HarmonyMethod(typeof(HarmonyUtility).GetMethod("PL_DrawGene")));
+				//	harmony.Patch(AccessTools.Method(typeof(GeneUIUtility), "DrawGeneDef"), prefix: new HarmonyMethod(typeof(HarmonyUtility).GetMethod("PL_DrawGeneDef")));
+				//}
 			}
 
 			// Backgroud

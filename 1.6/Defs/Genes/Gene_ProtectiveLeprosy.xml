@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <GeneDef ParentName="BMT_MutaGenes_Base">
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_ProtectiveLeprosy</defName>
 	<label>protective leprosy</label>
 	<description>Carriers of this gene have an immune defense mechanism that sheds infected organs and body parts, preventing the disease from spreading further.</description>
@@ -23,6 +23,6 @@
 			<intervals>100000~130000</intervals>
 		</li>
 	</modExtensions>
-  </GeneDef>
+  </BiomesCore.Defs.BMT_GeneDef>
 
 </Defs>

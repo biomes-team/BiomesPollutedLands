@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <GeneDef ParentName="BMT_MutaGenes_Base">
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_BloodExplusion</defName>
 	<label>blood explusion</label>
 	<description>Carriers of this gene have a small filtering organ in their stomach. It increases immunity, but when sick, it causes the carrier to vomit blood.</description>
@@ -21,7 +21,7 @@
 			<bloodlossSeverity>0.15</bloodlossSeverity>
 		</li>
 	</modExtensions>
-  </GeneDef>
+  </BiomesCore.Defs.BMT_GeneDef>
 
   <JobDef>
 	<defName>BMT_BloodVomit</defName>

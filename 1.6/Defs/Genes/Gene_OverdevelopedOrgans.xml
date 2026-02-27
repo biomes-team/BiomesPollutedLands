@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <GeneDef ParentName="BMT_MutaGenes_Base">
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_OverdevelopedOrgans</defName>
 	<label>overdeveloped organs</label>
 	<description>Carriers of this gene have overdeveloped organs that accumulate fats with regenerative properties. When injured, this fat significantly accelerates the restoration of damaged tissue.</description>
@@ -31,6 +31,6 @@
 			</bodyparts>
 		</li>
 	</modExtensions>
-  </GeneDef>
+  </BiomesCore.Defs.BMT_GeneDef>
 
 </Defs>

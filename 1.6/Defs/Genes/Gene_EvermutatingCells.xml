@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <GeneDef ParentName="BMT_MutaGenes_Base">
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_EvermutatingCells</defName>
 	<label>evermutating cells</label>
 	<!-- <description>Carriers of this gene have unstable cellular mutations that can cause mutapox.</description> -->
@@ -24,6 +24,6 @@
 			<intervals>441111~744444</intervals>
 		</li>
 	</modExtensions> -->
-  </GeneDef>
+  </BiomesCore.Defs.BMT_GeneDef>
 
 </Defs>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <GeneDef ParentName="BMT_MutaGenes_Base">
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_ConjoinedHeart</defName>
 	<label>conjoined heart</label>
 	<description>Carriers of this gene have a growth on the heart that rapidly replenishes blood when bleeding out. It does however have a chance to cause a heart attack due to the cardiovascular stress.</description>
@@ -32,6 +32,6 @@
 			<maxSeverity>0.72</maxSeverity>
 		</li>
 	</modExtensions>
-  </GeneDef>
+  </BiomesCore.Defs.BMT_GeneDef>
 
 </Defs>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <GeneDef ParentName="BMT_MutaGenes_Base">
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_HandsMutated</defName>
 	<label>mutated hands</label>
 	<description>Carriers of this gene have one or two extra fingers on their hands, allowing for extra manipulation.</description>
@@ -20,6 +20,6 @@
 	<exclusionTags>
 	  <li>Hands</li>
 	</exclusionTags>
-  </GeneDef>
+  </BiomesCore.Defs.BMT_GeneDef>
 
 </Defs>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <GeneDef ParentName="BMT_MutaGenes_Base">
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_ClusterEyes</defName>
 	<label>cluster eyes</label>
 	<!-- <description>Carriers of this gene have cluster eyes located on the forehead.</description> -->
@@ -77,6 +77,6 @@
 	  <!-- <li>Headbone</li> -->
 	  <li>EyeColor</li>
 	</exclusionTags>
-  </GeneDef>
+  </BiomesCore.Defs.BMT_GeneDef>
 
 </Defs>

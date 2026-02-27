@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <GeneDef ParentName="BMT_MutaGenes_Base">
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_EpidermalOssification</defName>
 	<label>epidermal ossification</label>
 	<description>Carriers of this gene have bone growths protecting much of their body while also making it harder to move.</description>
@@ -21,6 +21,6 @@
 		<offset>-0.10</offset>
 	  </li>
 	</capMods>
-  </GeneDef>
+  </BiomesCore.Defs.BMT_GeneDef>
 
 </Defs>

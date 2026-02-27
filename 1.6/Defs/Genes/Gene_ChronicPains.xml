@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <GeneDef ParentName="BMT_MutaGenes_Base">
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_ChronicPains</defName>
 	<label>chronic pains</label>
 	<description>Carriers of this gene suffer from periodic chronic pain, ranging from mild to intense.</description>
@@ -21,6 +21,6 @@
 			<intervals>141111~744444</intervals>
 		</li>
 	</modExtensions>
-  </GeneDef>
+  </BiomesCore.Defs.BMT_GeneDef>
 
 </Defs>

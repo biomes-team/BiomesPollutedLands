@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <GeneDef ParentName="BMT_MutaGenes_Base">
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_GoliathArms</defName>
 	<label>goliath arms</label>
 	<description>Carriers of this gene have huge, oversized arms and hands. Their strength is much higher, but their agility leaves much to be desired.</description>
@@ -21,6 +21,6 @@
 	<statOffsets>
 	  <ImmunityGainSpeed>-0.1</ImmunityGainSpeed>
 	</statOffsets>
-  </GeneDef>
+  </BiomesCore.Defs.BMT_GeneDef>
 
 </Defs>

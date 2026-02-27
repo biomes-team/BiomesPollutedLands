@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <GeneDef ParentName="BMT_MutaGenes_Base">
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_ImpalingClaws</defName>
 	<label>impaling claws</label>
 	<description>Carriers of this gene grow two claws on their backs that act as natural weapons.</description>
@@ -192,6 +192,6 @@
 			</bodyparts>
 		</li>
 	</modExtensions>
-  </GeneDef>
+  </BiomesCore.Defs.BMT_GeneDef>
 
 </Defs>

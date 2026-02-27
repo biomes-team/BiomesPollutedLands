@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <GeneDef ParentName="BMT_MutaGenes_Base">
+  <BiomesCore.Defs.BMT_GeneDef ParentName="BMT_MutaGenes_Base">
 	<defName>BMT_MoltingRegeneration</defName>
 	<label>molting regeneration</label>
 	<description>Carriers of this gene have incredible regeneration, their old wounds and chronic diseases gradually disappear. However, this causes their skin to peel off and they are forced to shed it from time to time.</description>
@@ -25,7 +25,7 @@
 			<intervals>450000~900000</intervals>
 		</li>
 	</modExtensions>
-  </GeneDef>
+  </BiomesCore.Defs.BMT_GeneDef>
   
   <ThingDef ParentName="BaseFilth">
 	<defName>BMT_Filth_MutatedShedSkin</defName>
