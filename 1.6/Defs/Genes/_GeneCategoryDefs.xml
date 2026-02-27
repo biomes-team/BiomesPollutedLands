@@ -18,6 +18,12 @@
 	<biostatCpx>3</biostatCpx>
 	<biostatMet>1</biostatMet>
 	<backgroundPath>BMT_PollutedLands/UI/Icons/Genes/MutageneBackground</backgroundPath>
+	<!-- Used if backgroundPath is empty -->
+	<!-- <backgroundEndogenePath>UI/Xenotype/GeneBackground_Mushkin</backgroundEndogenePath> -->
+	<!-- <backgroundXenogenePath>UI/Xenotype/GeneBackground_Mushkin</backgroundXenogenePath> -->
+	<!-- <backgroundArchiteEndogenePath>UI/Xenotype/GeneBackground_Mushkin</backgroundArchiteEndogenePath> -->
+	<!-- <backgroundArchiteXenogenePath>UI/Xenotype/GeneBackground_Mushkin</backgroundArchiteXenogenePath> -->
+	<!-- Used if backgroundPath is empty -->
   </BiomesCore.Defs.BMT_GeneDef>
 
 </Defs>
