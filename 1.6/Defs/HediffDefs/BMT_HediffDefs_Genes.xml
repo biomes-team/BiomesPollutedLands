@@ -109,7 +109,7 @@
   <HediffDef ParentName="BMT_PollutionLands_Hediffs_Base">
 	<defName>BMT_ImpalingClaws</defName>
 	<label>impaling claws</label>
-	<description>A creepy and sharp claws growing from the back.</description>
+	<description>Creepy and sharp claws grow from the back, allowing for attacks.</description>
 	<comps>
 	  <li Class="HediffCompProperties_VerbGiver">
 		<tools>
