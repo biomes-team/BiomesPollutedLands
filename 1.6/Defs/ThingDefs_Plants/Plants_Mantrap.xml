@@ -17,7 +17,7 @@
 	 <statBases>
 	  <MaxHitPoints>100</MaxHitPoints>
 	  <Nutrition>2.0</Nutrition>
-      <TerrorSource MayRequire="Ludeon.RimWorld.Ideology">0</TerrorSource>
+      <TerrorSource MayRequire="Ludeon.RimWorld.Ideology">2</TerrorSource>
     </statBases>
 	<uiIconScale>0.85</uiIconScale>
 	<plant>
