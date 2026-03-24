@@ -39,8 +39,8 @@
         </northDefault>
       </ingestHoldOffsetStanding>
       <ingestHoldUsesTable>false</ingestHoldUsesTable>
-      <ingestCommandString>Snort {0}</ingestCommandString>
-      <ingestReportString>Snorting {0}.</ingestReportString>
+      <ingestCommandString>Slurp {0}</ingestCommandString>
+      <ingestReportString>Slurping {0}.</ingestReportString>
       <useEatingSpeedStat>true</useEatingSpeedStat>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
