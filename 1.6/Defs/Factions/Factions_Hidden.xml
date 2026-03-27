@@ -52,6 +52,7 @@
         <li>(100000,10000)</li>
       </points>
     </maxPawnCostPerTotalPointsCurve>
+    <raidsForbidden>true</raidsForbidden>
     <hidden>true</hidden>
     <autoFlee>false</autoFlee>
     <canUseAvoidGrid>false</canUseAvoidGrid>
