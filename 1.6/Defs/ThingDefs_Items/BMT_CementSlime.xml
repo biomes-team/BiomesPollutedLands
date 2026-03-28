@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <ThingDef ParentName="StoneBlocksBase">
+  <ThingDef ParentName="ResourceBase">
     <defName>BMT_CementSlime</defName>
     <label>cement slime</label>
     <description>Globs of semi-hardened slime produced by a type of mutant snail. It can be used to build strong structures and furniture, albeit ugly ones.</description>
@@ -8,23 +8,38 @@
 			<texPath>BMT_PollutedLands/Things/Item/CementSlime</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
     <statBases>
         <Beauty>-0.10</Beauty>
       <Mass>1.0</Mass>
     </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>false</smeltable>
     <stuffProps>
       <color>(126,126,126)</color>
+      <categories>
+        <li>Stony</li>
+        <li>Metallic</li>
+      </categories>
       <!-- <soundImpactStuff>BulletImpact_Ground</soundImpactStuff> Removed in 1.5? -->
-      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
-      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
       <stuffAdjective>cement slime</stuffAdjective>
       <statFactors>
         <MaxHitPoints>2</MaxHitPoints>
+        <WorkToMake>1.25</WorkToMake>
+        <WorkToBuild>2.5</WorkToBuild>
+        <Flammability>0</Flammability>
       </statFactors>
       <statOffsets>
         <Beauty>-0.10</Beauty>
       </statOffsets>
       <commonality>0</commonality>
     </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
 </Defs>
