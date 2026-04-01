@@ -30,7 +30,7 @@
 				<eggFertilizedDef>BMT_EggSludgeCrawlerFertilized</eggFertilizedDef>
 				<eggUnfertilizedDef>BMT_EggSludgeCrawlerUnfertilized</eggUnfertilizedDef>
 				<eggLayIntervalDays>20</eggLayIntervalDays>
-				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggProgressUnfertilizedMax>1.0</eggProgressUnfertilizedMax>
 				<eggCountRange>1~2</eggCountRange>
 				<eggLayFemaleOnly>false</eggLayFemaleOnly>
 			</li>
