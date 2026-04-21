@@ -13,6 +13,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
 			<texPath>BMT_PollutedLands/Things/Plant/Eclipsus</texPath>
+			<drawSize>0.75</drawSize>
 		</graphicData>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
@@ -47,6 +48,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
 			<texPath>BMT_PollutedLands/Things/Plant/EclipsusLeaf</texPath>
+			<drawSize>0.75</drawSize>
 		</graphicData>
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
