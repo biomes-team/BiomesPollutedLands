@@ -11,7 +11,8 @@
     <soundInteract>ChunkRock_Drop</soundInteract>
     <soundDrop>ChunkRock_Drop</soundDrop>
     <statBases>
-        <Beauty>-0.10</Beauty>
+      <MarketValue>0.22</MarketValue>
+      <Beauty>-0.10</Beauty>
       <Mass>1.0</Mass>
     </statBases>
     <thingCategories>
