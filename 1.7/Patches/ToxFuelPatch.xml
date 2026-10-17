@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li[contains(text(),'WoodLog')]]</xpath>
+		<success>Always</success>
+		<value>
+		  <li>BMT_Toxwood</li>
+		  <!-- <li>RawFungus</li> -->
+		  <!-- <li>Hay</li> -->
+		</value>
+	</Operation>
+
+</Patch>

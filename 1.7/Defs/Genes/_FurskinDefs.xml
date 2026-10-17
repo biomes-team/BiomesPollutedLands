@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- <FurDef Name="BMT_PL_FurDef_Base" Abstract="True"> -->
+	<!-- <noGraphic>true</noGraphic> -->
+	<!-- <bodyTypeGraphicPaths> -->
+	  <!-- <Male>Things/Pawn/Humanlike/Bodies/Naked_Male</Male> -->
+	  <!-- <Female>Things/Pawn/Humanlike/Bodies/Naked_Female</Female> -->
+	  <!-- <Hulk>Things/Pawn/Humanlike/Bodies/Naked_Hulk</Hulk> -->
+	  <!-- <Fat>Things/Pawn/Humanlike/Bodies/Naked_Fat</Fat> -->
+	  <!-- <Thin>Things/Pawn/Humanlike/Bodies/Naked_Thin</Thin> -->
+	  <!-- <Child>Things/Pawn/Humanlike/Bodies/Naked_Child</Child> -->
+	  <!-- <Baby>Things/Pawn/Humanlike/Bodies/Naked_Child</Baby> -->
+	<!-- </bodyTypeGraphicPaths> -->
+  <!-- </FurDef> -->
+
+  <!-- ==================================== -->
+
+  <!-- DEV -->
+  <!-- <FurDef ParentName="BMT_PL_FurDef_Base"> -->
+	<!-- <defName>BMT_PestilentSymbiosis</defName> -->
+	<!-- <bodyTypeGraphicPaths> -->
+	  <!-- <Male>BMT_PollutedLands/Bodies/PestilentSymbiosis_Body/Naked_Male</Male> -->
+	  <!-- <Female>BMT_PollutedLands/Bodies/PestilentSymbiosis_Body/Naked_Female</Female> -->
+	  <!-- <Hulk>BMT_PollutedLands/Bodies/PestilentSymbiosis_Body/Naked_Hulk</Hulk> -->
+	  <!-- <Fat>BMT_PollutedLands/Bodies/PestilentSymbiosis_Body/Naked_Fat</Fat> -->
+	  <!-- <Thin>BMT_PollutedLands/Bodies/PestilentSymbiosis_Body/Naked_Thin</Thin> -->
+	<!-- </bodyTypeGraphicPaths> -->
+	<!-- <modExtensions> -->
+		<!-- <li Class="BMT_PollutedLands.GeneExtension"> -->
+			<!-- <furIsSkin>true</furIsSkin> -->
+		<!-- </li> -->
+	<!-- </modExtensions> -->
+  <!-- </FurDef> -->
+
+</Defs>

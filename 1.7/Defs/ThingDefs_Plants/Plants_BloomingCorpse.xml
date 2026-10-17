@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- To-Do: Add mood debuff when harvest -->
+  <ThingDef ParentName="BMT_PollutedLands_BushBase">
+	<defName>BMT_Plant_BloomingCorpse</defName>
+	<label>blooming corpse</label>
+	<description>Similar to the rafflesia, this flowering plant exhudes a disgusting scent. Unlike the corpseflower, however, it also produces rotstink as a natural byproduct.</description>
+	<graphicData>
+	  <texPath>BMT_PollutedLands/Things/Plant/BloomingCorpse/BloomingCorpse</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.15</drawSize>
+	  <shadowData>
+		<volume>(0.55, 0.2, 0.2)</volume>
+	  </shadowData>
+	</graphicData>
+	 <statBases>
+	  <MaxHitPoints>120</MaxHitPoints>
+	  <Nutrition>0.5</Nutrition>
+	  <Beauty>-6</Beauty>
+      <BeautyOutdoors>-6</BeautyOutdoors>
+    </statBases>
+	<uiIconScale>0.85</uiIconScale>
+	<plant>
+	  <growDays>4</growDays>
+	  <!-- <leaflessGraphicPath>Things/Plant/Bush_Leafless</leaflessGraphicPath> -->
+	  <pollution>PollutedOnly</pollution>
+	  <fertilityMin>0.10</fertilityMin>
+      <fertilitySensitivity>0</fertilitySensitivity>
+	</plant>
+	<comps>
+		<li Class="BiomesCore.CompProperties_PlantReleaseGas">
+			<gasType>RotStink</gasType>
+			<cellsToFill>1</cellsToFill>
+			<growthProgress>0.20</growthProgress>
+		</li>
+	</comps>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs[li="WoodLog"]</xpath>
+	  <success>Always</success>
+	  <value>
+		  <li>BMT_Toxwood</li>
+	  </value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs[li="WoodLog"]</xpath>
+	  <success>Always</success>
+	  <value>
+		  <li>BMT_Toxwood</li>
+	  </value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+	  <xpath>/Defs/RecipeDef/defaultIngredientFilter/thingDefs[li="WoodLog"]</xpath>
+	  <success>Always</success>
+	  <value>
+		  <li>BMT_Toxwood</li>
+	  </value>
+	</Operation>
+
+</Patch>

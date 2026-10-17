@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<BMT_PollutedLandsSettings>Biomes! Polluted Lands</BMT_PollutedLandsSettings>
+
+	<BMT_PollutedLandsSettings_Tab_General>General</BMT_PollutedLandsSettings_Tab_General>
+
+	<BMT_PL_Label_disableUniqueGeneInterface>Disable unique gene background</BMT_PL_Label_disableUniqueGeneInterface>
+	<BMT_PL_ToolTip_disableUniqueGeneInterface>Responsible for displaying the unique background and additional information of the gene.
+
+If enabled, then all genes of the mod will have a vanilla background without additional info.
+
+A restart is required.</BMT_PL_ToolTip_disableUniqueGeneInterface>
+
+</LanguageData>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>BMT_ToxWoodPlankFloor</defName>
+		<label>toxwood floor</label>
+		<renderPrecedence>250</renderPrecedence>
+		<description>Toxwood plank flooring for that warm, homey feeling, if you like the noxious look. It is quick to lay and is flammable.</description>
+		<texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+		<isPaintable>true</isPaintable>
+		<burnedDef>BurnedWoodPlankFloor</burnedDef>
+		<color>(71,63,47)</color>
+		<statBases>
+			<WorkToBuild>85</WorkToBuild>
+			<Flammability>20</Flammability>
+		</statBases>
+		<costList>
+			<BMT_Toxwood>3</BMT_Toxwood>
+		</costList>
+		<constructEffect>ConstructWood</constructEffect>
+	</TerrainDef>
+
+
+</Defs>

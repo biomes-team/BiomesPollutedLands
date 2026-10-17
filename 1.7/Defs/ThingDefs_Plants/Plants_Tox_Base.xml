@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Abstract="True" Name="BMT_PollutedLands_PlantBase" ParentName="PollutionPlantBase">
+  </ThingDef>
+
+  <ThingDef Abstract="True" Name="BMT_PollutedLands_TreeBase" ParentName="PollutionTreeWithStumpBase">
+  </ThingDef>
+  
+  
+  <ThingDef Abstract="True" Name="BMT_PollutedLands_DeciduousTreeBase" ParentName="BMT_PollutedLands_TreeBase">
+	<graphicData>
+      <shaderParameters>
+        <_FallColorSource>(0.3803, 0.4352, 0.1451)</_FallColorSource>
+        <_FallColorDestination>/Other/TreeFallGradient</_FallColorDestination>
+        <_FallTransitionRange>(0.02, 0.10)</_FallTransitionRange>
+        <_FallBehaviorEnabled>1</_FallBehaviorEnabled>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+  
+  
+  <ThingDef Abstract="True" Name="BMT_PollutedLands_BushBase" ParentName="BushBase">
+    <plant>
+      <pollution>PollutedOnly</pollution>
+	  <fertilityMin>0.05</fertilityMin>
+      <fertilitySensitivity>0.3</fertilitySensitivity>
+    </plant>
+  </ThingDef>
+
+
+</Defs>

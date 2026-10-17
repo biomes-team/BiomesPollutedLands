@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BMT_PollutedLands_PlantBase">
+		<defName>BMT_Plant_TumorbulbHyacinth</defName>
+		<label>tumorbulb hyacinth</label>
+		<description>A species of hyacinth that grows in toxin-infested waters. It has been known to grow even in polluted waste dumps.</description>
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+			<Nutrition>0.3</Nutrition>
+			<Beauty>14</Beauty>
+			<BeautyOutdoors>14</BeautyOutdoors>
+		</statBases>
+		<pathCost>20</pathCost>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>BMT_PollutedLands/Things/Plant/TumorbulbHyacinth</texPath>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<modExtensions>
+			<li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+				<terrainTags>
+					<li>Water</li>
+					<li>Shallow</li>
+					<li>ChestDeep</li>
+					<li>Boggy</li>
+					<li>Marshy</li>
+					<li>Marsh</li>
+				</terrainTags>
+			</li>
+		</modExtensions>
+		<plant>
+			<growDays>5</growDays>
+			<visualSizeRange>1.2~1.5</visualSizeRange>
+			<topWindExposure>0.2</topWindExposure>
+			<wildClusterRadius>8</wildClusterRadius>
+			<wildClusterWeight>50</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		    <pollution>PollutedOnly</pollution>
+			<fertilityMin>0.10</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+		</plant>
+	</ThingDef>
+
+</Defs>

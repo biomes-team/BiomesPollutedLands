@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=====================================================================-->
+	<!--=============================== Fish ================================-->
+	<!--=====================================================================-->
+
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>BMT_Tumorfish</defName>
+		<label>tumorfish</label>
+		<description>Despite their bodies being lumpy and gross-looking, they are fairly nutritious.</description>
+		<graphicData>
+			<texPath>BMT_PollutedLands/Things/Item/Fishes/Tumorfish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<Nutrition>0.01</Nutrition>
+			<MarketValue>0.22</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+
+	<!-- ================================================ -->
+
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>BMT_Megaleech</defName>
+		<label>megaleech</label>
+		<description>Thankfully these leeches are not currently filled with blood, but they are filled with nutrients.</description>
+		<graphicData>
+			<texPath>BMT_PollutedLands/Things/Item/Fishes/Megaleech</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.10</Mass>
+			<Nutrition>0.1</Nutrition>
+			<MarketValue>2.25</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+
+	<!-- ================================================ -->
+
+	<ThingDef ParentName="VCEF_RawFishBase">
+		<defName>BMT_Gaspar</defName>
+		<label>gaspar</label>
+		<description>With a body covered in toxic pustules, it has to be cooked properly to prevent food poisoning.</description>
+		<graphicData>
+			<texPath>BMT_PollutedLands/Things/Item/Fishes/Gaspar</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.25</Mass>
+			<Nutrition>0.25</Nutrition>
+			<MarketValue>5.5</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+		<uiIconForStackCount>1</uiIconForStackCount>
+	</ThingDef>
+
+
+</Defs>

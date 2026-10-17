@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="PlantBaseNonEdible">
+    <defName>BMT_RainbowTongue</defName>
+    <label>rainbow tongue</label>
+    <description>A genetically-engineered flower which produces a vibrant and multi-colored pollen. The pollen dye can be coaxed into different colors and used to change the color of walls, buildings, and more.</description>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>1</Beauty>
+    </statBases>
+    <graphicData>
+      <texPath>BMT_PollutedLands/Things/Plant/RainbowTongue/RainbowTongue</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <pathCost>14</pathCost>
+    <plant>
+	  <immatureGraphicPath>BMT_PollutedLands/Things/Plant/RainbowTongue/RainbowTongue_Immature</immatureGraphicPath>
+	  <visualSizeRange>0.8~1.4</visualSizeRange>
+      <dieIfLeafless>true</dieIfLeafless>
+      <sowWork>540</sowWork>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>2</growDays>
+      <lifespanDaysPerGrowDays>6</lifespanDaysPerGrowDays>
+      <allowAutoCut>false</allowAutoCut>
+      <wildClusterWeight>0</wildClusterWeight>
+      <harvestedThingDef>Dye</harvestedThingDef>
+      <harvestYield>1</harvestYield>
+      <harvestTag>Standard</harvestTag>
+      <purpose>Misc</purpose>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+	  <pollution>PollutedOnly</pollution>
+	  <fertilityMin>0.10</fertilityMin>
+      <fertilitySensitivity>0</fertilitySensitivity>
+    </plant>
+  </ThingDef>
+</Defs>

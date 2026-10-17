@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- To-Do: Add mood debuff when harvest -->
+  <ThingDef ParentName="BMT_PollutedLands_BushBase">
+	<defName>BMT_Plant_Doomsprout</defName>
+	<label>doomsprout</label>
+	<description>Bulbous and filled with toxic gasses, this fungi spews them out when damaged.</description>
+	<statBases>
+	  <MaxHitPoints>85</MaxHitPoints>
+	  <Nutrition>0.2</Nutrition>
+	</statBases>
+	<graphicData>
+	  <texPath>BMT_PollutedLands/Things/Plant/Doomsprout/Doomsprout</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.15</drawSize>
+	  <shadowData>
+		<volume>(0.55, 0.2, 0.2)</volume>
+	  </shadowData>
+	</graphicData>
+	<uiIconScale>0.85</uiIconScale>
+	<plant>
+	  <growDays>10</growDays>
+	  <!-- <leaflessGraphicPath>Things/Plant/Bush_Leafless</leaflessGraphicPath> -->
+	  <pollution>PollutedOnly</pollution>
+	  <fertilityMin>0.10</fertilityMin>
+      <fertilitySensitivity>0</fertilitySensitivity>
+	</plant>
+	 <comps>
+		<li Class="BiomesCore.CompProperties_PlantReleaseGasOnDeath">
+			<gasType>ToxGas</gasType>
+			<cellsToFill>6</cellsToFill>
+			<growthProgress>0.25</growthProgress>
+		</li>
+	  <li Class="BiomesCore.CompProperties_PlantReleaseGasOnDamage">
+		<gasType>ToxGas</gasType>
+		<cellsToFill>6</cellsToFill>
+		<growthProgress>0.25</growthProgress>
+	</li>
+	  </comps>
+  </ThingDef>
+
+</Defs>

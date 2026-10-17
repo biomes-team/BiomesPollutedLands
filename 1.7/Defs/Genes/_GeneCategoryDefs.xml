@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneCategoryDef>
+	<defName>BMT_MutaGenes</defName>
+	<label>mutagenes</label>
+	<displayPriorityInXenotype>510.8853270623</displayPriorityInXenotype>
+  </GeneCategoryDef>
+
+  <BiomesCore.Defs.BMT_GeneDef Name="BMT_MutaGenes_Base" Abstract="True">
+	<description>Carriers of this gene have...</description>
+	<displayCategory>BMT_MutaGenes</displayCategory>
+	<selectionWeight>0.00025</selectionWeight>
+	<canGenerateInGeneSet>true</canGenerateInGeneSet>
+	<marketValueFactor>1.5</marketValueFactor>
+	<minAgeActive>0</minAgeActive>
+	<randomChosen>false</randomChosen>
+	<biostatCpx>3</biostatCpx>
+	<biostatMet>1</biostatMet>
+	<backgroundPath>BMT_PollutedLands/UI/Icons/Genes/MutageneBackground</backgroundPath>
+	<!-- Used if backgroundPath is empty -->
+	<!-- <backgroundEndogenePath>UI/Xenotype/GeneBackground_Mushkin</backgroundEndogenePath> -->
+	<!-- <backgroundXenogenePath>UI/Xenotype/GeneBackground_Mushkin</backgroundXenogenePath> -->
+	<!-- <backgroundArchiteEndogenePath>UI/Xenotype/GeneBackground_Mushkin</backgroundArchiteEndogenePath> -->
+	<!-- <backgroundArchiteXenogenePath>UI/Xenotype/GeneBackground_Mushkin</backgroundArchiteXenogenePath> -->
+	<!-- Used if backgroundPath is empty -->
+  </BiomesCore.Defs.BMT_GeneDef>
+
+</Defs>

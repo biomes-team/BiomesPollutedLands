@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ======================================================== -->
+
+	<ThingDef ParentName="BiomesCore_ChitinBase">
+		<defName>BMT_ToxiChitin</defName>
+		<!-- medium chitin t2 -->
+		<label>toxic chitin</label>
+		<description>Chitin of a giant insect adapted to toxic environments. It's fairly durable.</description>
+		<graphicData>
+			<color>(112,112,76)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.0</MarketValue>
+			<StuffPower_Armor_Sharp>1.1</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+			<StuffPower_Insulation_Cold>15</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(112,112,76)</color>
+			<statFactors>
+				<MaxHitPoints>1.2</MaxHitPoints>
+				<Beauty>0.25</Beauty>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+</Defs>
