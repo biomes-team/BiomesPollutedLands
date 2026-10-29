@@ -59,14 +59,14 @@
 			</li>
 		</comps>
 		<race>
-			<body>Biomes_WhaleBody</body>
+			<body>BMT_PinnipedBody</body>
 			<petness>0.10</petness>
 			<baseBodySize>4</baseBodySize>
 			<baseHungerRate>1.5</baseHungerRate>
 			<baseHealthScale>0.9</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
 			<predator>true</predator>
-			<leatherDef>BiomesIslands_Leather_Pinnipedskin</leatherDef>
+			<leatherDef>BMT_Pinnipedskin</leatherDef>
 			<gestationPeriodDays>13</gestationPeriodDays>
 			<trainability>Advanced</trainability>
 			<!-- <manhunterOnDamageChance>0</manhunterOnDamageChance> -->
